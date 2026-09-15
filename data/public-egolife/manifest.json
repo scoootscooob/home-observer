@@ -1,0 +1,27 @@
+{
+  "kind": "public_real",
+  "repo_id": "lmms-lab/EgoLife",
+  "revision": "143fb319be7aa5ae210c936bf4f0f3a86092afb0",
+  "source_url": "https://huggingface.co/datasets/lmms-lab/EgoLife/blob/143fb319be7aa5ae210c936bf4f0f3a86092afb0/A1_JAKE/DAY1/DAY1_A1_JAKE_11094208.mp4",
+  "path_in_repo": "A1_JAKE/DAY1/DAY1_A1_JAKE_11094208.mp4",
+  "local_path": "/Users/scottfan/Documents/Codex/2026-09-15/do/work/public-egolife/raw/A1_JAKE/DAY1/DAY1_A1_JAKE_11094208.mp4",
+  "bytes": 6663507,
+  "sha256": "8d20da0a3385f2f8d870c24c8638852dda14380cefb88ce2dd012677bbd0f2da",
+  "license": "mit",
+  "timestamp_origin": "synthetic UTC origin; offsets within downloaded source clip are real",
+  "view": "one egocentric camera",
+  "group_id": "EgoLife:Beijing:shared-household-week",
+  "annotation_method": "unlabeled_public_replay",
+  "training_eligible": false,
+  "limits": [
+    "No Home Assistant action labels",
+    "No silence labels",
+    "One clip is only a media/replay smoke test",
+    "All cameras/participants/days from this shared recording remain in one split"
+  ],
+  "media_info": {
+    "duration_s": 17.63,
+    "has_audio": true
+  },
+  "prepared_windows": 2
+}

@@ -1,0 +1,115 @@
+{
+  "version": 1,
+  "metric": "known_annotated_observation_pairs",
+  "scope": "Exact typed values for annotated (entity_id, attribute) pairs only. Additional pairs are unscored extras.",
+  "matching": "Exact JSON values; strings, booleans and numbers are distinct. Identical duplicates count once; conflicting predictions are incorrect.",
+  "failure_handling": "Uses parsed observation values even when other fields are rejected. Invalid/failed windows are retained separately; no raw output is repaired or parsed here.",
+  "windows": 2,
+  "observation_labeled_windows": 0,
+  "observation_unscored_windows": 2,
+  "original_invalid_or_failed_windows": 0,
+  "known_labels": {
+    "annotated_pairs": 0,
+    "correct": 0,
+    "incorrect": 0,
+    "missing": 0,
+    "covered": 0,
+    "coverage": null,
+    "accuracy_on_covered": null,
+    "correct_fraction": null
+  },
+  "camera_occupancy": {
+    "annotated_pairs": 0,
+    "correct": 0,
+    "incorrect": 0,
+    "missing": 0,
+    "covered": 0,
+    "coverage": null,
+    "accuracy_on_covered": null,
+    "correct_fraction": null
+  },
+  "camera_occupancy_definition": "Source-annotated room.* / occupied pairs; this name does not assert that the model used camera evidence.",
+  "per_entity": {},
+  "unscored_extras": {
+    "pair_instances": 4,
+    "windows": 2,
+    "by_entity": {
+      "room.lounge": 2,
+      "sensor.ambient_lux": 2
+    },
+    "interpretation": "No source annotation for these pairs. Neither correct nor incorrect perception is established."
+  },
+  "legacy_strict_set_compatibility": {
+    "interpretation": "Original evaluator semantics. Unannotated extras count as strict-set mismatches; this is not proof of false perception.",
+    "metrics": {
+      "windows": 2,
+      "targeted_windows": 0,
+      "invalid_or_failed_windows": 0,
+      "valid_response_rate": 1.0,
+      "action_precision": null,
+      "action_recall": null,
+      "observation_precision": null,
+      "observation_recall": null,
+      "false_action_window_rate": null,
+      "latency_p50_s": 11.110057901591063,
+      "latency_p95_s": 11.538039622828364,
+      "latency_mean_s": 11.324048762209713,
+      "counts": {
+        "action_tp": 0,
+        "action_fp": 0,
+        "action_fn": 0,
+        "obs_tp": 0,
+        "obs_fp": 0,
+        "obs_fn": 0,
+        "action_scored": 0,
+        "observation_scored": 0,
+        "no_action_windows": 0,
+        "false_action_windows": 0
+      },
+      "scope": "Proposed-action and observation accuracy on labeled windows; not a household reliability guarantee."
+    }
+  },
+  "rows": [
+    {
+      "id": "egolife-a1-day1-sample-00000",
+      "task_type": "unspecified",
+      "observation_supervised": false,
+      "original_result_failed": false,
+      "annotated_pairs": 0,
+      "correct": 0,
+      "incorrect": 0,
+      "missing": 0,
+      "covered": 0,
+      "coverage": null,
+      "accuracy_on_covered": null,
+      "correct_fraction": null,
+      "unscored_extra_pairs": 2
+    },
+    {
+      "id": "egolife-a1-day1-sample-00001",
+      "task_type": "unspecified",
+      "observation_supervised": false,
+      "original_result_failed": false,
+      "annotated_pairs": 0,
+      "correct": 0,
+      "incorrect": 0,
+      "missing": 0,
+      "covered": 0,
+      "coverage": null,
+      "accuracy_on_covered": null,
+      "correct_fraction": null,
+      "unscored_extra_pairs": 2
+    }
+  ],
+  "built_at": "2026-09-15T17:00:50+00:00",
+  "sources": [
+    {
+      "path": "/workspace/home-observer/artifacts/release-base-v2-policy/public_video/predictions.jsonl",
+      "sha256": "b104a13b41fe9c6a7799c2f378f00ddf1014215eaf7a5c3c212ebaf7cc5fcef1",
+      "bytes": 5129,
+      "rows": 2
+    }
+  ],
+  "expected_windows": 2,
+  "complete": true
+}

@@ -1,0 +1,119 @@
+{
+  "seen_exports": [
+    "export_93c04ff156bf5654fe331a29b2751794",
+    "export_1034e7c2e34284424f6f76c386ce20b2",
+    "export_28dea1e70123a97e56658dfaeea78cfb",
+    "export_962583c539a744237057fcb9a0e5d863",
+    "export_442e294679499c953aca400957209299",
+    "export_1b4487931e1e57e6b4842d2effb52482",
+    "export_254ddcebc176a590291a2dd71bbdfad3",
+    "export_48d719b8f854d5d86ef007cf20a61857",
+    "export_088d4ae66245b12c9622ddf454a617a2",
+    "export_a4454452c26622c1d2a149822aa2ac14",
+    "export_ddcf12663827145e19775880b7f32250"
+  ],
+  "acked_exports": [
+    "export_93c04ff156bf5654fe331a29b2751794",
+    "export_1034e7c2e34284424f6f76c386ce20b2",
+    "export_28dea1e70123a97e56658dfaeea78cfb",
+    "export_962583c539a744237057fcb9a0e5d863",
+    "export_442e294679499c953aca400957209299",
+    "export_1b4487931e1e57e6b4842d2effb52482",
+    "export_254ddcebc176a590291a2dd71bbdfad3",
+    "export_48d719b8f854d5d86ef007cf20a61857",
+    "export_088d4ae66245b12c9622ddf454a617a2",
+    "export_a4454452c26622c1d2a149822aa2ac14",
+    "export_ddcf12663827145e19775880b7f32250"
+  ],
+  "commands": [
+    {
+      "command_id": "cmd-create-watch-bowl-motion-1",
+      "type": "create_watch",
+      "written_at": 1789506086.2693539
+    },
+    {
+      "command_id": "cmd-ack-watch-created-1",
+      "type": "ack_export",
+      "written_at": 1789506106.890075
+    },
+    {
+      "command_id": "cmd-ack-physical-event-1",
+      "type": "ack_export",
+      "written_at": 1789506106.8902998
+    },
+    {
+      "command_id": "cmd-ack-watch-matched-1",
+      "type": "ack_export",
+      "written_at": 1789506106.890497
+    },
+    {
+      "command_id": "cmd-ack-response-verified-1",
+      "type": "ack_export",
+      "written_at": 1789506106.890826
+    },
+    {
+      "command_id": "cmd-verify-pickup-1",
+      "type": "verify",
+      "written_at": 1789506106.8910022
+    },
+    {
+      "command_id": "cmd-verify-clear-1",
+      "type": "verify",
+      "written_at": 1789506106.891157
+    },
+    {
+      "command_id": "cmd-ack-physical-event-2",
+      "type": "ack_export",
+      "written_at": 1789506135.942525
+    },
+    {
+      "command_id": "cmd-ack-verification-result-1",
+      "type": "ack_export",
+      "written_at": 1789506135.942771
+    },
+    {
+      "command_id": "cmd-verify-pickup-2",
+      "type": "verify",
+      "written_at": 1789506135.943084
+    },
+    {
+      "command_id": "cmd-ack-physical-event-3",
+      "type": "ack_export",
+      "written_at": 1789506158.3461351
+    },
+    {
+      "command_id": "cmd-ack-perception-completed-1",
+      "type": "ack_export",
+      "written_at": 1789506158.34632
+    },
+    {
+      "command_id": "cmd-ack-verification-result-2",
+      "type": "ack_export",
+      "written_at": 1789506158.346457
+    },
+    {
+      "command_id": "cmd-verify-clear-2",
+      "type": "verify",
+      "written_at": 1789506158.346637
+    },
+    {
+      "command_id": "cmd-ack-verification-result-3",
+      "type": "ack_export",
+      "written_at": 1789506176.468137
+    },
+    {
+      "command_id": "cmd-ack-perception-failed-1",
+      "type": "ack_export",
+      "written_at": 1789506379.211993
+    }
+  ],
+  "turns": 6,
+  "assessment": {
+    "recipe_step_complete": false,
+    "pickup_verified": "unknown",
+    "rationale": "New export is a perception failure (ValidationError, 0 events accepted); it adds no evidence. pickup_completed and clear_of_support were each asked twice for phys_5a8bb6af and returned unknown, so no repeats. Only the light cue is verified. Step stays pending.",
+    "wait": true
+  },
+  "started_at": 1789506080.4949389,
+  "restarts": 1
+}

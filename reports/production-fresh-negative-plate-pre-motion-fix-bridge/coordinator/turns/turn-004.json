@@ -1,0 +1,719 @@
+{
+  "turn": 4,
+  "at": 1789507673.792951,
+  "prompt_sha256": "f5330b7112a009c184ab432d02c8f79ef7ea069a151f2281b1ad6c07c1d0540e",
+  "prompt": {
+    "now": 1789507673.793,
+    "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+    "digital_context": {
+      "commitment_id": "recipe-serve-lift-plate",
+      "text": "Recipe serving: lift the dinner plate from the table to carry it to the counter. Give an immediate visual cue when the observed plate begins moving, then verify the pickup from local observation before marking the step complete.",
+      "source_ref": "Demonstration digital recipe instruction for the negative workflow; the recorded footage only slides the plate on the table.",
+      "source_clip": "data/continuous-v2-workflow/negative-move-plate-P22_105.mp4",
+      "response_registry": "configs/recipe-workflow/responses.json",
+      "expected_outcome": "The plate is repositioned but never lifted; the step must remain pending and pickup must not be verified."
+    },
+    "approved_responses": [
+      {
+        "response_id": "recipe-movement-cue",
+        "kind": "ha_service",
+        "purpose": "Bowl movement detected; checking the recipe step."
+      }
+    ],
+    "exports_new": [
+      {
+        "created_at": 1789507648.92818,
+        "export_id": "export_e816676d67bb943deeec095e9f122bba",
+        "export_sha256": "ed3a150af180596a0ae7372693313ec83c59cd4e400b76dca801db05746b618d",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_772439d68f44bb3ae65ea373",
+          "available_at": 1789507648.92,
+          "category_in_vocabulary": true,
+          "confidence": 0.85,
+          "ended_at": 1789507619.955,
+          "event_id": "pevt_7bb0086caf254bb4b5b75ffc7dfb8009",
+          "evidence_count": 2,
+          "kind": "motion_started",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "plate",
+          "origin": "learned",
+          "started_at": 1789507619.835,
+          "subject_ids": [],
+          "uncertainty_level": "low"
+        },
+        "schema_version": "home-observer.production-export/1",
+        "topic": "physical.event",
+        "attempt": 4,
+        "exported_at": 1789507662.951346
+      },
+      {
+        "created_at": 1789507648.929807,
+        "export_id": "export_3f8dbbb72f9154427abcfbc286ec05a0",
+        "export_sha256": "0f273f54e172c33da72dd0578ee2d32a44d7e20697cd2690f904bd657b7f822a",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_bac986783d87c018b8c76938",
+          "emitted_at": 1789507648.92,
+          "events_accepted": 1,
+          "failure_class": null,
+          "full_sequence_frames": 8,
+          "inference_started_at": null,
+          "latency_s": 28.946,
+          "message_type": "perception_status",
+          "objects_accepted": 0,
+          "observations_accepted": 0,
+          "sampled_frames": 8,
+          "source_ended_at": 1789507619.955,
+          "source_started_at": 1789507619.815,
+          "status": "completed"
+        },
+        "schema_version": "home-observer.production-export/1",
+        "topic": "perception.completed",
+        "attempt": 4,
+        "exported_at": 1789507662.951346
+      },
+      {
+        "created_at": 1789507662.336378,
+        "export_id": "export_c9e359dbb7cc1d4075741113aa48cd1e",
+        "export_sha256": "425eb597f61074735abe06ebbe4136b700139e3c5325185394fca9efd49d5b0b",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_a199916420bbdb1462fb2b1a",
+          "available_at": 1789507662.328,
+          "category_in_vocabulary": true,
+          "confidence": 0.85,
+          "ended_at": 1789507623.395,
+          "event_id": "pevt_d5a5f8c0ec704ed5bc390857a779f1b1",
+          "evidence_count": 2,
+          "kind": "motion_started",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "plate",
+          "origin": "learned",
+          "started_at": 1789507619.815,
+          "subject_ids": [],
+          "uncertainty_level": "low"
+        },
+        "schema_version": "home-observer.production-export/1",
+        "topic": "physical.event",
+        "attempt": 3,
+        "exported_at": 1789507668.342143
+      },
+      {
+        "created_at": 1789507662.337883,
+        "export_id": "export_578da07799ad525628e1de212696fee1",
+        "export_sha256": "5e91824c3d72415809ffbed7c91b960f5c6b595925ca826b4e22d33a3fe0cdbd",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_b674ea370d01880a5a9d65f2",
+          "emitted_at": 1789507662.328,
+          "events_accepted": 1,
+          "failure_class": null,
+          "full_sequence_frames": 180,
+          "inference_started_at": null,
+          "latency_s": 13.393,
+          "message_type": "perception_status",
+          "objects_accepted": 0,
+          "observations_accepted": 0,
+          "sampled_frames": 8,
+          "source_ended_at": 1789507623.395,
+          "source_started_at": 1789507619.815,
+          "status": "completed"
+        },
+        "schema_version": "home-observer.production-export/1",
+        "topic": "perception.completed",
+        "attempt": 3,
+        "exported_at": 1789507668.342143
+      }
+    ],
+    "exports_all_recent": [
+      {
+        "topic": "watch.created",
+        "export_id": "export_a281c9daf909f7d7503c2168adbbec44",
+        "created_at": 1789507619.752212
+      },
+      {
+        "topic": "watch.response_verified",
+        "export_id": "export_13be7e65b78f5b13f988fbebb32428f2",
+        "created_at": 1789507619.930556
+      },
+      {
+        "topic": "physical.event",
+        "export_id": "export_1bb2d270cc8371851ce3eebcceec0e03",
+        "created_at": 1789507619.930556
+      },
+      {
+        "topic": "watch.matched",
+        "export_id": "export_3e96ce1a84eb9c53d2237ddc1fcb528a",
+        "created_at": 1789507619.930556
+      },
+      {
+        "topic": "physical.event",
+        "export_id": "export_f48b986664f48830456bfbd19812168a",
+        "created_at": 1789507622.023074
+      },
+      {
+        "topic": "physical.event",
+        "export_id": "export_25943fb560a31afa468490f54f531217",
+        "created_at": 1789507622.216023
+      },
+      {
+        "topic": "physical.event",
+        "export_id": "export_998c339bd9b2c19b12ff6ea31400fa97",
+        "created_at": 1789507625.31533
+      },
+      {
+        "topic": "physical.event",
+        "export_id": "export_c615703668c2c9544c9994028fa8c2f5",
+        "created_at": 1789507625.367556
+      },
+      {
+        "topic": "physical.event",
+        "export_id": "export_ecb6813a08ec2b741e8a6bbcb0553ebb",
+        "created_at": 1789507633.049781
+      },
+      {
+        "topic": "verification.result",
+        "export_id": "export_8453fb7f4db297e8500a6e319757af0b",
+        "created_at": 1789507640.976273
+      },
+      {
+        "topic": "physical.event",
+        "export_id": "export_e816676d67bb943deeec095e9f122bba",
+        "created_at": 1789507648.92818
+      },
+      {
+        "topic": "perception.completed",
+        "export_id": "export_3f8dbbb72f9154427abcfbc286ec05a0",
+        "created_at": 1789507648.929807
+      },
+      {
+        "topic": "physical.event",
+        "export_id": "export_c9e359dbb7cc1d4075741113aa48cd1e",
+        "created_at": 1789507662.336378
+      },
+      {
+        "topic": "perception.completed",
+        "export_id": "export_578da07799ad525628e1de212696fee1",
+        "created_at": 1789507662.337883
+      }
+    ],
+    "export_messages_recent": [
+      {
+        "export_id": "export_a281c9daf909f7d7503c2168adbbec44",
+        "topic": "watch.created",
+        "message": {
+          "audit_ref": "audit_a3f109dca51456e6b5a6d397",
+          "commitment_id": "recipe-serve-lift-plate",
+          "eligible_at": null,
+          "event_id": null,
+          "failure_class": null,
+          "matched_at": null,
+          "message_type": "watch_status",
+          "outcome_event_id": null,
+          "outcome_verified_at": null,
+          "readback_state": null,
+          "reported_at": 1789507619.752,
+          "response_id": "recipe-movement-cue",
+          "response_reserved_at": null,
+          "response_result": null,
+          "response_sent_at": null,
+          "response_timely": null,
+          "response_verified_at": null,
+          "status": "armed",
+          "verification_kind": null,
+          "watch_id": "watch-plate-motion-cue"
+        }
+      },
+      {
+        "export_id": "export_13be7e65b78f5b13f988fbebb32428f2",
+        "topic": "watch.response_verified",
+        "message": {
+          "audit_ref": "audit_592bf7fe44d5ca55095d6547",
+          "commitment_id": "recipe-serve-lift-plate",
+          "eligible_at": 1789507619.855,
+          "event_id": "pevt_ffa3ebaf00de4a3fbf70f3c772c040c8",
+          "failure_class": null,
+          "matched_at": 1789507619.912,
+          "message_type": "watch_status",
+          "outcome_event_id": null,
+          "outcome_verified_at": null,
+          "readback_state": "on",
+          "reported_at": null,
+          "response_id": "recipe-movement-cue",
+          "response_reserved_at": 1789507619.912,
+          "response_result": "verified",
+          "response_sent_at": 1789507619.913,
+          "response_timely": true,
+          "response_verified_at": 1789507619.93,
+          "status": "response_verified",
+          "verification_kind": "ha_state_readback",
+          "watch_id": "watch-plate-motion-cue"
+        }
+      },
+      {
+        "export_id": "export_1bb2d270cc8371851ce3eebcceec0e03",
+        "topic": "physical.event",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_65cf74fb4f175ee0a0e1e92c",
+          "available_at": 1789507619.9,
+          "category_in_vocabulary": true,
+          "confidence": 0.85,
+          "ended_at": 1789507619.855,
+          "event_id": "pevt_ffa3ebaf00de4a3fbf70f3c772c040c8",
+          "evidence_count": 2,
+          "kind": "motion_started",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "plate",
+          "origin": "geometric",
+          "started_at": 1789507619.835,
+          "subject_ids": [
+            "phys_392326cbd2e147038b9e753469e7c484"
+          ],
+          "uncertainty_level": "medium"
+        }
+      },
+      {
+        "export_id": "export_3e96ce1a84eb9c53d2237ddc1fcb528a",
+        "topic": "watch.matched",
+        "message": {
+          "audit_ref": "audit_e2f6eeda98e2bbe71225a1a4",
+          "commitment_id": "recipe-serve-lift-plate",
+          "eligible_at": 1789507619.855,
+          "event_id": "pevt_ffa3ebaf00de4a3fbf70f3c772c040c8",
+          "failure_class": null,
+          "matched_at": 1789507619.912,
+          "message_type": "watch_status",
+          "outcome_event_id": null,
+          "outcome_verified_at": null,
+          "readback_state": null,
+          "reported_at": null,
+          "response_id": "recipe-movement-cue",
+          "response_reserved_at": 1789507619.912,
+          "response_result": null,
+          "response_sent_at": null,
+          "response_timely": null,
+          "response_verified_at": null,
+          "status": "matched",
+          "verification_kind": null,
+          "watch_id": "watch-plate-motion-cue"
+        }
+      },
+      {
+        "export_id": "export_f48b986664f48830456bfbd19812168a",
+        "topic": "physical.event",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_53f218a75b57c57aab7a7870",
+          "available_at": 1789507622.016,
+          "category_in_vocabulary": true,
+          "confidence": 0.85,
+          "ended_at": 1789507621.775,
+          "event_id": "pevt_e01ae1f3a9d0410b8e14afe6d797efc2",
+          "evidence_count": 2,
+          "kind": "motion_settled",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "plate",
+          "origin": "geometric",
+          "started_at": 1789507621.475,
+          "subject_ids": [
+            "phys_392326cbd2e147038b9e753469e7c484"
+          ],
+          "uncertainty_level": "medium"
+        }
+      },
+      {
+        "export_id": "export_25943fb560a31afa468490f54f531217",
+        "topic": "physical.event",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_da0ec5f62ad1002f7fb8237b",
+          "available_at": 1789507622.212,
+          "category_in_vocabulary": true,
+          "confidence": 0.85,
+          "ended_at": 1789507621.935,
+          "event_id": "pevt_de52f242c9774fec96254fe3b74df48c",
+          "evidence_count": 2,
+          "kind": "motion_started",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "plate",
+          "origin": "geometric",
+          "started_at": 1789507621.915,
+          "subject_ids": [
+            "phys_392326cbd2e147038b9e753469e7c484"
+          ],
+          "uncertainty_level": "medium"
+        }
+      },
+      {
+        "export_id": "export_998c339bd9b2c19b12ff6ea31400fa97",
+        "topic": "physical.event",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_d014cb3552bc911a4c40a44b",
+          "available_at": 1789507625.312,
+          "category_in_vocabulary": true,
+          "confidence": 0.69,
+          "ended_at": 1789507624.735,
+          "event_id": "pevt_b574269423f14f558b0fffea4913f8b7",
+          "evidence_count": 2,
+          "kind": "motion_settled",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "plate",
+          "origin": "geometric",
+          "started_at": 1789507624.435,
+          "subject_ids": [
+            "phys_392326cbd2e147038b9e753469e7c484"
+          ],
+          "uncertainty_level": "medium"
+        }
+      },
+      {
+        "export_id": "export_c615703668c2c9544c9994028fa8c2f5",
+        "topic": "physical.event",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_480d8efc956ba96bf35c9765",
+          "available_at": 1789507625.357,
+          "category_in_vocabulary": true,
+          "confidence": 0.7,
+          "ended_at": 1789507624.775,
+          "event_id": "pevt_13f416ba57a240028bfa214610f48488",
+          "evidence_count": 2,
+          "kind": "motion_started",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "plate",
+          "origin": "geometric",
+          "started_at": 1789507624.755,
+          "subject_ids": [
+            "phys_392326cbd2e147038b9e753469e7c484"
+          ],
+          "uncertainty_level": "medium"
+        }
+      },
+      {
+        "export_id": "export_ecb6813a08ec2b741e8a6bbcb0553ebb",
+        "topic": "physical.event",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_0e4ffa84a151c6ed7f23a070",
+          "available_at": 1789507633.042,
+          "category_in_vocabulary": true,
+          "confidence": 0.0,
+          "ended_at": 1789507631.175,
+          "event_id": "pevt_d9f7e298e1734b64b7a249512c556cb4",
+          "evidence_count": 2,
+          "kind": "visibility_lost",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "plate",
+          "origin": "geometric",
+          "started_at": 1789507631.155,
+          "subject_ids": [
+            "phys_392326cbd2e147038b9e753469e7c484"
+          ],
+          "uncertainty_level": "high"
+        }
+      },
+      {
+        "export_id": "export_8453fb7f4db297e8500a6e319757af0b",
+        "topic": "verification.result",
+        "message": {
+          "audit_ref": "audit_ca1eadce009ef4fe4e385040",
+          "confidence": 0.0,
+          "evaluated_at": 1789507640.959,
+          "evidence_ended_at": 1789507631.175,
+          "evidence_started_at": 1789507619.835,
+          "frames_examined": 568,
+          "message_type": "verification_result",
+          "question": "pickup_completed",
+          "reason_code": "localization_uncertain",
+          "request_id": "vr-pickup-plate-001",
+          "subject_id": "phys_392326cbd2e147038b9e753469e7c484",
+          "uncertainty_level": "high",
+          "verdict": "unknown",
+          "verification_id": "pver_4a7cabd7609f4aa79c15d9294a084c6b"
+        }
+      },
+      {
+        "export_id": "export_e816676d67bb943deeec095e9f122bba",
+        "topic": "physical.event",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_772439d68f44bb3ae65ea373",
+          "available_at": 1789507648.92,
+          "category_in_vocabulary": true,
+          "confidence": 0.85,
+          "ended_at": 1789507619.955,
+          "event_id": "pevt_7bb0086caf254bb4b5b75ffc7dfb8009",
+          "evidence_count": 2,
+          "kind": "motion_started",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "plate",
+          "origin": "learned",
+          "started_at": 1789507619.835,
+          "subject_ids": [],
+          "uncertainty_level": "low"
+        }
+      },
+      {
+        "export_id": "export_3f8dbbb72f9154427abcfbc286ec05a0",
+        "topic": "perception.completed",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_bac986783d87c018b8c76938",
+          "emitted_at": 1789507648.92,
+          "events_accepted": 1,
+          "failure_class": null,
+          "full_sequence_frames": 8,
+          "inference_started_at": null,
+          "latency_s": 28.946,
+          "message_type": "perception_status",
+          "objects_accepted": 0,
+          "observations_accepted": 0,
+          "sampled_frames": 8,
+          "source_ended_at": 1789507619.955,
+          "source_started_at": 1789507619.815,
+          "status": "completed"
+        }
+      },
+      {
+        "export_id": "export_c9e359dbb7cc1d4075741113aa48cd1e",
+        "topic": "physical.event",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_a199916420bbdb1462fb2b1a",
+          "available_at": 1789507662.328,
+          "category_in_vocabulary": true,
+          "confidence": 0.85,
+          "ended_at": 1789507623.395,
+          "event_id": "pevt_d5a5f8c0ec704ed5bc390857a779f1b1",
+          "evidence_count": 2,
+          "kind": "motion_started",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "plate",
+          "origin": "learned",
+          "started_at": 1789507619.815,
+          "subject_ids": [],
+          "uncertainty_level": "low"
+        }
+      },
+      {
+        "export_id": "export_578da07799ad525628e1de212696fee1",
+        "topic": "perception.completed",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_b674ea370d01880a5a9d65f2",
+          "emitted_at": 1789507662.328,
+          "events_accepted": 1,
+          "failure_class": null,
+          "full_sequence_frames": 180,
+          "inference_started_at": null,
+          "latency_s": 13.393,
+          "message_type": "perception_status",
+          "objects_accepted": 0,
+          "observations_accepted": 0,
+          "sampled_frames": 8,
+          "source_ended_at": 1789507623.395,
+          "source_started_at": 1789507619.815,
+          "status": "completed"
+        }
+      }
+    ],
+    "command_results": [
+      {
+        "command_id": "cmd-001-watch-plate-motion",
+        "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+        "accepted_at": 1789507619.752212,
+        "outcome": {
+          "watch_id": "watch-plate-motion-cue",
+          "status": "armed"
+        }
+      },
+      {
+        "command_id": "cmd-002-ack-watch-created",
+        "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+        "accepted_at": 1789507640.9592261,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "watch.created"
+        }
+      },
+      {
+        "command_id": "cmd-003-ack-response-verified",
+        "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+        "accepted_at": 1789507640.9592261,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "watch.response_verified"
+        }
+      },
+      {
+        "command_id": "cmd-004-ack-physical-event",
+        "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+        "accepted_at": 1789507640.9592261,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "physical.event"
+        }
+      },
+      {
+        "command_id": "cmd-005-ack-watch-matched",
+        "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+        "accepted_at": 1789507640.9592261,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "watch.matched"
+        }
+      },
+      {
+        "command_id": "cmd-006-verify-pickup",
+        "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+        "accepted_at": 1789507640.9592261,
+        "outcome": {
+          "verification_id": "pver_bd4f890ade2f4ec7a1e5c49a7dd92c13",
+          "status": "pending"
+        }
+      },
+      {
+        "command_id": "cmd-007-verify-clear-of-support",
+        "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+        "accepted_at": 1789507640.9592261,
+        "outcome": {
+          "verification_id": "pver_4a7cabd7609f4aa79c15d9294a084c6b",
+          "status": "pending"
+        }
+      },
+      {
+        "command_id": "cmd-008-ack-export-f48b986664",
+        "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+        "accepted_at": 1789507672.787265,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "physical.event"
+        }
+      },
+      {
+        "command_id": "cmd-009-ack-export-25943fb560",
+        "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+        "accepted_at": 1789507672.787265,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "physical.event"
+        }
+      },
+      {
+        "command_id": "cmd-010-ack-export-998c339bd9",
+        "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+        "accepted_at": 1789507672.787265,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "physical.event"
+        }
+      },
+      {
+        "command_id": "cmd-011-ack-export-c615703668",
+        "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+        "accepted_at": 1789507672.787265,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "physical.event"
+        }
+      },
+      {
+        "command_id": "cmd-012-ack-export-ecb6813a08",
+        "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+        "accepted_at": 1789507672.787265,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "physical.event"
+        }
+      },
+      {
+        "command_id": "cmd-013-ack-export-8453fb7f4d",
+        "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+        "accepted_at": 1789507672.787265,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "verification.result"
+        }
+      }
+    ],
+    "rejected_commands": [],
+    "previous_assessment": {
+      "recipe_step_complete": false,
+      "pickup_verified": "unknown",
+      "rationale": "Verifier returned verdict unknown (localization_uncertain) for pickup on phys_3923...; only motion_started/settled and a visibility_lost were observed. Second verification (pver_bd4f...) still pending. Step stays pending; no repeat questions issued.",
+      "wait": true
+    },
+    "already_acknowledged": [
+      "export_a281c9daf909f7d7503c2168adbbec44",
+      "export_13be7e65b78f5b13f988fbebb32428f2",
+      "export_1bb2d270cc8371851ce3eebcceec0e03",
+      "export_3e96ce1a84eb9c53d2237ddc1fcb528a",
+      "export_f48b986664f48830456bfbd19812168a",
+      "export_25943fb560a31afa468490f54f531217",
+      "export_998c339bd9b2c19b12ff6ea31400fa97",
+      "export_c615703668c2c9544c9994028fa8c2f5",
+      "export_ecb6813a08ec2b741e8a6bbcb0553ebb",
+      "export_8453fb7f4db297e8500a6e319757af0b"
+    ],
+    "turn": 4
+  },
+  "model_record": {
+    "model": "claude-opus-5",
+    "attempt": 1,
+    "latency_s": 13.008081912994385,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 11079,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 11079
+      },
+      "output_tokens": 700,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+    }
+  },
+  "model_text": "{\"commands\": [{\"command_id\": \"cmd-014-ack-export-e816676d67\", \"coordinator_id\": \"sandboxed-frontier-267e8c45a0bd\", \"type\": \"ack_export\", \"export_id\": \"export_e816676d67bb943deeec095e9f122bba\", \"export_sha256\": \"ed3a150af180596a0ae7372693313ec83c59cd4e400b76dca801db05746b618d\"}, {\"command_id\": \"cmd-015-ack-export-3f8dbbb72f\", \"coordinator_id\": \"sandboxed-frontier-267e8c45a0bd\", \"type\": \"ack_export\", \"export_id\": \"export_3f8dbbb72f9154427abcfbc286ec05a0\", \"export_sha256\": \"0f273f54e172c33da72dd0578ee2d32a44d7e20697cd2690f904bd657b7f822a\"}, {\"command_id\": \"cmd-016-ack-export-c9e359dbb7\", \"coordinator_id\": \"sandboxed-frontier-267e8c45a0bd\", \"type\": \"ack_export\", \"export_id\": \"export_c9e359dbb7cc1d4075741113aa48cd1e\", \"export_sha256\": \"425eb597f61074735abe06ebbe4136b700139e3c5325185394fca9efd49d5b0b\"}, {\"command_id\": \"cmd-017-ack-export-578da07799\", \"coordinator_id\": \"sandboxed-frontier-267e8c45a0bd\", \"type\": \"ack_export\", \"export_id\": \"export_578da07799ad525628e1de212696fee1\", \"export_sha256\": \"5e91824c3d72415809ffbed7c91b960f5c6b595925ca826b4e22d33a3fe0cdbd\"}], \"assessment\": {\"recipe_step_complete\": false, \"pickup_verified\": \"unknown\", \"rationale\": \"clear_of_support returned unknown (localization_uncertain); pickup_completed verification pver_bd4f... still pending. New learned motion_started events carry no subject_ids, so no new verifiable subject. Step remains pending.\", \"wait\": true}",
+  "error": "JSONDecodeError: Expecting ',' delimiter: line 1 column 1407 (char 1406)",
+  "commands_written": [],
+  "skipped": [],
+  "auto_acknowledged": [
+    "export_e816676d67bb943deeec095e9f122bba",
+    "export_3f8dbbb72f9154427abcfbc286ec05a0",
+    "export_c9e359dbb7cc1d4075741113aa48cd1e",
+    "export_578da07799ad525628e1de212696fee1"
+  ],
+  "assessment": {
+    "recipe_step_complete": false,
+    "pickup_verified": "unknown",
+    "rationale": "Verifier returned verdict unknown (localization_uncertain) for pickup on phys_3923...; only motion_started/settled and a visibility_lost were observed. Second verification (pver_bd4f...) still pending. Step stays pending; no repeat questions issued.",
+    "wait": true
+  }
+}

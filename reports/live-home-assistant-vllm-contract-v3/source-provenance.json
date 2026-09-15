@@ -1,0 +1,71 @@
+{
+  "source": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/data/public-egolife/raw/A1_JAKE/DAY1/DAY1_A1_JAKE_11094208.mp4",
+  "source_sha256": "8d20da0a3385f2f8d870c24c8638852dda14380cefb88ce2dd012677bbd0f2da",
+  "source_decoded_duration_s": 17.6,
+  "segments": [
+    {
+      "camera_id": "kitchen",
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/work/live-distinct-inputs/kitchen-offset-0s.mp4",
+      "source_offset_s": 0,
+      "requested_duration_s": 8,
+      "decoded_duration_s": 8.0,
+      "decoded_frames": 80,
+      "sha256": "a560309082f9cdbf8f5af6cfa6cee61242edaa1c7629d9f45f5b506f54e09806",
+      "bytes": 501302,
+      "decoded_rgb24_sha256_by_segment_second": {
+        "0": "91217482819ebe33711d223db3a61926a686a9bf7ddffc45691309a5659c4ad1",
+        "4": "19281454690140d325949b1b064bec3d20ddeee1e647421853c1c769bbdafd11"
+      }
+    },
+    {
+      "camera_id": "entry",
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/work/live-distinct-inputs/entry-offset-3s.mp4",
+      "source_offset_s": 3,
+      "requested_duration_s": 8,
+      "decoded_duration_s": 8.0,
+      "decoded_frames": 80,
+      "sha256": "d37d3e2aaad11c2313bc264cc1ba8dbb4179495b64551f584d69f631dc25bcf6",
+      "bytes": 412830,
+      "decoded_rgb24_sha256_by_segment_second": {
+        "0": "cd43bf38ef23f5c1bcddec9d288f1ddc57e87a040757b8f92fe62a247e56cb95",
+        "4": "dc48f9ee69c2afad2d85af8073056f76d3882dabc7aeaf6cc8ae7c5040617ba7"
+      }
+    },
+    {
+      "camera_id": "lounge",
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/work/live-distinct-inputs/lounge-offset-6s.mp4",
+      "source_offset_s": 6,
+      "requested_duration_s": 8,
+      "decoded_duration_s": 8.0,
+      "decoded_frames": 80,
+      "sha256": "4b787de50e26b973861fd9d71e9703b4acbe894d4c79dac5bd8f10e9e165afcd",
+      "bytes": 377999,
+      "decoded_rgb24_sha256_by_segment_second": {
+        "0": "4e0c82cf0f7852a7590b4832b5611e0e292294dadb7f249f37d1128b600cf1f1",
+        "4": "f8d99151f6dd466648a6ec14b76c470e8fe9bcd9c546e6fc83f9607cfec44cc5"
+      }
+    },
+    {
+      "camera_id": "garage",
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/work/live-distinct-inputs/garage-offset-9s.mp4",
+      "source_offset_s": 9,
+      "requested_duration_s": 8,
+      "decoded_duration_s": 8.0,
+      "decoded_frames": 80,
+      "sha256": "b63c07f7f38a2aad2f32426f96050bacd5ce5e5a7fad5ff6719972d9a8855205",
+      "bytes": 297968,
+      "decoded_rgb24_sha256_by_segment_second": {
+        "0": "96406537d34e41539a63c7d28b717cee3fc3d4e2fef86882b89ed181498df2c7",
+        "4": "fd87dd1f1cea5d135aae2a1b16eef9f697fd0bbae693e9e08ecb337b31c74c95"
+      }
+    }
+  ],
+  "distinct_decoded_frames_per_sample": {
+    "0": 4,
+    "4": 4
+  },
+  "sources_sha256": "7563685e02edfa7cba5cbde58daf2cf0376326504eec2c73a8c06d1b02586f8b",
+  "scope": "Four temporally offset segments from ONE EgoLife recording. Camera names are routing labels only; not genuine simultaneous multiview or four-room coverage.",
+  "transforms": "8-second segments at offsets 0/3/6/9 seconds; video resized to384px width at10fps; source audio retained as16kHz mono AAC.",
+  "verification": "All four RGB24 decoded frame hashes differ at segment seconds0 and4; every clip decodes to about8seconds. This verifies distinct inputs, not model quality."
+}

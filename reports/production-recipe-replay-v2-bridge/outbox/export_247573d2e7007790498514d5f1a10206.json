@@ -1,0 +1,25 @@
+{
+  "created_at": 1789503281.978976,
+  "export_id": "export_247573d2e7007790498514d5f1a10206",
+  "export_sha256": "3fb3aa83ca7c4b8a2923eba977e7d648098030573099e5e3b0b3dfc11d054139",
+  "message": {
+    "audit_ref": "audit_4a064bfed7a509a92e8f47df",
+    "confidence": 0.0,
+    "evaluated_at": 1789503281.979,
+    "evidence_ended_at": null,
+    "evidence_started_at": null,
+    "frames_examined": 0,
+    "message_type": "verification_result",
+    "question": "pickup_completed",
+    "reason_code": "insufficient_tracking_history",
+    "request_id": "vr-pickup-2926da09-2",
+    "subject_id": "phys_2926da09e441488cbc781edf2eea2cc2",
+    "uncertainty_level": "high",
+    "verdict": "unknown",
+    "verification_id": "pver_88518e7293004845ab990b4a9b582f9a"
+  },
+  "schema_version": "home-observer.production-export/1",
+  "topic": "verification.result",
+  "attempt": 4,
+  "exported_at": 1789503296.014744
+}

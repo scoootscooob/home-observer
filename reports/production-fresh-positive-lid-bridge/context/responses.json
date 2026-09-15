@@ -1,0 +1,7 @@
+[
+  {
+    "response_id": "recipe-movement-cue",
+    "kind": "ha_service",
+    "purpose": "Bowl movement detected; checking the recipe step."
+  }
+]

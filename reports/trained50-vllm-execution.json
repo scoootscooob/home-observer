@@ -1,0 +1,29 @@
+{
+  "engine_health": {
+    "status": "ready",
+    "model_id": "google/gemma-4-E4B-it",
+    "model_revision": "ee0ef6023621cff504d758262d4e04895a5af4a2",
+    "adapter_configured": true,
+    "inference_backend": "VLLMModel",
+    "schema_constraints": true,
+    "schema_contract": "executor_arguments_v3",
+    "brightness_enabled": false,
+    "decision_field_order": "actions-first",
+    "model_identity_source": "deployment_configuration",
+    "context_mode": "bounded_window"
+  },
+  "steps": [
+    {
+      "command": [
+        "scripts/evaluate_fixed_remote.py",
+        "--endpoint",
+        "http://127.0.0.1:18080",
+        "--output",
+        "reports/trained50-vllm-fixed8"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 40.820770025253296,
+      "log": "/Users/scottfan/Documents/Codex/2026-09-15/do/work/trained50-vllm-check-0.log"
+    }
+  ]
+}

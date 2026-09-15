@@ -1,0 +1,102 @@
+{
+  "scope": "One direct inference request; no proposed actions executed. Original HA readback preserved from case-0 journal.",
+  "endpoint_path": "/observe",
+  "health": {
+    "status": "ready",
+    "model_id": "google/gemma-4-E4B-it",
+    "adapter_loaded": false,
+    "context_mode": "bounded_window"
+  },
+  "status_code": 200,
+  "response": {
+    "decision": {
+      "summary": "A person is visible in the lounge area, and motion is detected in the lounge. The ambient light level is low.",
+      "observations": [
+        {
+          "entity_id": "room.lounge",
+          "attribute": "occupied",
+          "value": true,
+          "confidence": 0.9,
+          "evidence_ids": [
+            "09a634e3dc82c5846a9a5dd2:frame:lounge"
+          ]
+        },
+        {
+          "entity_id": "binary_sensor.motion_lounge",
+          "attribute": "state",
+          "value": "on",
+          "confidence": 1.0,
+          "evidence_ids": [
+            "device:binary_sensor.motion_lounge"
+          ]
+        },
+        {
+          "entity_id": "sensor.ambient_lux",
+          "attribute": "state",
+          "value": "12",
+          "confidence": 1.0,
+          "evidence_ids": [
+            "device:sensor.ambient_lux"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "domain": "light",
+          "service": "turn_on",
+          "entity_id": "light.lounge",
+          "data": {},
+          "reason": "Occupancy is supported by the camera frame, motion sensor is on, ambient light is below 40, and the light is off.",
+          "evidence_ids": [
+            "09a634e3dc82c5846a9a5dd2:frame:lounge",
+            "device:binary_sensor.motion_lounge",
+            "device:sensor.ambient_lux"
+          ]
+        }
+      ],
+      "noop": false
+    },
+    "metrics": {
+      "latency_s": 16.965977400541306,
+      "preprocess_s": 0.1219713082537055,
+      "input_tokens": 2461,
+      "output_tokens": 317,
+      "model_id": "google/gemma-4-E4B-it",
+      "adapter": null,
+      "adapter_merged": false,
+      "peak_allocated_gb": 15.256264686584473,
+      "context_mode": "bounded_window"
+    }
+  },
+  "elapsed_s": 17.341137333016377,
+  "source_journal": "reports/learned-home-assistant-base/case-0.sqlite",
+  "original_readback_window_file": "reports/base-422-readback-window.json",
+  "original_readback_window_bytes": 1448,
+  "original_readback_window_sha256": "028f2a67c78488c7604cc68d7f062868d7f51913cc2c4da7cfe0ce9cb32bdd08",
+  "exact_transmitted_request_file": "reports/base-422-request.json",
+  "exact_transmitted_request_bytes": 4226,
+  "exact_transmitted_request_sha256": "ca40a015a19661eda8000ca11eeb94a0d0106c60c2cb3c5dd6da5f7ce3837a72",
+  "request_reconstruction": "Original normalized input_json window and existing device facts, same policy and empty recent_events; no model decision had been committed in case-0.",
+  "auth_headers_retained": false,
+  "source_comparison": {
+    "src/home_observer/prompts.py": {
+      "uploaded_sha256": "f8f3d9dce0e6b6922b21d70d0c9c80d452b60de382d7e5b218083bb1c144e03c",
+      "current_local_sha256": "5ffe7120c015f9a90c57cbb05368c661c6afbea27f6c8d4bbaeda35eb3fb87c1",
+      "current_local_matches_upload": false,
+      "uploaded_contains_device_prefix_instruction": false
+    },
+    "src/home_observer/model.py": {
+      "uploaded_sha256": "1bb15e3646bb2f09fea75c81e54ed13b66b1fb3a9c50adf1f272317e1e2f6172",
+      "current_local_sha256": "1bb15e3646bb2f09fea75c81e54ed13b66b1fb3a9c50adf1f272317e1e2f6172",
+      "current_local_matches_upload": true
+    },
+    "data/fixtures-expanded/policy.json": {
+      "uploaded_sha256": "def9f5ddb786a78e16478aa53762bdcf3b8a87bf16f4d6cecc9945e3f2831043",
+      "current_local_sha256": "def9f5ddb786a78e16478aa53762bdcf3b8a87bf16f4d6cecc9945e3f2831043",
+      "current_local_matches_upload": true
+    },
+    "remote_metadata": "f8f3d9dce0e6b6922b21d70d0c9c80d452b60de382d7e5b218083bb1c144e03c  src/home_observer/prompts.py\n1bb15e3646bb2f09fea75c81e54ed13b66b1fb3a9c50adf1f272317e1e2f6172  src/home_observer/model.py\ndef9f5ddb786a78e16478aa53762bdcf3b8a87bf16f4d6cecc9945e3f2831043  data/fixtures-expanded/policy.json\n1533\nINFO:     Started server process [1533]\nINFO:     Waiting for application startup.\n"
+  },
+  "failure_reproduced": false,
+  "limitation": "Original HTTP request bytes were not captured on the earlier failed test. This request was reconstructed from the preserved window, device facts, and current policy. One diagnostic inference returned200; it cannot establish the original422 cause."
+}

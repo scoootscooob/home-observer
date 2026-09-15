@@ -1,0 +1,33 @@
+{
+  "mode": "production",
+  "runtime": {
+    "mode": "production",
+    "inference_backend": "local-mps",
+    "model_id": "google/gemma-4-E4B-it",
+    "revision": "ee0ef6023621cff504d758262d4e04895a5af4a2",
+    "adapter_path": "artifacts/physical-training-v1/adapter",
+    "export_policy": "configs/production/export-policy.json",
+    "export_key_file": "../../work/production-export.key",
+    "max_frames": 8,
+    "max_new_tokens": 768,
+    "output_contract": "judged-fields"
+  },
+  "declaration": {
+    "model_class": "PhysicalLocalModel",
+    "local_inference": true,
+    "sensory_media_leaves_host": false,
+    "coordinator_class": "ProductionCoordinator",
+    "exports_only": true
+  },
+  "bridge": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-positive-lid-bridge",
+  "coordinator_id": "sandboxed-frontier-cdbda4751e05",
+  "approved_response_ids": [
+    "recipe-movement-cue"
+  ],
+  "ready_at": 1789507387.3464682,
+  "source_kind": "continuous_file_replay",
+  "source_sha256": "2ebe37f28a35ed656a1785ad21263b049d1bbb8d816a2569bfa5e20656e002fe",
+  "source_origin": 44.5,
+  "camera_id": "recipe",
+  "frontier": "sandboxed"
+}

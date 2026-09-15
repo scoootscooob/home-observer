@@ -1,0 +1,9 @@
+{
+  "command_id": "cmd-18-verify-pickup-retry",
+  "coordinator_id": "sandboxed-frontier-37a12cb40ee3",
+  "accepted_at": 1789507262.415723,
+  "outcome": {
+    "verification_id": "pver_8d8e3850cbcc4b7ab0c49862745f6f51",
+    "status": "pending"
+  }
+}

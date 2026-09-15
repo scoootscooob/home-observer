@@ -1,0 +1,20 @@
+{
+  "verified_at": 1789497721.967935,
+  "manifest": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/recipe-workflow-trained-v1/sequences/clip_19116a95186d0f07fdd551b0/manifest.json",
+  "manifest_sha256": "478fe1275ba45ce0279a9a85332a989874f8279a5b26fd18766cc4d5c6c2d33b",
+  "verified_frame_count": 145,
+  "all_image_hashes_match": true,
+  "contact_sheet_frames": [
+    1,
+    8,
+    22,
+    42,
+    63,
+    83,
+    104,
+    124,
+    145
+  ],
+  "source_begin": 608.99,
+  "source_end": 611.87
+}

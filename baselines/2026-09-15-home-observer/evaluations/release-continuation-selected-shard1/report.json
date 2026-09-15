@@ -1,0 +1,1010 @@
+{
+  "model_config": {
+    "model_id": "google/gemma-4-E4B-it",
+    "revision": "ee0ef6023621cff504d758262d4e04895a5af4a2",
+    "adapter_path": "artifacts/training-v2-continuation/adapter/checkpoints/checkpoint-50",
+    "dataset_root": "/workspace/home-observer/data",
+    "quantization": "none",
+    "max_frames": 8,
+    "max_audio_seconds": 30.0,
+    "max_input_tokens": 8192,
+    "max_new_tokens": 768,
+    "max_soft_tokens": 140,
+    "max_context_chars": 24000,
+    "max_media_bytes": 33554432,
+    "max_batch_size": 4,
+    "merge_adapter": false
+  },
+  "suites": {
+    "heldout": {
+      "windows": 80,
+      "targeted_windows": 80,
+      "invalid_or_failed_windows": 8,
+      "valid_response_rate": 0.9,
+      "action_precision": 0.7272727272727273,
+      "action_recall": 0.6666666666666666,
+      "observation_precision": 0.39285714285714285,
+      "observation_recall": 0.9166666666666666,
+      "false_action_window_rate": 0.0,
+      "latency_p50_s": 22.396602489054203,
+      "latency_p95_s": 31.23354054428637,
+      "latency_mean_s": 21.29081617409829,
+      "counts": {
+        "action_tp": 24,
+        "action_fp": 9,
+        "action_fn": 12,
+        "obs_tp": 198,
+        "obs_fp": 306,
+        "obs_fn": 18,
+        "action_scored": 72,
+        "observation_scored": 72,
+        "no_action_windows": 36,
+        "false_action_windows": 0
+      },
+      "scope": "Proposed-action and observation accuracy on labeled windows; not a household reliability guarantee.",
+      "elapsed_s": 1703.622660126537,
+      "by_task_type": {
+        "device_control": {
+          "windows": 36,
+          "targeted_windows": 36,
+          "invalid_or_failed_windows": 0,
+          "valid_response_rate": 1.0,
+          "action_precision": 1.0,
+          "action_recall": 1.0,
+          "observation_precision": 0.2222222222222222,
+          "observation_recall": 1.0,
+          "false_action_window_rate": 0.0,
+          "latency_p50_s": 27.107145024463534,
+          "latency_p95_s": 31.323588732630014,
+          "latency_mean_s": 28.313917678004753,
+          "counts": {
+            "action_tp": 18,
+            "action_fp": 0,
+            "action_fn": 0,
+            "obs_tp": 72,
+            "obs_fp": 252,
+            "obs_fn": 0,
+            "action_scored": 36,
+            "observation_scored": 36,
+            "no_action_windows": 18,
+            "false_action_windows": 0
+          },
+          "scope": "Proposed-action and observation accuracy on labeled windows; not a household reliability guarantee."
+        },
+        "natural_image_summary": {
+          "windows": 8,
+          "targeted_windows": 8,
+          "invalid_or_failed_windows": 8,
+          "valid_response_rate": 0.0,
+          "action_precision": null,
+          "action_recall": null,
+          "observation_precision": null,
+          "observation_recall": null,
+          "false_action_window_rate": null,
+          "latency_p50_s": 0.9774821884930134,
+          "latency_p95_s": 1.2496655192226171,
+          "latency_mean_s": 1.039904083358124,
+          "counts": {
+            "action_tp": 0,
+            "action_fp": 0,
+            "action_fn": 0,
+            "obs_tp": 0,
+            "obs_fp": 0,
+            "obs_fn": 0,
+            "action_scored": 0,
+            "observation_scored": 0,
+            "no_action_windows": 0,
+            "false_action_windows": 0
+          },
+          "scope": "Proposed-action and observation accuracy on labeled windows; not a household reliability guarantee."
+        },
+        "visual_occupancy": {
+          "windows": 36,
+          "targeted_windows": 36,
+          "invalid_or_failed_windows": 0,
+          "valid_response_rate": 1.0,
+          "action_precision": 0.4,
+          "action_recall": 0.3333333333333333,
+          "observation_precision": 0.7,
+          "observation_recall": 0.875,
+          "false_action_window_rate": 0.0,
+          "latency_p50_s": 16.924238743260503,
+          "latency_p95_s": 22.667008252814412,
+          "latency_mean_s": 18.767917357022977,
+          "counts": {
+            "action_tp": 6,
+            "action_fp": 9,
+            "action_fn": 12,
+            "obs_tp": 126,
+            "obs_fp": 54,
+            "obs_fn": 18,
+            "action_scored": 36,
+            "observation_scored": 36,
+            "no_action_windows": 18,
+            "false_action_windows": 0
+          },
+          "scope": "Proposed-action and observation accuracy on labeled windows; not a household reliability guarantee."
+        }
+      },
+      "journals": {
+        "snapshot-b68f8b5689d5a1f217dfd5c8": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 14
+        },
+        "snapshot-f6f170a74a8e7b8d436008ed": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 14
+        },
+        "snapshot-492057d99e5d2180d3531c21": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 14
+        },
+        "snapshot-64166b6fd8dfd993785ea165": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 14
+        },
+        "snapshot-253c8f61bf005ef88ebec0f9": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 14
+        },
+        "snapshot-c96fa7c5ad26f44e799689b0": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 14
+        },
+        "snapshot-51106d195a8192b5c246c1f9": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 14
+        },
+        "snapshot-4b5341c16b670a32829394d8": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 14
+        },
+        "snapshot-78c93f00881ed1df514eb94b": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 14
+        },
+        "snapshot-8fcc83fc4b23c276586b102a": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 14
+        },
+        "snapshot-521199d88214f9b7459c55f4": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 14
+        },
+        "snapshot-5c4c30bec334469a7c45e74b": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 14
+        },
+        "snapshot-42fe252aa09e066517bb8d98": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 14
+        },
+        "snapshot-f4f64b8f4612a431fc2700b0": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 14
+        },
+        "snapshot-c57d2bc4cd1295cb993748cd": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 14
+        },
+        "snapshot-7486bbb4353793011ace2369": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 14
+        },
+        "snapshot-4f76836c46c5ab7fe1fdd7fa": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 14
+        },
+        "snapshot-e117b646c3285801d4a03da4": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 14
+        },
+        "snapshot-2986a2ae1ddae332ad14fb3a": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 14
+        },
+        "snapshot-89d6c4c521f4a653837d28a5": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 14
+        },
+        "snapshot-c10f2994de3438946360e12c": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 14
+        },
+        "snapshot-74ceb5247dde6c68bbf76657": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 14
+        },
+        "snapshot-c83830d2a84416153ff89a20": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 14
+        },
+        "snapshot-84974991594a6edd8a3093d3": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 14
+        },
+        "snapshot-6684dc0cd3155c50f5317ef3": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 14
+        },
+        "snapshot-3c4419c518bb12f0893b1617": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 14
+        },
+        "snapshot-f55faf61443c7b14e67be543": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 14
+        },
+        "snapshot-5478dfb8afcc79c3992a0d1d": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 14
+        },
+        "snapshot-cc4fc7a7cc726907de427fb1": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 14
+        },
+        "snapshot-b11e2bc54178e87fa3fdcce3": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 14
+        },
+        "snapshot-f546b737fad1c73b2fa43689": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 14
+        },
+        "snapshot-aebeee6e589366b8f8a6894f": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 14
+        },
+        "snapshot-c401802dc62e6c8e2aa48997": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 14
+        },
+        "snapshot-b2cd7eb525ee7cf82c0f56e9": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 14
+        },
+        "snapshot-d2ee82b56eef870e8c0b2e90": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 14
+        },
+        "snapshot-eb0a89a527d93b0a9e0ba9c4": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 14
+        },
+        "snapshot-1bee9eccd3c9c863f8013b75": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 10
+        },
+        "snapshot-ac2b6e834417d4d6a1982180": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 10
+        },
+        "snapshot-ab92d4b0a8cb6f2182d8902b": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 10
+        },
+        "snapshot-6747a63d947dd3246626ca36": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 10
+        },
+        "snapshot-ddddbf34f7132970da15e3a4": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 10
+        },
+        "snapshot-6ae7e17979f9dfdad146848c": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 10
+        },
+        "snapshot-f2b26b4fd3c2d64c1bf9ceea": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 10
+        },
+        "snapshot-f1e12b68eaa14aaffe6e6a7d": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 10
+        },
+        "snapshot-805d14add3c33a2c2070d882": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 10
+        },
+        "snapshot-245cd3c19c4267c71a437f7f": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 10
+        },
+        "snapshot-0bd83f10a34c643bdbee45cb": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 10
+        },
+        "snapshot-4dedd6360d2817855a0179ce": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 10
+        },
+        "snapshot-42dfb8ce4e9d631e868b81bf": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 10
+        },
+        "snapshot-d026c6a0d6ad3d86556de594": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 10
+        },
+        "snapshot-d0fd2739bf00b3e22d442dce": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 10
+        },
+        "snapshot-5bd0e36f6637b450dda49fa2": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 10
+        },
+        "snapshot-d467505ff8a53de4ac7fb9df": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 10
+        },
+        "snapshot-e1c8067c2c43a530f792e000": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 10
+        },
+        "snapshot-9c5852c1e1990ccc69e26399": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 10
+        },
+        "snapshot-a447ba20f6c0c6ae29e5fe52": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 10
+        },
+        "snapshot-801cf180312c0b200946a562": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 10
+        },
+        "snapshot-25b23ff9ad0e4c434175995c": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 10
+        },
+        "snapshot-084b0218765c813eba086195": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 10
+        },
+        "snapshot-5bc4016efef4c14dad0e0dfb": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 10
+        },
+        "snapshot-f9eb64110fc1a754ce65edab": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 10
+        },
+        "snapshot-0c738318911695611abf1824": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 10
+        },
+        "snapshot-f693df6807265025d1c7ba12": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 10
+        },
+        "snapshot-bf99a50f4431542b1ff21036": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 10
+        },
+        "snapshot-050029e6864ae13d0d4650a5": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 10
+        },
+        "snapshot-3b262530861f724864170d11": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 10
+        },
+        "snapshot-1f7edc15b45a5e624a90eb4e": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 10
+        },
+        "snapshot-82caacfbd349cdb46a6b35f1": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 10
+        },
+        "snapshot-d3f1d7993db4941f0758321e": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 10
+        },
+        "snapshot-c8db76a776c26247e1e3103f": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 10
+        },
+        "snapshot-943461b73d4373def64858fa": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 10
+        },
+        "snapshot-832401afa292885386dbf93d": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {},
+          "events": 1,
+          "facts": 10
+        },
+        "snapshot-0461aaccebddf2a56b2efd91": {
+          "windows": {
+            "error": 1
+          },
+          "actions": {},
+          "events": 0,
+          "facts": 0
+        },
+        "snapshot-554e60464a497a8858e09c19": {
+          "windows": {
+            "error": 1
+          },
+          "actions": {},
+          "events": 0,
+          "facts": 0
+        },
+        "snapshot-4d97451e7f284154229fb0ae": {
+          "windows": {
+            "error": 1
+          },
+          "actions": {},
+          "events": 0,
+          "facts": 0
+        },
+        "snapshot-a48387e2ec48906f7226c6ec": {
+          "windows": {
+            "error": 1
+          },
+          "actions": {},
+          "events": 0,
+          "facts": 0
+        },
+        "snapshot-fb493e5e4cffd3d818ea4fad": {
+          "windows": {
+            "error": 1
+          },
+          "actions": {},
+          "events": 0,
+          "facts": 0
+        },
+        "snapshot-6622c73a4909363a4b8a7dbb": {
+          "windows": {
+            "error": 1
+          },
+          "actions": {},
+          "events": 0,
+          "facts": 0
+        },
+        "snapshot-2af061185d74011f63a6fad1": {
+          "windows": {
+            "error": 1
+          },
+          "actions": {},
+          "events": 0,
+          "facts": 0
+        },
+        "snapshot-e8eb414b5bc370220928e6aa": {
+          "windows": {
+            "error": 1
+          },
+          "actions": {},
+          "events": 0,
+          "facts": 0
+        }
+      },
+      "context_mode": "isolated_snapshot",
+      "accuracy_interpretation": "Independent annotated snapshot accuracy, with empty prior observation history."
+    },
+    "counterfactual": {
+      "windows": 8,
+      "targeted_windows": 8,
+      "invalid_or_failed_windows": 2,
+      "valid_response_rate": 0.75,
+      "action_precision": 0.5,
+      "action_recall": 0.375,
+      "observation_precision": 0.3333333333333333,
+      "observation_recall": 0.5625,
+      "false_action_window_rate": null,
+      "latency_p50_s": 33.23455421440303,
+      "latency_p95_s": 34.456057250499725,
+      "latency_mean_s": 33.29428619053215,
+      "counts": {
+        "action_tp": 3,
+        "action_fp": 3,
+        "action_fn": 5,
+        "obs_tp": 18,
+        "obs_fp": 36,
+        "obs_fn": 14,
+        "action_scored": 8,
+        "observation_scored": 8,
+        "no_action_windows": 0,
+        "false_action_windows": 0
+      },
+      "scope": "Proposed-action and observation accuracy on labeled windows; not a household reliability guarantee.",
+      "elapsed_s": 266.3829834908247,
+      "by_task_type": {
+        "visual_counterfactual": {
+          "windows": 8,
+          "targeted_windows": 8,
+          "invalid_or_failed_windows": 2,
+          "valid_response_rate": 0.75,
+          "action_precision": 0.5,
+          "action_recall": 0.375,
+          "observation_precision": 0.3333333333333333,
+          "observation_recall": 0.5625,
+          "false_action_window_rate": null,
+          "latency_p50_s": 33.23455421440303,
+          "latency_p95_s": 34.456057250499725,
+          "latency_mean_s": 33.29428619053215,
+          "counts": {
+            "action_tp": 3,
+            "action_fp": 3,
+            "action_fn": 5,
+            "obs_tp": 18,
+            "obs_fp": 36,
+            "obs_fn": 14,
+            "action_scored": 8,
+            "observation_scored": 8,
+            "no_action_windows": 0,
+            "false_action_windows": 0
+          },
+          "scope": "Proposed-action and observation accuracy on labeled windows; not a household reliability guarantee."
+        }
+      },
+      "journals": {
+        "snapshot-320586e222400855addd810a": {
+          "windows": {
+            "error": 1
+          },
+          "actions": {},
+          "events": 0,
+          "facts": 5
+        },
+        "snapshot-52b72c6e6bc6b452bf3ff482": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 14
+        },
+        "snapshot-d10b3b096ef7d8cf160ab2a4": {
+          "windows": {
+            "error": 1
+          },
+          "actions": {},
+          "events": 0,
+          "facts": 5
+        },
+        "snapshot-65743fadd0d1501ce40b3a8b": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 14
+        },
+        "snapshot-85b38cf2ecdda7009208f91b": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 14
+        },
+        "snapshot-4fcb997b598fe74146dfffe7": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 14
+        },
+        "snapshot-cfb826c91dcdbe8383c2685a": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 14
+        },
+        "snapshot-b29743cb70975216549f2842": {
+          "windows": {
+            "complete": 1
+          },
+          "actions": {
+            "complete": 1
+          },
+          "events": 2,
+          "facts": 14
+        }
+      },
+      "context_mode": "isolated_snapshot",
+      "accuracy_interpretation": "Independent annotated snapshot accuracy, with empty prior observation history."
+    },
+    "public_video": {
+      "windows": 0,
+      "targeted_windows": 0,
+      "invalid_or_failed_windows": 0,
+      "valid_response_rate": null,
+      "action_precision": null,
+      "action_recall": null,
+      "observation_precision": null,
+      "observation_recall": null,
+      "false_action_window_rate": null,
+      "latency_p50_s": null,
+      "latency_p95_s": null,
+      "latency_mean_s": null,
+      "counts": {
+        "action_tp": 0,
+        "action_fp": 0,
+        "action_fn": 0,
+        "obs_tp": 0,
+        "obs_fp": 0,
+        "obs_fn": 0,
+        "action_scored": 0,
+        "observation_scored": 0,
+        "no_action_windows": 0,
+        "false_action_windows": 0
+      },
+      "scope": "Proposed-action and observation accuracy on labeled windows; not a household reliability guarantee.",
+      "elapsed_s": 9.29906964302063e-05,
+      "by_task_type": {},
+      "journals": {},
+      "context_mode": "chronological_unscored",
+      "accuracy_interpretation": "Chronological journal replay without ground-truth targets; timing/schema validity only, no perception accuracy claim."
+    }
+  }
+}

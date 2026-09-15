@@ -1,0 +1,440 @@
+{
+  "frozen_at_utc": "2026-09-15T20:48:39Z",
+  "frozen_before_download_and_decoding": true,
+  "policy": "Fixed participant-disjoint and recording-disjoint assignment, disjoint from the temporal pilot participants. Substitutions are allowed only for videos listed in the official missing-timestamp narration files or unavailable from the official server, decided by annotation lists and HTTP HEAD checks before any download or decoding. The split is never changed from video content, labels or model results.",
+  "pilot_participants_excluded": [
+    "P01",
+    "P02",
+    "P03",
+    "P04",
+    "P06",
+    "P11"
+  ],
+  "requested": {
+    "test": [
+      "P28_10",
+      "P30_01",
+      "P22_105",
+      "P27_03"
+    ],
+    "validation": [
+      "P26_16"
+    ],
+    "train": [
+      "P09_04",
+      "P25_12",
+      "P14_05",
+      "P07_01",
+      "P23_01",
+      "P13_06"
+    ]
+  },
+  "assigned": {
+    "test": [
+      "P28_07",
+      "P30_01",
+      "P22_105",
+      "P27_03"
+    ],
+    "validation": [
+      "P26_16"
+    ],
+    "train": [
+      "P09_04",
+      "P25_12",
+      "P14_05",
+      "P07_01",
+      "P23_01",
+      "P13_06"
+    ]
+  },
+  "participants": {
+    "test": [
+      "P22",
+      "P27",
+      "P28",
+      "P30"
+    ],
+    "validation": [
+      "P26"
+    ],
+    "train": [
+      "P07",
+      "P09",
+      "P13",
+      "P14",
+      "P23",
+      "P25"
+    ]
+  },
+  "substitutions": [
+    {
+      "split": "test",
+      "requested": "P28_10",
+      "replacement": "P28_07",
+      "reason": "video has narrations with missing timestamps (incomplete timing coverage): P28_10_16 (EPIC_100_train_missing_timestamp_narrations.csv), P28_10_2 (EPIC_100_train_missing_timestamp_narrations.csv)",
+      "same_participant": true
+    }
+  ],
+  "alternates_policy": {
+    "test": [
+      {
+        "video": "P26_17",
+        "unless": "P26 is used in validation"
+      },
+      {
+        "video": "P25_01",
+        "unless": "P25 is used in train"
+      },
+      {
+        "video": "P30_112"
+      },
+      {
+        "video": "P28_07"
+      },
+      {
+        "video": "P22_101",
+        "avoid": "long"
+      },
+      {
+        "others": "P27"
+      }
+    ],
+    "validation": [
+      {
+        "video": "P26_01"
+      },
+      {
+        "video": "P26_11"
+      }
+    ],
+    "train": [
+      {
+        "video": "P07_02"
+      },
+      {
+        "video": "P14_01"
+      },
+      {
+        "video": "P14_07"
+      },
+      {
+        "video": "P09_105"
+      },
+      {
+        "others": "P13"
+      },
+      {
+        "others": "P23"
+      },
+      {
+        "video": "P31_04"
+      },
+      {
+        "video": "P19_02"
+      },
+      {
+        "video": "P15_12"
+      }
+    ]
+  },
+  "alternates_considered": [
+    {
+      "video_id": "P28_07",
+      "participant_id": "P28",
+      "split": "test",
+      "eligible": true,
+      "missing_timestamp_narrations": [],
+      "narrations": 16,
+      "head_checks": [
+        {
+          "url": "https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/train/P28/P28_07.MP4",
+          "http_status": 200,
+          "content_length": 493453067
+        }
+      ],
+      "official_video_info": {
+        "video_id": "P28_07",
+        "duration": "130.797333",
+        "fps": "59.9400599400599",
+        "resolution": "1920x1080"
+      },
+      "url": "https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/train/P28/P28_07.MP4",
+      "content_length": 493453067,
+      "replacing": "P28_10"
+    }
+  ],
+  "video_checks": {
+    "P26_16": {
+      "video_id": "P26_16",
+      "participant_id": "P26",
+      "split": "validation",
+      "eligible": true,
+      "missing_timestamp_narrations": [],
+      "narrations": 13,
+      "head_checks": [
+        {
+          "url": "https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/train/P26/P26_16.MP4",
+          "http_status": 200,
+          "content_length": 245929093
+        }
+      ],
+      "official_video_info": {
+        "video_id": "P26_16",
+        "duration": "65.081683",
+        "fps": "59.9400599400599",
+        "resolution": "1920x1080"
+      },
+      "url": "https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/train/P26/P26_16.MP4",
+      "content_length": 245929093
+    },
+    "P09_04": {
+      "video_id": "P09_04",
+      "participant_id": "P09",
+      "split": "train",
+      "eligible": true,
+      "missing_timestamp_narrations": [],
+      "narrations": 19,
+      "head_checks": [
+        {
+          "url": "https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/train/P09/P09_04.MP4",
+          "http_status": 404,
+          "content_length": null
+        },
+        {
+          "url": "https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/test/P09/P09_04.MP4",
+          "http_status": 200,
+          "content_length": 385723733
+        }
+      ],
+      "official_video_info": {
+        "video_id": "P09_04",
+        "duration": "102.16873299999999",
+        "fps": "59.9400599400599",
+        "resolution": "1920x1080"
+      },
+      "url": "https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/test/P09/P09_04.MP4",
+      "content_length": 385723733
+    },
+    "P25_12": {
+      "video_id": "P25_12",
+      "participant_id": "P25",
+      "split": "train",
+      "eligible": true,
+      "missing_timestamp_narrations": [],
+      "narrations": 17,
+      "head_checks": [
+        {
+          "url": "https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/train/P25/P25_12.MP4",
+          "http_status": 200,
+          "content_length": 362139411
+        }
+      ],
+      "official_video_info": {
+        "video_id": "P25_12",
+        "duration": "96.04595",
+        "fps": "59.9400599400599",
+        "resolution": "1920x1080"
+      },
+      "url": "https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/train/P25/P25_12.MP4",
+      "content_length": 362139411
+    },
+    "P14_05": {
+      "video_id": "P14_05",
+      "participant_id": "P14",
+      "split": "train",
+      "eligible": true,
+      "missing_timestamp_narrations": [],
+      "narrations": 13,
+      "head_checks": [
+        {
+          "url": "https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/train/P14/P14_05.MP4",
+          "http_status": 200,
+          "content_length": 268478601
+        }
+      ],
+      "official_video_info": {
+        "video_id": "P14_05",
+        "duration": "71.15441700000001",
+        "fps": "59.9400599400599",
+        "resolution": "1920x1080"
+      },
+      "url": "https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/train/P14/P14_05.MP4",
+      "content_length": 268478601
+    },
+    "P07_01": {
+      "video_id": "P07_01",
+      "participant_id": "P07",
+      "split": "train",
+      "eligible": true,
+      "missing_timestamp_narrations": [],
+      "narrations": 15,
+      "head_checks": [
+        {
+          "url": "https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/train/P07/P07_01.MP4",
+          "http_status": 200,
+          "content_length": 412108969
+        }
+      ],
+      "official_video_info": {
+        "video_id": "P07_01",
+        "duration": "109.12568300000001",
+        "fps": "59.9400599400599",
+        "resolution": "1920x1080"
+      },
+      "url": "https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/train/P07/P07_01.MP4",
+      "content_length": 412108969
+    },
+    "P23_01": {
+      "video_id": "P23_01",
+      "participant_id": "P23",
+      "split": "train",
+      "eligible": true,
+      "missing_timestamp_narrations": [],
+      "narrations": 14,
+      "head_checks": [
+        {
+          "url": "https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/train/P23/P23_01.MP4",
+          "http_status": 200,
+          "content_length": 346561411
+        }
+      ],
+      "official_video_info": {
+        "video_id": "P23_01",
+        "duration": "91.84175",
+        "fps": "59.9400599400599",
+        "resolution": "1920x1080"
+      },
+      "url": "https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/train/P23/P23_01.MP4",
+      "content_length": 346561411
+    },
+    "P13_06": {
+      "video_id": "P13_06",
+      "participant_id": "P13",
+      "split": "train",
+      "eligible": true,
+      "missing_timestamp_narrations": [],
+      "narrations": 22,
+      "head_checks": [
+        {
+          "url": "https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/train/P13/P13_06.MP4",
+          "http_status": 200,
+          "content_length": 420496827
+        }
+      ],
+      "official_video_info": {
+        "video_id": "P13_06",
+        "duration": "111.394617",
+        "fps": "59.9400599400599",
+        "resolution": "1920x1080"
+      },
+      "url": "https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/train/P13/P13_06.MP4",
+      "content_length": 420496827
+    },
+    "P28_10": {
+      "video_id": "P28_10",
+      "participant_id": "P28",
+      "split": "test",
+      "eligible": false,
+      "missing_timestamp_narrations": [
+        "P28_10_16 (EPIC_100_train_missing_timestamp_narrations.csv)",
+        "P28_10_2 (EPIC_100_train_missing_timestamp_narrations.csv)"
+      ],
+      "narrations": 21,
+      "head_checks": [],
+      "reason": "video has narrations with missing timestamps (incomplete timing coverage): P28_10_16 (EPIC_100_train_missing_timestamp_narrations.csv), P28_10_2 (EPIC_100_train_missing_timestamp_narrations.csv)"
+    },
+    "P28_07": {
+      "video_id": "P28_07",
+      "participant_id": "P28",
+      "split": "test",
+      "eligible": true,
+      "missing_timestamp_narrations": [],
+      "narrations": 16,
+      "head_checks": [
+        {
+          "url": "https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/train/P28/P28_07.MP4",
+          "http_status": 200,
+          "content_length": 493453067
+        }
+      ],
+      "official_video_info": {
+        "video_id": "P28_07",
+        "duration": "130.797333",
+        "fps": "59.9400599400599",
+        "resolution": "1920x1080"
+      },
+      "url": "https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/train/P28/P28_07.MP4",
+      "content_length": 493453067
+    },
+    "P30_01": {
+      "video_id": "P30_01",
+      "participant_id": "P30",
+      "split": "test",
+      "eligible": true,
+      "missing_timestamp_narrations": [],
+      "narrations": 30,
+      "head_checks": [
+        {
+          "url": "https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/train/P30/P30_01.MP4",
+          "http_status": 200,
+          "content_length": 282806688
+        }
+      ],
+      "official_video_info": {
+        "video_id": "P30_01",
+        "duration": "74.8748",
+        "fps": "59.9400599400599",
+        "resolution": "1920x1080"
+      },
+      "url": "https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/train/P30/P30_01.MP4",
+      "content_length": 282806688
+    },
+    "P22_105": {
+      "video_id": "P22_105",
+      "participant_id": "P22",
+      "split": "test",
+      "eligible": true,
+      "missing_timestamp_narrations": [],
+      "narrations": 17,
+      "head_checks": [
+        {
+          "url": "https://data.bris.ac.uk/datasets/2g1n6qdydwa9u22shpxqzp0t8m/P22/videos/P22_105.MP4",
+          "http_status": 200,
+          "content_length": 208872238
+        }
+      ],
+      "official_video_info": {
+        "video_id": "P22_105",
+        "duration": "68.94",
+        "fps": "50.0",
+        "resolution": "1920x1080"
+      },
+      "url": "https://data.bris.ac.uk/datasets/2g1n6qdydwa9u22shpxqzp0t8m/P22/videos/P22_105.MP4",
+      "content_length": 208872238
+    },
+    "P27_03": {
+      "video_id": "P27_03",
+      "participant_id": "P27",
+      "split": "test",
+      "eligible": true,
+      "missing_timestamp_narrations": [],
+      "narrations": 18,
+      "head_checks": [
+        {
+          "url": "https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/train/P27/P27_03.MP4",
+          "http_status": 200,
+          "content_length": 369563270
+        }
+      ],
+      "official_video_info": {
+        "video_id": "P27_03",
+        "duration": "97.9979",
+        "fps": "59.9400599400599",
+        "resolution": "1920x1080"
+      },
+      "url": "https://data.bris.ac.uk/datasets/3h91syskeag572hl6tvuovwv4d/videos/train/P27/P27_03.MP4",
+      "content_length": 369563270
+    }
+  }
+}

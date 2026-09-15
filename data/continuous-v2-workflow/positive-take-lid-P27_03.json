@@ -1,0 +1,47 @@
+{
+  "role": "positive",
+  "source_video": "data/continuous-v2/videos/P27_03.mp4",
+  "source_video_sha256": "e4cd4527ced4902cfb78271b44e8fd8970fc03bc8abd592aef8978949267d49e",
+  "video_id": "P27_03",
+  "source_start_s": 44.5,
+  "source_end_s": 53.0,
+  "duration_s": 8.5,
+  "clip_sha256": "2ebe37f28a35ed656a1785ad21263b049d1bbb8d816a2569bfa5e20656e002fe",
+  "encode_seconds": 0.59,
+  "annotations_sha256": "a3a7ef2e397bd8af12bd0496b09d61b1f2c1f3f6e1726fa86af50a27f4855e87",
+  "overlapping_narrations": [
+    {
+      "narration_id": "P27_03_6",
+      "narration": "put down saucepan",
+      "verb": "put-down",
+      "noun": "saucepan",
+      "start": 41.38,
+      "stop": 45.38,
+      "clip_relative_start": -3.12,
+      "clip_relative_stop": 0.88
+    },
+    {
+      "narration_id": "P27_03_7",
+      "narration": "take lid",
+      "verb": "take",
+      "noun": "lid",
+      "start": 47.68,
+      "stop": 49.9,
+      "clip_relative_start": 3.18,
+      "clip_relative_stop": 5.4
+    },
+    {
+      "narration_id": "P27_03_8",
+      "narration": "put down lid",
+      "verb": "put-down",
+      "noun": "lid",
+      "start": 48.98,
+      "stop": 55.03,
+      "clip_relative_start": 4.48,
+      "clip_relative_stop": 10.53
+    }
+  ],
+  "note": "Candidate positive: official narration P27_03_7 'take lid' 47.68-49.90 s with 2.3 s quiet before",
+  "time_basis": "clip-relative seconds; add source_start_s for recording time",
+  "selection": "chosen by inspecting footage and official narrations only; no model predictions used"
+}

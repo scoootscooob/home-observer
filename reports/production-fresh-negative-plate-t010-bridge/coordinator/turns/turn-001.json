@@ -1,0 +1,92 @@
+{
+  "turn": 1,
+  "at": 1789508760.8944042,
+  "prompt_sha256": "eb4af696261443fea5fc3b71e5dafc504e5081026a3f120e86d85d4ad0f53a72",
+  "prompt": {
+    "now": 1789508760.894,
+    "coordinator_id": "sandboxed-frontier-920d2cf72ced",
+    "digital_context": {
+      "commitment_id": "recipe-serve-lift-plate",
+      "text": "Recipe serving: lift the dinner plate from the table to carry it to the counter. Give an immediate visual cue when the observed plate begins moving, then verify the pickup from local observation before marking the step complete.",
+      "source_ref": "Demonstration digital recipe instruction for the negative workflow; the recorded footage only slides the plate on the table.",
+      "source_clip": "data/continuous-v2-workflow/negative-move-plate-P22_105.mp4",
+      "response_registry": "configs/recipe-workflow/responses.json",
+      "expected_outcome": "The plate is repositioned but never lifted; the step must remain pending and pickup must not be verified."
+    },
+    "approved_responses": [
+      {
+        "response_id": "recipe-movement-cue",
+        "kind": "ha_service",
+        "purpose": "Bowl movement detected; checking the recipe step."
+      }
+    ],
+    "exports_new": [],
+    "exports_all_recent": [],
+    "export_messages_recent": [],
+    "command_results": [],
+    "rejected_commands": [],
+    "previous_assessment": null,
+    "already_acknowledged": [],
+    "turn": 1
+  },
+  "model_record": {
+    "model": "claude-opus-5",
+    "attempt": 1,
+    "latency_s": 10.799913883209229,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 1825,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 1825
+      },
+      "output_tokens": 861,
+      "output_tokens_details": {
+        "thinking_tokens": 410
+      },
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+    }
+  },
+  "model_text": "{\"commands\": [{\"command_id\": \"cmd-1-watch-move-cue\", \"coordinator_id\": \"sandboxed-frontier-920d2cf72ced\", \"type\": \"create_watch\", \"watch\": {\"watch_id\": \"watch-plate-move-cue\", \"context\": {\"commitment_id\": \"recipe-serve-lift-plate\", \"text\": \"Cue when the plate starts moving; pickup still needs local verification.\", \"coordinator_id\": \"sandboxed-frontier-920d2cf72ced\"}, \"condition\": {\"type\": \"event\", \"kind\": \"motion_started\", \"object_label\": \"plate\", \"origin\": \"geometric\", \"min_confidence\": 0.5, \"min_duration_s\": 0, \"max_gap_s\": 0.5}, \"response_id\": \"recipe-movement-cue\", \"created_at\": 1789508760.894, \"ttl_s\": 3600, \"response_deadline_s\": 1.0, \"max_event_age_s\": 2.0, \"max_responses\": 1}}], \"assessment\": {\"recipe_step_complete\": false, \"pickup_verified\": \"unknown\", \"rationale\": \"No exports yet, so no phys_ track exists to verify. Watch armed for plate motion cue only; motion alone cannot complete the step. Step stays pending until a verification_result confirms pickup_completed or clear_of_support.\", \"wait\": true}, \"wait\": true}",
+  "error": null,
+  "commands_written": [
+    {
+      "command_id": "cmd-1-watch-move-cue",
+      "coordinator_id": "sandboxed-frontier-920d2cf72ced",
+      "type": "create_watch",
+      "watch": {
+        "watch_id": "watch-plate-move-cue",
+        "context": {
+          "commitment_id": "recipe-serve-lift-plate",
+          "text": "Cue when the plate starts moving; pickup still needs local verification.",
+          "coordinator_id": "sandboxed-frontier-920d2cf72ced"
+        },
+        "condition": {
+          "type": "event",
+          "kind": "motion_started",
+          "object_label": "plate",
+          "origin": "geometric",
+          "min_confidence": 0.5,
+          "min_duration_s": 0,
+          "max_gap_s": 0.5
+        },
+        "response_id": "recipe-movement-cue",
+        "created_at": 1789508760.894,
+        "ttl_s": 3600,
+        "response_deadline_s": 1.0,
+        "max_event_age_s": 2.0,
+        "max_responses": 1
+      }
+    }
+  ],
+  "skipped": [],
+  "auto_acknowledged": [],
+  "assessment": {
+    "recipe_step_complete": false,
+    "pickup_verified": "unknown",
+    "rationale": "No exports yet, so no phys_ track exists to verify. Watch armed for plate motion cue only; motion alone cannot complete the step. Step stays pending until a verification_result confirms pickup_completed or clear_of_support.",
+    "wait": true
+  }
+}

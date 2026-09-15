@@ -1,0 +1,1083 @@
+{
+  "turn": 4,
+  "at": 1789508603.048249,
+  "prompt_sha256": "4c148706dcd092239129fe84b764fe05f7e29287525bd00336d4a5ec211cf041",
+  "prompt": {
+    "now": 1789508603.048,
+    "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+    "digital_context": {
+      "commitment_id": "recipe-serve-lift-plate",
+      "text": "Recipe serving: lift the dinner plate from the table to carry it to the counter. Give an immediate visual cue when the observed plate begins moving, then verify the pickup from local observation before marking the step complete.",
+      "source_ref": "Demonstration digital recipe instruction for the negative workflow; the recorded footage only slides the plate on the table.",
+      "source_clip": "data/continuous-v2-workflow/negative-move-plate-P22_105.mp4",
+      "response_registry": "configs/recipe-workflow/responses.json",
+      "expected_outcome": "The plate is repositioned but never lifted; the step must remain pending and pickup must not be verified."
+    },
+    "approved_responses": [
+      {
+        "response_id": "recipe-movement-cue",
+        "kind": "ha_service",
+        "purpose": "Bowl movement detected; checking the recipe step."
+      }
+    ],
+    "exports_new": [
+      {
+        "created_at": 1789508539.441028,
+        "export_id": "export_1f82c8eb30ba455e68beb6dc0515af69",
+        "export_sha256": "586920db6daa3f8dda1d45b21b57834fb2f46cbc6ea7c8492a0cdc7dbb03f90a",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_d613b2c2c53ec0d072426937",
+          "available_at": 1789508539.435,
+          "category_in_vocabulary": true,
+          "confidence": 0.5,
+          "ended_at": 1789508515.175,
+          "event_id": "pevt_2c91401625b44d008a721fb1d5f6f15c",
+          "evidence_count": 2,
+          "kind": "put-down",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "plate",
+          "origin": "learned",
+          "started_at": 1789508511.595,
+          "subject_ids": [],
+          "uncertainty_level": "medium"
+        },
+        "schema_version": "home-observer.production-export/1",
+        "topic": "physical.event",
+        "attempt": 6,
+        "exported_at": 1789508601.727434
+      },
+      {
+        "created_at": 1789508539.44362,
+        "export_id": "export_86a983f567ab08d5f337c8532759feb4",
+        "export_sha256": "f15a8c38660df614a78dd065f80fb4b99b6dc07c1b33e1279c542be878ccbc0c",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_aa5471c018a7ea7dfab2635e",
+          "emitted_at": 1789508539.435,
+          "events_accepted": 1,
+          "failure_class": null,
+          "full_sequence_frames": 180,
+          "inference_started_at": null,
+          "latency_s": 13.939,
+          "message_type": "perception_status",
+          "objects_accepted": 0,
+          "observations_accepted": 0,
+          "sampled_frames": 8,
+          "source_ended_at": 1789508515.175,
+          "source_started_at": 1789508511.595,
+          "status": "completed"
+        },
+        "schema_version": "home-observer.production-export/1",
+        "topic": "perception.completed",
+        "attempt": 6,
+        "exported_at": 1789508601.727434
+      },
+      {
+        "created_at": 1789508553.437733,
+        "export_id": "export_3563aaa4ea857587308c51e0903df356",
+        "export_sha256": "65d3f472675b0c31c71fbc486f5cbab993d25365a7908743a514c0197b9885b8",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_c46235880e22f4e67e8c01fc",
+          "available_at": 1789508553.426,
+          "category_in_vocabulary": true,
+          "confidence": 0.5,
+          "ended_at": 1789508517.755,
+          "event_id": "pevt_0a36d3a8dab442b19990f383a9e19ce0",
+          "evidence_count": 2,
+          "kind": "put-down",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "plate",
+          "origin": "learned",
+          "started_at": 1789508514.175,
+          "subject_ids": [],
+          "uncertainty_level": "medium"
+        },
+        "schema_version": "home-observer.production-export/1",
+        "topic": "physical.event",
+        "attempt": 5,
+        "exported_at": 1789508583.460779
+      },
+      {
+        "created_at": 1789508553.439591,
+        "export_id": "export_85ec228cada7c461eb0bced3c68f459e",
+        "export_sha256": "1e3694ec5c389eed4d943734553f38638897553fb12798050ca42bd12106ee1d",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_879a407d7be217dea2f15084",
+          "emitted_at": 1789508553.426,
+          "events_accepted": 1,
+          "failure_class": null,
+          "full_sequence_frames": 180,
+          "inference_started_at": null,
+          "latency_s": 13.971,
+          "message_type": "perception_status",
+          "objects_accepted": 0,
+          "observations_accepted": 0,
+          "sampled_frames": 8,
+          "source_ended_at": 1789508517.755,
+          "source_started_at": 1789508514.175,
+          "status": "completed"
+        },
+        "schema_version": "home-observer.production-export/1",
+        "topic": "perception.completed",
+        "attempt": 5,
+        "exported_at": 1789508583.460779
+      },
+      {
+        "created_at": 1789508564.597543,
+        "export_id": "export_52d6679c37631b59203d39798600c81f",
+        "export_sha256": "dca25fbd3cc3ac44e39ed742ad201d52abacee2f2a47db066d4184ab8a9de90d",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_1cd5891abe7a3e4180f2e76a",
+          "available_at": 1789508564.588,
+          "category_in_vocabulary": true,
+          "confidence": 0.5,
+          "ended_at": 1789508520.335,
+          "event_id": "pevt_85c4aa2b696e4a49ad363080231b43bc",
+          "evidence_count": 2,
+          "kind": "put-down",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "plate",
+          "origin": "learned",
+          "started_at": 1789508516.755,
+          "subject_ids": [],
+          "uncertainty_level": "medium"
+        },
+        "schema_version": "home-observer.production-export/1",
+        "topic": "physical.event",
+        "attempt": 5,
+        "exported_at": 1789508594.6353621
+      },
+      {
+        "created_at": 1789508564.600808,
+        "export_id": "export_0919b9e35a712c5108059e4ac2baba56",
+        "export_sha256": "74047fc28cd9a5e8aacc77bb6ff3788be8afb96db278e500efa1a5cb2e2c59ca",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_b1bcbe07a9021732a31c3560",
+          "emitted_at": 1789508564.588,
+          "events_accepted": 1,
+          "failure_class": null,
+          "full_sequence_frames": 180,
+          "inference_started_at": null,
+          "latency_s": 11.14,
+          "message_type": "perception_status",
+          "objects_accepted": 0,
+          "observations_accepted": 0,
+          "sampled_frames": 8,
+          "source_ended_at": 1789508520.335,
+          "source_started_at": 1789508516.755,
+          "status": "completed"
+        },
+        "schema_version": "home-observer.production-export/1",
+        "topic": "perception.completed",
+        "attempt": 5,
+        "exported_at": 1789508594.66381
+      },
+      {
+        "created_at": 1789508576.824215,
+        "export_id": "export_7f7e22c1dd20b7cfd8155ed82de17143",
+        "export_sha256": "5e8f50e48e884e67b17807b1890086c53ade6c6546fa48f248c3baafceaccf2b",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_20ddcfab1c89ff7601c81b17",
+          "available_at": 1789508576.823,
+          "category_in_vocabulary": true,
+          "confidence": 0.5,
+          "ended_at": 1789508520.995,
+          "event_id": "pevt_8aa3468297ab4b3fae5a167afafaae09",
+          "evidence_count": 2,
+          "kind": "put-down",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "plate",
+          "origin": "learned",
+          "started_at": 1789508519.335,
+          "subject_ids": [],
+          "uncertainty_level": "medium"
+        },
+        "schema_version": "home-observer.production-export/1",
+        "topic": "physical.event",
+        "attempt": 4,
+        "exported_at": 1789508590.886604
+      },
+      {
+        "created_at": 1789508576.825811,
+        "export_id": "export_ed1b0f79bd77a8d2675eab1ab40d62e2",
+        "export_sha256": "0c61790ca930638c310aa55f5037e5c70ac2f6ce87eee2297e361dae740145f8",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_158cc1abc3364dd33e3bf435",
+          "emitted_at": 1789508576.823,
+          "events_accepted": 1,
+          "failure_class": null,
+          "full_sequence_frames": 84,
+          "inference_started_at": null,
+          "latency_s": 12.212,
+          "message_type": "perception_status",
+          "objects_accepted": 0,
+          "observations_accepted": 0,
+          "sampled_frames": 8,
+          "source_ended_at": 1789508520.995,
+          "source_started_at": 1789508519.335,
+          "status": "completed"
+        },
+        "schema_version": "home-observer.production-export/1",
+        "topic": "perception.completed",
+        "attempt": 4,
+        "exported_at": 1789508590.886604
+      }
+    ],
+    "exports_all_recent": [
+      {
+        "topic": "watch.created",
+        "export_id": "export_a281c9daf909f7d7503c2168adbbec44",
+        "created_at": 1789508508.95205
+      },
+      {
+        "topic": "watch.response_verified",
+        "export_id": "export_13be7e65b78f5b13f988fbebb32428f2",
+        "created_at": 1789508509.405783
+      },
+      {
+        "topic": "watch.matched",
+        "export_id": "export_3e96ce1a84eb9c53d2237ddc1fcb528a",
+        "created_at": 1789508509.405783
+      },
+      {
+        "topic": "physical.event",
+        "export_id": "export_d8bbe090d44d9e8c43334611778da0af",
+        "created_at": 1789508509.405783
+      },
+      {
+        "topic": "physical.event",
+        "export_id": "export_56eb388548ea5be8b1d417e8ecc05484",
+        "created_at": 1789508511.020692
+      },
+      {
+        "topic": "physical.event",
+        "export_id": "export_f334559a50a77cf13ec500630a9bb583",
+        "created_at": 1789508511.372027
+      },
+      {
+        "topic": "physical.event",
+        "export_id": "export_38213ed6df95fc1c7358c128f194d29d",
+        "created_at": 1789508514.055423
+      },
+      {
+        "topic": "physical.event",
+        "export_id": "export_dee47558213d25f051a724779af8b960",
+        "created_at": 1789508514.134624
+      },
+      {
+        "topic": "physical.event",
+        "export_id": "export_73ce0c5adae07e61aa7bb0e90abc953b",
+        "created_at": 1789508516.012667
+      },
+      {
+        "topic": "perception.completed",
+        "export_id": "export_8ae4a72a63fc0211ab4bfa0074f6b966",
+        "created_at": 1789508516.014131
+      },
+      {
+        "topic": "physical.event",
+        "export_id": "export_9e8a2b1a2d03cbc15c39214947519c38",
+        "created_at": 1789508520.433275
+      },
+      {
+        "topic": "physical.event",
+        "export_id": "export_cf87e97abde7f26204f9ad0c86d242a4",
+        "created_at": 1789508525.486366
+      },
+      {
+        "topic": "perception.completed",
+        "export_id": "export_088f1f83fa1f603207b502216a944c7f",
+        "created_at": 1789508525.487997
+      },
+      {
+        "topic": "verification.result",
+        "export_id": "export_d988646145fb3bd0d7e34a2907aeafb3",
+        "created_at": 1789508528.264301
+      },
+      {
+        "topic": "physical.event",
+        "export_id": "export_1f82c8eb30ba455e68beb6dc0515af69",
+        "created_at": 1789508539.441028
+      },
+      {
+        "topic": "perception.completed",
+        "export_id": "export_86a983f567ab08d5f337c8532759feb4",
+        "created_at": 1789508539.44362
+      },
+      {
+        "topic": "physical.event",
+        "export_id": "export_3563aaa4ea857587308c51e0903df356",
+        "created_at": 1789508553.437733
+      },
+      {
+        "topic": "perception.completed",
+        "export_id": "export_85ec228cada7c461eb0bced3c68f459e",
+        "created_at": 1789508553.439591
+      },
+      {
+        "topic": "physical.event",
+        "export_id": "export_52d6679c37631b59203d39798600c81f",
+        "created_at": 1789508564.597543
+      },
+      {
+        "topic": "perception.completed",
+        "export_id": "export_0919b9e35a712c5108059e4ac2baba56",
+        "created_at": 1789508564.600808
+      },
+      {
+        "topic": "physical.event",
+        "export_id": "export_7f7e22c1dd20b7cfd8155ed82de17143",
+        "created_at": 1789508576.824215
+      },
+      {
+        "topic": "perception.completed",
+        "export_id": "export_ed1b0f79bd77a8d2675eab1ab40d62e2",
+        "created_at": 1789508576.825811
+      }
+    ],
+    "export_messages_recent": [
+      {
+        "export_id": "export_a281c9daf909f7d7503c2168adbbec44",
+        "topic": "watch.created",
+        "message": {
+          "audit_ref": "audit_a3f109dca51456e6b5a6d397",
+          "commitment_id": "recipe-serve-lift-plate",
+          "eligible_at": null,
+          "event_id": null,
+          "failure_class": null,
+          "matched_at": null,
+          "message_type": "watch_status",
+          "outcome_event_id": null,
+          "outcome_verified_at": null,
+          "readback_state": null,
+          "reported_at": 1789508508.952,
+          "response_id": "recipe-movement-cue",
+          "response_reserved_at": null,
+          "response_result": null,
+          "response_sent_at": null,
+          "response_timely": null,
+          "response_verified_at": null,
+          "status": "armed",
+          "verification_kind": null,
+          "watch_id": "watch-plate-motion-cue"
+        }
+      },
+      {
+        "export_id": "export_13be7e65b78f5b13f988fbebb32428f2",
+        "topic": "watch.response_verified",
+        "message": {
+          "audit_ref": "audit_592bf7fe44d5ca55095d6547",
+          "commitment_id": "recipe-serve-lift-plate",
+          "eligible_at": 1789508509.315,
+          "event_id": "pevt_6415702458b445ffbfc63289759c99b6",
+          "failure_class": null,
+          "matched_at": 1789508509.393,
+          "message_type": "watch_status",
+          "outcome_event_id": null,
+          "outcome_verified_at": null,
+          "readback_state": "on",
+          "reported_at": null,
+          "response_id": "recipe-movement-cue",
+          "response_reserved_at": 1789508509.393,
+          "response_result": "verified",
+          "response_sent_at": 1789508509.394,
+          "response_timely": true,
+          "response_verified_at": 1789508509.404,
+          "status": "response_verified",
+          "verification_kind": "ha_state_readback",
+          "watch_id": "watch-plate-motion-cue"
+        }
+      },
+      {
+        "export_id": "export_3e96ce1a84eb9c53d2237ddc1fcb528a",
+        "topic": "watch.matched",
+        "message": {
+          "audit_ref": "audit_e2f6eeda98e2bbe71225a1a4",
+          "commitment_id": "recipe-serve-lift-plate",
+          "eligible_at": 1789508509.315,
+          "event_id": "pevt_6415702458b445ffbfc63289759c99b6",
+          "failure_class": null,
+          "matched_at": 1789508509.393,
+          "message_type": "watch_status",
+          "outcome_event_id": null,
+          "outcome_verified_at": null,
+          "readback_state": null,
+          "reported_at": null,
+          "response_id": "recipe-movement-cue",
+          "response_reserved_at": 1789508509.393,
+          "response_result": null,
+          "response_sent_at": null,
+          "response_timely": null,
+          "response_verified_at": null,
+          "status": "matched",
+          "verification_kind": null,
+          "watch_id": "watch-plate-motion-cue"
+        }
+      },
+      {
+        "export_id": "export_d8bbe090d44d9e8c43334611778da0af",
+        "topic": "physical.event",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_07de03c55179e0d351f9266d",
+          "available_at": 1789508509.385,
+          "category_in_vocabulary": true,
+          "confidence": 0.85,
+          "ended_at": 1789508509.315,
+          "event_id": "pevt_6415702458b445ffbfc63289759c99b6",
+          "evidence_count": 2,
+          "kind": "motion_started",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "plate",
+          "origin": "geometric",
+          "started_at": 1789508509.255,
+          "subject_ids": [
+            "phys_7fe841eec2e8496ebec7916e1ea90a11"
+          ],
+          "uncertainty_level": "medium"
+        }
+      },
+      {
+        "export_id": "export_56eb388548ea5be8b1d417e8ecc05484",
+        "topic": "physical.event",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_fcf7a81409f05625ef2d56f7",
+          "available_at": 1789508511.019,
+          "category_in_vocabulary": true,
+          "confidence": 0.85,
+          "ended_at": 1789508510.975,
+          "event_id": "pevt_614bc9ec01fc4d2791ff9ed144c63ff3",
+          "evidence_count": 2,
+          "kind": "motion_settled",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "plate",
+          "origin": "geometric",
+          "started_at": 1789508510.675,
+          "subject_ids": [
+            "phys_7fe841eec2e8496ebec7916e1ea90a11"
+          ],
+          "uncertainty_level": "medium"
+        }
+      },
+      {
+        "export_id": "export_f334559a50a77cf13ec500630a9bb583",
+        "topic": "physical.event",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_aa5851d9ab5b23d6d62910a8",
+          "available_at": 1789508511.368,
+          "category_in_vocabulary": true,
+          "confidence": 0.84,
+          "ended_at": 1789508511.315,
+          "event_id": "pevt_5be89dd77b634091af2f97a5a67a42d5",
+          "evidence_count": 2,
+          "kind": "motion_started",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "plate",
+          "origin": "geometric",
+          "started_at": 1789508511.255,
+          "subject_ids": [
+            "phys_7fe841eec2e8496ebec7916e1ea90a11"
+          ],
+          "uncertainty_level": "medium"
+        }
+      },
+      {
+        "export_id": "export_38213ed6df95fc1c7358c128f194d29d",
+        "topic": "physical.event",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_2d8c16e3474983d351dfa23d",
+          "available_at": 1789508514.045,
+          "category_in_vocabulary": true,
+          "confidence": 0.69,
+          "ended_at": 1789508513.935,
+          "event_id": "pevt_23c1277d2d3148159cf354d7a793a05b",
+          "evidence_count": 2,
+          "kind": "motion_settled",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "plate",
+          "origin": "geometric",
+          "started_at": 1789508513.635,
+          "subject_ids": [
+            "phys_7fe841eec2e8496ebec7916e1ea90a11"
+          ],
+          "uncertainty_level": "medium"
+        }
+      },
+      {
+        "export_id": "export_dee47558213d25f051a724779af8b960",
+        "topic": "physical.event",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_1878e9d02693c2d07125c6e4",
+          "available_at": 1789508514.126,
+          "category_in_vocabulary": true,
+          "confidence": 0.69,
+          "ended_at": 1789508514.015,
+          "event_id": "pevt_1a7fac8d106a41c8b649c6f4d85b9d48",
+          "evidence_count": 2,
+          "kind": "motion_started",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "plate",
+          "origin": "geometric",
+          "started_at": 1789508513.955,
+          "subject_ids": [
+            "phys_7fe841eec2e8496ebec7916e1ea90a11"
+          ],
+          "uncertainty_level": "medium"
+        }
+      },
+      {
+        "export_id": "export_73ce0c5adae07e61aa7bb0e90abc953b",
+        "topic": "physical.event",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_52504e89bbc138b159845f8b",
+          "available_at": 1789508516.009,
+          "category_in_vocabulary": true,
+          "confidence": 0.5,
+          "ended_at": 1789508509.155,
+          "event_id": "pevt_a1e7037e8de64a8893ba0a36cf5b2efa",
+          "evidence_count": 2,
+          "kind": "put-down",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "plate",
+          "origin": "learned",
+          "started_at": 1789508509.015,
+          "subject_ids": [],
+          "uncertainty_level": "medium"
+        }
+      },
+      {
+        "export_id": "export_8ae4a72a63fc0211ab4bfa0074f6b966",
+        "topic": "perception.completed",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_232ce766f135c14dbb16730d",
+          "emitted_at": 1789508516.009,
+          "events_accepted": 1,
+          "failure_class": null,
+          "full_sequence_frames": 8,
+          "inference_started_at": null,
+          "latency_s": 6.832,
+          "message_type": "perception_status",
+          "objects_accepted": 0,
+          "observations_accepted": 0,
+          "sampled_frames": 8,
+          "source_ended_at": 1789508509.155,
+          "source_started_at": 1789508509.015,
+          "status": "completed"
+        }
+      },
+      {
+        "export_id": "export_9e8a2b1a2d03cbc15c39214947519c38",
+        "topic": "physical.event",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_b76fb161e52b4b043962a4ec",
+          "available_at": 1789508520.422,
+          "category_in_vocabulary": true,
+          "confidence": 0.0,
+          "ended_at": 1789508520.375,
+          "event_id": "pevt_e807c8ac50354c2380ca703453a675c5",
+          "evidence_count": 2,
+          "kind": "visibility_lost",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "plate",
+          "origin": "geometric",
+          "started_at": 1789508520.355,
+          "subject_ids": [
+            "phys_7fe841eec2e8496ebec7916e1ea90a11"
+          ],
+          "uncertainty_level": "high"
+        }
+      },
+      {
+        "export_id": "export_cf87e97abde7f26204f9ad0c86d242a4",
+        "topic": "physical.event",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_e4844ccadc63b5ccba34c016",
+          "available_at": 1789508525.475,
+          "category_in_vocabulary": true,
+          "confidence": 0.5,
+          "ended_at": 1789508512.595,
+          "event_id": "pevt_9b33e0be0e884e099b60696263ba6508",
+          "evidence_count": 2,
+          "kind": "put-down",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "plate",
+          "origin": "learned",
+          "started_at": 1789508509.015,
+          "subject_ids": [],
+          "uncertainty_level": "medium"
+        }
+      },
+      {
+        "export_id": "export_088f1f83fa1f603207b502216a944c7f",
+        "topic": "perception.completed",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_364b74c7a3ae59161a0212bf",
+          "emitted_at": 1789508525.475,
+          "events_accepted": 1,
+          "failure_class": null,
+          "full_sequence_frames": 180,
+          "inference_started_at": null,
+          "latency_s": 9.457,
+          "message_type": "perception_status",
+          "objects_accepted": 0,
+          "observations_accepted": 0,
+          "sampled_frames": 8,
+          "source_ended_at": 1789508512.595,
+          "source_started_at": 1789508509.015,
+          "status": "completed"
+        }
+      },
+      {
+        "export_id": "export_d988646145fb3bd0d7e34a2907aeafb3",
+        "topic": "verification.result",
+        "message": {
+          "audit_ref": "audit_189b232526c6477affa1330d",
+          "confidence": 0.0,
+          "evaluated_at": 1789508528.245,
+          "evidence_ended_at": 1789508520.375,
+          "evidence_started_at": 1789508509.035,
+          "frames_examined": 568,
+          "message_type": "verification_result",
+          "question": "clear_of_support",
+          "reason_code": "localization_uncertain",
+          "request_id": "vrq-clear-plate-1",
+          "subject_id": "phys_7fe841eec2e8496ebec7916e1ea90a11",
+          "uncertainty_level": "high",
+          "verdict": "unknown",
+          "verification_id": "pver_e61e92619794444082ad544566ae5648"
+        }
+      },
+      {
+        "export_id": "export_1f82c8eb30ba455e68beb6dc0515af69",
+        "topic": "physical.event",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_d613b2c2c53ec0d072426937",
+          "available_at": 1789508539.435,
+          "category_in_vocabulary": true,
+          "confidence": 0.5,
+          "ended_at": 1789508515.175,
+          "event_id": "pevt_2c91401625b44d008a721fb1d5f6f15c",
+          "evidence_count": 2,
+          "kind": "put-down",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "plate",
+          "origin": "learned",
+          "started_at": 1789508511.595,
+          "subject_ids": [],
+          "uncertainty_level": "medium"
+        }
+      },
+      {
+        "export_id": "export_86a983f567ab08d5f337c8532759feb4",
+        "topic": "perception.completed",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_aa5471c018a7ea7dfab2635e",
+          "emitted_at": 1789508539.435,
+          "events_accepted": 1,
+          "failure_class": null,
+          "full_sequence_frames": 180,
+          "inference_started_at": null,
+          "latency_s": 13.939,
+          "message_type": "perception_status",
+          "objects_accepted": 0,
+          "observations_accepted": 0,
+          "sampled_frames": 8,
+          "source_ended_at": 1789508515.175,
+          "source_started_at": 1789508511.595,
+          "status": "completed"
+        }
+      },
+      {
+        "export_id": "export_3563aaa4ea857587308c51e0903df356",
+        "topic": "physical.event",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_c46235880e22f4e67e8c01fc",
+          "available_at": 1789508553.426,
+          "category_in_vocabulary": true,
+          "confidence": 0.5,
+          "ended_at": 1789508517.755,
+          "event_id": "pevt_0a36d3a8dab442b19990f383a9e19ce0",
+          "evidence_count": 2,
+          "kind": "put-down",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "plate",
+          "origin": "learned",
+          "started_at": 1789508514.175,
+          "subject_ids": [],
+          "uncertainty_level": "medium"
+        }
+      },
+      {
+        "export_id": "export_85ec228cada7c461eb0bced3c68f459e",
+        "topic": "perception.completed",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_879a407d7be217dea2f15084",
+          "emitted_at": 1789508553.426,
+          "events_accepted": 1,
+          "failure_class": null,
+          "full_sequence_frames": 180,
+          "inference_started_at": null,
+          "latency_s": 13.971,
+          "message_type": "perception_status",
+          "objects_accepted": 0,
+          "observations_accepted": 0,
+          "sampled_frames": 8,
+          "source_ended_at": 1789508517.755,
+          "source_started_at": 1789508514.175,
+          "status": "completed"
+        }
+      },
+      {
+        "export_id": "export_52d6679c37631b59203d39798600c81f",
+        "topic": "physical.event",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_1cd5891abe7a3e4180f2e76a",
+          "available_at": 1789508564.588,
+          "category_in_vocabulary": true,
+          "confidence": 0.5,
+          "ended_at": 1789508520.335,
+          "event_id": "pevt_85c4aa2b696e4a49ad363080231b43bc",
+          "evidence_count": 2,
+          "kind": "put-down",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "plate",
+          "origin": "learned",
+          "started_at": 1789508516.755,
+          "subject_ids": [],
+          "uncertainty_level": "medium"
+        }
+      },
+      {
+        "export_id": "export_0919b9e35a712c5108059e4ac2baba56",
+        "topic": "perception.completed",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_b1bcbe07a9021732a31c3560",
+          "emitted_at": 1789508564.588,
+          "events_accepted": 1,
+          "failure_class": null,
+          "full_sequence_frames": 180,
+          "inference_started_at": null,
+          "latency_s": 11.14,
+          "message_type": "perception_status",
+          "objects_accepted": 0,
+          "observations_accepted": 0,
+          "sampled_frames": 8,
+          "source_ended_at": 1789508520.335,
+          "source_started_at": 1789508516.755,
+          "status": "completed"
+        }
+      },
+      {
+        "export_id": "export_7f7e22c1dd20b7cfd8155ed82de17143",
+        "topic": "physical.event",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_20ddcfab1c89ff7601c81b17",
+          "available_at": 1789508576.823,
+          "category_in_vocabulary": true,
+          "confidence": 0.5,
+          "ended_at": 1789508520.995,
+          "event_id": "pevt_8aa3468297ab4b3fae5a167afafaae09",
+          "evidence_count": 2,
+          "kind": "put-down",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "plate",
+          "origin": "learned",
+          "started_at": 1789508519.335,
+          "subject_ids": [],
+          "uncertainty_level": "medium"
+        }
+      },
+      {
+        "export_id": "export_ed1b0f79bd77a8d2675eab1ab40d62e2",
+        "topic": "perception.completed",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_158cc1abc3364dd33e3bf435",
+          "emitted_at": 1789508576.823,
+          "events_accepted": 1,
+          "failure_class": null,
+          "full_sequence_frames": 84,
+          "inference_started_at": null,
+          "latency_s": 12.212,
+          "message_type": "perception_status",
+          "objects_accepted": 0,
+          "observations_accepted": 0,
+          "sampled_frames": 8,
+          "source_ended_at": 1789508520.995,
+          "source_started_at": 1789508519.335,
+          "status": "completed"
+        }
+      }
+    ],
+    "command_results": [
+      {
+        "command_id": "ack-088f1f83fa1f6032-3",
+        "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+        "accepted_at": 1789508602.058243,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "perception.completed"
+        }
+      },
+      {
+        "command_id": "ack-38213ed6df95fc1c-3",
+        "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+        "accepted_at": 1789508602.058243,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "physical.event"
+        }
+      },
+      {
+        "command_id": "ack-56eb388548ea5be8-3",
+        "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+        "accepted_at": 1789508602.058243,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "physical.event"
+        }
+      },
+      {
+        "command_id": "ack-73ce0c5adae07e61-3",
+        "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+        "accepted_at": 1789508602.058243,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "physical.event"
+        }
+      },
+      {
+        "command_id": "ack-8ae4a72a63fc0211-3",
+        "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+        "accepted_at": 1789508602.058243,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "perception.completed"
+        }
+      },
+      {
+        "command_id": "ack-9e8a2b1a2d03cbc1-3",
+        "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+        "accepted_at": 1789508602.058243,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "physical.event"
+        }
+      },
+      {
+        "command_id": "ack-cf87e97abde7f262-3",
+        "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+        "accepted_at": 1789508602.058243,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "physical.event"
+        }
+      },
+      {
+        "command_id": "ack-d988646145fb3bd0-3",
+        "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+        "accepted_at": 1789508602.058243,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "verification.result"
+        }
+      },
+      {
+        "command_id": "ack-dee47558213d25f0-3",
+        "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+        "accepted_at": 1789508602.058243,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "physical.event"
+        }
+      },
+      {
+        "command_id": "ack-f334559a50a77cf1-3",
+        "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+        "accepted_at": 1789508602.058243,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "physical.event"
+        }
+      },
+      {
+        "command_id": "cmd-ack-physical-event-1",
+        "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+        "accepted_at": 1789508528.2448618,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "physical.event"
+        }
+      },
+      {
+        "command_id": "cmd-ack-response-verified-1",
+        "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+        "accepted_at": 1789508528.2448618,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "watch.response_verified"
+        }
+      },
+      {
+        "command_id": "cmd-ack-watch-created-1",
+        "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+        "accepted_at": 1789508528.2448618,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "watch.created"
+        }
+      },
+      {
+        "command_id": "cmd-ack-watch-matched-1",
+        "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+        "accepted_at": 1789508528.2448618,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "watch.matched"
+        }
+      },
+      {
+        "command_id": "cmd-verify-clear-1",
+        "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+        "accepted_at": 1789508528.2448618,
+        "outcome": {
+          "verification_id": "pver_157bfa9ba8dc44458d2ec74b616973be",
+          "status": "pending"
+        }
+      },
+      {
+        "command_id": "cmd-verify-pickup-1",
+        "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+        "accepted_at": 1789508528.2448618,
+        "outcome": {
+          "verification_id": "pver_e61e92619794444082ad544566ae5648",
+          "status": "pending"
+        }
+      },
+      {
+        "command_id": "cmd-watch-plate-motion-1",
+        "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+        "accepted_at": 1789508508.95205,
+        "outcome": {
+          "watch_id": "watch-plate-motion-cue",
+          "status": "armed"
+        }
+      }
+    ],
+    "rejected_commands": [],
+    "previous_assessment": {
+      "recipe_step_complete": false,
+      "pickup_verified": "unknown",
+      "rationale": "Geometric motion_started on plate phys_7fe8 matched the watch and the cue response was verified, but a light cue and motion never prove a lift. Asked verifier for pickup_completed and clear_of_support; step stays pending until a confirmed verdict."
+    },
+    "already_acknowledged": [
+      "export_a281c9daf909f7d7503c2168adbbec44",
+      "export_13be7e65b78f5b13f988fbebb32428f2",
+      "export_3e96ce1a84eb9c53d2237ddc1fcb528a",
+      "export_d8bbe090d44d9e8c43334611778da0af",
+      "export_56eb388548ea5be8b1d417e8ecc05484",
+      "export_f334559a50a77cf13ec500630a9bb583",
+      "export_38213ed6df95fc1c7358c128f194d29d",
+      "export_dee47558213d25f051a724779af8b960",
+      "export_73ce0c5adae07e61aa7bb0e90abc953b",
+      "export_8ae4a72a63fc0211ab4bfa0074f6b966",
+      "export_9e8a2b1a2d03cbc15c39214947519c38",
+      "export_cf87e97abde7f26204f9ad0c86d242a4",
+      "export_088f1f83fa1f603207b502216a944c7f",
+      "export_d988646145fb3bd0d7e34a2907aeafb3"
+    ],
+    "turn": 4
+  },
+  "model_record": {
+    "model": "claude-opus-5",
+    "attempt": 1,
+    "latency_s": 28.622876167297363,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 16151,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 16151
+      },
+      "output_tokens": 1694,
+      "output_tokens_details": {
+        "thinking_tokens": 323
+      },
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+    }
+  },
+  "model_text": "{\"commands\":[{\"command_id\":\"ack-1f82c8eb30ba4556-4\",\"coordinator_id\":\"sandboxed-frontier-267e8c45a0bd\",\"type\":\"ack_export\",\"export_id\":\"export_1f82c8eb30ba455e68beb6dc0515af69\",\"export_sha256\":\"586920db6daa3f8dda1d45b21b57834fb2f46cbc6ea7c8492a0cdc7dbb03f90a\"},{\"command_id\":\"ack-86a983f567ab08d5-4\",\"coordinator_id\":\"sandboxed-frontier-267e8c45a0bd\",\"type\":\"ack_export\",\"export_id\":\"export_86a983f567ab08d5f337c8532759feb4\",\"export_sha256\":\"f15a8c38660df614a78dd065f80fb4b99b6dc07c1b33e1279c542be878ccbc0c\"},{\"command_id\":\"ack-3563aaa4ea857587-4\",\"coordinator_id\":\"sandboxed-frontier-267e8c45a0bd\",\"type\":\"ack_export\",\"export_id\":\"export_3563aaa4ea857587308c51e0903df356\",\"export_sha256\":\"65d3f472675b0c31c71fbc486f5cbab993d25365a7908743a514c0197b9885b8\"},{\"command_id\":\"ack-85ec228cada7c461-4\",\"coordinator_id\":\"sandboxed-frontier-267e8c45a0bd\",\"type\":\"ack_export\",\"export_id\":\"export_85ec228cada7c461eb0bced3c68f459e\",\"export_sha256\":\"1e3694ec5c389eed4d943734553f38638897553fb12798050ca42bd12106ee1d\"},{\"command_id\":\"ack-52d6679c37631b59-4\",\"coordinator_id\":\"sandboxed-frontier-267e8c45a0bd\",\"type\":\"ack_export\",\"export_id\":\"export_52d6679c37631b59203d39798600c81f\",\"export_sha256\":\"dca25fbd3cc3ac44e39ed742ad201d52abacee2f2a47db066d4184ab8a9de90d\"},{\"command_id\":\"ack-0919b9e35a712c51-4\",\"coordinator_id\":\"sandboxed-frontier-267e8c45a0bd\",\"type\":\"ack_export\",\"export_id\":\"export_0919b9e35a712c5108059e4ac2baba56\",\"export_sha256\":\"74047fc28cd9a5e8aacc77bb6ff3788be8afb96db278e500efa1a5cb2e2c59ca\"},{\"command_id\":\"ack-7f7e22c1dd20b7cf-4\",\"coordinator_id\":\"sandboxed-frontier-267e8c45a0bd\",\"type\":\"ack_export\",\"export_id\":\"export_7f7e22c1dd20b7cfd8155ed82de17143\",\"export_sha256\":\"5e8f50e48e884e67b17807b1890086c53ade6c6546fa48f248c3baafceaccf2b\"},{\"command_id\":\"ack-ed1b0f79bd77a8d2-4\",\"coordinator_id\":\"sandboxed-frontier-267e8c45a0bd\",\"type\":\"ack_export\",\"export_id\":\"export_ed1b0f79bd77a8d2675eab1ab40d62e2\",\"export_sha256\":\"0c61790ca930638c310aa55f5037e5c70ac2f6ce87eee2297e361dae740145f8\"},{\"command_id\":\"cmd-verify-pickup-2\",\"coordinator_id\":\"sandboxed-frontier-267e8c45a0bd\",\"type\":\"verify\",\"verification\":{\"request_id\":\"vrq-pickup-plate-2\",\"question\":\"pickup_completed\",\"subject_id\":\"phys_7fe841eec2e8496ebec7916e1ea90a11\",\"lookback_s\":30}}],\"assessment\":{\"recipe_step_complete\":false,\"pickup_verified\":\"unknown\",\"rationale\":\"New exports are only learned put-down events (conf 0.5) plus perception status; no confirmed verdict. Prior clear_of_support came back unknown (localization_uncertain). Asked pickup_completed once more; step stays pending.\",\"wait\":true}",
+  "error": "JSONDecodeError: Expecting ',' delimiter: line 1 column 2573 (char 2572)",
+  "commands_written": [],
+  "skipped": [],
+  "auto_acknowledged": [
+    "export_1f82c8eb30ba455e68beb6dc0515af69",
+    "export_86a983f567ab08d5f337c8532759feb4",
+    "export_3563aaa4ea857587308c51e0903df356",
+    "export_85ec228cada7c461eb0bced3c68f459e",
+    "export_52d6679c37631b59203d39798600c81f",
+    "export_0919b9e35a712c5108059e4ac2baba56",
+    "export_7f7e22c1dd20b7cfd8155ed82de17143",
+    "export_ed1b0f79bd77a8d2675eab1ab40d62e2"
+  ],
+  "assessment": {
+    "recipe_step_complete": false,
+    "pickup_verified": "unknown",
+    "rationale": "Geometric motion_started on plate phys_7fe8 matched the watch and the cue response was verified, but a light cue and motion never prove a lift. Asked verifier for pickup_completed and clear_of_support; step stays pending until a confirmed verdict."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "created_at": 1789508312.466359,
+  "export_id": "export_bd4b7a661b73073a21d12663fa50fe0f",
+  "export_sha256": "5877d2efe6f1e76d89e031c642cd678e185404d356a6631a11ad718c0077fee5",
+  "message": {
+    "audit_ref": "audit_cd23a36f66f97ac2a71aee72",
+    "commitment_id": "recipe-cook-take-lid",
+    "eligible_at": null,
+    "event_id": null,
+    "failure_class": null,
+    "matched_at": null,
+    "message_type": "watch_status",
+    "outcome_event_id": null,
+    "outcome_verified_at": null,
+    "readback_state": null,
+    "reported_at": 1789508312.466,
+    "response_id": "recipe-movement-cue",
+    "response_reserved_at": null,
+    "response_result": null,
+    "response_sent_at": null,
+    "response_timely": null,
+    "response_verified_at": null,
+    "status": "armed",
+    "verification_kind": null,
+    "watch_id": "watch-lid-motion-cue"
+  },
+  "schema_version": "home-observer.production-export/1",
+  "topic": "watch.created",
+  "attempt": 4,
+  "exported_at": 1789508326.4795258
+}

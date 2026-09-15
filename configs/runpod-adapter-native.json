@@ -1,0 +1,16 @@
+{
+  "gpu_type": "NVIDIA GeForce RTX 3090",
+  "cloud_type": "COMMUNITY",
+  "image": "runpod/pytorch:1.0.2-cu1281-torch280-ubuntu2404",
+  "volume_gb": 80,
+  "container_gb": 30,
+  "min_memory_gb": 16,
+  "min_vcpu": 2,
+  "max_spend_usd": 64,
+  "max_hours": 4,
+  "max_hourly_usd": 2,
+  "cleanup_reserve_seconds": 600,
+  "startup_timeout_seconds": 900,
+  "storage_usd_gb_month": 0.1,
+  "command": "bash scripts/runpod_adapter_job.sh native"
+}

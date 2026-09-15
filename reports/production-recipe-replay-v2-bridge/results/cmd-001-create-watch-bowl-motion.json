@@ -1,0 +1,9 @@
+{
+  "command_id": "cmd-001-create-watch-bowl-motion",
+  "coordinator_id": "sandboxed-frontier-a75d38c6a948",
+  "accepted_at": 1789503220.897604,
+  "outcome": {
+    "watch_id": "watch-bowl-motion-cue",
+    "status": "armed"
+  }
+}

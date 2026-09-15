@@ -1,0 +1,7 @@
+{
+  "label": "pan",
+  "box": {"x_min": 0.47, "y_min": 0.52, "x_max": 0.71, "y_max": 0.84},
+  "confidence": 0.8,
+  "provenance": "Assistant visually selected initial box on the first frame of the positive demonstration clip (P27_03, source 52.5 s) from a coordinate-grid contact sheet; explicit demonstration bootstrap, not a learned detection or human ground-truth annotation.",
+  "uncertainty": "Approximate image box around a dark pan resting in the lower rack; the official narration P27_03_9 'take pan' covers 56.54-57.99 s. Strong egocentric camera motion is expected. Identity and calibrated confidence are not established."
+}

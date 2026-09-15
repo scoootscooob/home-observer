@@ -1,0 +1,13 @@
+{
+  "verified_at": 1789497910.740695,
+  "linked_report_files_exist": true,
+  "coordinator_inbox_empty": true,
+  "final_source_archive_sha256": "090a23aa61af8d5366897bcd870f294b357f8307da847178023ccf38e181ada7",
+  "report_hashes": {
+    "reports/physical-release-status.json": "83d2b4d7c575b24b0683bd49456835edb06df14dd4a63809912569f16c494887",
+    "reports/recipe-workflow-trained-v1/coordinator/physical-outcome.json": "aba3ce75369dbbec7491f162b9884180b93dfe6faa1ba77c678244cfd955a8bb",
+    "reports/recipe-workflow-trained-v1/coordinator/post-run-ack-receipt.json": "7d7a89eae42ac8987b77b387c88fed66c873ac4e13414fe710d74ac72471c153",
+    "reports/recipe-workflow-trained-v1/stream-report.json": "e2498867b215bbf26766a608b2cb2bcba6a395b192c9bf5a6c21ff84c01c50f6"
+  },
+  "all_task_pods_cleanup_confirmed": true
+}

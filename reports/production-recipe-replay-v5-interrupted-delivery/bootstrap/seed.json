@@ -1,0 +1,71 @@
+{
+  "seed": {
+    "label": "bowl",
+    "box": {
+      "x_min": 0.373536299765808,
+      "y_min": 0.13958333333333334,
+      "x_max": 0.6709601873536299,
+      "y_max": 0.68125
+    },
+    "confidence": 0.9,
+    "provenance": "Assistant visually selected initial box on the first frame of real clip030c003244925eb728dd; this is an explicit demonstration bootstrap, not a learned detection or human ground-truth annotation.",
+    "uncertainty": "Approximate image box around nested bowls. Count, persistent identity, and calibrated confidence are not established."
+  },
+  "window": {
+    "window_id": "bootstrap",
+    "started_at": 608.99,
+    "ended_at": 608.99,
+    "clips": [
+      {
+        "clip_id": "bootstrap_clip",
+        "camera_id": "recipe",
+        "started_at": 608.99,
+        "ended_at": 608.99,
+        "frames": [
+          {
+            "evidence_id": "recipe:1",
+            "timestamp": 608.99,
+            "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-recipe-replay-v5-interrupted-delivery/bootstrap/first-frame.jpg"
+          }
+        ]
+      }
+    ],
+    "audio": []
+  },
+  "decision": {
+    "summary": "Explicit box bootstrap from recorded provenance",
+    "objects": [
+      {
+        "confidence": 0.9,
+        "uncertainty": "Approximate image box around nested bowls. Count, persistent identity, and calibrated confidence are not established.",
+        "detection_id": "bootstrap_object",
+        "track_id": null,
+        "label": "bowl",
+        "box": {
+          "x_min": 0.373536299765808,
+          "y_min": 0.13958333333333334,
+          "x_max": 0.6709601873536299,
+          "y_max": 0.68125
+        },
+        "location": {
+          "camera_id": "recipe",
+          "area": null
+        },
+        "timestamp": 608.99,
+        "frame_evidence_id": "recipe:1",
+        "visibility": "partially_occluded",
+        "evidence_ids": [
+          "recipe:1"
+        ],
+        "attributes": {
+          "bootstrap_provenance": "Assistant visually selected initial box on the first frame of real clip030c003244925eb728dd; this is an explicit demonstration bootstrap, not a learned detection or human ground-truth annotation."
+        }
+      }
+    ],
+    "observations": [],
+    "events": []
+  },
+  "mapping": {
+    "bootstrap_object": "phys_5a8bb6af145f4bc6a9abfdbdc5a9eadd"
+  }
+}

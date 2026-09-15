@@ -1,0 +1,26 @@
+{
+  "created_at": 1789508321.181826,
+  "export_id": "export_3303dc2bb5429fe7737092fdbbcee94e",
+  "export_sha256": "db79d1703dbdfc17412d47da466c45005fcdc519d22270c5834f2b919d15d990",
+  "message": {
+    "area": "kitchen",
+    "audit_ref": "audit_c2a88ee8c07960f130ef5267",
+    "emitted_at": 1789508321.178,
+    "events_accepted": 1,
+    "failure_class": null,
+    "full_sequence_frames": 8,
+    "inference_started_at": null,
+    "latency_s": 8.524,
+    "message_type": "perception_status",
+    "objects_accepted": 0,
+    "observations_accepted": 0,
+    "sampled_frames": 8,
+    "source_ended_at": 1789508312.641,
+    "source_started_at": 1789508312.525,
+    "status": "completed"
+  },
+  "schema_version": "home-observer.production-export/1",
+  "topic": "perception.completed",
+  "attempt": 5,
+  "exported_at": 1789508351.2031062
+}

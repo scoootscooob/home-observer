@@ -1,0 +1,18 @@
+{
+  "pod_id": "5aarka5mncu5lo",
+  "status": "completed",
+  "artifacts_verified": true,
+  "cleanup": "terminated",
+  "cleanup_confirmed": true,
+  "baseline_and_physical_archives": [
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/work/runpod-evaluation-300/artifacts.tar.gz",
+      "sha256": "47098c948f839b0623a971ed0cef057e7e288de08f6399a9a522a2742e9e7360"
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/physical-native-base-evidence.tar.gz",
+      "sha256": "eb78cca5ced693c3f977f081c9d5c4200f9f6aa27fd7dfea606a3e77b5faad0e"
+    }
+  ],
+  "cleanup_at": 1789496441.2451441
+}

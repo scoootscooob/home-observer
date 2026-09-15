@@ -1,0 +1,167 @@
+{
+  "passed": false,
+  "scope": "Learned cloud inference and actual isolated Home Assistant REST execution; synthetic test conditions.",
+  "cases": [
+    {
+      "id": "09a634e3dc82c5846a9a5dd2",
+      "authored_test_conditions": true,
+      "device_readback": {
+        "binary_sensor.motion_entry": "off",
+        "binary_sensor.motion_garage": "off",
+        "binary_sensor.motion_kitchen": "off",
+        "binary_sensor.motion_lounge": "on",
+        "binary_sensor.water_leak": "off",
+        "light.entry": "off",
+        "light.garage": "off",
+        "light.kitchen": "off",
+        "light.lounge": "off",
+        "sensor.ambient_lux": "12"
+      },
+      "expected_actions": [
+        {
+          "data": {},
+          "domain": "light",
+          "entity_id": "light.lounge",
+          "evidence_ids": [
+            "device:binary_sensor.motion_lounge",
+            "device:sensor.ambient_lux",
+            "device:light.lounge"
+          ],
+          "reason": "Motion is on, ambient light is below 40 lux, and this light is off.",
+          "service": "turn_on"
+        }
+      ],
+      "result": {
+        "window_id": "09a634e3dc82c5846a9a5dd2",
+        "started_at": 1750166707.0,
+        "ended_at": 1750166717.0,
+        "actions": [],
+        "rejections": [],
+        "decision": {
+          "summary": "Explicit fixture policy requires no action.",
+          "observations": [],
+          "actions": [],
+          "noop": true
+        },
+        "metrics": {
+          "latency_s": 16.506742535158992,
+          "preprocess_s": 13.283813782036304,
+          "input_tokens": 2461,
+          "output_tokens": 22,
+          "model_id": "google/gemma-4-E4B-it",
+          "adapter": "artifacts/training-v1/adapter",
+          "peak_allocated_gb": 15.551112651824951,
+          "context_mode": "bounded_window",
+          "remote_roundtrip_s": 17.088736041041557,
+          "uploaded_media_bytes": 0
+        },
+        "total_latency_s": 17.091760999988765
+      },
+      "duplicate_replay_skipped": true,
+      "passed": false
+    },
+    {
+      "id": "30cd0455a9376a04a5a2d8a2-integration-only-leak",
+      "authored_test_conditions": true,
+      "device_readback": {
+        "binary_sensor.motion_entry": "off",
+        "binary_sensor.motion_garage": "off",
+        "binary_sensor.motion_kitchen": "off",
+        "binary_sensor.motion_lounge": "off",
+        "binary_sensor.water_leak": "on",
+        "light.entry": "off",
+        "light.garage": "off",
+        "light.kitchen": "off",
+        "light.lounge": "off",
+        "sensor.ambient_lux": "12",
+        "switch.buzzer": "off"
+      },
+      "expected_actions": [
+        {
+          "domain": "switch",
+          "service": "turn_on",
+          "entity_id": "switch.buzzer",
+          "data": {},
+          "reason": "Configured leak rule",
+          "evidence_ids": [
+            "device:binary_sensor.water_leak",
+            "device:switch.buzzer"
+          ]
+        }
+      ],
+      "result": {
+        "window_id": "30cd0455a9376a04a5a2d8a2",
+        "started_at": 1750166697.0,
+        "ended_at": 1750166707.0,
+        "actions": [],
+        "rejections": [],
+        "decision": {
+          "summary": "Explicit fixture policy requires no action.",
+          "observations": [],
+          "actions": [],
+          "noop": true
+        },
+        "metrics": {
+          "latency_s": 2.7584439869970083,
+          "preprocess_s": 0.04154742043465376,
+          "input_tokens": 2530,
+          "output_tokens": 22,
+          "model_id": "google/gemma-4-E4B-it",
+          "adapter": "artifacts/training-v1/adapter",
+          "peak_allocated_gb": 15.567972183227539,
+          "context_mode": "bounded_window",
+          "remote_roundtrip_s": 3.1477153330342844,
+          "uploaded_media_bytes": 0
+        },
+        "total_latency_s": 3.1501809589681216
+      },
+      "duplicate_replay_skipped": true,
+      "passed": false
+    },
+    {
+      "id": "30cd0455a9376a04a5a2d8a2",
+      "authored_test_conditions": true,
+      "device_readback": {
+        "binary_sensor.motion_entry": "off",
+        "binary_sensor.motion_garage": "off",
+        "binary_sensor.motion_kitchen": "off",
+        "binary_sensor.motion_lounge": "off",
+        "binary_sensor.water_leak": "off",
+        "light.entry": "off",
+        "light.garage": "off",
+        "light.kitchen": "off",
+        "light.lounge": "off",
+        "sensor.ambient_lux": "12"
+      },
+      "expected_actions": [],
+      "result": {
+        "window_id": "30cd0455a9376a04a5a2d8a2",
+        "started_at": 1750166697.0,
+        "ended_at": 1750166707.0,
+        "actions": [],
+        "rejections": [],
+        "decision": {
+          "summary": "Explicit fixture policy requires no action.",
+          "observations": [],
+          "actions": [],
+          "noop": true
+        },
+        "metrics": {
+          "latency_s": 2.7193256514146924,
+          "preprocess_s": 0.12842774018645287,
+          "input_tokens": 2467,
+          "output_tokens": 22,
+          "model_id": "google/gemma-4-E4B-it",
+          "adapter": "artifacts/training-v1/adapter",
+          "peak_allocated_gb": 15.553274154663086,
+          "context_mode": "bounded_window",
+          "remote_roundtrip_s": 3.12514670798555,
+          "uploaded_media_bytes": 0
+        },
+        "total_latency_s": 3.1271625829976983
+      },
+      "duplicate_replay_skipped": true,
+      "passed": true
+    }
+  ]
+}

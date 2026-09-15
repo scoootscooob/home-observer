@@ -1,0 +1,10 @@
+{
+  "command_id": "cmd-010-ack-clear-of-support-result",
+  "coordinator_id": "sandboxed-frontier-98f0d757ea8e",
+  "accepted_at": 1789505399.512437,
+  "outcome": {
+    "acknowledged": true,
+    "already_acknowledged": false,
+    "topic": "verification.result"
+  }
+}

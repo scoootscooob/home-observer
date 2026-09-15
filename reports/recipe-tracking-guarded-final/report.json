@@ -1,0 +1,89 @@
+{
+  "clip": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/data/temporal-pilot/clips/030c003244925eb728dd.mp4",
+  "clip_sha256": "3655e454f3d510b5138b5059261d99f84ca226b3513234b97cbfe448dacea30c",
+  "initial_box_xyxy": [
+    319,
+    67,
+    573,
+    327
+  ],
+  "initial_box_source": "assistant-observed initial box passed on command line; no later correction",
+  "opencv": "4.14.0",
+  "contrib_distribution": "4.14.0.94",
+  "numpy": "2.4.6",
+  "python": "3.11.15",
+  "machine": "arm64",
+  "scale": 0.5,
+  "opencv_threads": 1,
+  "source_docs": [
+    "https://docs.opencv.org/4.12.0/d2/da2/classcv_1_1TrackerCSRT.html"
+  ],
+  "trackers": [
+    {
+      "tracker": "CSRTGuarded",
+      "status_meaning": "guarded localization accepted",
+      "source_fps": 50.0,
+      "source_declared_frames": 145,
+      "frames_decoded": 145,
+      "frames_updated": 144,
+      "init_s": 0.026837125013116747,
+      "update_total_s": 2.336105783819221,
+      "decode_total_s": 0.03865033749025315,
+      "update_median_ms": 17.73510401835665,
+      "update_p95_ms": 19.911945503554307,
+      "update_max_ms": 24.779125000350177,
+      "update_only_fps": 61.641044252961535,
+      "full_decode_track_inspection_loop_s": 2.4053910840302706,
+      "full_decode_track_inspection_loop_fps": 60.28125778077227,
+      "frame_budget_ms": 20.0,
+      "updates_exceeding_source_frame_budget": 7,
+      "sampled_frames": [
+        0,
+        21,
+        41,
+        62,
+        82,
+        103,
+        123,
+        144
+      ],
+      "manual_localization_quality": "pending visual inspection; no supplied tracking ground truth",
+      "scope": "Actual continuous frames, one initial assistant-observed box, no reseeding or model detections. API success does not prove identity or localization; no calibrated confidence or semantic event claim. Guarded timings include JPEG packing, decode, appearance checks and camera compensation; lost tracks stop backend updates.",
+      "guarded_tracker": {
+        "frames_processed": 144,
+        "active_tracks": 1,
+        "flow_failures": 1,
+        "maximum_tracks": 8,
+        "scope": "Supplied-box propagation with appearance, scale, visibility and gap checks; no object discovery, semantic action recognition, or guaranteed identity.",
+        "backend": "OpenCV CSRT",
+        "scale": 0.5,
+        "loss_reasons": {
+          "appearance_changed": 1
+        },
+        "camera_compensated_frames": 144,
+        "backend_updates": 125,
+        "visible_tracks": 0,
+        "uncertain_tracks": 1,
+        "guards": {
+          "min_points": 4,
+          "motion_threshold": 0.003,
+          "settle_seconds": 0.3,
+          "lost_ttl_seconds": 5.0,
+          "scale": 0.5,
+          "max_frame_gap_s": 0.25,
+          "max_appearance_distance": 0.65,
+          "min_visible_fraction": 0.65,
+          "min_area_ratio": 0.25,
+          "max_area_ratio": 4.0,
+          "max_step_area_ratio": 1.7,
+          "max_center_step": 0.12
+        },
+        "confidence_kind": "uncalibrated_heuristic",
+        "calibrated_confidence": null
+      },
+      "accepted_updates": 124,
+      "first_rejected_frame": 125,
+      "metadata_clarification": "Guarded acceptance fields name local guards, not OpenCV API failure; values and observations unchanged."
+    }
+  ]
+}

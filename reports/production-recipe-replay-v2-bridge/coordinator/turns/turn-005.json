@@ -1,0 +1,632 @@
+{
+  "turn": 5,
+  "at": 1789503282.978606,
+  "prompt_sha256": "4c0a648d55580d6cf2a92fd97f1381bb4e388e771f7a9dd8e9d0d45579668283",
+  "prompt": {
+    "now": 1789503282.979,
+    "coordinator_id": "sandboxed-frontier-a75d38c6a948",
+    "digital_context": {
+      "commitment_id": "recipe-prep-lift-bowls",
+      "text": "Recipe preparation: lift the nested mixing bowls from the worktop. Give an immediate visual cue when the observed bowls begin moving, then verify the pickup from the physical sequence before marking the step complete.",
+      "source_ref": "Demonstration digital recipe instruction, not a claim about the user's actual kitchen.",
+      "source_clip": "data/temporal-pilot/clips/030c003244925eb728dd.mp4",
+      "response_registry": "configs/recipe-workflow/responses.json",
+      "scope": "Real public video replay and isolated Home Assistant service execution; frontier creates the watch and verifies the observed interaction."
+    },
+    "approved_responses": [
+      {
+        "response_id": "recipe-movement-cue",
+        "kind": "ha_service",
+        "purpose": "Bowl movement detected; checking the recipe step."
+      }
+    ],
+    "exports_new": [
+      {
+        "created_at": 1789503281.978976,
+        "export_id": "export_247573d2e7007790498514d5f1a10206",
+        "export_sha256": "3fb3aa83ca7c4b8a2923eba977e7d648098030573099e5e3b0b3dfc11d054139",
+        "message": {
+          "audit_ref": "audit_4a064bfed7a509a92e8f47df",
+          "confidence": 0.0,
+          "evaluated_at": 1789503281.979,
+          "evidence_ended_at": null,
+          "evidence_started_at": null,
+          "frames_examined": 0,
+          "message_type": "verification_result",
+          "question": "pickup_completed",
+          "reason_code": "insufficient_tracking_history",
+          "request_id": "vr-pickup-2926da09-2",
+          "subject_id": "phys_2926da09e441488cbc781edf2eea2cc2",
+          "uncertainty_level": "high",
+          "verdict": "unknown",
+          "verification_id": "pver_88518e7293004845ab990b4a9b582f9a"
+        },
+        "schema_version": "home-observer.production-export/1",
+        "topic": "verification.result",
+        "attempt": 1,
+        "exported_at": 1789503281.978976
+      },
+      {
+        "created_at": 1789503281.978976,
+        "export_id": "export_38e01164bcf1e0e5666b66caa1fbc4cc",
+        "export_sha256": "3444722da41dda9566b4121a486f5e02da3820143898ec4be771f3d25863ccb5",
+        "message": {
+          "audit_ref": "audit_122086d0a7118e50157d8c3b",
+          "confidence": 0.0,
+          "evaluated_at": 1789503281.979,
+          "evidence_ended_at": null,
+          "evidence_started_at": null,
+          "frames_examined": 0,
+          "message_type": "verification_result",
+          "question": "clear_of_support",
+          "reason_code": "insufficient_tracking_history",
+          "request_id": "vr-clear-2926da09-2",
+          "subject_id": "phys_2926da09e441488cbc781edf2eea2cc2",
+          "uncertainty_level": "high",
+          "verdict": "unknown",
+          "verification_id": "pver_124b32dd221c4fd7b7ca50c921d3f4b0"
+        },
+        "schema_version": "home-observer.production-export/1",
+        "topic": "verification.result",
+        "attempt": 1,
+        "exported_at": 1789503281.978976
+      }
+    ],
+    "exports_all_recent": [
+      {
+        "topic": "watch.created",
+        "export_id": "export_93c04ff156bf5654fe331a29b2751794",
+        "created_at": 1789503220.897604
+      },
+      {
+        "topic": "watch.matched",
+        "export_id": "export_28dea1e70123a97e56658dfaeea78cfb",
+        "created_at": 1789503221.172513
+      },
+      {
+        "topic": "physical.event",
+        "export_id": "export_2c854c40d297e06033dc68cb9622d0b8",
+        "created_at": 1789503221.172513
+      },
+      {
+        "topic": "watch.response_verified",
+        "export_id": "export_962583c539a744237057fcb9a0e5d863",
+        "created_at": 1789503221.172513
+      },
+      {
+        "topic": "physical.event",
+        "export_id": "export_741e006f8f32f4b868ff040464490245",
+        "created_at": 1789503224.263463
+      },
+      {
+        "topic": "physical.event",
+        "export_id": "export_dc0d12b177ca9964a9db3e27dc813f57",
+        "created_at": 1789503232.9352
+      },
+      {
+        "topic": "perception.completed",
+        "export_id": "export_a506ebcb7f407baf586687d7ee42c1bf",
+        "created_at": 1789503232.937664
+      },
+      {
+        "topic": "perception.failed",
+        "export_id": "export_52d283197683c6ecce3f0cbd38c5db17",
+        "created_at": 1789503245.249361
+      },
+      {
+        "topic": "verification.result",
+        "export_id": "export_00491ab1fc0dcc2ad34d31abc00bb4f8",
+        "created_at": 1789503258.863607
+      },
+      {
+        "topic": "verification.result",
+        "export_id": "export_352e128ea2133e16c761768806df832f",
+        "created_at": 1789503258.863607
+      },
+      {
+        "topic": "verification.result",
+        "export_id": "export_247573d2e7007790498514d5f1a10206",
+        "created_at": 1789503281.978976
+      },
+      {
+        "topic": "verification.result",
+        "export_id": "export_38e01164bcf1e0e5666b66caa1fbc4cc",
+        "created_at": 1789503281.978976
+      }
+    ],
+    "export_messages_recent": [
+      {
+        "export_id": "export_93c04ff156bf5654fe331a29b2751794",
+        "topic": "watch.created",
+        "message": {
+          "audit_ref": "audit_a584123589ba89095c4738c1",
+          "commitment_id": "recipe-prep-lift-bowls",
+          "eligible_at": null,
+          "event_id": null,
+          "failure_class": null,
+          "matched_at": null,
+          "message_type": "watch_status",
+          "outcome_event_id": null,
+          "outcome_verified_at": null,
+          "readback_state": null,
+          "reported_at": 1789503220.898,
+          "response_id": "recipe-movement-cue",
+          "response_reserved_at": null,
+          "response_result": null,
+          "response_sent_at": null,
+          "response_timely": null,
+          "response_verified_at": null,
+          "status": "armed",
+          "verification_kind": null,
+          "watch_id": "watch-bowl-motion-cue"
+        }
+      },
+      {
+        "export_id": "export_28dea1e70123a97e56658dfaeea78cfb",
+        "topic": "watch.matched",
+        "message": {
+          "audit_ref": "audit_99946c575b9ba0914a83058b",
+          "commitment_id": "recipe-prep-lift-bowls",
+          "eligible_at": 1789503221.034,
+          "event_id": "pevt_18a860ec69e34198bb875e0af99a7954",
+          "failure_class": null,
+          "matched_at": 1789503221.104,
+          "message_type": "watch_status",
+          "outcome_event_id": null,
+          "outcome_verified_at": null,
+          "readback_state": null,
+          "reported_at": null,
+          "response_id": "recipe-movement-cue",
+          "response_reserved_at": 1789503221.104,
+          "response_result": null,
+          "response_sent_at": null,
+          "response_timely": null,
+          "response_verified_at": null,
+          "status": "matched",
+          "verification_kind": null,
+          "watch_id": "watch-bowl-motion-cue"
+        }
+      },
+      {
+        "export_id": "export_2c854c40d297e06033dc68cb9622d0b8",
+        "topic": "physical.event",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_879739c13ef7d8072936c991",
+          "available_at": 1789503221.101,
+          "category_in_vocabulary": true,
+          "confidence": 0.88,
+          "ended_at": 1789503221.034,
+          "event_id": "pevt_18a860ec69e34198bb875e0af99a7954",
+          "evidence_count": 2,
+          "kind": "motion_started",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "bowl",
+          "origin": "geometric",
+          "started_at": 1789503221.014,
+          "subject_ids": [
+            "phys_2926da09e441488cbc781edf2eea2cc2"
+          ],
+          "uncertainty_level": "medium"
+        }
+      },
+      {
+        "export_id": "export_962583c539a744237057fcb9a0e5d863",
+        "topic": "watch.response_verified",
+        "message": {
+          "audit_ref": "audit_7ff225840d12536669127330",
+          "commitment_id": "recipe-prep-lift-bowls",
+          "eligible_at": 1789503221.034,
+          "event_id": "pevt_18a860ec69e34198bb875e0af99a7954",
+          "failure_class": null,
+          "matched_at": 1789503221.104,
+          "message_type": "watch_status",
+          "outcome_event_id": null,
+          "outcome_verified_at": null,
+          "readback_state": "on",
+          "reported_at": null,
+          "response_id": "recipe-movement-cue",
+          "response_reserved_at": 1789503221.104,
+          "response_result": "verified",
+          "response_sent_at": 1789503221.105,
+          "response_timely": true,
+          "response_verified_at": 1789503221.172,
+          "status": "response_verified",
+          "verification_kind": "ha_state_readback",
+          "watch_id": "watch-bowl-motion-cue"
+        }
+      },
+      {
+        "export_id": "export_741e006f8f32f4b868ff040464490245",
+        "topic": "physical.event",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_05154d7a6b36e81087f61b21",
+          "available_at": 1789503224.249,
+          "category_in_vocabulary": true,
+          "confidence": 0.0,
+          "ended_at": 1789503223.454,
+          "event_id": "pevt_91392f36fd974f52b0952bb0f4ee15a5",
+          "evidence_count": 2,
+          "kind": "visibility_lost",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "bowl",
+          "origin": "geometric",
+          "started_at": 1789503223.434,
+          "subject_ids": [
+            "phys_2926da09e441488cbc781edf2eea2cc2"
+          ],
+          "uncertainty_level": "high"
+        }
+      },
+      {
+        "export_id": "export_dc0d12b177ca9964a9db3e27dc813f57",
+        "topic": "physical.event",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_6bcf6bc560ea38f2ef78b3cd",
+          "available_at": 1789503232.926,
+          "category_in_vocabulary": true,
+          "confidence": 0.5,
+          "ended_at": 1789503221.094,
+          "event_id": "pevt_9f481e4055f945cf8afc6230d2531359",
+          "evidence_count": 2,
+          "kind": "pick-up",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "bowl",
+          "origin": "learned",
+          "started_at": 1789503220.954,
+          "subject_ids": [],
+          "uncertainty_level": "medium"
+        }
+      },
+      {
+        "export_id": "export_a506ebcb7f407baf586687d7ee42c1bf",
+        "topic": "perception.completed",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_a0fd53f16498941cf148245c",
+          "emitted_at": 1789503232.926,
+          "events_accepted": 1,
+          "failure_class": null,
+          "full_sequence_frames": 8,
+          "inference_started_at": null,
+          "latency_s": 11.815,
+          "message_type": "perception_status",
+          "objects_accepted": 0,
+          "observations_accepted": 0,
+          "sampled_frames": 8,
+          "source_ended_at": 1789503221.094,
+          "source_started_at": 1789503220.954,
+          "status": "completed"
+        }
+      },
+      {
+        "export_id": "export_52d283197683c6ecce3f0cbd38c5db17",
+        "topic": "perception.failed",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_77e110150e4919d908dbe5bd",
+          "emitted_at": 1789503245.242,
+          "events_accepted": 0,
+          "failure_class": "ValidationError",
+          "full_sequence_frames": 145,
+          "inference_started_at": null,
+          "latency_s": null,
+          "message_type": "perception_status",
+          "objects_accepted": 0,
+          "observations_accepted": 0,
+          "sampled_frames": 8,
+          "source_ended_at": 1789503223.834,
+          "source_started_at": 1789503220.954,
+          "status": "invalid"
+        }
+      },
+      {
+        "export_id": "export_00491ab1fc0dcc2ad34d31abc00bb4f8",
+        "topic": "verification.result",
+        "message": {
+          "audit_ref": "audit_32cbfe0595a16c8ece737514",
+          "confidence": 0.0,
+          "evaluated_at": 1789503258.864,
+          "evidence_ended_at": null,
+          "evidence_started_at": null,
+          "frames_examined": 0,
+          "message_type": "verification_result",
+          "question": "pickup_completed",
+          "reason_code": "insufficient_tracking_history",
+          "request_id": "vr-pickup-2926da09-1",
+          "subject_id": "phys_2926da09e441488cbc781edf2eea2cc2",
+          "uncertainty_level": "high",
+          "verdict": "unknown",
+          "verification_id": "pver_aaca83ab48dc40a88203f83377e4d53c"
+        }
+      },
+      {
+        "export_id": "export_352e128ea2133e16c761768806df832f",
+        "topic": "verification.result",
+        "message": {
+          "audit_ref": "audit_13273a01fc5a4d55ef632c46",
+          "confidence": 0.0,
+          "evaluated_at": 1789503258.864,
+          "evidence_ended_at": null,
+          "evidence_started_at": null,
+          "frames_examined": 0,
+          "message_type": "verification_result",
+          "question": "clear_of_support",
+          "reason_code": "insufficient_tracking_history",
+          "request_id": "vr-clear-2926da09-1",
+          "subject_id": "phys_2926da09e441488cbc781edf2eea2cc2",
+          "uncertainty_level": "high",
+          "verdict": "unknown",
+          "verification_id": "pver_b750a6a590594e918adbc669886fa39d"
+        }
+      },
+      {
+        "export_id": "export_247573d2e7007790498514d5f1a10206",
+        "topic": "verification.result",
+        "message": {
+          "audit_ref": "audit_4a064bfed7a509a92e8f47df",
+          "confidence": 0.0,
+          "evaluated_at": 1789503281.979,
+          "evidence_ended_at": null,
+          "evidence_started_at": null,
+          "frames_examined": 0,
+          "message_type": "verification_result",
+          "question": "pickup_completed",
+          "reason_code": "insufficient_tracking_history",
+          "request_id": "vr-pickup-2926da09-2",
+          "subject_id": "phys_2926da09e441488cbc781edf2eea2cc2",
+          "uncertainty_level": "high",
+          "verdict": "unknown",
+          "verification_id": "pver_88518e7293004845ab990b4a9b582f9a"
+        }
+      },
+      {
+        "export_id": "export_38e01164bcf1e0e5666b66caa1fbc4cc",
+        "topic": "verification.result",
+        "message": {
+          "audit_ref": "audit_122086d0a7118e50157d8c3b",
+          "confidence": 0.0,
+          "evaluated_at": 1789503281.979,
+          "evidence_ended_at": null,
+          "evidence_started_at": null,
+          "frames_examined": 0,
+          "message_type": "verification_result",
+          "question": "clear_of_support",
+          "reason_code": "insufficient_tracking_history",
+          "request_id": "vr-clear-2926da09-2",
+          "subject_id": "phys_2926da09e441488cbc781edf2eea2cc2",
+          "uncertainty_level": "high",
+          "verdict": "unknown",
+          "verification_id": "pver_124b32dd221c4fd7b7ca50c921d3f4b0"
+        }
+      }
+    ],
+    "command_results": [
+      {
+        "command_id": "ack-00491ab1fc0dcc2a-4",
+        "coordinator_id": "sandboxed-frontier-a75d38c6a948",
+        "accepted_at": 1789503281.978976,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "verification.result"
+        }
+      },
+      {
+        "command_id": "ack-28dea1e70123a97e-2",
+        "coordinator_id": "sandboxed-frontier-a75d38c6a948",
+        "accepted_at": 1789503241.118638,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "watch.matched"
+        }
+      },
+      {
+        "command_id": "ack-2c854c40d297e060-2",
+        "coordinator_id": "sandboxed-frontier-a75d38c6a948",
+        "accepted_at": 1789503241.118638,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "physical.event"
+        }
+      },
+      {
+        "command_id": "ack-352e128ea2133e16-4",
+        "coordinator_id": "sandboxed-frontier-a75d38c6a948",
+        "accepted_at": 1789503281.978976,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "verification.result"
+        }
+      },
+      {
+        "command_id": "ack-52d283197683c6ec-4",
+        "coordinator_id": "sandboxed-frontier-a75d38c6a948",
+        "accepted_at": 1789503281.978976,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "perception.failed"
+        }
+      },
+      {
+        "command_id": "ack-741e006f8f32f4b8-3",
+        "coordinator_id": "sandboxed-frontier-a75d38c6a948",
+        "accepted_at": 1789503258.863607,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "physical.event"
+        }
+      },
+      {
+        "command_id": "ack-93c04ff156bf5654-2",
+        "coordinator_id": "sandboxed-frontier-a75d38c6a948",
+        "accepted_at": 1789503241.118638,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "watch.created"
+        }
+      },
+      {
+        "command_id": "ack-962583c539a74423-2",
+        "coordinator_id": "sandboxed-frontier-a75d38c6a948",
+        "accepted_at": 1789503241.118638,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "watch.response_verified"
+        }
+      },
+      {
+        "command_id": "ack-a506ebcb7f407baf-3",
+        "coordinator_id": "sandboxed-frontier-a75d38c6a948",
+        "accepted_at": 1789503258.863607,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "perception.completed"
+        }
+      },
+      {
+        "command_id": "ack-dc0d12b177ca9964-3",
+        "coordinator_id": "sandboxed-frontier-a75d38c6a948",
+        "accepted_at": 1789503258.863607,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "physical.event"
+        }
+      },
+      {
+        "command_id": "cmd-001-create-watch-bowl-motion",
+        "coordinator_id": "sandboxed-frontier-a75d38c6a948",
+        "accepted_at": 1789503220.897604,
+        "outcome": {
+          "watch_id": "watch-bowl-motion-cue",
+          "status": "armed"
+        }
+      },
+      {
+        "command_id": "cmd-003-verify-pickup",
+        "coordinator_id": "sandboxed-frontier-a75d38c6a948",
+        "accepted_at": 1789503258.863607,
+        "outcome": {
+          "verification_id": "pver_aaca83ab48dc40a88203f83377e4d53c",
+          "status": "pending"
+        }
+      },
+      {
+        "command_id": "cmd-004-verify-clear",
+        "coordinator_id": "sandboxed-frontier-a75d38c6a948",
+        "accepted_at": 1789503258.863607,
+        "outcome": {
+          "verification_id": "pver_b750a6a590594e918adbc669886fa39d",
+          "status": "pending"
+        }
+      },
+      {
+        "command_id": "cmd-005-verify-pickup-retry",
+        "coordinator_id": "sandboxed-frontier-a75d38c6a948",
+        "accepted_at": 1789503281.978976,
+        "outcome": {
+          "verification_id": "pver_88518e7293004845ab990b4a9b582f9a",
+          "status": "pending"
+        }
+      },
+      {
+        "command_id": "cmd-006-verify-clear-retry",
+        "coordinator_id": "sandboxed-frontier-a75d38c6a948",
+        "accepted_at": 1789503281.978976,
+        "outcome": {
+          "verification_id": "pver_124b32dd221c4fd7b7ca50c921d3f4b0",
+          "status": "pending"
+        }
+      }
+    ],
+    "rejected_commands": [],
+    "previous_assessment": {
+      "recipe_step_complete": false,
+      "pickup_verified": "unknown",
+      "rationale": "Both verdicts came back unknown (insufficient_tracking_history), and the latest perception batch failed validation, so no new evidence. Acked the three new exports and issued one final retry of pickup_completed and clear_of_support on phys_2926da09. Step stays pending.",
+      "wait": true
+    },
+    "already_acknowledged": [
+      "export_93c04ff156bf5654fe331a29b2751794",
+      "export_28dea1e70123a97e56658dfaeea78cfb",
+      "export_2c854c40d297e06033dc68cb9622d0b8",
+      "export_962583c539a744237057fcb9a0e5d863",
+      "export_741e006f8f32f4b868ff040464490245",
+      "export_dc0d12b177ca9964a9db3e27dc813f57",
+      "export_a506ebcb7f407baf586687d7ee42c1bf",
+      "export_52d283197683c6ecce3f0cbd38c5db17",
+      "export_00491ab1fc0dcc2ad34d31abc00bb4f8",
+      "export_352e128ea2133e16c761768806df832f"
+    ],
+    "turn": 5
+  },
+  "model_record": {
+    "model": "claude-opus-5",
+    "attempt": 1,
+    "latency_s": 16.133980989456177,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 9659,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 9659
+      },
+      "output_tokens": 1068,
+      "output_tokens_details": {
+        "thinking_tokens": 569
+      },
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+    }
+  },
+  "model_text": "{\"commands\":[{\"command_id\":\"ack-247573d2e7007790-5\",\"coordinator_id\":\"sandboxed-frontier-a75d38c6a948\",\"type\":\"ack_export\",\"export_id\":\"export_247573d2e7007790498514d5f1a10206\",\"export_sha256\":\"3fb3aa83ca7c4b8a2923eba977e7d648098030573099e5e3b0b3dfc11d054139\"},{\"command_id\":\"ack-38e01164bcf1e0e5-5\",\"coordinator_id\":\"sandboxed-frontier-a75d38c6a948\",\"type\":\"ack_export\",\"export_id\":\"export_38e01164bcf1e0e5666b66caa1fbc4cc\",\"export_sha256\":\"3444722da41dda9566b4121a486f5e02da3820143898ec4be771f3d25863ccb5\"},{\"command_id\":\"cmd-007-cancel-watch-bowl-motion\",\"coordinator_id\":\"sandboxed-frontier-a75d38c6a948\",\"type\":\"cancel_watch\",\"watch_id\":\"watch-bowl-motion-cue\"}],\"assessment\":{\"recipe_step_complete\":false,\"pickup_verified\":\"unknown\",\"rationale\":\"Retry verdicts again unknown (insufficient_tracking_history); both questions now asked twice, so no further repeats allowed. Only evidence is geometric motion plus a verified cue, which cannot complete the step. Acked both exports and cancelled the spent watch. Step pending.\",\"wait\":true}}",
+  "error": null,
+  "commands_written": [
+    {
+      "command_id": "ack-247573d2e7007790-5",
+      "coordinator_id": "sandboxed-frontier-a75d38c6a948",
+      "type": "ack_export",
+      "export_id": "export_247573d2e7007790498514d5f1a10206",
+      "export_sha256": "3fb3aa83ca7c4b8a2923eba977e7d648098030573099e5e3b0b3dfc11d054139"
+    },
+    {
+      "command_id": "ack-38e01164bcf1e0e5-5",
+      "coordinator_id": "sandboxed-frontier-a75d38c6a948",
+      "type": "ack_export",
+      "export_id": "export_38e01164bcf1e0e5666b66caa1fbc4cc",
+      "export_sha256": "3444722da41dda9566b4121a486f5e02da3820143898ec4be771f3d25863ccb5"
+    },
+    {
+      "command_id": "cmd-007-cancel-watch-bowl-motion",
+      "coordinator_id": "sandboxed-frontier-a75d38c6a948",
+      "type": "cancel_watch",
+      "watch_id": "watch-bowl-motion-cue"
+    }
+  ],
+  "skipped": [],
+  "auto_acknowledged": [
+    "export_247573d2e7007790498514d5f1a10206",
+    "export_38e01164bcf1e0e5666b66caa1fbc4cc"
+  ],
+  "assessment": {
+    "recipe_step_complete": false,
+    "pickup_verified": "unknown",
+    "rationale": "Retry verdicts again unknown (insufficient_tracking_history); both questions now asked twice, so no further repeats allowed. Only evidence is geometric motion plus a verified cue, which cannot complete the step. Acked both exports and cancelled the spent watch. Step pending.",
+    "wait": true
+  }
+}

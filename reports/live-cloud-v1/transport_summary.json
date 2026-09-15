@@ -1,0 +1,99 @@
+{
+  "run_exit_code": 0,
+  "scope": "Transport and continuous-capture plumbing only: one public EgoLife clip repeated as four camera feeds, with audio from that same clip. No four-room coverage or model-quality claim.",
+  "adapter": "training-v1/adapter",
+  "quantization": "none (BF16)",
+  "requested_duration_s": 30,
+  "actual_elapsed_s": 31.846558332967106,
+  "windows": 9,
+  "windows_with_audio": 8,
+  "frames_per_window": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "received_media_bytes_per_window": [
+    119104,
+    183392,
+    121156,
+    113992,
+    114216,
+    120048,
+    112636,
+    113996,
+    114836
+  ],
+  "received_media_bytes_total": 1113376,
+  "uploaded_equals_received_per_window": true,
+  "all_windows_received_media": true,
+  "roundtrip_s_mean": 3.4369809444437527,
+  "roundtrip_s_max": 3.8437310829758644,
+  "all_results_error_count": 0,
+  "noop_windows": 9,
+  "proposed_actions": 0,
+  "executed_actions": 0,
+  "capture_report": {
+    "elapsed_s": 31.846558332967106,
+    "model_windows": 9,
+    "actual_windows_per_s": 0.28260510620651047,
+    "requested_windows_per_s": 1.0,
+    "errors": [],
+    "error_count": 0,
+    "errors_retained_limit": 100,
+    "snapshot_retention": {
+      "retained_completed_windows": 4,
+      "limit": 4,
+      "active_windows": 0,
+      "expired_windows": 5,
+      "scope": "Snapshot media from this invocation; text audit logs and older runs are retained separately."
+    },
+    "cameras": {
+      "kitchen": {
+        "captured": 64,
+        "model_sampled": 9,
+        "not_model_sampled": 55,
+        "sample_events": 9,
+        "capture_error": null
+      },
+      "entry": {
+        "captured": 64,
+        "model_sampled": 9,
+        "not_model_sampled": 55,
+        "sample_events": 9,
+        "capture_error": null
+      },
+      "lounge": {
+        "captured": 64,
+        "model_sampled": 9,
+        "not_model_sampled": 55,
+        "sample_events": 9,
+        "capture_error": null
+      },
+      "garage": {
+        "captured": 64,
+        "model_sampled": 9,
+        "not_model_sampled": 55,
+        "sample_events": 9,
+        "capture_error": null
+      }
+    },
+    "journal": {
+      "windows": {
+        "complete": 9
+      },
+      "actions": {},
+      "events": 14,
+      "facts": 5
+    },
+    "scope": "Continuous capture with latest-frame model sampling. Captured frames omitted by the model are counted; no full-rate awareness claim."
+  },
+  "remaining_matching_capture_processes": [],
+  "cleanup_checked_at_unix": 1789489330.329752,
+  "prior_attempt": "A zero-capture attempt used a different Python environment missing imageio-ffmpeg and incorrectly returned exit0. Its files are retained privately; this report uses project .venv with the declared data dependencies."
+}

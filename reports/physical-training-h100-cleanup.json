@@ -1,0 +1,11 @@
+{
+  "pod_id": "epx7z7hxojw5j1",
+  "status": "completed",
+  "artifacts_verified": true,
+  "cleanup": "terminated",
+  "cleanup_confirmed": true,
+  "cleanup_at": 1789497307.2406242,
+  "recovery_verification": "physical-recovery-verification.json",
+  "physical_execution_context": "../artifacts/physical-training-v1/execution-context",
+  "note": "All previous checkpoints/evaluations and new physical training recovered before deletion."
+}

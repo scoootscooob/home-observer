@@ -1,0 +1,10 @@
+{
+  "command_id": "cmd-6-ack-verification-moved1",
+  "coordinator_id": "sandboxed-frontier-37a12cb40ee3",
+  "accepted_at": 1789508213.9558852,
+  "outcome": {
+    "acknowledged": true,
+    "already_acknowledged": false,
+    "topic": "verification.result"
+  }
+}

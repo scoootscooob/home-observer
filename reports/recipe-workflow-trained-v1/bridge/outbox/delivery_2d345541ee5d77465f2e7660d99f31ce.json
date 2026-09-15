@@ -1,0 +1,43 @@
+{
+  "delivery_id": "delivery_2d345541ee5d77465f2e7660d99f31ce",
+  "topic": "watch.created",
+  "payload": {
+    "created_at": 1789497574.90303,
+    "spec": {
+      "condition": {
+        "kind": "motion_started",
+        "max_gap_s": 0.5,
+        "min_confidence": 0.5,
+        "min_duration_s": 0.0,
+        "object_label": "bowl",
+        "origin": "geometric",
+        "reset_kinds": [],
+        "subject_ids": [],
+        "type": "event"
+      },
+      "context": {
+        "commitment_id": "recipe-prep-lift-bowls",
+        "coordinator_id": "/root/frontier_coordinator",
+        "source_ref": "configs/recipe-workflow/digital-context.json",
+        "text": "Recipe preparation: lift the nested mixing bowls from the worktop. Give an immediate visual cue when the observed bowls begin moving, then verify the pickup from the physical sequence before marking the step complete."
+      },
+      "created_at": 1789496289.351596,
+      "deadline_at": null,
+      "max_event_age_s": 1.0,
+      "max_responses": 1,
+      "not_before": null,
+      "outcome": null,
+      "response_deadline_s": 1.0,
+      "response_id": "recipe-movement-cue",
+      "ttl_s": 3600.0,
+      "watch_id": "recipe-bowls-movement-cue-1"
+    },
+    "watch_id": "recipe-bowls-movement-cue-1"
+  },
+  "payload_sha256": "29a5faf30f3947c53b053927e8404881ff6292f5b6c4837b03654ea481b52fdf",
+  "created_at": 1789497574.90303,
+  "attempt": 6,
+  "lease_token": "27e90d018d064eee9a58970f2994892b",
+  "delivered_at": 1789497574.90303,
+  "transport_delivered_at": 1789497636.942901
+}

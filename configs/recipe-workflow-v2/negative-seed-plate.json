@@ -1,0 +1,7 @@
+{
+  "label": "plate",
+  "box": {"x_min": 0.33, "y_min": 0.72, "x_max": 0.56, "y_max": 0.97},
+  "confidence": 0.85,
+  "provenance": "Assistant visually selected initial box on the first frame of the negative demonstration clip (P22_105, source 55.0 s) from a coordinate-grid contact sheet; explicit demonstration bootstrap, not a learned detection or human ground-truth annotation.",
+  "uncertainty": "Approximate image box around the lower-left plate; the plate is later slid on the table (official narrations 'move plate'), never lifted. Persistent identity and calibrated confidence are not established."
+}

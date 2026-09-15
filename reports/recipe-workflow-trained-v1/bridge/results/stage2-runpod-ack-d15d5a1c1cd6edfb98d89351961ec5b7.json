@@ -1,0 +1,9 @@
+{
+  "command_id": "stage2-runpod-ack-d15d5a1c1cd6edfb98d89351961ec5b7",
+  "coordinator_id": "/root/runpod_impl",
+  "accepted_at": 1789497733.329386,
+  "result": {
+    "acknowledged": true,
+    "already_acknowledged": false
+  }
+}

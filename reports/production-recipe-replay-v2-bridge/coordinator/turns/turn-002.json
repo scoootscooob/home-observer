@@ -1,0 +1,311 @@
+{
+  "turn": 2,
+  "at": 1789503221.888727,
+  "prompt_sha256": "a103b1629b167ae15e600c26fb8ef607e0fdca6aa61921806923992e9f0ba02a",
+  "prompt": {
+    "now": 1789503221.889,
+    "coordinator_id": "sandboxed-frontier-a75d38c6a948",
+    "digital_context": {
+      "commitment_id": "recipe-prep-lift-bowls",
+      "text": "Recipe preparation: lift the nested mixing bowls from the worktop. Give an immediate visual cue when the observed bowls begin moving, then verify the pickup from the physical sequence before marking the step complete.",
+      "source_ref": "Demonstration digital recipe instruction, not a claim about the user's actual kitchen.",
+      "source_clip": "data/temporal-pilot/clips/030c003244925eb728dd.mp4",
+      "response_registry": "configs/recipe-workflow/responses.json",
+      "scope": "Real public video replay and isolated Home Assistant service execution; frontier creates the watch and verifies the observed interaction."
+    },
+    "approved_responses": [
+      {
+        "response_id": "recipe-movement-cue",
+        "kind": "ha_service",
+        "purpose": "Bowl movement detected; checking the recipe step."
+      }
+    ],
+    "exports_new": [
+      {
+        "created_at": 1789503220.897604,
+        "export_id": "export_93c04ff156bf5654fe331a29b2751794",
+        "export_sha256": "7cddd00bca9fff918d26331760ede8c67bbba4a8acf8f8af683aa03c38f34537",
+        "message": {
+          "audit_ref": "audit_a584123589ba89095c4738c1",
+          "commitment_id": "recipe-prep-lift-bowls",
+          "eligible_at": null,
+          "event_id": null,
+          "failure_class": null,
+          "matched_at": null,
+          "message_type": "watch_status",
+          "outcome_event_id": null,
+          "outcome_verified_at": null,
+          "readback_state": null,
+          "reported_at": 1789503220.898,
+          "response_id": "recipe-movement-cue",
+          "response_reserved_at": null,
+          "response_result": null,
+          "response_sent_at": null,
+          "response_timely": null,
+          "response_verified_at": null,
+          "status": "armed",
+          "verification_kind": null,
+          "watch_id": "watch-bowl-motion-cue"
+        },
+        "schema_version": "home-observer.production-export/1",
+        "topic": "watch.created",
+        "attempt": 1,
+        "exported_at": 1789503220.897604
+      },
+      {
+        "created_at": 1789503221.172513,
+        "export_id": "export_28dea1e70123a97e56658dfaeea78cfb",
+        "export_sha256": "5c805ad46b3114099c74953b91e7a48fcb0ecc7eb84ebb00ce37223e01326c6f",
+        "message": {
+          "audit_ref": "audit_99946c575b9ba0914a83058b",
+          "commitment_id": "recipe-prep-lift-bowls",
+          "eligible_at": 1789503221.034,
+          "event_id": "pevt_18a860ec69e34198bb875e0af99a7954",
+          "failure_class": null,
+          "matched_at": 1789503221.104,
+          "message_type": "watch_status",
+          "outcome_event_id": null,
+          "outcome_verified_at": null,
+          "readback_state": null,
+          "reported_at": null,
+          "response_id": "recipe-movement-cue",
+          "response_reserved_at": 1789503221.104,
+          "response_result": null,
+          "response_sent_at": null,
+          "response_timely": null,
+          "response_verified_at": null,
+          "status": "matched",
+          "verification_kind": null,
+          "watch_id": "watch-bowl-motion-cue"
+        },
+        "schema_version": "home-observer.production-export/1",
+        "topic": "watch.matched",
+        "attempt": 1,
+        "exported_at": 1789503221.172513
+      },
+      {
+        "created_at": 1789503221.172513,
+        "export_id": "export_2c854c40d297e06033dc68cb9622d0b8",
+        "export_sha256": "d0150b6b8b03920e9a699df9e99c18419511bac5f4716f75bfca9bfa1f573159",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_879739c13ef7d8072936c991",
+          "available_at": 1789503221.101,
+          "category_in_vocabulary": true,
+          "confidence": 0.88,
+          "ended_at": 1789503221.034,
+          "event_id": "pevt_18a860ec69e34198bb875e0af99a7954",
+          "evidence_count": 2,
+          "kind": "motion_started",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "bowl",
+          "origin": "geometric",
+          "started_at": 1789503221.014,
+          "subject_ids": [
+            "phys_2926da09e441488cbc781edf2eea2cc2"
+          ],
+          "uncertainty_level": "medium"
+        },
+        "schema_version": "home-observer.production-export/1",
+        "topic": "physical.event",
+        "attempt": 1,
+        "exported_at": 1789503221.172513
+      },
+      {
+        "created_at": 1789503221.172513,
+        "export_id": "export_962583c539a744237057fcb9a0e5d863",
+        "export_sha256": "0f5b3534b95cbd5bfa8010d0fb7e9cd5d29cda3bae3798a9149142e1ea88c9b9",
+        "message": {
+          "audit_ref": "audit_7ff225840d12536669127330",
+          "commitment_id": "recipe-prep-lift-bowls",
+          "eligible_at": 1789503221.034,
+          "event_id": "pevt_18a860ec69e34198bb875e0af99a7954",
+          "failure_class": null,
+          "matched_at": 1789503221.104,
+          "message_type": "watch_status",
+          "outcome_event_id": null,
+          "outcome_verified_at": null,
+          "readback_state": "on",
+          "reported_at": null,
+          "response_id": "recipe-movement-cue",
+          "response_reserved_at": 1789503221.104,
+          "response_result": "verified",
+          "response_sent_at": 1789503221.105,
+          "response_timely": true,
+          "response_verified_at": 1789503221.172,
+          "status": "response_verified",
+          "verification_kind": "ha_state_readback",
+          "watch_id": "watch-bowl-motion-cue"
+        },
+        "schema_version": "home-observer.production-export/1",
+        "topic": "watch.response_verified",
+        "attempt": 1,
+        "exported_at": 1789503221.172513
+      }
+    ],
+    "exports_all_recent": [
+      {
+        "topic": "watch.created",
+        "export_id": "export_93c04ff156bf5654fe331a29b2751794",
+        "created_at": 1789503220.897604
+      },
+      {
+        "topic": "watch.matched",
+        "export_id": "export_28dea1e70123a97e56658dfaeea78cfb",
+        "created_at": 1789503221.172513
+      },
+      {
+        "topic": "physical.event",
+        "export_id": "export_2c854c40d297e06033dc68cb9622d0b8",
+        "created_at": 1789503221.172513
+      },
+      {
+        "topic": "watch.response_verified",
+        "export_id": "export_962583c539a744237057fcb9a0e5d863",
+        "created_at": 1789503221.172513
+      }
+    ],
+    "export_messages_recent": [
+      {
+        "export_id": "export_93c04ff156bf5654fe331a29b2751794",
+        "topic": "watch.created",
+        "message": {
+          "audit_ref": "audit_a584123589ba89095c4738c1",
+          "commitment_id": "recipe-prep-lift-bowls",
+          "eligible_at": null,
+          "event_id": null,
+          "failure_class": null,
+          "matched_at": null,
+          "message_type": "watch_status",
+          "outcome_event_id": null,
+          "outcome_verified_at": null,
+          "readback_state": null,
+          "reported_at": 1789503220.898,
+          "response_id": "recipe-movement-cue",
+          "response_reserved_at": null,
+          "response_result": null,
+          "response_sent_at": null,
+          "response_timely": null,
+          "response_verified_at": null,
+          "status": "armed",
+          "verification_kind": null,
+          "watch_id": "watch-bowl-motion-cue"
+        }
+      },
+      {
+        "export_id": "export_28dea1e70123a97e56658dfaeea78cfb",
+        "topic": "watch.matched",
+        "message": {
+          "audit_ref": "audit_99946c575b9ba0914a83058b",
+          "commitment_id": "recipe-prep-lift-bowls",
+          "eligible_at": 1789503221.034,
+          "event_id": "pevt_18a860ec69e34198bb875e0af99a7954",
+          "failure_class": null,
+          "matched_at": 1789503221.104,
+          "message_type": "watch_status",
+          "outcome_event_id": null,
+          "outcome_verified_at": null,
+          "readback_state": null,
+          "reported_at": null,
+          "response_id": "recipe-movement-cue",
+          "response_reserved_at": 1789503221.104,
+          "response_result": null,
+          "response_sent_at": null,
+          "response_timely": null,
+          "response_verified_at": null,
+          "status": "matched",
+          "verification_kind": null,
+          "watch_id": "watch-bowl-motion-cue"
+        }
+      },
+      {
+        "export_id": "export_2c854c40d297e06033dc68cb9622d0b8",
+        "topic": "physical.event",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_879739c13ef7d8072936c991",
+          "available_at": 1789503221.101,
+          "category_in_vocabulary": true,
+          "confidence": 0.88,
+          "ended_at": 1789503221.034,
+          "event_id": "pevt_18a860ec69e34198bb875e0af99a7954",
+          "evidence_count": 2,
+          "kind": "motion_started",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "bowl",
+          "origin": "geometric",
+          "started_at": 1789503221.014,
+          "subject_ids": [
+            "phys_2926da09e441488cbc781edf2eea2cc2"
+          ],
+          "uncertainty_level": "medium"
+        }
+      },
+      {
+        "export_id": "export_962583c539a744237057fcb9a0e5d863",
+        "topic": "watch.response_verified",
+        "message": {
+          "audit_ref": "audit_7ff225840d12536669127330",
+          "commitment_id": "recipe-prep-lift-bowls",
+          "eligible_at": 1789503221.034,
+          "event_id": "pevt_18a860ec69e34198bb875e0af99a7954",
+          "failure_class": null,
+          "matched_at": 1789503221.104,
+          "message_type": "watch_status",
+          "outcome_event_id": null,
+          "outcome_verified_at": null,
+          "readback_state": "on",
+          "reported_at": null,
+          "response_id": "recipe-movement-cue",
+          "response_reserved_at": 1789503221.104,
+          "response_result": "verified",
+          "response_sent_at": 1789503221.105,
+          "response_timely": true,
+          "response_verified_at": 1789503221.172,
+          "status": "response_verified",
+          "verification_kind": "ha_state_readback",
+          "watch_id": "watch-bowl-motion-cue"
+        }
+      }
+    ],
+    "command_results": [
+      {
+        "command_id": "cmd-001-create-watch-bowl-motion",
+        "coordinator_id": "sandboxed-frontier-a75d38c6a948",
+        "accepted_at": 1789503220.897604,
+        "outcome": {
+          "watch_id": "watch-bowl-motion-cue",
+          "status": "armed"
+        }
+      }
+    ],
+    "rejected_commands": [],
+    "previous_assessment": {
+      "recipe_step_complete": false,
+      "pickup_verified": "unknown",
+      "rationale": "Turn 1: watch created for bowl motion_started to fire the approved cue. No exports or physical track IDs yet, so no acks or verification possible. Step pending until a verifier confirms pickup_completed or clear_of_support.",
+      "wait": true
+    },
+    "already_acknowledged": [],
+    "turn": 2
+  },
+  "model_record": {},
+  "model_text": "",
+  "error": "JSONDecodeError: Expecting ',' delimiter: line 1 column 1888 (char 1887)",
+  "commands_written": [],
+  "skipped": [],
+  "auto_acknowledged": [
+    "export_93c04ff156bf5654fe331a29b2751794",
+    "export_28dea1e70123a97e56658dfaeea78cfb",
+    "export_2c854c40d297e06033dc68cb9622d0b8",
+    "export_962583c539a744237057fcb9a0e5d863"
+  ],
+  "assessment": {
+    "recipe_step_complete": false,
+    "pickup_verified": "unknown",
+    "rationale": "Turn 1: watch created for bowl motion_started to fire the approved cue. No exports or physical track IDs yet, so no acks or verification possible. Step pending until a verifier confirms pickup_completed or clear_of_support.",
+    "wait": true
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "seen_exports": [
+    "export_6eeba5bd159d64f25f4d606b0f47229e",
+    "export_0568ef6806dd20d983f70c556f69890d",
+    "export_a2983c4eb29fccda26efcc1301d8da39",
+    "export_a824159d21a732f611e174e6ef11771c",
+    "export_ea0c6b7ca22c38c70ede6515d968932b",
+    "export_f9f54f709fd56cf1f2e1163596f4c2fc",
+    "export_e12d53d748aa06a259215cacbc4c88e5",
+    "export_185ad204d3ca5d963cc9a21911547443",
+    "export_0c0457d78569ff589c2f4e0aaaa15fb6"
+  ],
+  "acked_exports": [
+    "export_6eeba5bd159d64f25f4d606b0f47229e",
+    "export_0568ef6806dd20d983f70c556f69890d",
+    "export_a2983c4eb29fccda26efcc1301d8da39",
+    "export_a824159d21a732f611e174e6ef11771c",
+    "export_ea0c6b7ca22c38c70ede6515d968932b",
+    "export_f9f54f709fd56cf1f2e1163596f4c2fc",
+    "export_e12d53d748aa06a259215cacbc4c88e5",
+    "export_185ad204d3ca5d963cc9a21911547443",
+    "export_0c0457d78569ff589c2f4e0aaaa15fb6"
+  ],
+  "commands": [
+    {
+      "command_id": "cmd-create-watch-bowl-motion-1",
+      "type": "create_watch",
+      "written_at": 1789505765.0544379
+    },
+    {
+      "command_id": "cmd-ack-watch-created-1",
+      "type": "ack_export",
+      "written_at": 1789505787.039361
+    },
+    {
+      "command_id": "cmd-ack-physical-event-1",
+      "type": "ack_export",
+      "written_at": 1789505787.039552
+    },
+    {
+      "command_id": "cmd-ack-response-verified-1",
+      "type": "ack_export",
+      "written_at": 1789505787.0397272
+    },
+    {
+      "command_id": "cmd-ack-watch-matched-1",
+      "type": "ack_export",
+      "written_at": 1789505787.0399969
+    },
+    {
+      "command_id": "cmd-verify-pickup-1",
+      "type": "verify",
+      "written_at": 1789505787.0401511
+    },
+    {
+      "command_id": "cmd-verify-clear-1",
+      "type": "verify",
+      "written_at": 1789505787.040412
+    },
+    {
+      "command_id": "cmd-ack-physical-event-2",
+      "type": "ack_export",
+      "written_at": 1789505803.99185
+    },
+    {
+      "command_id": "cmd-ack-verification-result-1",
+      "type": "ack_export",
+      "written_at": 1789505803.992123
+    },
+    {
+      "command_id": "cmd-ack-physical-event-3",
+      "type": "ack_export",
+      "written_at": 1789505880.746165
+    },
+    {
+      "command_id": "cmd-ack-perception-completed-1",
+      "type": "ack_export",
+      "written_at": 1789505880.746677
+    },
+    {
+      "command_id": "cmd-ack-perception-failed-1",
+      "type": "ack_export",
+      "written_at": 1789505952.856547
+    }
+  ],
+  "turns": 5,
+  "assessment": {
+    "recipe_step_complete": false,
+    "pickup_verified": "unknown",
+    "rationale": "perception.failed (ValidationError, 0 accepted) adds no evidence; I ack it only. Sole verdict remains unknown for clear_of_support, and pickup_completed on phys_39204ac4 is still pending, so the step stays pending and I wait rather than re-ask."
+  },
+  "started_at": 1789505758.740875,
+  "restarts": 0
+}

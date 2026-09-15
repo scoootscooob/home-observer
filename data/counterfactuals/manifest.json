@@ -1,0 +1,7 @@
+{
+  "kind": "synthetic_counterfactual",
+  "pairs": 8,
+  "rows": 16,
+  "protocol": "Independent inference with empty state/journal per row; do not call chronological iter_replay on pairs.jsonl",
+  "training_eligible": false
+}

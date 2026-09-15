@@ -1,0 +1,16 @@
+# Transformers/PEFT APIs inspected on 2026-09-15. Python 3.11+, Ampere or newer.
+# PyTorch 2.10 CUDA 12.8 wheels supported on the H100 pod; BF16 training avoids bitsandbytes.
+torch==2.10.0
+torchvision==0.25.0
+torchaudio==2.10.0
+transformers==5.17.0
+peft==0.21.0
+accelerate==1.15.0
+bitsandbytes==0.49.2
+librosa==0.11.0
+soundfile==0.14.0
+pillow==12.3.0
+fastapi==0.141.1
+uvicorn==0.53.0
+safetensors==0.8.0
+httpx==0.28.1

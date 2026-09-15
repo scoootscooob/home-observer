@@ -1,0 +1,87 @@
+{
+  "clip": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/data/temporal-pilot/clips/030c003244925eb728dd.mp4",
+  "clip_sha256": "3655e454f3d510b5138b5059261d99f84ca226b3513234b97cbfe448dacea30c",
+  "initial_box_xyxy": [
+    319,
+    67,
+    573,
+    327
+  ],
+  "initial_box_source": "assistant visual inspection by tracking assessment agent, before tracker outputs; no later correction",
+  "opencv": "4.14.0",
+  "contrib_distribution": "4.14.0.94",
+  "numpy": "2.4.6",
+  "python": "3.11.15",
+  "machine": "arm64",
+  "scale": 1.0,
+  "opencv_threads": 1,
+  "source_docs": [
+    "https://docs.opencv.org/4.12.0/d2/da2/classcv_1_1TrackerCSRT.html"
+  ],
+  "trackers": [
+    {
+      "tracker": "CSRT",
+      "source_fps": 50.0,
+      "source_declared_frames": 145,
+      "frames_decoded": 145,
+      "frames_updated": 144,
+      "api_success_updates": 144,
+      "first_api_failure_frame": null,
+      "init_s": 0.02659141703043133,
+      "update_total_s": 2.4904810039442964,
+      "decode_total_s": 0.031412756827194244,
+      "update_median_ms": 17.2417294816114,
+      "update_p95_ms": 19.638018793193623,
+      "update_max_ms": 23.419292003381997,
+      "update_only_fps": 57.820155934512314,
+      "full_decode_track_inspection_loop_s": 2.5537173749762587,
+      "full_decode_track_inspection_loop_fps": 56.77997158998381,
+      "frame_budget_ms": 20.0,
+      "updates_exceeding_source_frame_budget": 6,
+      "sampled_frames": [
+        0,
+        21,
+        41,
+        62,
+        82,
+        103,
+        123,
+        144
+      ],
+      "manual_localization_quality": "pending visual inspection; no supplied tracking ground truth",
+      "scope": "Actual continuous frames, one initial assistant-observed box, no reseeding or model detections. API success does not prove identity or localization; no calibrated confidence or semantic event claim."
+    },
+    {
+      "tracker": "KCF",
+      "source_fps": 50.0,
+      "source_declared_frames": 145,
+      "frames_decoded": 145,
+      "frames_updated": 144,
+      "api_success_updates": 144,
+      "first_api_failure_frame": null,
+      "init_s": 0.0015083750477060676,
+      "update_total_s": 3.8108213350642473,
+      "decode_total_s": 0.03183753986377269,
+      "update_median_ms": 26.54293749947101,
+      "update_p95_ms": 28.6979473719839,
+      "update_max_ms": 29.762083024252206,
+      "update_only_fps": 37.78712968645964,
+      "full_decode_track_inspection_loop_s": 3.847839792026207,
+      "full_decode_track_inspection_loop_fps": 37.68348159933277,
+      "frame_budget_ms": 20.0,
+      "updates_exceeding_source_frame_budget": 143,
+      "sampled_frames": [
+        0,
+        21,
+        41,
+        62,
+        82,
+        103,
+        123,
+        144
+      ],
+      "manual_localization_quality": "pending visual inspection; no supplied tracking ground truth",
+      "scope": "Actual continuous frames, one initial assistant-observed box, no reseeding or model detections. API success does not prove identity or localization; no calibrated confidence or semantic event claim."
+    }
+  ]
+}

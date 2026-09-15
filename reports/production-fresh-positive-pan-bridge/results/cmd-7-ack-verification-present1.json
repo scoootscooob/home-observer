@@ -1,0 +1,10 @@
+{
+  "command_id": "cmd-7-ack-verification-present1",
+  "coordinator_id": "sandboxed-frontier-37a12cb40ee3",
+  "accepted_at": 1789508225.825513,
+  "outcome": {
+    "acknowledged": true,
+    "already_acknowledged": false,
+    "topic": "verification.result"
+  }
+}

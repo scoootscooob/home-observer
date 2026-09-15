@@ -1,0 +1,558 @@
+{
+  "passed": true,
+  "engine_health": {
+    "status": "ready",
+    "model_id": "google/gemma-4-E4B-it",
+    "model_revision": "ee0ef6023621cff504d758262d4e04895a5af4a2",
+    "adapter_configured": true,
+    "inference_backend": "VLLMModel",
+    "schema_constraints": true,
+    "schema_contract": "executor_arguments_v3",
+    "brightness_enabled": false,
+    "decision_field_order": "actions-first",
+    "model_identity_source": "deployment_configuration",
+    "context_mode": "bounded_window"
+  },
+  "policy_sha256": "dc6efa42ac18eefc2da2436720732244a769972a7f7ad9ca77de3836d48d5559",
+  "scope": "Learned cloud inference and actual isolated Home Assistant REST execution; synthetic test conditions.",
+  "cases": [
+    {
+      "id": "09a634e3dc82c5846a9a5dd2",
+      "authored_test_conditions": true,
+      "device_readback": {
+        "binary_sensor.motion_entry": "off",
+        "binary_sensor.motion_garage": "off",
+        "binary_sensor.motion_kitchen": "off",
+        "binary_sensor.motion_lounge": "on",
+        "binary_sensor.water_leak": "off",
+        "light.entry": "off",
+        "light.garage": "off",
+        "light.kitchen": "off",
+        "light.lounge": "off",
+        "sensor.ambient_lux": "12"
+      },
+      "expected_actions": [
+        {
+          "data": {},
+          "domain": "light",
+          "entity_id": "light.lounge",
+          "evidence_ids": [
+            "device:binary_sensor.motion_lounge",
+            "device:sensor.ambient_lux",
+            "device:light.lounge"
+          ],
+          "reason": "Motion is on, ambient light is below 40 lux, and this light is off.",
+          "service": "turn_on"
+        }
+      ],
+      "result": {
+        "window_id": "09a634e3dc82c5846a9a5dd2",
+        "started_at": 1750166707.0,
+        "ended_at": 1750166717.0,
+        "actions": [
+          {
+            "action_id": "8ac6a132ef95c072c8711704",
+            "status": "complete",
+            "result": {
+              "action_id": "8ac6a132ef95c072c8711704",
+              "entity_id": "light.lounge",
+              "state": "on",
+              "simulated": false,
+              "verified": true,
+              "attributes": {
+                "supported_color_modes": [
+                  "onoff"
+                ],
+                "color_mode": "onoff",
+                "friendly_name": "Lounge",
+                "supported_features": 0
+              },
+              "verification_latency_s": 0.0013176660286262631
+            }
+          }
+        ],
+        "rejections": [],
+        "request_sha256": "ab9e607ccd242e9107cee7d7dd5c4a12fd06c1f82e2a2ac2b953dcf2d08d6765",
+        "prior_context": {
+          "state": {},
+          "recent_events": []
+        },
+        "decision": {
+          "summary": "Turn on light.lounge; current policy conditions are met.",
+          "observations": [
+            {
+              "entity_id": "room.kitchen",
+              "attribute": "occupied",
+              "value": false,
+              "confidence": 1.0,
+              "evidence_ids": [
+                "09a634e3dc82c5846a9a5dd2:frame:kitchen"
+              ]
+            },
+            {
+              "entity_id": "room.entry",
+              "attribute": "occupied",
+              "value": false,
+              "confidence": 1.0,
+              "evidence_ids": [
+                "09a634e3dc82c5846a9a5dd2:frame:entry"
+              ]
+            },
+            {
+              "entity_id": "room.lounge",
+              "attribute": "occupied",
+              "value": true,
+              "confidence": 1.0,
+              "evidence_ids": [
+                "09a634e3dc82c5846a9a5dd2:frame:lounge"
+              ]
+            },
+            {
+              "entity_id": "room.garage",
+              "attribute": "occupied",
+              "value": false,
+              "confidence": 1.0,
+              "evidence_ids": [
+                "09a634e3dc82c5846a9a5dd2:frame:garage"
+              ]
+            },
+            {
+              "entity_id": "binary_sensor.motion_entry",
+              "attribute": "state",
+              "value": "off",
+              "confidence": 1.0,
+              "evidence_ids": [
+                "device:binary_sensor.motion_entry"
+              ]
+            },
+            {
+              "entity_id": "binary_sensor.motion_garage",
+              "attribute": "state",
+              "value": "off",
+              "confidence": 1.0,
+              "evidence_ids": [
+                "device:binary_sensor.motion_garage"
+              ]
+            },
+            {
+              "entity_id": "binary_sensor.motion_kitchen",
+              "attribute": "state",
+              "value": "off",
+              "confidence": 1.0,
+              "evidence_ids": [
+                "device:binary_sensor.motion_kitchen"
+              ]
+            },
+            {
+              "entity_id": "binary_sensor.motion_lounge",
+              "attribute": "state",
+              "value": "on",
+              "confidence": 1.0,
+              "evidence_ids": [
+                "device:binary_sensor.motion_lounge"
+              ]
+            },
+            {
+              "entity_id": "binary_sensor.water_leak",
+              "attribute": "state",
+              "value": "off",
+              "confidence": 1.0,
+              "evidence_ids": [
+                "device:binary_sensor.water_leak"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "domain": "light",
+              "service": "turn_on",
+              "entity_id": "light.lounge",
+              "data": {},
+              "reason": "Current motion is active, ambient lux is below 40, and this light is off.",
+              "evidence_ids": [
+                "device:binary_sensor.motion_lounge",
+                "device:sensor.ambient_lux",
+                "device:light.lounge"
+              ]
+            }
+          ],
+          "noop": false
+        },
+        "metrics": {
+          "latency_s": 9.419768805149943,
+          "preprocess_s": 0.002782199066132307,
+          "input_tokens": 2061,
+          "output_tokens": 519,
+          "token_usage": {
+            "prompt_tokens": 2061,
+            "total_tokens": 2580,
+            "completion_tokens": 519,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          },
+          "backend": "vllm",
+          "served_model": "observer",
+          "engine_reported_model": "observer",
+          "model_id": "google/gemma-4-E4B-it",
+          "model_revision": "ee0ef6023621cff504d758262d4e04895a5af4a2",
+          "model_revision_source": "deployment_config",
+          "adapter": "artifacts/training-v2-continuation/adapter/checkpoints/checkpoint-50",
+          "structured_decode": true,
+          "schema_contract": "executor_arguments_v3",
+          "brightness_enabled": false,
+          "decision_field_order": "actions-first",
+          "finish_reason": "stop",
+          "context_mode": "bounded_window",
+          "gpu_memory_available": false,
+          "gpu_memory_unavailable_reason": "chat completions API does not report GPU memory",
+          "remote_roundtrip_s": 9.809008250012994,
+          "uploaded_media_bytes": 0
+        },
+        "total_latency_s": 9.818506833049469
+      },
+      "duplicate_replay_skipped": true,
+      "passed": true
+    },
+    {
+      "id": "30cd0455a9376a04a5a2d8a2-integration-only-leak",
+      "authored_test_conditions": true,
+      "device_readback": {
+        "binary_sensor.motion_entry": "off",
+        "binary_sensor.motion_garage": "off",
+        "binary_sensor.motion_kitchen": "off",
+        "binary_sensor.motion_lounge": "off",
+        "binary_sensor.water_leak": "on",
+        "light.entry": "off",
+        "light.garage": "off",
+        "light.kitchen": "off",
+        "light.lounge": "off",
+        "sensor.ambient_lux": "12",
+        "switch.buzzer": "off"
+      },
+      "expected_actions": [
+        {
+          "domain": "switch",
+          "service": "turn_on",
+          "entity_id": "switch.buzzer",
+          "data": {},
+          "reason": "Configured leak rule",
+          "evidence_ids": [
+            "device:binary_sensor.water_leak",
+            "device:switch.buzzer"
+          ]
+        }
+      ],
+      "result": {
+        "window_id": "30cd0455a9376a04a5a2d8a2",
+        "started_at": 1750166697.0,
+        "ended_at": 1750166707.0,
+        "actions": [
+          {
+            "action_id": "79392ee119c97983dec70b23",
+            "status": "complete",
+            "result": {
+              "action_id": "79392ee119c97983dec70b23",
+              "entity_id": "switch.buzzer",
+              "state": "on",
+              "simulated": false,
+              "verified": true,
+              "attributes": {
+                "friendly_name": "Buzzer"
+              },
+              "verification_latency_s": 0.0013480419875122607
+            }
+          }
+        ],
+        "rejections": [],
+        "request_sha256": "0297e12682434c6f975921235f95d113e20d2a32b5273acfc5a63450bb16c51d",
+        "prior_context": {
+          "state": {},
+          "recent_events": []
+        },
+        "decision": {
+          "summary": "Turn on switch.buzzer; current policy conditions are met.",
+          "observations": [
+            {
+              "entity_id": "room.kitchen",
+              "attribute": "occupied",
+              "value": false,
+              "confidence": 1.0,
+              "evidence_ids": [
+                "30cd0455a9376a04a5a2d8a2:frame:kitchen"
+              ]
+            },
+            {
+              "entity_id": "room.entry",
+              "attribute": "occupied",
+              "value": false,
+              "confidence": 1.0,
+              "evidence_ids": [
+                "30cd0455a9376a04a5a2d8a2:frame:entry"
+              ]
+            },
+            {
+              "entity_id": "room.lounge",
+              "attribute": "occupied",
+              "value": false,
+              "confidence": 1.0,
+              "evidence_ids": [
+                "30cd0455a9376a04a5a2d8a2:frame:lounge"
+              ]
+            },
+            {
+              "entity_id": "room.garage",
+              "attribute": "occupied",
+              "value": false,
+              "confidence": 1.0,
+              "evidence_ids": [
+                "30cd0455a9376a04a5a2d8a2:frame:garage"
+              ]
+            },
+            {
+              "entity_id": "binary_sensor.motion_entry",
+              "attribute": "state",
+              "value": "off",
+              "confidence": 1.0,
+              "evidence_ids": [
+                "device:binary_sensor.motion_entry"
+              ]
+            },
+            {
+              "entity_id": "binary_sensor.motion_garage",
+              "attribute": "state",
+              "value": "off",
+              "confidence": 1.0,
+              "evidence_ids": [
+                "device:binary_sensor.motion_garage"
+              ]
+            },
+            {
+              "entity_id": "binary_sensor.motion_kitchen",
+              "attribute": "state",
+              "value": "off",
+              "confidence": 1.0,
+              "evidence_ids": [
+                "device:binary_sensor.motion_kitchen"
+              ]
+            },
+            {
+              "entity_id": "binary_sensor.motion_lounge",
+              "attribute": "state",
+              "value": "off",
+              "confidence": 1.0,
+              "evidence_ids": [
+                "device:binary_sensor.motion_lounge"
+              ]
+            },
+            {
+              "entity_id": "binary_sensor.water_leak",
+              "attribute": "state",
+              "value": "on",
+              "confidence": 1.0,
+              "evidence_ids": [
+                "device:binary_sensor.water_leak"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "domain": "switch",
+              "service": "turn_on",
+              "entity_id": "switch.buzzer",
+              "data": {},
+              "reason": "The current leak sensor is active and the buzzer is off.",
+              "evidence_ids": [
+                "device:binary_sensor.water_leak",
+                "device:switch.buzzer"
+              ]
+            }
+          ],
+          "noop": false
+        },
+        "metrics": {
+          "latency_s": 9.183084309101105,
+          "preprocess_s": 0.004732542904093862,
+          "input_tokens": 2074,
+          "output_tokens": 507,
+          "token_usage": {
+            "prompt_tokens": 2074,
+            "total_tokens": 2581,
+            "completion_tokens": 507,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          },
+          "backend": "vllm",
+          "served_model": "observer",
+          "engine_reported_model": "observer",
+          "model_id": "google/gemma-4-E4B-it",
+          "model_revision": "ee0ef6023621cff504d758262d4e04895a5af4a2",
+          "model_revision_source": "deployment_config",
+          "adapter": "artifacts/training-v2-continuation/adapter/checkpoints/checkpoint-50",
+          "structured_decode": true,
+          "schema_contract": "executor_arguments_v3",
+          "brightness_enabled": false,
+          "decision_field_order": "actions-first",
+          "finish_reason": "stop",
+          "context_mode": "bounded_window",
+          "gpu_memory_available": false,
+          "gpu_memory_unavailable_reason": "chat completions API does not report GPU memory",
+          "remote_roundtrip_s": 9.543148458993528,
+          "uploaded_media_bytes": 0
+        },
+        "total_latency_s": 9.550276249996386
+      },
+      "duplicate_replay_skipped": true,
+      "passed": true
+    },
+    {
+      "id": "30cd0455a9376a04a5a2d8a2",
+      "authored_test_conditions": true,
+      "device_readback": {
+        "binary_sensor.motion_entry": "off",
+        "binary_sensor.motion_garage": "off",
+        "binary_sensor.motion_kitchen": "off",
+        "binary_sensor.motion_lounge": "off",
+        "binary_sensor.water_leak": "off",
+        "light.entry": "off",
+        "light.garage": "off",
+        "light.kitchen": "off",
+        "light.lounge": "off",
+        "sensor.ambient_lux": "12"
+      },
+      "expected_actions": [],
+      "result": {
+        "window_id": "30cd0455a9376a04a5a2d8a2",
+        "started_at": 1750166697.0,
+        "ended_at": 1750166707.0,
+        "actions": [],
+        "rejections": [],
+        "request_sha256": "09baa887d9e2965febe132f13c5b74959625423fe3a3be2fd8d2e0474b55748d",
+        "prior_context": {
+          "state": {},
+          "recent_events": []
+        },
+        "decision": {
+          "summary": "Recorded current occupancy and sensor changes; no device action is required.",
+          "observations": [
+            {
+              "entity_id": "room.kitchen",
+              "attribute": "occupied",
+              "value": false,
+              "confidence": 1.0,
+              "evidence_ids": [
+                "30cd0455a9376a04a5a2d8a2:frame:kitchen"
+              ]
+            },
+            {
+              "entity_id": "room.entry",
+              "attribute": "occupied",
+              "value": false,
+              "confidence": 1.0,
+              "evidence_ids": [
+                "30cd0455a9376a04a5a2d8a2:frame:entry"
+              ]
+            },
+            {
+              "entity_id": "room.lounge",
+              "attribute": "occupied",
+              "value": false,
+              "confidence": 1.0,
+              "evidence_ids": [
+                "30cd0455a9376a04a5a2d8a2:frame:lounge"
+              ]
+            },
+            {
+              "entity_id": "room.garage",
+              "attribute": "occupied",
+              "value": false,
+              "confidence": 1.0,
+              "evidence_ids": [
+                "30cd0455a9376a04a5a2d8a2:frame:garage"
+              ]
+            },
+            {
+              "entity_id": "binary_sensor.motion_entry",
+              "attribute": "state",
+              "value": "off",
+              "confidence": 1.0,
+              "evidence_ids": [
+                "device:binary_sensor.motion_entry"
+              ]
+            },
+            {
+              "entity_id": "binary_sensor.motion_garage",
+              "attribute": "state",
+              "value": "off",
+              "confidence": 1.0,
+              "evidence_ids": [
+                "device:binary_sensor.motion_garage"
+              ]
+            },
+            {
+              "entity_id": "binary_sensor.motion_kitchen",
+              "attribute": "state",
+              "value": "off",
+              "confidence": 1.0,
+              "evidence_ids": [
+                "device:binary_sensor.motion_kitchen"
+              ]
+            },
+            {
+              "entity_id": "binary_sensor.motion_lounge",
+              "attribute": "state",
+              "value": "off",
+              "confidence": 1.0,
+              "evidence_ids": [
+                "device:binary_sensor.motion_lounge"
+              ]
+            },
+            {
+              "entity_id": "binary_sensor.water_leak",
+              "attribute": "state",
+              "value": "off",
+              "confidence": 1.0,
+              "evidence_ids": [
+                "device:binary_sensor.water_leak"
+              ]
+            }
+          ],
+          "actions": [],
+          "noop": false
+        },
+        "metrics": {
+          "latency_s": 8.064560310915112,
+          "preprocess_s": 0.005284379934892058,
+          "input_tokens": 2067,
+          "output_tokens": 448,
+          "token_usage": {
+            "prompt_tokens": 2067,
+            "total_tokens": 2515,
+            "completion_tokens": 448,
+            "prompt_tokens_details": null,
+            "completion_tokens_details": null
+          },
+          "backend": "vllm",
+          "served_model": "observer",
+          "engine_reported_model": "observer",
+          "model_id": "google/gemma-4-E4B-it",
+          "model_revision": "ee0ef6023621cff504d758262d4e04895a5af4a2",
+          "model_revision_source": "deployment_config",
+          "adapter": "artifacts/training-v2-continuation/adapter/checkpoints/checkpoint-50",
+          "structured_decode": true,
+          "schema_contract": "executor_arguments_v3",
+          "brightness_enabled": false,
+          "decision_field_order": "actions-first",
+          "finish_reason": "stop",
+          "context_mode": "bounded_window",
+          "gpu_memory_available": false,
+          "gpu_memory_unavailable_reason": "chat completions API does not report GPU memory",
+          "remote_roundtrip_s": 8.457534167042468,
+          "uploaded_media_bytes": 0
+        },
+        "total_latency_s": 8.459155959018972
+      },
+      "duplicate_replay_skipped": true,
+      "passed": true
+    }
+  ]
+}

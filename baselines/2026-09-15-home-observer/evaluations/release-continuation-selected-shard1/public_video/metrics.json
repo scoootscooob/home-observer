@@ -1,0 +1,30 @@
+{
+  "windows": 0,
+  "targeted_windows": 0,
+  "invalid_or_failed_windows": 0,
+  "valid_response_rate": null,
+  "action_precision": null,
+  "action_recall": null,
+  "observation_precision": null,
+  "observation_recall": null,
+  "false_action_window_rate": null,
+  "latency_p50_s": null,
+  "latency_p95_s": null,
+  "latency_mean_s": null,
+  "counts": {
+    "action_tp": 0,
+    "action_fp": 0,
+    "action_fn": 0,
+    "obs_tp": 0,
+    "obs_fp": 0,
+    "obs_fn": 0,
+    "action_scored": 0,
+    "observation_scored": 0,
+    "no_action_windows": 0,
+    "false_action_windows": 0
+  },
+  "scope": "Proposed-action and observation accuracy on labeled windows; not a household reliability guarantee.",
+  "elapsed_s": 9.29906964302063e-05,
+  "by_task_type": {},
+  "journals": {}
+}

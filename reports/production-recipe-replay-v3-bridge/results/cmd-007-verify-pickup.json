@@ -1,0 +1,9 @@
+{
+  "command_id": "cmd-007-verify-pickup",
+  "coordinator_id": "sandboxed-frontier-98f0d757ea8e",
+  "accepted_at": 1789505368.949557,
+  "outcome": {
+    "verification_id": "pver_771fe61993db4b6090888a346e40725f",
+    "status": "pending"
+  }
+}

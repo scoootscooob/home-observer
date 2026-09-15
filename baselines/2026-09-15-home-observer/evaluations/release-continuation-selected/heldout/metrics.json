@@ -1,0 +1,128 @@
+{
+  "windows": 160,
+  "targeted_windows": 160,
+  "invalid_or_failed_windows": 16,
+  "valid_response_rate": 0.9,
+  "action_precision": 0.38095238095238093,
+  "action_recall": 0.6666666666666666,
+  "observation_precision": 0.32142857142857145,
+  "observation_recall": 0.9,
+  "false_action_window_rate": 0.2777777777777778,
+  "latency_p50_s": 22.05083450488746,
+  "latency_p95_s": 30.637174347415566,
+  "latency_mean_s": 21.08573481987696,
+  "counts": {
+    "action_tp": 24,
+    "action_fp": 39,
+    "action_fn": 12,
+    "obs_tp": 324,
+    "obs_fp": 684,
+    "obs_fn": 36,
+    "action_scored": 144,
+    "observation_scored": 144,
+    "no_action_windows": 108,
+    "false_action_windows": 30
+  },
+  "scope": "Proposed-action and observation accuracy on labeled windows; not a household reliability guarantee.",
+  "by_task_type": {
+    "device_control": {
+      "windows": 72,
+      "targeted_windows": 72,
+      "invalid_or_failed_windows": 0,
+      "valid_response_rate": 1.0,
+      "action_precision": 0.5142857142857142,
+      "action_recall": 1.0,
+      "observation_precision": 0.1111111111111111,
+      "observation_recall": 1.0,
+      "false_action_window_rate": 0.3148148148148148,
+      "latency_p50_s": 27.107145024463534,
+      "latency_p95_s": 31.278681840747595,
+      "latency_mean_s": 28.1230963284098,
+      "counts": {
+        "action_tp": 18,
+        "action_fp": 17,
+        "action_fn": 0,
+        "obs_tp": 72,
+        "obs_fp": 576,
+        "obs_fn": 0,
+        "action_scored": 72,
+        "observation_scored": 72,
+        "no_action_windows": 54,
+        "false_action_windows": 17
+      },
+      "scope": "Proposed-action and observation accuracy on labeled windows; not a household reliability guarantee."
+    },
+    "natural_image_summary": {
+      "windows": 16,
+      "targeted_windows": 16,
+      "invalid_or_failed_windows": 16,
+      "valid_response_rate": 0.0,
+      "action_precision": null,
+      "action_recall": null,
+      "observation_precision": null,
+      "observation_recall": null,
+      "false_action_window_rate": null,
+      "latency_p50_s": 0.9391243234276772,
+      "latency_p95_s": 1.2496655192226171,
+      "latency_mean_s": 0.9790350585244596,
+      "counts": {
+        "action_tp": 0,
+        "action_fp": 0,
+        "action_fn": 0,
+        "obs_tp": 0,
+        "obs_fp": 0,
+        "obs_fn": 0,
+        "action_scored": 0,
+        "observation_scored": 0,
+        "no_action_windows": 0,
+        "false_action_windows": 0
+      },
+      "scope": "Proposed-action and observation accuracy on labeled windows; not a household reliability guarantee."
+    },
+    "visual_occupancy": {
+      "windows": 72,
+      "targeted_windows": 72,
+      "invalid_or_failed_windows": 0,
+      "valid_response_rate": 1.0,
+      "action_precision": 0.21428571428571427,
+      "action_recall": 0.3333333333333333,
+      "observation_precision": 0.7,
+      "observation_recall": 0.875,
+      "false_action_window_rate": 0.24074074074074073,
+      "latency_p50_s": 16.791053799912333,
+      "latency_p95_s": 22.605695171281695,
+      "latency_mean_s": 18.5165288138669,
+      "counts": {
+        "action_tp": 6,
+        "action_fp": 22,
+        "action_fn": 12,
+        "obs_tp": 252,
+        "obs_fp": 108,
+        "obs_fn": 36,
+        "action_scored": 72,
+        "observation_scored": 72,
+        "no_action_windows": 54,
+        "false_action_windows": 13
+      },
+      "scope": "Proposed-action and observation accuracy on labeled windows; not a household reliability guarantee."
+    }
+  },
+  "context_mode": "isolated_snapshot",
+  "native_batch_size": 1,
+  "accuracy_interpretation": "Independent annotated snapshot accuracy, with empty prior observation history.",
+  "latency_interpretation": "Pooled original per-event service latencies from separate workers; no division by workers or batch size.",
+  "per_worker_runtime": [
+    {
+      "shard_index": 0,
+      "windows": 80,
+      "elapsed_s": 1670.8479344584048,
+      "windows_per_second": 0.04787988083782832
+    },
+    {
+      "shard_index": 1,
+      "windows": 80,
+      "elapsed_s": 1703.622660126537,
+      "windows_per_second": 0.046958755522809245
+    }
+  ]
+}

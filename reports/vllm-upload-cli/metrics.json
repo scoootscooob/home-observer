@@ -1,0 +1,67 @@
+{
+  "windows": 1,
+  "targeted_windows": 1,
+  "invalid_or_failed_windows": 0,
+  "valid_response_rate": 1.0,
+  "action_precision": null,
+  "action_recall": null,
+  "observation_precision": null,
+  "observation_recall": null,
+  "false_action_window_rate": 0.0,
+  "latency_p50_s": 5.5653077909955755,
+  "latency_p95_s": 5.5653077909955755,
+  "latency_mean_s": 5.5653077909955755,
+  "counts": {
+    "action_tp": 0,
+    "action_fp": 0,
+    "action_fn": 0,
+    "obs_tp": 0,
+    "obs_fp": 0,
+    "obs_fn": 0,
+    "action_scored": 1,
+    "observation_scored": 1,
+    "no_action_windows": 1,
+    "false_action_windows": 0
+  },
+  "scope": "Proposed-action and observation accuracy on labeled windows; not a household reliability guarantee.",
+  "elapsed_s": 5.569939959037583,
+  "by_task_type": {
+    "device_control": {
+      "windows": 1,
+      "targeted_windows": 1,
+      "invalid_or_failed_windows": 0,
+      "valid_response_rate": 1.0,
+      "action_precision": null,
+      "action_recall": null,
+      "observation_precision": null,
+      "observation_recall": null,
+      "false_action_window_rate": 0.0,
+      "latency_p50_s": 5.5653077909955755,
+      "latency_p95_s": 5.5653077909955755,
+      "latency_mean_s": 5.5653077909955755,
+      "counts": {
+        "action_tp": 0,
+        "action_fp": 0,
+        "action_fn": 0,
+        "obs_tp": 0,
+        "obs_fp": 0,
+        "obs_fn": 0,
+        "action_scored": 1,
+        "observation_scored": 1,
+        "no_action_windows": 1,
+        "false_action_windows": 0
+      },
+      "scope": "Proposed-action and observation accuracy on labeled windows; not a household reliability guarantee."
+    }
+  },
+  "journals": {
+    "test-0-0": {
+      "windows": {
+        "complete": 1
+      },
+      "actions": {},
+      "events": 1,
+      "facts": 10
+    }
+  }
+}

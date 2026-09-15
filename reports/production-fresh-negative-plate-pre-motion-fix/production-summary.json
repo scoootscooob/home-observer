@@ -1,0 +1,226 @@
+{
+  "captured_frames": 600,
+  "journal": {
+    "windows": 12,
+    "tracks": 1,
+    "detections": 1,
+    "observations": 0,
+    "events": 11,
+    "evidence": 65
+  },
+  "errors": [],
+  "exports": {
+    "exports": 21,
+    "delivered": 21,
+    "acked": 21,
+    "blocked": 0,
+    "audit_records": 21
+  },
+  "bridge_violations": {},
+  "final_assessment": {
+    "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+    "finished_at": 1789507901.173687,
+    "turns": 8,
+    "restarts": 0,
+    "exports_seen": 21,
+    "exports_acknowledged": 21,
+    "commands_written": 24,
+    "assessment": {
+      "recipe_step_complete": false,
+      "pickup_verified": "unknown",
+      "rationale": "Only new export is a perception.failed (ValidationError, 0 events accepted); acked. No new verification verdicts: clear_of_support returned unknown, pickup_completed pver_bd4f still pending. Learned pick-up event alone cannot complete the step. Step stays pending.",
+      "wait": true
+    },
+    "model_calls": [
+      {
+        "model": "claude-opus-5",
+        "attempt": 1,
+        "latency_s": 8.642306804656982,
+        "usage": {
+          "input_tokens": 2,
+          "cache_creation_input_tokens": 1826,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1826
+          },
+          "output_tokens": 664,
+          "output_tokens_details": {
+            "thinking_tokens": 235
+          },
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      },
+      {
+        "model": "claude-opus-5",
+        "attempt": 1,
+        "latency_s": 20.206429958343506,
+        "usage": {
+          "input_tokens": 2,
+          "cache_creation_input_tokens": 5700,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 5700
+          },
+          "output_tokens": 1112,
+          "output_tokens_details": {
+            "thinking_tokens": 136
+          },
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      },
+      {
+        "model": "claude-opus-5",
+        "attempt": 1,
+        "latency_s": 30.818684101104736,
+        "usage": {
+          "input_tokens": 2,
+          "cache_creation_input_tokens": 9774,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 9774
+          },
+          "output_tokens": 1673,
+          "output_tokens_details": {
+            "thinking_tokens": 661
+          },
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      },
+      {
+        "model": "claude-opus-5",
+        "attempt": 1,
+        "latency_s": 14.954032897949219,
+        "usage": {
+          "input_tokens": 2,
+          "cache_creation_input_tokens": 11051,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 11051
+          },
+          "output_tokens": 821,
+          "output_tokens_details": {
+            "thinking_tokens": 111
+          },
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      },
+      {
+        "model": "claude-opus-5",
+        "attempt": 1,
+        "latency_s": 13.008081912994385,
+        "usage": {
+          "input_tokens": 2,
+          "cache_creation_input_tokens": 11079,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 11079
+          },
+          "output_tokens": 700,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      },
+      {
+        "model": "claude-opus-5",
+        "attempt": 1,
+        "latency_s": 9.950628995895386,
+        "usage": {
+          "input_tokens": 2,
+          "cache_creation_input_tokens": 11565,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 11565
+          },
+          "output_tokens": 534,
+          "output_tokens_details": {
+            "thinking_tokens": 110
+          },
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      },
+      {
+        "model": "claude-opus-5",
+        "attempt": 1,
+        "latency_s": 9.854267120361328,
+        "usage": {
+          "input_tokens": 2,
+          "cache_creation_input_tokens": 12606,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 12606
+          },
+          "output_tokens": 563,
+          "output_tokens_details": {
+            "thinking_tokens": 113
+          },
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      },
+      {
+        "model": "claude-opus-5",
+        "attempt": 1,
+        "latency_s": 15.444121837615967,
+        "usage": {
+          "input_tokens": 2,
+          "cache_creation_input_tokens": 13710,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 13710
+          },
+          "output_tokens": 866,
+          "output_tokens_details": {
+            "thinking_tokens": 428
+          },
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      },
+      {
+        "model": "claude-opus-5",
+        "attempt": 1,
+        "latency_s": 8.335002183914185,
+        "usage": {
+          "input_tokens": 2,
+          "cache_creation_input_tokens": 13914,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 13914
+          },
+          "output_tokens": 491,
+          "output_tokens_details": {
+            "thinking_tokens": 204
+          },
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      }
+    ],
+    "stopped_by": "stop_file",
+    "media_access": "none: sandboxed to the bridge directory and the local inference proxy port"
+  },
+  "watches": [
+    {
+      "watch_id": "watch-plate-motion-cue",
+      "status": "verified"
+    }
+  ],
+  "output": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-negative-plate"
+}

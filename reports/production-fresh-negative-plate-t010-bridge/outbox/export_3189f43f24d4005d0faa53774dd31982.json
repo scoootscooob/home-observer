@@ -1,0 +1,31 @@
+{
+  "created_at": 1789508780.919257,
+  "export_id": "export_3189f43f24d4005d0faa53774dd31982",
+  "export_sha256": "af4343b61d2aa2cd945ede99334a493083e21dbdfd5ce7c90ef081f7ebf4e3b7",
+  "message": {
+    "audit_ref": "audit_48a4dd444c1b10b7fe0a794a",
+    "commitment_id": "recipe-serve-lift-plate",
+    "eligible_at": 1789508780.65,
+    "event_id": "pevt_b6456854b28e4c7295018f1ab30ca3f5",
+    "failure_class": null,
+    "matched_at": 1789508780.904,
+    "message_type": "watch_status",
+    "outcome_event_id": null,
+    "outcome_verified_at": null,
+    "readback_state": "on",
+    "reported_at": null,
+    "response_id": "recipe-movement-cue",
+    "response_reserved_at": 1789508780.904,
+    "response_result": "verified",
+    "response_sent_at": 1789508780.905,
+    "response_timely": true,
+    "response_verified_at": 1789508780.919,
+    "status": "response_verified",
+    "verification_kind": "ha_state_readback",
+    "watch_id": "watch-plate-move-cue"
+  },
+  "schema_version": "home-observer.production-export/1",
+  "topic": "watch.response_verified",
+  "attempt": 5,
+  "exported_at": 1789508810.947883
+}

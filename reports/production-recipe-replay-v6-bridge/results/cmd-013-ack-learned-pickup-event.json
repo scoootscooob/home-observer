@@ -1,0 +1,10 @@
+{
+  "command_id": "cmd-013-ack-learned-pickup-event",
+  "coordinator_id": "sandboxed-frontier-b33d9d1fe618",
+  "accepted_at": 1789506850.8435662,
+  "outcome": {
+    "acknowledged": true,
+    "already_acknowledged": false,
+    "topic": "physical.event"
+  }
+}

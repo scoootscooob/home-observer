@@ -1,0 +1,132 @@
+{
+  "passed": true,
+  "rows": 664,
+  "participant_disjoint": true,
+  "recording_disjoint": true,
+  "video_hash_disjoint": true,
+  "frame_hash_disjoint": true,
+  "physical_schema_valid": true,
+  "frame_files_verified": 5312,
+  "distinct_frame_hashes": 5301,
+  "frame_timestamps_are_index_over_fps": true,
+  "all_timestamps_causal": true,
+  "runtime_validator_accepted_rows": 160,
+  "pilot_participants_disjoint": true,
+  "held_out_homes_verified": false,
+  "home_identity_statement": "Held-out home identity is asserted from the EPIC-KITCHENS one-participant-one-kitchen recording protocol (each participant recorded in their own kitchen) together with the Extension_Participants.csv returning/changing-kitchen notes for the 2020 extension recordings. It was not independently verified: the dataset publishes no shared-home identifiers, so only participant and recording separation is checked.",
+  "participants": {
+    "test": [
+      "P22",
+      "P27",
+      "P28",
+      "P30"
+    ],
+    "validation": [
+      "P26"
+    ],
+    "train": [
+      "P07",
+      "P09",
+      "P13",
+      "P14",
+      "P23",
+      "P25"
+    ]
+  },
+  "recordings": {
+    "test": [
+      "P22_105",
+      "P27_03",
+      "P28_07",
+      "P30_01"
+    ],
+    "validation": [
+      "P26_16"
+    ],
+    "train": [
+      "P07_01",
+      "P09_04",
+      "P13_06",
+      "P14_05",
+      "P23_01",
+      "P25_12"
+    ]
+  },
+  "row_counts": {
+    "test": 242,
+    "validation": 42,
+    "train": 380
+  },
+  "quiet_windows": {
+    "test": 33,
+    "validation": 3,
+    "train": 48
+  },
+  "evidence_citation_rows": {
+    "test": 216,
+    "validation": 32,
+    "train": 309
+  },
+  "rows_without_covered_intervals": {
+    "test": 4,
+    "validation": 3,
+    "train": 19
+  },
+  "non_quiet_windows_without_targets": {
+    "test": 108,
+    "validation": 20,
+    "train": 185
+  },
+  "target_events_per_class": {
+    "test": {
+      "close": 19,
+      "dry": 2,
+      "move": 6,
+      "open": 25,
+      "pick-up": 14,
+      "put": 6,
+      "put-down": 28,
+      "put-in": 8,
+      "stir": 2,
+      "take": 26,
+      "take-from": 4,
+      "take-out": 2,
+      "turn-off": 2,
+      "turn-on": 2
+    },
+    "validation": {
+      "open": 2,
+      "pick-up": 6,
+      "put": 4,
+      "put-down": 2,
+      "turn-off": 4,
+      "turn-on": 2
+    },
+    "train": {
+      "check": 4,
+      "clean": 2,
+      "close": 16,
+      "grab": 4,
+      "open": 34,
+      "pick-up": 24,
+      "put": 2,
+      "put-down": 16,
+      "put-in": 16,
+      "put-into": 4,
+      "put-on": 11,
+      "remove": 2,
+      "remove-from": 2,
+      "take": 17,
+      "throw-in": 4,
+      "touch": 2,
+      "turn": 2,
+      "turn-off": 2,
+      "turn-on": 2,
+      "wash": 2
+    }
+  },
+  "all_targets_partial": true,
+  "home_assistant_fields": false,
+  "validation_script_sha256": "78da8635a73179e873bb53a2a7f7d4e516c3141bc2f51ce99ed78c8333571878",
+  "validated_at_utc": "2026-09-15T22:12:08Z"
+}

@@ -1,0 +1,167 @@
+{
+  "version": 2,
+  "kind": "mixed_synthetic_decisions_and_human_captions",
+  "source_inputs": {
+    "train": {
+      "path": "mixed/train.jsonl",
+      "sha256": "10c34d1f55430e1d3818cec4a6b47c4c04992d9d9192a197552426f43e7878ed"
+    },
+    "validation": {
+      "path": "mixed/validation.jsonl",
+      "sha256": "1e89be01f26edc0ee040a169c473aa69182446aa4fb4df3eaab14bf482053fc4"
+    }
+  },
+  "generator_sha256": "b1d21990fb825f0ee1ecca368096fc21825cc68f84e2682788b0b649bd7a7a8b",
+  "dataset_root": "..",
+  "policy_path": "policy.json",
+  "counts": {
+    "train": {
+      "rows": 496,
+      "synthetic_decisions": 432,
+      "action_windows": 216,
+      "no_action_windows": 216,
+      "noop_windows": 61,
+      "summary_only_rows": 64,
+      "task_types": {
+        "device_control": 360,
+        "visual_occupancy": 72,
+        "natural_image_summary": 64
+      },
+      "families": 6,
+      "context_modes": {
+        "same": 108,
+        "different": 108,
+        "none": 108,
+        "stale": 108
+      },
+      "sensor_encodings": {
+        "1": 118,
+        "0": 102,
+        "3": 111,
+        "2": 101
+      },
+      "action_entities": {
+        "light.kitchen": 28,
+        "light.entry": 35,
+        "light.garage": 28,
+        "switch.buzzer": 126,
+        "light.lounge": 35
+      }
+    },
+    "validation": {
+      "rows": 160,
+      "synthetic_decisions": 144,
+      "action_windows": 72,
+      "no_action_windows": 72,
+      "noop_windows": 25,
+      "summary_only_rows": 16,
+      "task_types": {
+        "device_control": 120,
+        "visual_occupancy": 24,
+        "natural_image_summary": 16
+      },
+      "families": 6,
+      "context_modes": {
+        "none": 36,
+        "same": 36,
+        "stale": 36,
+        "different": 36
+      },
+      "sensor_encodings": {
+        "0": 49,
+        "1": 34,
+        "2": 31,
+        "3": 30
+      },
+      "action_entities": {
+        "light.lounge": 14,
+        "switch.buzzer": 42,
+        "light.garage": 7,
+        "light.kitchen": 7,
+        "light.entry": 14
+      }
+    }
+  },
+  "validation_dev": {
+    "rows": 56,
+    "synthetic_decisions": 48,
+    "action_windows": 24,
+    "no_action_windows": 24,
+    "noop_windows": 12,
+    "summary_only_rows": 8,
+    "task_types": {
+      "device_control": 36,
+      "visual_occupancy": 12,
+      "natural_image_summary": 8
+    },
+    "families": 6,
+    "context_modes": {
+      "none": 13,
+      "same": 16,
+      "stale": 7,
+      "different": 12
+    },
+    "sensor_encodings": {
+      "1": 16,
+      "3": 10,
+      "0": 13,
+      "2": 9
+    },
+    "action_entities": {
+      "light.lounge": 6,
+      "switch.buzzer": 12,
+      "light.garage": 3,
+      "light.entry": 6,
+      "light.kitchen": 3
+    }
+  },
+  "generation_validation": {
+    "rows": 8,
+    "synthetic_decisions": 8,
+    "action_windows": 4,
+    "no_action_windows": 4,
+    "noop_windows": 2,
+    "summary_only_rows": 0,
+    "task_types": {
+      "device_control": 4,
+      "visual_occupancy": 4
+    },
+    "families": 6,
+    "context_modes": {
+      "none": 4,
+      "same": 3,
+      "different": 1
+    },
+    "sensor_encodings": {
+      "0": 2,
+      "1": 2,
+      "2": 3,
+      "3": 1
+    },
+    "action_entities": {
+      "light.lounge": 2,
+      "switch.buzzer": 1,
+      "light.kitchen": 1
+    }
+  },
+  "context_source_rows": 432,
+  "split_unit": "original scenario family / COCO image ID",
+  "integrity_checks": [
+    "Decision/ObservationWindow schema",
+    "Policy.validate",
+    "authored exact action count",
+    "prior timestamps strictly before current window",
+    "group and row ID disjoint",
+    "camera-byte hashes disjoint",
+    "all reused media exist and are hashed",
+    "natural summary mask preserved"
+  ],
+  "test_data": "No test file was read, copied, relabeled, or modified by this preparation.",
+  "limits": [
+    "Synthetic decisions are authored, not human household annotations.",
+    "Reused procedural images are not new visual examples; sensor/time/history variants provide decision supervision.",
+    "Action balance is an intentional training distribution, not an estimate of household event frequency.",
+    "No real audio, alarm, speech or long-duration reliability claims.",
+    "Natural captions supervise summary only; their missing decisions are not silence labels."
+  ]
+}

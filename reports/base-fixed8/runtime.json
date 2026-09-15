@@ -1,0 +1,15 @@
+{
+  "server_pid": 3568,
+  "health": {
+    "status": "ready",
+    "model_id": "google/gemma-4-E4B-it",
+    "adapter_loaded": false,
+    "context_mode": "bounded_window"
+  },
+  "quantization": "none (BF16)",
+  "compile_enabled": false,
+  "max_new_tokens": 512,
+  "prompt_sha256": "5ffe7120c015f9a90c57cbb05368c661c6afbea27f6c8d4bbaeda35eb3fb87c1",
+  "input_sha256": "aac331e3c6d5a02b984753705aa096b7d9dec7855219b3bf8de75bb9ea92bea5",
+  "policy_sha256": "dc6efa42ac18eefc2da2436720732244a769972a7f7ad9ca77de3836d48d5559"
+}

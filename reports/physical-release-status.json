@@ -1,0 +1,112 @@
+{
+  "generated_at": 1789497887.623911,
+  "scope": "Continuous public-video replay, actual Runpod inference/training, actual session-bound frontier subagent, isolated Home Assistant fixture. No user physical home connected.",
+  "implementation_exercised": true,
+  "production_model_accepted": false,
+  "persistent_service_running": false,
+  "baseline_preserved": true,
+  "training": {
+    "steps": 100,
+    "train_rows": 64,
+    "validation_rows": 16,
+    "validation_loss_before": 2.16524338722229,
+    "validation_loss_after": 0.07311901450157166,
+    "adapter_sha256": "e46d41928e3657cda31194451d35588fb1c054e1b4f881a947dea7aa84309306"
+  },
+  "matched_test": {
+    "base": {
+      "rows": 16,
+      "strict_valid": 15,
+      "matched_events": 0,
+      "raw_content_matches": 0,
+      "raw_content_is_accepted_decision": false
+    },
+    "adapted": {
+      "rows": 16,
+      "strict_valid": 1,
+      "matched_events": 1,
+      "raw_content_matches": 6,
+      "raw_content_is_accepted_decision": false
+    }
+  },
+  "temporal_probe": {
+    "complete": true,
+    "completed_calls": 4,
+    "strictly_valid": 0,
+    "wall_s": 53.20611133496277,
+    "new_human_labels": false,
+    "interpretation": "Changing output shows sensitivity, not correctness. Static-frame movement claims need separate review; these are derived counterfactuals, not real continuous negatives or a false-events/hour estimate."
+  },
+  "recipe": {
+    "captured_frames": 145,
+    "tracking_frame_losses": 0,
+    "dropped_sequences": 0,
+    "local_event_losses": 0,
+    "source_end_to_verified_cue_s": 0.17378520965576172,
+    "coordinator_acknowledgements": 8,
+    "physical_outcome": {
+      "status": "unknown",
+      "pickup_verified": false,
+      "recipe_step_complete": false,
+      "conclusion": "A completed pickup of the nested bowls is not established by the inspected sequence. Keep the recipe step unverified.",
+      "uncertainty": [
+        "Nine chronological frames were visually inspected, with three also at full size; all 145 files were hash-verified, not all individually visually inspected.",
+        "Egocentric camera motion and hand/cupboard occlusion limit inference about depth and support contact.",
+        "The motion watch is an operational geometric cue, not proof of pickup.",
+        "The 2.50-second tracking appearance failure is localization uncertainty; the object is still visible in the final image."
+      ],
+      "needed_for_confirmation": "A subsequent unobscured view showing the cookware separated from its prior support and held/carried, or another explicit verified completion observation.",
+      "next_context_correction": "Any future observation request should describe the observed open lower cupboard rather than the digital worktop wording, while retaining the original commitment and its discrepancy in provenance.",
+      "new_watch_armed_after_eof": false
+    },
+    "coordinator_review_delay_after_source_eof_s": 207.90164017677307,
+    "model_prefix_event_is_semantically_verified": false,
+    "source_kind": "continuous_public_video_replay"
+  },
+  "software": {
+    "tests_passed": 272,
+    "tests_skipped": 5,
+    "ruff_passed": true
+  },
+  "cleanup": [
+    {
+      "pod_id": "epx7z7hxojw5j1",
+      "status": "completed",
+      "artifacts_verified": true,
+      "cleanup": "terminated",
+      "cleanup_confirmed": true,
+      "cleanup_at": 1789497307.2406242,
+      "recovery_verification": "physical-recovery-verification.json",
+      "physical_execution_context": "../artifacts/physical-training-v1/execution-context",
+      "note": "All previous checkpoints/evaluations and new physical training recovered before deletion."
+    },
+    {
+      "pod_id": "5aarka5mncu5lo",
+      "status": "completed",
+      "artifacts_verified": true,
+      "cleanup": "terminated",
+      "cleanup_confirmed": true,
+      "baseline_and_physical_archives": [
+        {
+          "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/work/runpod-evaluation-300/artifacts.tar.gz",
+          "sha256": "47098c948f839b0623a971ed0cef057e7e288de08f6399a9a522a2742e9e7360"
+        },
+        {
+          "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/physical-native-base-evidence.tar.gz",
+          "sha256": "eb78cca5ced693c3f977f081c9d5c4200f9f6aa27fd7dfea606a3e77b5faad0e"
+        }
+      ],
+      "cleanup_at": 1789496441.2451441
+    },
+    {
+      "pod_id": "fszm4l6p59bl7o",
+      "status": "completed",
+      "artifacts_verified": true,
+      "cleanup": "terminated",
+      "cleanup_confirmed": true,
+      "cleanup_at": 1789497705.4977589,
+      "recovery": "../artifacts/physical-runtime/consumer-recovery-verification.json"
+    }
+  ],
+  "report": "../PHYSICAL_REPORT.md"
+}

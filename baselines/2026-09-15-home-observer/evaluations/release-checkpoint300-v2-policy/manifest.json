@@ -1,0 +1,91 @@
+{
+  "model_config": {
+    "model_id": "google/gemma-4-E4B-it",
+    "revision": "ee0ef6023621cff504d758262d4e04895a5af4a2",
+    "adapter_path": "artifacts/training-v2/adapter/checkpoint-300",
+    "dataset_root": "/workspace/home-observer/data",
+    "quantization": "none",
+    "max_frames": 8,
+    "max_audio_seconds": 30.0,
+    "max_input_tokens": 8192,
+    "max_new_tokens": 768,
+    "max_soft_tokens": 140,
+    "max_context_chars": 24000,
+    "max_media_bytes": 33554432,
+    "max_batch_size": 4,
+    "merge_adapter": null
+  },
+  "suites": [
+    {
+      "name": "heldout",
+      "source": "/workspace/home-observer/data/mixed/test.jsonl",
+      "source_sha256": "6e4e422bc0e1eefe650513b484fd34aad12ea3414f9f91a27e61ad50ae951fb7",
+      "source_rows": 160,
+      "selected_rows": 160,
+      "context_mode": "isolated_snapshot",
+      "targets_changed": false,
+      "window_ids_changed": false
+    },
+    {
+      "name": "counterfactual",
+      "source": "/workspace/home-observer/data/counterfactuals/pairs.jsonl",
+      "source_sha256": "54122b5b262e253d99ee49ba75432ff7eff367f41de76b741f5f0b151695351d",
+      "source_rows": 16,
+      "selected_rows": 16,
+      "context_mode": "isolated_snapshot",
+      "targets_changed": false,
+      "window_ids_changed": false
+    },
+    {
+      "name": "public_video",
+      "source": "/workspace/home-observer/data/public-egolife/replay.jsonl",
+      "source_sha256": "ea872cd3e8d7d51e506bac2036b6b9c681104dd9454c47494d60f115bc98bf42",
+      "source_rows": 2,
+      "selected_rows": 2,
+      "context_mode": "chronological_unscored",
+      "targets_changed": false,
+      "window_ids_changed": false
+    }
+  ],
+  "policy": {
+    "entities": [
+      "light.kitchen",
+      "light.entry",
+      "light.lounge",
+      "light.garage",
+      "room.kitchen",
+      "room.entry",
+      "room.lounge",
+      "room.garage",
+      "binary_sensor.motion_kitchen",
+      "binary_sensor.motion_entry",
+      "binary_sensor.motion_lounge",
+      "binary_sensor.motion_garage",
+      "sensor.ambient_lux",
+      "binary_sensor.water_leak",
+      "switch.buzzer"
+    ],
+    "rules": [
+      "For each camera, room.<camera_id> occupied is true exactly when a person is visible; report uncertainty for ambiguous footage.",
+      "Turn on light.<room> when occupancy is supported by its camera frame or an explicit motion sensor, ambient_lux < 40, and that light is off.",
+      "Turn on switch.buzzer only when binary_sensor.water_leak is on and switch.buzzer is off.",
+      "Generated tones are fixture sounds; never interpret them as a real fire alarm.",
+      "Do not turn off lights or take any other action. Return noop=true with empty observations/actions when nothing should be recorded or executed.",
+      "For binary sensors, on, true and JSON true mean active; off, false and JSON false mean inactive. Unwrap a Home Assistant object using its state field. Parse numeric lux strings as numbers.",
+      "Current device states are authoritative. Prior state is historical context, never a replacement for current telemetry. Previously observing an active sensor does not imply that an action was executed. Use current sensor and actuator states to decide whether an action is still required.",
+      "Record clear room occupancy and motion/leak sensor states when absent from prior memory, stale, or changed. Do not repeat an unchanged fact. Other telemetry supplies action preconditions. If both new observations and permitted actions are empty, use noop=true."
+    ],
+    "allowed_services": [
+      "light.turn_on",
+      "switch.turn_on"
+    ],
+    "min_confidence": 0.8,
+    "cooldown_seconds": 30,
+    "state_ttl_seconds": 300,
+    "max_actions_per_window": 2,
+    "max_window_seconds": 60
+  },
+  "model_revision": "ee0ef6023621cff504d758262d4e04895a5af4a2",
+  "system_prompt_sha256": "3e92b2ef2af1f5abacecadc3d36f113af6725c9cfc98224aab6c653dd2346813",
+  "policy_sha256": "a756632394beb041bd82d878acb5ab69ff2b2c9ddf682a3dbfcc24509126600e"
+}

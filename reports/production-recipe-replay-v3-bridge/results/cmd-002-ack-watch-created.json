@@ -1,0 +1,10 @@
+{
+  "command_id": "cmd-002-ack-watch-created",
+  "coordinator_id": "sandboxed-frontier-98f0d757ea8e",
+  "accepted_at": 1789505349.399369,
+  "outcome": {
+    "acknowledged": true,
+    "already_acknowledged": false,
+    "topic": "watch.created"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "synthetic",
+  "counts": {
+    "train": 144,
+    "validation": 144,
+    "test": 144
+  },
+  "total_rows": 432,
+  "split_unit": "scenario_family",
+  "cameras": [
+    "kitchen",
+    "entry",
+    "lounge",
+    "garage"
+  ],
+  "task_types": [
+    "device_control",
+    "visual_occupancy"
+  ],
+  "limits": [
+    "No human speech",
+    "No real household footage",
+    "Visual targets derived from authored geometry",
+    "Does not establish real-world visual competence"
+  ]
+}

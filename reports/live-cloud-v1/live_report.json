@@ -1,0 +1,55 @@
+{
+  "elapsed_s": 31.846558332967106,
+  "model_windows": 9,
+  "actual_windows_per_s": 0.28260510620651047,
+  "requested_windows_per_s": 1.0,
+  "errors": [],
+  "error_count": 0,
+  "errors_retained_limit": 100,
+  "snapshot_retention": {
+    "retained_completed_windows": 4,
+    "limit": 4,
+    "active_windows": 0,
+    "expired_windows": 5,
+    "scope": "Snapshot media from this invocation; text audit logs and older runs are retained separately."
+  },
+  "cameras": {
+    "kitchen": {
+      "captured": 64,
+      "model_sampled": 9,
+      "not_model_sampled": 55,
+      "sample_events": 9,
+      "capture_error": null
+    },
+    "entry": {
+      "captured": 64,
+      "model_sampled": 9,
+      "not_model_sampled": 55,
+      "sample_events": 9,
+      "capture_error": null
+    },
+    "lounge": {
+      "captured": 64,
+      "model_sampled": 9,
+      "not_model_sampled": 55,
+      "sample_events": 9,
+      "capture_error": null
+    },
+    "garage": {
+      "captured": 64,
+      "model_sampled": 9,
+      "not_model_sampled": 55,
+      "sample_events": 9,
+      "capture_error": null
+    }
+  },
+  "journal": {
+    "windows": {
+      "complete": 9
+    },
+    "actions": {},
+    "events": 14,
+    "facts": 5
+  },
+  "scope": "Continuous capture with latest-frame model sampling. Captured frames omitted by the model are counted; no full-rate awareness claim."
+}

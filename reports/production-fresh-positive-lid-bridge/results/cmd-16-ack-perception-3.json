@@ -1,0 +1,10 @@
+{
+  "command_id": "cmd-16-ack-perception-3",
+  "coordinator_id": "sandboxed-frontier-cdbda4751e05",
+  "accepted_at": 1789508437.794881,
+  "outcome": {
+    "acknowledged": true,
+    "already_acknowledged": false,
+    "topic": "perception.completed"
+  }
+}

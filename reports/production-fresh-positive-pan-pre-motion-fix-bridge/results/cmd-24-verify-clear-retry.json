@@ -1,0 +1,9 @@
+{
+  "command_id": "cmd-24-verify-clear-retry",
+  "coordinator_id": "sandboxed-frontier-37a12cb40ee3",
+  "accepted_at": 1789507285.3908591,
+  "outcome": {
+    "verification_id": "pver_5e084fa727064a49be8134ca2edf7790",
+    "status": "pending"
+  }
+}

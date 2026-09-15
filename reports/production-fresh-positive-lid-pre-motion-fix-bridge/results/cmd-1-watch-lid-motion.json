@@ -1,0 +1,9 @@
+{
+  "command_id": "cmd-1-watch-lid-motion",
+  "coordinator_id": "sandboxed-frontier-cdbda4751e05",
+  "accepted_at": 1789507399.087636,
+  "outcome": {
+    "watch_id": "watch-recipe-lid-motion",
+    "status": "armed"
+  }
+}

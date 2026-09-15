@@ -1,0 +1,7 @@
+{
+  "label": "lid",
+  "box": {"x_min": 0.02, "y_min": 0.13, "x_max": 0.26, "y_max": 0.46},
+  "confidence": 0.8,
+  "provenance": "Assistant visually selected initial box on the first frame of the positive demonstration clip (P27_03, source 44.5 s) from a coordinate-grid contact sheet; explicit demonstration bootstrap, not a learned detection or human ground-truth annotation.",
+  "uncertainty": "Approximate image box around a pot lid resting on a pot; the official narration P27_03_7 'take lid' covers 47.68-49.90 s. Strong egocentric camera motion is expected. Identity and calibrated confidence are not established."
+}

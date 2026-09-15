@@ -1,0 +1,10 @@
+{
+  "command_id": "cmd-4-ack-verification-pickup2",
+  "coordinator_id": "sandboxed-frontier-37a12cb40ee3",
+  "accepted_at": 1789508175.493314,
+  "outcome": {
+    "acknowledged": true,
+    "already_acknowledged": false,
+    "topic": "verification.result"
+  }
+}

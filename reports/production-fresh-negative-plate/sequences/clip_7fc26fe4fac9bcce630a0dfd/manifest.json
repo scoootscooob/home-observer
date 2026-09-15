@@ -1,0 +1,101 @@
+{
+  "clip_id": "clip_7fc26fe4fac9bcce630a0dfd",
+  "reason": "initial_context",
+  "frames": [
+    {
+      "camera_id": "recipe",
+      "sequence": 1,
+      "timestamp": 55.0,
+      "captured_at": 1789508509.031175,
+      "evidence_id": "recipe:1",
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-negative-plate/sequences/clip_7fc26fe4fac9bcce630a0dfd/000000.jpg",
+      "sha256": "b66f274b2a3104e44fcc207b50e03cbf331d8aad0616ad994fda06f06a296133",
+      "activity": 0.0,
+      "selected_for_model": true
+    },
+    {
+      "camera_id": "recipe",
+      "sequence": 2,
+      "timestamp": 55.02,
+      "captured_at": 1789508509.0365598,
+      "evidence_id": "recipe:2",
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-negative-plate/sequences/clip_7fc26fe4fac9bcce630a0dfd/000001.jpg",
+      "sha256": "1ab7a1cedf305888eb40d758f5f9b7794ed4a3aed8ff3d5b1cb185054bbb6dc4",
+      "activity": 0.023633879781420765,
+      "selected_for_model": true
+    },
+    {
+      "camera_id": "recipe",
+      "sequence": 3,
+      "timestamp": 55.04,
+      "captured_at": 1789508509.059646,
+      "evidence_id": "recipe:3",
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-negative-plate/sequences/clip_7fc26fe4fac9bcce630a0dfd/000002.jpg",
+      "sha256": "8525013d65fd55f95d7d18b8ccb178d2b6ce268dbc659e35bce0bc94473fbb59",
+      "activity": 0.035785031225604995,
+      "selected_for_model": true
+    },
+    {
+      "camera_id": "recipe",
+      "sequence": 4,
+      "timestamp": 55.06,
+      "captured_at": 1789508509.078897,
+      "evidence_id": "recipe:4",
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-negative-plate/sequences/clip_7fc26fe4fac9bcce630a0dfd/000003.jpg",
+      "sha256": "702a715c3508366bf270f6b0e441adce9d8628646a99dd25b97d31036451f40b",
+      "activity": 0.03854898516783763,
+      "selected_for_model": true
+    },
+    {
+      "camera_id": "recipe",
+      "sequence": 5,
+      "timestamp": 55.08,
+      "captured_at": 1789508509.0987751,
+      "evidence_id": "recipe:5",
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-negative-plate/sequences/clip_7fc26fe4fac9bcce630a0dfd/000004.jpg",
+      "sha256": "299e94071b4a79cf998e73f33bfd124aec6ec402565ce865c4fb71ab08d51e1e",
+      "activity": 0.027488290398126464,
+      "selected_for_model": true
+    },
+    {
+      "camera_id": "recipe",
+      "sequence": 6,
+      "timestamp": 55.1,
+      "captured_at": 1789508509.11903,
+      "evidence_id": "recipe:6",
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-negative-plate/sequences/clip_7fc26fe4fac9bcce630a0dfd/000005.jpg",
+      "sha256": "824fe2a3ffc783d569c99fa42c54e10d8be9410aa5c584fa816270d266ea0e45",
+      "activity": 0.01674717017954723,
+      "selected_for_model": true
+    },
+    {
+      "camera_id": "recipe",
+      "sequence": 7,
+      "timestamp": 55.12,
+      "captured_at": 1789508509.138004,
+      "evidence_id": "recipe:7",
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-negative-plate/sequences/clip_7fc26fe4fac9bcce630a0dfd/000006.jpg",
+      "sha256": "6affb72cba86c393240ee50f3530ae711a84cd61748293b8cc11c3fd96ea5171",
+      "activity": 0.012175546448087432,
+      "selected_for_model": true
+    },
+    {
+      "camera_id": "recipe",
+      "sequence": 8,
+      "timestamp": 55.14,
+      "captured_at": 1789508509.1592839,
+      "evidence_id": "recipe:8",
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-negative-plate/sequences/clip_7fc26fe4fac9bcce630a0dfd/000007.jpg",
+      "sha256": "9753a63825d585e9b3e49578fd8cea08630870efd5cd85a5dad3f5301ef0c09f",
+      "activity": 0.0034958040593286496,
+      "selected_for_model": true
+    }
+  ],
+  "started_at": 55.0,
+  "ended_at": 55.14,
+  "activity_started_at": null,
+  "activity_ended_at": null,
+  "full_sequence_frames": 8,
+  "selected_model_frames": 8,
+  "semantic_event_label": null
+}

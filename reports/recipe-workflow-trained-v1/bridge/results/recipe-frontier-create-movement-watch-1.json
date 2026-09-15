@@ -1,0 +1,77 @@
+{
+  "command_id": "recipe-frontier-create-movement-watch-1",
+  "coordinator_id": "/root/frontier_coordinator",
+  "accepted_at": 1789497574.90303,
+  "result": {
+    "watch_id": "recipe-bowls-movement-cue-1",
+    "digest": "292d8b52d376da6ffaa47f81e3867bf4e9c64174f6dbec4a71b71d37be0bd70b",
+    "status": "armed",
+    "spec": {
+      "condition": {
+        "kind": "motion_started",
+        "max_gap_s": 0.5,
+        "min_confidence": 0.5,
+        "min_duration_s": 0.0,
+        "object_label": "bowl",
+        "origin": "geometric",
+        "reset_kinds": [],
+        "subject_ids": [],
+        "type": "event"
+      },
+      "context": {
+        "commitment_id": "recipe-prep-lift-bowls",
+        "coordinator_id": "/root/frontier_coordinator",
+        "source_ref": "configs/recipe-workflow/digital-context.json",
+        "text": "Recipe preparation: lift the nested mixing bowls from the worktop. Give an immediate visual cue when the observed bowls begin moving, then verify the pickup from the physical sequence before marking the step complete."
+      },
+      "created_at": 1789496289.351596,
+      "deadline_at": null,
+      "max_event_age_s": 1.0,
+      "max_responses": 1,
+      "not_before": null,
+      "outcome": null,
+      "response_deadline_s": 1.0,
+      "response_id": "recipe-movement-cue",
+      "ttl_s": 3600.0,
+      "watch_id": "recipe-bowls-movement-cue-1"
+    },
+    "response": {
+      "approval_ref": "User authorized end-to-end recipe demonstration; isolated Home Assistant test light, local response registry.",
+      "data": {},
+      "domain": "light",
+      "ha_entity_id": "light.kitchen",
+      "kind": "ha_service",
+      "message": "Bowl movement detected; checking the recipe step.",
+      "response_id": "recipe-movement-cue",
+      "service": "turn_on"
+    },
+    "progress": {},
+    "execution": null,
+    "clocks": {
+      "eligible_at": null,
+      "event_source_started_at": null,
+      "event_source_ended_at": null,
+      "event_available_at": null,
+      "matched_at": null,
+      "response_reserved_at": null,
+      "response_queued_at": null,
+      "response_sent_at": null,
+      "response_verified_at": null,
+      "outcome_source_ended_at": null,
+      "outcome_available_at": null,
+      "outcome_verified_at": null,
+      "event_delivered_at": null,
+      "event_acked_at": null,
+      "outcome_delivered_at": null,
+      "outcome_acked_at": null
+    },
+    "latencies_s": {
+      "source_to_available": null,
+      "available_to_match": null,
+      "source_to_delivery": null,
+      "source_to_response": null,
+      "source_to_verified_response": null,
+      "response_to_verified_outcome": null
+    }
+  }
+}

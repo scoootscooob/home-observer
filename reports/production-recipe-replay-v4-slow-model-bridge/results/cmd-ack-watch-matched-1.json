@@ -1,0 +1,10 @@
+{
+  "command_id": "cmd-ack-watch-matched-1",
+  "coordinator_id": "sandboxed-frontier-8afa30f7dc91",
+  "accepted_at": 1789505787.042153,
+  "outcome": {
+    "acknowledged": true,
+    "already_acknowledged": false,
+    "topic": "watch.matched"
+  }
+}

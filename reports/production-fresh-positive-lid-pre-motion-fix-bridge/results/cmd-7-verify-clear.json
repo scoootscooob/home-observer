@@ -1,0 +1,9 @@
+{
+  "command_id": "cmd-7-verify-clear",
+  "coordinator_id": "sandboxed-frontier-cdbda4751e05",
+  "accepted_at": 1789507418.378724,
+  "outcome": {
+    "verification_id": "pver_c8acf8fc08c844fa8935bae4111df6a4",
+    "status": "pending"
+  }
+}

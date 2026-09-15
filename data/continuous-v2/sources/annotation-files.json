@@ -1,0 +1,35 @@
+{
+  "url": "https://github.com/epic-kitchens/epic-kitchens-100-annotations",
+  "revision": "ea8b40457a400c3fffa1c7f406ef3dc169cc2522",
+  "local_directory": "/Users/scottfan/Documents/Codex/2026-09-15/do/work/temporal-source-probe/official-annotations",
+  "files": {
+    "EPIC_100_train.csv": {
+      "sha256": "a3a7ef2e397bd8af12bd0496b09d61b1f2c1f3f6e1726fa86af50a27f4855e87",
+      "bytes": 8415872
+    },
+    "EPIC_100_validation.csv": {
+      "sha256": "35f7932ba0a1127a96cac215a98d35398946f343e3cea9ad6688ed17eee9d75d",
+      "bytes": 1184998
+    },
+    "EPIC_100_video_info.csv": {
+      "sha256": "75fd040f6662cb407b4ca2eed4811ca94df280a1aba00b6bf8a5cd286deff382",
+      "bytes": 27721
+    },
+    "EPIC_100_train_missing_timestamp_narrations.csv": {
+      "sha256": "dce53e33f68178293f8bd339e657bfa78d39ea02a06bd7c217ee7d9b939f8450",
+      "bytes": 1565
+    },
+    "EPIC_100_validation_missing_timestamp_narrations.csv": {
+      "sha256": "395773f385f21e39154fcee2c53050f5c4ae6fab743ed0d0f3d406ab64215657",
+      "bytes": 920
+    },
+    "Extension_Participants.csv": {
+      "sha256": "896b36886807ac7e64da767b0445d70292c5be3aa2d4b4a74b01679cdc65fdb1",
+      "bytes": 269
+    },
+    "license.txt": {
+      "sha256": "acb7384c3f73cc96367ac132bc0bd57efa38c4495c17781032a2cf1444b65ebe",
+      "bytes": 481
+    }
+  }
+}

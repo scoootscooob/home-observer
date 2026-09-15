@@ -1,0 +1,339 @@
+{
+  "coordinator_id": "/root/runpod_impl",
+  "stage": "actual_frontier_coordinator_stage2",
+  "original_planning_coordinator_id": "/root/frontier_coordinator",
+  "commitment_id": "recipe-prep-lift-bowls",
+  "received_at": 1789497600.730732,
+  "inspected_at": 1789497785.741606,
+  "inspected_at_utc": "2026-09-15T18:43:05.741606+00:00",
+  "timing_note": "Visual inspection timestamp recorded immediately after the displayed chronological review; ACK submissions occurred after runtime shutdown and require documented post-run bridge receive. ACK receipt does not endorse model content.",
+  "original_plan_preserved": true,
+  "planning_path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/recipe-workflow-trained-v1/coordinator/planning.json",
+  "planning_sha256": "6149c1af81b69d54d2e79e66247348979602b0ead0026410e5c49bced7e3fe57",
+  "inputs": {
+    "manifest": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/recipe-workflow-trained-v1/sequences/clip_19116a95186d0f07fdd551b0/manifest.json",
+    "manifest_sha256": "478fe1275ba45ce0279a9a85332a989874f8279a5b26fd18766cc4d5c6c2d33b",
+    "all_145_manifest_image_hashes_match": true,
+    "source_interval": [
+      608.99,
+      611.87
+    ],
+    "chronology_sheet": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/recipe-workflow-trained-v1/coordinator/stage2-chronology.jpg"
+  },
+  "inspected_frames": [
+    {
+      "evidence_id": "recipe:1",
+      "timestamp": 608.99,
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/recipe-workflow-trained-v1/sequences/clip_19116a95186d0f07fdd551b0/000000.jpg",
+      "sha256": "4490c70f7ab8badfed1e90b400020d0dff889e583f22ab7bb56207cee183adeb",
+      "display": "full_size_and_chronology"
+    },
+    {
+      "evidence_id": "recipe:8",
+      "timestamp": 609.13,
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/recipe-workflow-trained-v1/sequences/clip_19116a95186d0f07fdd551b0/000007.jpg",
+      "sha256": "99a7584f109578066ef813fad2a6f404bc38ed20d5b6667418fe9ef47b2faa8f",
+      "display": "chronology_contact_sheet"
+    },
+    {
+      "evidence_id": "recipe:22",
+      "timestamp": 609.41,
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/recipe-workflow-trained-v1/sequences/clip_19116a95186d0f07fdd551b0/000021.jpg",
+      "sha256": "9884ae38794544ea6f9aacbf5198c1495b0643376c4c16e69cf5e9a5f72afae5",
+      "display": "chronology_contact_sheet"
+    },
+    {
+      "evidence_id": "recipe:42",
+      "timestamp": 609.8100000000001,
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/recipe-workflow-trained-v1/sequences/clip_19116a95186d0f07fdd551b0/000041.jpg",
+      "sha256": "e6b87d0b39c58d5e0a3fceb364674d6d8643629de0bbfc5505c9db2b18fd4a57",
+      "display": "full_size_and_chronology"
+    },
+    {
+      "evidence_id": "recipe:63",
+      "timestamp": 610.23,
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/recipe-workflow-trained-v1/sequences/clip_19116a95186d0f07fdd551b0/000062.jpg",
+      "sha256": "0a221967ea7c094de8a4f2a681627c485c2f7a89bd142f30c6851bcdc81d23a7",
+      "display": "chronology_contact_sheet"
+    },
+    {
+      "evidence_id": "recipe:83",
+      "timestamp": 610.63,
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/recipe-workflow-trained-v1/sequences/clip_19116a95186d0f07fdd551b0/000082.jpg",
+      "sha256": "fa64050a3667853f953a9c5dde1310d03b04551e91969790fba71fbc3ea6a073",
+      "display": "chronology_contact_sheet"
+    },
+    {
+      "evidence_id": "recipe:104",
+      "timestamp": 611.05,
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/recipe-workflow-trained-v1/sequences/clip_19116a95186d0f07fdd551b0/000103.jpg",
+      "sha256": "1ed9f7ca5d809b3f6a5179d7899f4e1fbf626a97b98189340dcce1c6331fccd8",
+      "display": "chronology_contact_sheet"
+    },
+    {
+      "evidence_id": "recipe:124",
+      "timestamp": 611.45,
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/recipe-workflow-trained-v1/sequences/clip_19116a95186d0f07fdd551b0/000123.jpg",
+      "sha256": "e36c779a1d457e882844e388b5da54edbca918f67b665093d17170960d20e265",
+      "display": "chronology_contact_sheet"
+    },
+    {
+      "evidence_id": "recipe:145",
+      "timestamp": 611.87,
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/recipe-workflow-trained-v1/sequences/clip_19116a95186d0f07fdd551b0/000144.jpg",
+      "sha256": "966b586590b2da98c75ceaa31438b7a38245376cb4f806c3da6ac028e494a609",
+      "display": "full_size_and_chronology"
+    }
+  ],
+  "observation": {
+    "initial": "Nested dark cookware and a metal colander with blue handles are supported on a wooden board in an open lower cupboard. Hands are at the front sides of the board.",
+    "middle": "The hands reposition and the left arm reaches into/behind the cupboard contents. The cookware shifts in the view along with the board/camera; the exact support/contact state is partly occluded.",
+    "final": "The nested cookware remains visible over the wooden board. The inspected sequence does not clearly show completed removal from its support or a separate carried state.",
+    "location_discrepancy": "The digital commitment says worktop; the observed setting is an open lower cupboard. The digital wording was not silently corrected or treated as visual evidence."
+  },
+  "physical_outcome": {
+    "status": "unknown",
+    "pickup_verified": false,
+    "recipe_step_complete": false,
+    "conclusion": "A completed pickup of the nested bowls is not established by the inspected sequence. Keep the recipe step unverified.",
+    "uncertainty": [
+      "Nine chronological frames were visually inspected, with three also at full size; all 145 files were hash-verified, not all individually visually inspected.",
+      "Egocentric camera motion and hand/cupboard occlusion limit inference about depth and support contact.",
+      "The motion watch is an operational geometric cue, not proof of pickup.",
+      "The 2.50-second tracking appearance failure is localization uncertainty; the object is still visible in the final image."
+    ],
+    "needed_for_confirmation": "A subsequent unobscured view showing the cookware separated from its prior support and held/carried, or another explicit verified completion observation.",
+    "next_context_correction": "Any future observation request should describe the observed open lower cupboard rather than the digital worktop wording, while retaining the original commitment and its discrepancy in provenance.",
+    "new_watch_armed_after_eof": false
+  },
+  "local_response": {
+    "status": "verified",
+    "scope": "Actual owned Home Assistant API controlling an isolated simulated template light; no physical home connected.",
+    "preparation_path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/recipe-workflow-trained-v1/preparation.json",
+    "initial_state": "off",
+    "readback_state": "on",
+    "response_key": "response_a54609eed883620f1f8955539d365698",
+    "delivery_id": "delivery_b36453181cbc40c69331c968a8a14cdb",
+    "payload_sha256": "0305e4c84d03032a6bd063e2760a20842b3a05a4e9d956265d714b0dfdc5a2d7",
+    "event_source_ended_at": 1789497575.0399659,
+    "event_available_at": 1789497575.150424,
+    "response_sent_at": 1789497575.162482,
+    "response_verified_at": 1789497575.213751,
+    "source_end_to_response_verified_s": 0.17378520965576172,
+    "available_to_response_verified_s": 0.06332707405090332,
+    "response_timely": true,
+    "verification_kind": "ha_state_readback",
+    "readback": {
+      "action_id": "response_a54609eed883620f1f8955539d365698",
+      "attributes": {
+        "color_mode": "onoff",
+        "friendly_name": "Kitchen",
+        "supported_color_modes": [
+          "onoff"
+        ],
+        "supported_features": 0
+      },
+      "entity_id": "light.kitchen",
+      "simulated": false,
+      "state": "on",
+      "verification_latency_s": 0.002306167036294937,
+      "verified": true
+    },
+    "separate_from_physical_outcome": true
+  },
+  "learned_perception": {
+    "prefix": {
+      "status": "strict_valid_but_not_semantic_confirmation",
+      "delivery_id": "delivery_d15d5a1c1cd6edfb98d89351961ec5b7",
+      "payload_sha256": "6f86f66a5de0677aecb217f5d0fdcf20c7603d07d95f2b7b2784a950aff9abed",
+      "event": {
+        "confidence": 0.9,
+        "description": "pick up bowl from counter",
+        "ended_at": 1789497575.099966,
+        "event_available_at": 1789497587.224066,
+        "event_id": "pevt_118a138400114fb28dfb78e5aed887b7",
+        "kind": "pick-up",
+        "object_label": "bowl",
+        "origin": "learned",
+        "post_evidence_ids": [
+          "recipe:8"
+        ],
+        "pre_evidence_ids": [
+          "recipe:1"
+        ],
+        "received_at": 1789497587.225466,
+        "source_event_id": "pick-up-bowl-from-counter-608.99-609.13",
+        "started_at": 1789497574.959966,
+        "subject_ids": [
+          "phys_90534c9232004643bd8a6d61aa3d3754"
+        ],
+        "uncertainty": "Approximate image box around nested bowls. Count, persistent identity, and calibrated confidence are not established.",
+        "window_id": "clip_dc6dae3031f8f2182ac2fa7f"
+      },
+      "source_end_to_available_s": 12.124099969863892,
+      "assessment": "An asserted pickup within the initial 0.14-second prefix is not sufficient evidence of completed pickup; visual review does not confirm that claim."
+    },
+    "full_sequence": {
+      "status": "rejected",
+      "delivery_id": "delivery_98eca00c2fddea44a4ce6062b9517af0",
+      "payload_sha256": "9794ac8b9cb51f0d9106aa8d1456d4848c8cc0c315a1d7d3b75947becb6ad86f",
+      "error": "physical assertion cites future evidence",
+      "assessment": "No accepted full-sequence physical decision. The rejected raw prediction cannot confirm completion."
+    }
+  },
+  "transport_acknowledgements": [
+    {
+      "command_id": "stage2-runpod-ack-2d345541ee5d77465f2e7660d99f31ce",
+      "delivery_id": "delivery_2d345541ee5d77465f2e7660d99f31ce",
+      "payload_sha256": "29a5faf30f3947c53b053927e8404881ff6292f5b6c4837b03654ea481b52fdf",
+      "submitted_at": 1789497707.9817972,
+      "result": {
+        "command_id": "stage2-runpod-ack-2d345541ee5d77465f2e7660d99f31ce",
+        "coordinator_id": "/root/runpod_impl",
+        "accepted_at": 1789497733.329386,
+        "result": {
+          "acknowledged": true,
+          "already_acknowledged": false
+        }
+      }
+    },
+    {
+      "command_id": "stage2-runpod-ack-3187bc6c608b9cd5a1f01d35750e8cfb",
+      "delivery_id": "delivery_3187bc6c608b9cd5a1f01d35750e8cfb",
+      "payload_sha256": "c0610651ef20d1fac066d1eb52fab474b7d8588ced128ecd8205db74acd21a2b",
+      "submitted_at": 1789497707.98222,
+      "result": {
+        "command_id": "stage2-runpod-ack-3187bc6c608b9cd5a1f01d35750e8cfb",
+        "coordinator_id": "/root/runpod_impl",
+        "accepted_at": 1789497733.329386,
+        "result": {
+          "acknowledged": true,
+          "already_acknowledged": false
+        }
+      }
+    },
+    {
+      "command_id": "stage2-runpod-ack-805a67a8be1b8c1f34059eecd539779c",
+      "delivery_id": "delivery_805a67a8be1b8c1f34059eecd539779c",
+      "payload_sha256": "7601add9c15bdfccaec4794a555bb6c2f36a070944907c10a5ec126cc99b55ce",
+      "submitted_at": 1789497707.982547,
+      "result": {
+        "command_id": "stage2-runpod-ack-805a67a8be1b8c1f34059eecd539779c",
+        "coordinator_id": "/root/runpod_impl",
+        "accepted_at": 1789497733.329386,
+        "result": {
+          "acknowledged": true,
+          "already_acknowledged": false
+        }
+      }
+    },
+    {
+      "command_id": "stage2-runpod-ack-98eca00c2fddea44a4ce6062b9517af0",
+      "delivery_id": "delivery_98eca00c2fddea44a4ce6062b9517af0",
+      "payload_sha256": "9794ac8b9cb51f0d9106aa8d1456d4848c8cc0c315a1d7d3b75947becb6ad86f",
+      "submitted_at": 1789497707.983104,
+      "result": {
+        "command_id": "stage2-runpod-ack-98eca00c2fddea44a4ce6062b9517af0",
+        "coordinator_id": "/root/runpod_impl",
+        "accepted_at": 1789497733.329386,
+        "result": {
+          "acknowledged": true,
+          "already_acknowledged": false
+        }
+      }
+    },
+    {
+      "command_id": "stage2-runpod-ack-b20a4925d2c0c0b5fc029c0a308274ea",
+      "delivery_id": "delivery_b20a4925d2c0c0b5fc029c0a308274ea",
+      "payload_sha256": "48babf585076d0478e4770c5cebc8b3656680572f1028113a28e15529fdbe224",
+      "submitted_at": 1789497707.983417,
+      "result": {
+        "command_id": "stage2-runpod-ack-b20a4925d2c0c0b5fc029c0a308274ea",
+        "coordinator_id": "/root/runpod_impl",
+        "accepted_at": 1789497733.329386,
+        "result": {
+          "acknowledged": true,
+          "already_acknowledged": false
+        }
+      }
+    },
+    {
+      "command_id": "stage2-runpod-ack-b36453181cbc40c69331c968a8a14cdb",
+      "delivery_id": "delivery_b36453181cbc40c69331c968a8a14cdb",
+      "payload_sha256": "0305e4c84d03032a6bd063e2760a20842b3a05a4e9d956265d714b0dfdc5a2d7",
+      "submitted_at": 1789497707.984363,
+      "result": {
+        "command_id": "stage2-runpod-ack-b36453181cbc40c69331c968a8a14cdb",
+        "coordinator_id": "/root/runpod_impl",
+        "accepted_at": 1789497733.329386,
+        "result": {
+          "acknowledged": true,
+          "already_acknowledged": false
+        }
+      }
+    },
+    {
+      "command_id": "stage2-runpod-ack-d15d5a1c1cd6edfb98d89351961ec5b7",
+      "delivery_id": "delivery_d15d5a1c1cd6edfb98d89351961ec5b7",
+      "payload_sha256": "6f86f66a5de0677aecb217f5d0fdcf20c7603d07d95f2b7b2784a950aff9abed",
+      "submitted_at": 1789497707.9848168,
+      "result": {
+        "command_id": "stage2-runpod-ack-d15d5a1c1cd6edfb98d89351961ec5b7",
+        "coordinator_id": "/root/runpod_impl",
+        "accepted_at": 1789497733.329386,
+        "result": {
+          "acknowledged": true,
+          "already_acknowledged": false
+        }
+      }
+    },
+    {
+      "command_id": "stage2-runpod-ack-e7fabffb9e738e081acf8f3fd57ab8ae",
+      "delivery_id": "delivery_e7fabffb9e738e081acf8f3fd57ab8ae",
+      "payload_sha256": "552fb6dbd4bf1bd5aa752c0f85762a92db4f8f933d67e2cf89329fec312df982",
+      "submitted_at": 1789497707.9852018,
+      "result": {
+        "command_id": "stage2-runpod-ack-e7fabffb9e738e081acf8f3fd57ab8ae",
+        "coordinator_id": "/root/runpod_impl",
+        "accepted_at": 1789497733.329386,
+        "result": {
+          "acknowledged": true,
+          "already_acknowledged": false
+        }
+      }
+    }
+  ],
+  "runtime": {
+    "started_at": 1789497575.0017579,
+    "finished_at": 1789497659.343447,
+    "captured_frames": 145,
+    "capture_trace_tail_limit": 128,
+    "capture_lateness_mean_s": 0.0026922012197560276,
+    "capture_lateness_max_s": 0.0355839729309082,
+    "tracking_queue_frame_limit": 128,
+    "tracking_frame_losses": 0,
+    "buffer_capacity_splits": 0,
+    "seeds_pending_at_eof": 0,
+    "local_event_losses": 0,
+    "artificial_inference_delay_s": 0,
+    "event_evidence_retention_limit": 256,
+    "initial_context_frames": 8,
+    "expired_event_evidence": 0,
+    "post_source_watch_seconds": 60.0,
+    "source_eof": true,
+    "watch_runtime_continues_after_return": false,
+    "scope": "One continuous video source; activity coverage and geometry are separate from learned event accuracy."
+  },
+  "data_access": {
+    "dataset_target_labels_inspected": false,
+    "gpu_inference_calls_by_stage2": 0,
+    "sources_used": [
+      "Preserved digital commitment and plan",
+      "Actual event outbox and typed ACK results",
+      "Actual recorded sequence manifest/JPEGs",
+      "Actual HA preparation/readback artifacts",
+      "Actual stream report"
+    ]
+  },
+  "completed_at": 1789497785.744255
+}

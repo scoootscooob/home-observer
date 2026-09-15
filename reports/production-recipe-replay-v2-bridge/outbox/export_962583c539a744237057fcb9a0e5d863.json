@@ -1,0 +1,31 @@
+{
+  "created_at": 1789503221.172513,
+  "export_id": "export_962583c539a744237057fcb9a0e5d863",
+  "export_sha256": "0f5b3534b95cbd5bfa8010d0fb7e9cd5d29cda3bae3798a9149142e1ea88c9b9",
+  "message": {
+    "audit_ref": "audit_7ff225840d12536669127330",
+    "commitment_id": "recipe-prep-lift-bowls",
+    "eligible_at": 1789503221.034,
+    "event_id": "pevt_18a860ec69e34198bb875e0af99a7954",
+    "failure_class": null,
+    "matched_at": 1789503221.104,
+    "message_type": "watch_status",
+    "outcome_event_id": null,
+    "outcome_verified_at": null,
+    "readback_state": "on",
+    "reported_at": null,
+    "response_id": "recipe-movement-cue",
+    "response_reserved_at": 1789503221.104,
+    "response_result": "verified",
+    "response_sent_at": 1789503221.105,
+    "response_timely": true,
+    "response_verified_at": 1789503221.172,
+    "status": "response_verified",
+    "verification_kind": "ha_state_readback",
+    "watch_id": "watch-bowl-motion-cue"
+  },
+  "schema_version": "home-observer.production-export/1",
+  "topic": "watch.response_verified",
+  "attempt": 4,
+  "exported_at": 1789503235.193778
+}

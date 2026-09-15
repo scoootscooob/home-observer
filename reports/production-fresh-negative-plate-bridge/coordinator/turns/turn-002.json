@@ -1,0 +1,379 @@
+{
+  "turn": 2,
+  "at": 1789508509.9086359,
+  "prompt_sha256": "3e67a7c50cfe1d6150eb809293add493f38c7d43562bff5e8d08377540b8d246",
+  "prompt": {
+    "now": 1789508509.909,
+    "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+    "digital_context": {
+      "commitment_id": "recipe-serve-lift-plate",
+      "text": "Recipe serving: lift the dinner plate from the table to carry it to the counter. Give an immediate visual cue when the observed plate begins moving, then verify the pickup from local observation before marking the step complete.",
+      "source_ref": "Demonstration digital recipe instruction for the negative workflow; the recorded footage only slides the plate on the table.",
+      "source_clip": "data/continuous-v2-workflow/negative-move-plate-P22_105.mp4",
+      "response_registry": "configs/recipe-workflow/responses.json",
+      "expected_outcome": "The plate is repositioned but never lifted; the step must remain pending and pickup must not be verified."
+    },
+    "approved_responses": [
+      {
+        "response_id": "recipe-movement-cue",
+        "kind": "ha_service",
+        "purpose": "Bowl movement detected; checking the recipe step."
+      }
+    ],
+    "exports_new": [
+      {
+        "created_at": 1789508508.95205,
+        "export_id": "export_a281c9daf909f7d7503c2168adbbec44",
+        "export_sha256": "44c3c790547ff861b0783ee8dbb18fbb3d5c66bffbc1e20fa873c7b70ae16f8f",
+        "message": {
+          "audit_ref": "audit_a3f109dca51456e6b5a6d397",
+          "commitment_id": "recipe-serve-lift-plate",
+          "eligible_at": null,
+          "event_id": null,
+          "failure_class": null,
+          "matched_at": null,
+          "message_type": "watch_status",
+          "outcome_event_id": null,
+          "outcome_verified_at": null,
+          "readback_state": null,
+          "reported_at": 1789508508.952,
+          "response_id": "recipe-movement-cue",
+          "response_reserved_at": null,
+          "response_result": null,
+          "response_sent_at": null,
+          "response_timely": null,
+          "response_verified_at": null,
+          "status": "armed",
+          "verification_kind": null,
+          "watch_id": "watch-plate-motion-cue"
+        },
+        "schema_version": "home-observer.production-export/1",
+        "topic": "watch.created",
+        "attempt": 1,
+        "exported_at": 1789508508.95205
+      },
+      {
+        "created_at": 1789508509.405783,
+        "export_id": "export_13be7e65b78f5b13f988fbebb32428f2",
+        "export_sha256": "994dcce7525489f65b71fc07acbd16cdcfa755cbe12ff9505c44c3bf339b30a3",
+        "message": {
+          "audit_ref": "audit_592bf7fe44d5ca55095d6547",
+          "commitment_id": "recipe-serve-lift-plate",
+          "eligible_at": 1789508509.315,
+          "event_id": "pevt_6415702458b445ffbfc63289759c99b6",
+          "failure_class": null,
+          "matched_at": 1789508509.393,
+          "message_type": "watch_status",
+          "outcome_event_id": null,
+          "outcome_verified_at": null,
+          "readback_state": "on",
+          "reported_at": null,
+          "response_id": "recipe-movement-cue",
+          "response_reserved_at": 1789508509.393,
+          "response_result": "verified",
+          "response_sent_at": 1789508509.394,
+          "response_timely": true,
+          "response_verified_at": 1789508509.404,
+          "status": "response_verified",
+          "verification_kind": "ha_state_readback",
+          "watch_id": "watch-plate-motion-cue"
+        },
+        "schema_version": "home-observer.production-export/1",
+        "topic": "watch.response_verified",
+        "attempt": 1,
+        "exported_at": 1789508509.405783
+      },
+      {
+        "created_at": 1789508509.405783,
+        "export_id": "export_3e96ce1a84eb9c53d2237ddc1fcb528a",
+        "export_sha256": "8f020caa224d69b148982d75aea60d7efefae346cab9df4a7e774dd41da4619b",
+        "message": {
+          "audit_ref": "audit_e2f6eeda98e2bbe71225a1a4",
+          "commitment_id": "recipe-serve-lift-plate",
+          "eligible_at": 1789508509.315,
+          "event_id": "pevt_6415702458b445ffbfc63289759c99b6",
+          "failure_class": null,
+          "matched_at": 1789508509.393,
+          "message_type": "watch_status",
+          "outcome_event_id": null,
+          "outcome_verified_at": null,
+          "readback_state": null,
+          "reported_at": null,
+          "response_id": "recipe-movement-cue",
+          "response_reserved_at": 1789508509.393,
+          "response_result": null,
+          "response_sent_at": null,
+          "response_timely": null,
+          "response_verified_at": null,
+          "status": "matched",
+          "verification_kind": null,
+          "watch_id": "watch-plate-motion-cue"
+        },
+        "schema_version": "home-observer.production-export/1",
+        "topic": "watch.matched",
+        "attempt": 1,
+        "exported_at": 1789508509.405783
+      },
+      {
+        "created_at": 1789508509.405783,
+        "export_id": "export_d8bbe090d44d9e8c43334611778da0af",
+        "export_sha256": "c23b272627a81f530ef3e8a6266dd74b943ee058bf88a51ce63d665f21c907b3",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_07de03c55179e0d351f9266d",
+          "available_at": 1789508509.385,
+          "category_in_vocabulary": true,
+          "confidence": 0.85,
+          "ended_at": 1789508509.315,
+          "event_id": "pevt_6415702458b445ffbfc63289759c99b6",
+          "evidence_count": 2,
+          "kind": "motion_started",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "plate",
+          "origin": "geometric",
+          "started_at": 1789508509.255,
+          "subject_ids": [
+            "phys_7fe841eec2e8496ebec7916e1ea90a11"
+          ],
+          "uncertainty_level": "medium"
+        },
+        "schema_version": "home-observer.production-export/1",
+        "topic": "physical.event",
+        "attempt": 1,
+        "exported_at": 1789508509.405783
+      }
+    ],
+    "exports_all_recent": [
+      {
+        "topic": "watch.created",
+        "export_id": "export_a281c9daf909f7d7503c2168adbbec44",
+        "created_at": 1789508508.95205
+      },
+      {
+        "topic": "watch.response_verified",
+        "export_id": "export_13be7e65b78f5b13f988fbebb32428f2",
+        "created_at": 1789508509.405783
+      },
+      {
+        "topic": "watch.matched",
+        "export_id": "export_3e96ce1a84eb9c53d2237ddc1fcb528a",
+        "created_at": 1789508509.405783
+      },
+      {
+        "topic": "physical.event",
+        "export_id": "export_d8bbe090d44d9e8c43334611778da0af",
+        "created_at": 1789508509.405783
+      }
+    ],
+    "export_messages_recent": [
+      {
+        "export_id": "export_a281c9daf909f7d7503c2168adbbec44",
+        "topic": "watch.created",
+        "message": {
+          "audit_ref": "audit_a3f109dca51456e6b5a6d397",
+          "commitment_id": "recipe-serve-lift-plate",
+          "eligible_at": null,
+          "event_id": null,
+          "failure_class": null,
+          "matched_at": null,
+          "message_type": "watch_status",
+          "outcome_event_id": null,
+          "outcome_verified_at": null,
+          "readback_state": null,
+          "reported_at": 1789508508.952,
+          "response_id": "recipe-movement-cue",
+          "response_reserved_at": null,
+          "response_result": null,
+          "response_sent_at": null,
+          "response_timely": null,
+          "response_verified_at": null,
+          "status": "armed",
+          "verification_kind": null,
+          "watch_id": "watch-plate-motion-cue"
+        }
+      },
+      {
+        "export_id": "export_13be7e65b78f5b13f988fbebb32428f2",
+        "topic": "watch.response_verified",
+        "message": {
+          "audit_ref": "audit_592bf7fe44d5ca55095d6547",
+          "commitment_id": "recipe-serve-lift-plate",
+          "eligible_at": 1789508509.315,
+          "event_id": "pevt_6415702458b445ffbfc63289759c99b6",
+          "failure_class": null,
+          "matched_at": 1789508509.393,
+          "message_type": "watch_status",
+          "outcome_event_id": null,
+          "outcome_verified_at": null,
+          "readback_state": "on",
+          "reported_at": null,
+          "response_id": "recipe-movement-cue",
+          "response_reserved_at": 1789508509.393,
+          "response_result": "verified",
+          "response_sent_at": 1789508509.394,
+          "response_timely": true,
+          "response_verified_at": 1789508509.404,
+          "status": "response_verified",
+          "verification_kind": "ha_state_readback",
+          "watch_id": "watch-plate-motion-cue"
+        }
+      },
+      {
+        "export_id": "export_3e96ce1a84eb9c53d2237ddc1fcb528a",
+        "topic": "watch.matched",
+        "message": {
+          "audit_ref": "audit_e2f6eeda98e2bbe71225a1a4",
+          "commitment_id": "recipe-serve-lift-plate",
+          "eligible_at": 1789508509.315,
+          "event_id": "pevt_6415702458b445ffbfc63289759c99b6",
+          "failure_class": null,
+          "matched_at": 1789508509.393,
+          "message_type": "watch_status",
+          "outcome_event_id": null,
+          "outcome_verified_at": null,
+          "readback_state": null,
+          "reported_at": null,
+          "response_id": "recipe-movement-cue",
+          "response_reserved_at": 1789508509.393,
+          "response_result": null,
+          "response_sent_at": null,
+          "response_timely": null,
+          "response_verified_at": null,
+          "status": "matched",
+          "verification_kind": null,
+          "watch_id": "watch-plate-motion-cue"
+        }
+      },
+      {
+        "export_id": "export_d8bbe090d44d9e8c43334611778da0af",
+        "topic": "physical.event",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_07de03c55179e0d351f9266d",
+          "available_at": 1789508509.385,
+          "category_in_vocabulary": true,
+          "confidence": 0.85,
+          "ended_at": 1789508509.315,
+          "event_id": "pevt_6415702458b445ffbfc63289759c99b6",
+          "evidence_count": 2,
+          "kind": "motion_started",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "plate",
+          "origin": "geometric",
+          "started_at": 1789508509.255,
+          "subject_ids": [
+            "phys_7fe841eec2e8496ebec7916e1ea90a11"
+          ],
+          "uncertainty_level": "medium"
+        }
+      }
+    ],
+    "command_results": [
+      {
+        "command_id": "cmd-watch-plate-motion-1",
+        "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+        "accepted_at": 1789508508.95205,
+        "outcome": {
+          "watch_id": "watch-plate-motion-cue",
+          "status": "armed"
+        }
+      }
+    ],
+    "rejected_commands": [],
+    "previous_assessment": {
+      "recipe_step_complete": false,
+      "pickup_verified": "unknown",
+      "rationale": "No exports yet: no physical events, no track IDs, no verification results. Watch armed for plate motion to fire the cue. Step stays pending until a verifier confirms pickup_completed or clear_of_support."
+    },
+    "already_acknowledged": [],
+    "turn": 2
+  },
+  "model_record": {
+    "model": "claude-opus-5",
+    "attempt": 1,
+    "latency_s": 18.323853015899658,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 5660,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5660
+      },
+      "output_tokens": 1084,
+      "output_tokens_details": {
+        "thinking_tokens": 105
+      },
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+    }
+  },
+  "model_text": "{\"commands\": [{\"command_id\": \"cmd-ack-watch-created-1\", \"coordinator_id\": \"sandboxed-frontier-267e8c45a0bd\", \"type\": \"ack_export\", \"export_id\": \"export_a281c9daf909f7d7503c2168adbbec44\", \"export_sha256\": \"44c3c790547ff861b0783ee8dbb18fbb3d5c66bffbc1e20fa873c7b70ae16f8f\"}, {\"command_id\": \"cmd-ack-response-verified-1\", \"coordinator_id\": \"sandboxed-frontier-267e8c45a0bd\", \"type\": \"ack_export\", \"export_id\": \"export_13be7e65b78f5b13f988fbebb32428f2\", \"export_sha256\": \"994dcce7525489f65b71fc07acbd16cdcfa755cbe12ff9505c44c3bf339b30a3\"}, {\"command_id\": \"cmd-ack-watch-matched-1\", \"coordinator_id\": \"sandboxed-frontier-267e8c45a0bd\", \"type\": \"ack_export\", \"export_id\": \"export_3e96ce1a84eb9c53d2237ddc1fcb528a\", \"export_sha256\": \"8f020caa224d69b148982d75aea60d7efefae346cab9df4a7e774dd41da4619b\"}, {\"command_id\": \"cmd-ack-physical-event-1\", \"coordinator_id\": \"sandboxed-frontier-267e8c45a0bd\", \"type\": \"ack_export\", \"export_id\": \"export_d8bbe090d44d9e8c43334611778da0af\", \"export_sha256\": \"c23b272627a81f530ef3e8a6266dd74b943ee058bf88a51ce63d665f21c907b3\"}, {\"command_id\": \"cmd-verify-pickup-1\", \"coordinator_id\": \"sandboxed-frontier-267e8c45a0bd\", \"type\": \"verify\", \"verification\": {\"request_id\": \"vrq-pickup-plate-1\", \"question\": \"pickup_completed\", \"subject_id\": \"phys_7fe841eec2e8496ebec7916e1ea90a11\", \"lookback_s\": 30}}, {\"command_id\": \"cmd-verify-clear-1\", \"coordinator_id\": \"sandboxed-frontier-267e8c45a0bd\", \"type\": \"verify\", \"verification\": {\"request_id\": \"vrq-clear-plate-1\", \"question\": \"clear_of_support\", \"subject_id\": \"phys_7fe841eec2e8496ebec7916e1ea90a11\", \"lookback_s\": 30}}], \"assessment\": {\"recipe_step_complete\": false, \"pickup_verified\": \"unknown\", \"rationale\": \"Geometric motion_started on plate phys_7fe8 matched the watch and the cue response was verified, but a light cue and motion never prove a lift. Asked verifier for pickup_completed and clear_of_support; step stays pending until a confirmed verdict.\"}, \"wait\": true}",
+  "error": null,
+  "commands_written": [
+    {
+      "command_id": "cmd-ack-watch-created-1",
+      "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+      "type": "ack_export",
+      "export_id": "export_a281c9daf909f7d7503c2168adbbec44",
+      "export_sha256": "44c3c790547ff861b0783ee8dbb18fbb3d5c66bffbc1e20fa873c7b70ae16f8f"
+    },
+    {
+      "command_id": "cmd-ack-response-verified-1",
+      "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+      "type": "ack_export",
+      "export_id": "export_13be7e65b78f5b13f988fbebb32428f2",
+      "export_sha256": "994dcce7525489f65b71fc07acbd16cdcfa755cbe12ff9505c44c3bf339b30a3"
+    },
+    {
+      "command_id": "cmd-ack-watch-matched-1",
+      "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+      "type": "ack_export",
+      "export_id": "export_3e96ce1a84eb9c53d2237ddc1fcb528a",
+      "export_sha256": "8f020caa224d69b148982d75aea60d7efefae346cab9df4a7e774dd41da4619b"
+    },
+    {
+      "command_id": "cmd-ack-physical-event-1",
+      "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+      "type": "ack_export",
+      "export_id": "export_d8bbe090d44d9e8c43334611778da0af",
+      "export_sha256": "c23b272627a81f530ef3e8a6266dd74b943ee058bf88a51ce63d665f21c907b3"
+    },
+    {
+      "command_id": "cmd-verify-pickup-1",
+      "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+      "type": "verify",
+      "verification": {
+        "request_id": "vrq-pickup-plate-1",
+        "question": "pickup_completed",
+        "subject_id": "phys_7fe841eec2e8496ebec7916e1ea90a11",
+        "lookback_s": 30
+      }
+    },
+    {
+      "command_id": "cmd-verify-clear-1",
+      "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+      "type": "verify",
+      "verification": {
+        "request_id": "vrq-clear-plate-1",
+        "question": "clear_of_support",
+        "subject_id": "phys_7fe841eec2e8496ebec7916e1ea90a11",
+        "lookback_s": 30
+      }
+    }
+  ],
+  "skipped": [],
+  "auto_acknowledged": [
+    "export_a281c9daf909f7d7503c2168adbbec44",
+    "export_13be7e65b78f5b13f988fbebb32428f2",
+    "export_3e96ce1a84eb9c53d2237ddc1fcb528a",
+    "export_d8bbe090d44d9e8c43334611778da0af"
+  ],
+  "assessment": {
+    "recipe_step_complete": false,
+    "pickup_verified": "unknown",
+    "rationale": "Geometric motion_started on plate phys_7fe8 matched the watch and the cue response was verified, but a light cue and motion never prove a lift. Asked verifier for pickup_completed and clear_of_support; step stays pending until a confirmed verdict."
+  }
+}

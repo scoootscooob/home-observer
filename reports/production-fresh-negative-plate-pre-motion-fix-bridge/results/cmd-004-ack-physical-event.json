@@ -1,0 +1,10 @@
+{
+  "command_id": "cmd-004-ack-physical-event",
+  "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+  "accepted_at": 1789507640.9592261,
+  "outcome": {
+    "acknowledged": true,
+    "already_acknowledged": false,
+    "topic": "physical.event"
+  }
+}

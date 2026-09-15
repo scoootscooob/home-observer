@@ -1,0 +1,97 @@
+{
+  "basis": "source visibility only, before candidate model outputs; original bowl failure retained",
+  "candidates": [
+    {
+      "id": "epic_64066260fe86eb204ed9",
+      "interaction": "pick up bowl",
+      "clip": "clips/64066260fe86eb204ed9.mp4"
+    },
+    {
+      "id": "epic_030c003244925eb728dd",
+      "interaction": "pick up bowls",
+      "clip": "clips/030c003244925eb728dd.mp4"
+    },
+    {
+      "id": "epic_04798b158f7edbe24248",
+      "interaction": "pick up knife",
+      "clip": "clips/04798b158f7edbe24248.mp4"
+    },
+    {
+      "id": "epic_049c62a27db7a36a728d",
+      "interaction": "pick up knife",
+      "clip": "clips/049c62a27db7a36a728d.mp4"
+    },
+    {
+      "id": "epic_a890f0b6cb389efafa60",
+      "interaction": "put down bowl",
+      "clip": "clips/a890f0b6cb389efafa60.mp4"
+    },
+    {
+      "id": "epic_075224833ab8933f0efc",
+      "interaction": "put down bowls",
+      "clip": "clips/075224833ab8933f0efc.mp4"
+    },
+    {
+      "id": "epic_10712ed97f592de4bebb",
+      "interaction": "put down bowl",
+      "clip": "clips/10712ed97f592de4bebb.mp4"
+    },
+    {
+      "id": "epic_13e8efa9b77dc5475bf6",
+      "interaction": "put plate in drying up rack",
+      "clip": "clips/13e8efa9b77dc5475bf6.mp4"
+    },
+    {
+      "id": "epic_01659d9083e47dac8d2f",
+      "interaction": "open cupboard",
+      "clip": "clips/01659d9083e47dac8d2f.mp4"
+    },
+    {
+      "id": "epic_05abe7d37040ccbccec9",
+      "interaction": "open cupboard",
+      "clip": "clips/05abe7d37040ccbccec9.mp4"
+    },
+    {
+      "id": "epic_0a6b2e13d11c959e17ab",
+      "interaction": "open cupboard",
+      "clip": "clips/0a6b2e13d11c959e17ab.mp4"
+    },
+    {
+      "id": "epic_1a2d012cfe9af08bf7b9",
+      "interaction": "open cupboard",
+      "clip": "clips/1a2d012cfe9af08bf7b9.mp4"
+    },
+    {
+      "id": "epic_1299e5f96751e7952a02",
+      "interaction": "close cupboard",
+      "clip": "clips/1299e5f96751e7952a02.mp4"
+    },
+    {
+      "id": "epic_1772ed13e609646ab36f",
+      "interaction": "close drawer",
+      "clip": "clips/1772ed13e609646ab36f.mp4"
+    },
+    {
+      "id": "epic_178f903665d54a841d21",
+      "interaction": "close cupboard",
+      "clip": "clips/178f903665d54a841d21.mp4"
+    },
+    {
+      "id": "epic_1999a73d5aedff84fcec",
+      "interaction": "close cupboard",
+      "clip": "clips/1999a73d5aedff84fcec.mp4"
+    }
+  ],
+  "selected_candidate": {
+    "id": "epic_030c003244925eb728dd",
+    "interaction": "pick up bowls",
+    "selection_reason": "Nested bowl/colander stack remains large and visible in first, middle and last actual frames; selected before any new model inference outputs",
+    "initial_assistant_box_xyxy": [
+      319,
+      67,
+      573,
+      327
+    ],
+    "visibility_is_not_semantic_ground_truth": true
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "seen_exports": [
+    "export_93c04ff156bf5654fe331a29b2751794",
+    "export_28dea1e70123a97e56658dfaeea78cfb",
+    "export_2c854c40d297e06033dc68cb9622d0b8",
+    "export_962583c539a744237057fcb9a0e5d863",
+    "export_741e006f8f32f4b868ff040464490245",
+    "export_dc0d12b177ca9964a9db3e27dc813f57",
+    "export_a506ebcb7f407baf586687d7ee42c1bf",
+    "export_52d283197683c6ecce3f0cbd38c5db17",
+    "export_00491ab1fc0dcc2ad34d31abc00bb4f8",
+    "export_352e128ea2133e16c761768806df832f",
+    "export_247573d2e7007790498514d5f1a10206",
+    "export_38e01164bcf1e0e5666b66caa1fbc4cc"
+  ],
+  "acked_exports": [
+    "export_93c04ff156bf5654fe331a29b2751794",
+    "export_28dea1e70123a97e56658dfaeea78cfb",
+    "export_2c854c40d297e06033dc68cb9622d0b8",
+    "export_962583c539a744237057fcb9a0e5d863",
+    "export_741e006f8f32f4b868ff040464490245",
+    "export_dc0d12b177ca9964a9db3e27dc813f57",
+    "export_a506ebcb7f407baf586687d7ee42c1bf",
+    "export_52d283197683c6ecce3f0cbd38c5db17",
+    "export_00491ab1fc0dcc2ad34d31abc00bb4f8",
+    "export_352e128ea2133e16c761768806df832f",
+    "export_247573d2e7007790498514d5f1a10206",
+    "export_38e01164bcf1e0e5666b66caa1fbc4cc"
+  ],
+  "commands": [
+    {
+      "command_id": "cmd-001-create-watch-bowl-motion",
+      "type": "create_watch",
+      "written_at": 1789503220.88191
+    },
+    {
+      "command_id": "ack-93c04ff156bf5654-2",
+      "type": "ack_export",
+      "written_at": 1789503241.1104481,
+      "auto": true
+    },
+    {
+      "command_id": "ack-28dea1e70123a97e-2",
+      "type": "ack_export",
+      "written_at": 1789503241.110622,
+      "auto": true
+    },
+    {
+      "command_id": "ack-2c854c40d297e060-2",
+      "type": "ack_export",
+      "written_at": 1789503241.110773,
+      "auto": true
+    },
+    {
+      "command_id": "ack-962583c539a74423-2",
+      "type": "ack_export",
+      "written_at": 1789503241.1110342,
+      "auto": true
+    },
+    {
+      "command_id": "ack-741e006f8f32f4b8-3",
+      "type": "ack_export",
+      "written_at": 1789503258.857014
+    },
+    {
+      "command_id": "ack-dc0d12b177ca9964-3",
+      "type": "ack_export",
+      "written_at": 1789503258.857287
+    },
+    {
+      "command_id": "ack-a506ebcb7f407baf-3",
+      "type": "ack_export",
+      "written_at": 1789503258.857522
+    },
+    {
+      "command_id": "cmd-003-verify-pickup",
+      "type": "verify",
+      "written_at": 1789503258.8577468
+    },
+    {
+      "command_id": "cmd-004-verify-clear",
+      "type": "verify",
+      "written_at": 1789503258.8580759
+    },
+    {
+      "command_id": "ack-52d283197683c6ec-4",
+      "type": "ack_export",
+      "written_at": 1789503281.970739
+    },
+    {
+      "command_id": "ack-00491ab1fc0dcc2a-4",
+      "type": "ack_export",
+      "written_at": 1789503281.971047
+    },
+    {
+      "command_id": "ack-352e128ea2133e16-4",
+      "type": "ack_export",
+      "written_at": 1789503281.9713228
+    },
+    {
+      "command_id": "cmd-005-verify-pickup-retry",
+      "type": "verify",
+      "written_at": 1789503281.971582
+    },
+    {
+      "command_id": "cmd-006-verify-clear-retry",
+      "type": "verify",
+      "written_at": 1789503281.971832
+    },
+    {
+      "command_id": "ack-247573d2e7007790-5",
+      "type": "ack_export",
+      "written_at": 1789503299.115552
+    },
+    {
+      "command_id": "ack-38e01164bcf1e0e5-5",
+      "type": "ack_export",
+      "written_at": 1789503299.115734
+    },
+    {
+      "command_id": "cmd-007-cancel-watch-bowl-motion",
+      "type": "cancel_watch",
+      "written_at": 1789503299.115894
+    }
+  ],
+  "turns": 5,
+  "assessment": {
+    "recipe_step_complete": false,
+    "pickup_verified": "unknown",
+    "rationale": "Retry verdicts again unknown (insufficient_tracking_history); both questions now asked twice, so no further repeats allowed. Only evidence is geometric motion plus a verified cue, which cannot complete the step. Acked both exports and cancelled the spent watch. Step pending.",
+    "wait": true
+  },
+  "started_at": 1789503214.398685,
+  "restarts": 0
+}

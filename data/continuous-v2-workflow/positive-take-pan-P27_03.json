@@ -1,0 +1,47 @@
+{
+  "role": "positive",
+  "source_video": "data/continuous-v2/videos/P27_03.mp4",
+  "source_video_sha256": "e4cd4527ced4902cfb78271b44e8fd8970fc03bc8abd592aef8978949267d49e",
+  "video_id": "P27_03",
+  "source_start_s": 52.5,
+  "source_end_s": 61.0,
+  "duration_s": 8.5,
+  "clip_sha256": "3c3cea12449ec4b432cdf1e3a8bc827172fc13d7fe74460db4cddc1f522b29eb",
+  "encode_seconds": 0.45,
+  "annotations_sha256": "a3a7ef2e397bd8af12bd0496b09d61b1f2c1f3f6e1726fa86af50a27f4855e87",
+  "overlapping_narrations": [
+    {
+      "narration_id": "P27_03_10",
+      "narration": "put down pan",
+      "verb": "put-down",
+      "noun": "pan",
+      "start": 57.9,
+      "stop": 62.17,
+      "clip_relative_start": 5.4,
+      "clip_relative_stop": 9.67
+    },
+    {
+      "narration_id": "P27_03_8",
+      "narration": "put down lid",
+      "verb": "put-down",
+      "noun": "lid",
+      "start": 48.98,
+      "stop": 55.03,
+      "clip_relative_start": -3.52,
+      "clip_relative_stop": 2.53
+    },
+    {
+      "narration_id": "P27_03_9",
+      "narration": "take pan",
+      "verb": "take",
+      "noun": "pan",
+      "start": 56.54,
+      "stop": 57.99,
+      "clip_relative_start": 4.04,
+      "clip_relative_stop": 5.49
+    }
+  ],
+  "note": "Candidate positive: official narration P27_03_9 'take pan' 56.54-57.99 s with 1.5 s quiet before",
+  "time_basis": "clip-relative seconds; add source_start_s for recording time",
+  "selection": "chosen by inspecting footage and official narrations only; no model predictions used"
+}

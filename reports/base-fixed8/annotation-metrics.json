@@ -1,0 +1,297 @@
+{
+  "version": 1,
+  "metric": "known_annotated_observation_pairs",
+  "scope": "Exact typed values for annotated (entity_id, attribute) pairs only. Additional pairs are unscored extras.",
+  "matching": "Exact JSON values; strings, booleans and numbers are distinct. Identical duplicates count once; conflicting predictions are incorrect.",
+  "failure_handling": "Uses parsed observation values even when other fields are rejected. Invalid/failed windows are retained separately; no raw output is repaired or parsed here.",
+  "windows": 8,
+  "observation_labeled_windows": 8,
+  "observation_unscored_windows": 0,
+  "original_invalid_or_failed_windows": 1,
+  "known_labels": {
+    "annotated_pairs": 28,
+    "correct": 2,
+    "incorrect": 1,
+    "missing": 25,
+    "covered": 3,
+    "coverage": 0.10714285714285714,
+    "accuracy_on_covered": 0.6666666666666666,
+    "correct_fraction": 0.07142857142857142
+  },
+  "camera_occupancy": {
+    "annotated_pairs": 16,
+    "correct": 1,
+    "incorrect": 1,
+    "missing": 14,
+    "covered": 2,
+    "coverage": 0.125,
+    "accuracy_on_covered": 0.5,
+    "correct_fraction": 0.0625
+  },
+  "camera_occupancy_definition": "Source-annotated room.* / occupied pairs; this name does not assert that the model used camera evidence.",
+  "per_entity": {
+    "binary_sensor.motion_entry": {
+      "annotated_pairs": 2,
+      "correct": 0,
+      "incorrect": 0,
+      "missing": 2,
+      "covered": 0,
+      "coverage": 0.0,
+      "accuracy_on_covered": null,
+      "correct_fraction": 0.0
+    },
+    "binary_sensor.motion_garage": {
+      "annotated_pairs": 2,
+      "correct": 0,
+      "incorrect": 0,
+      "missing": 2,
+      "covered": 0,
+      "coverage": 0.0,
+      "accuracy_on_covered": null,
+      "correct_fraction": 0.0
+    },
+    "binary_sensor.motion_kitchen": {
+      "annotated_pairs": 2,
+      "correct": 0,
+      "incorrect": 0,
+      "missing": 2,
+      "covered": 0,
+      "coverage": 0.0,
+      "accuracy_on_covered": null,
+      "correct_fraction": 0.0
+    },
+    "binary_sensor.motion_lounge": {
+      "annotated_pairs": 2,
+      "correct": 1,
+      "incorrect": 0,
+      "missing": 1,
+      "covered": 1,
+      "coverage": 0.5,
+      "accuracy_on_covered": 1.0,
+      "correct_fraction": 0.5
+    },
+    "binary_sensor.water_leak": {
+      "annotated_pairs": 4,
+      "correct": 0,
+      "incorrect": 0,
+      "missing": 4,
+      "covered": 0,
+      "coverage": 0.0,
+      "accuracy_on_covered": null,
+      "correct_fraction": 0.0
+    },
+    "room.entry": {
+      "annotated_pairs": 4,
+      "correct": 0,
+      "incorrect": 0,
+      "missing": 4,
+      "covered": 0,
+      "coverage": 0.0,
+      "accuracy_on_covered": null,
+      "correct_fraction": 0.0
+    },
+    "room.garage": {
+      "annotated_pairs": 4,
+      "correct": 0,
+      "incorrect": 0,
+      "missing": 4,
+      "covered": 0,
+      "coverage": 0.0,
+      "accuracy_on_covered": null,
+      "correct_fraction": 0.0
+    },
+    "room.kitchen": {
+      "annotated_pairs": 4,
+      "correct": 0,
+      "incorrect": 0,
+      "missing": 4,
+      "covered": 0,
+      "coverage": 0.0,
+      "accuracy_on_covered": null,
+      "correct_fraction": 0.0
+    },
+    "room.lounge": {
+      "annotated_pairs": 4,
+      "correct": 1,
+      "incorrect": 1,
+      "missing": 2,
+      "covered": 2,
+      "coverage": 0.5,
+      "accuracy_on_covered": 0.5,
+      "correct_fraction": 0.25
+    }
+  },
+  "unscored_extras": {
+    "pair_instances": 4,
+    "windows": 2,
+    "by_entity": {
+      "binary_sensor.motion_kitchen": 1,
+      "binary_sensor.water_leak": 1,
+      "light.kitchen": 1,
+      "sensor.ambient_lux": 1
+    },
+    "interpretation": "No source annotation for these pairs. Neither correct nor incorrect perception is established."
+  },
+  "legacy_strict_set_compatibility": {
+    "interpretation": "Original evaluator semantics. Unannotated extras count as strict-set mismatches; this is not proof of false perception.",
+    "metrics": {
+      "windows": 8,
+      "targeted_windows": 8,
+      "invalid_or_failed_windows": 1,
+      "valid_response_rate": 0.875,
+      "action_precision": 1.0,
+      "action_recall": 0.5,
+      "observation_precision": 0.2857142857142857,
+      "observation_recall": 0.07142857142857142,
+      "false_action_window_rate": 0.0,
+      "latency_p50_s": 2.7599896250176243,
+      "latency_p95_s": 18.53575391601771,
+      "latency_mean_s": 7.889179499761667,
+      "counts": {
+        "action_tp": 2,
+        "action_fp": 0,
+        "action_fn": 2,
+        "obs_tp": 2,
+        "obs_fp": 5,
+        "obs_fn": 26,
+        "action_scored": 8,
+        "observation_scored": 8,
+        "no_action_windows": 4,
+        "false_action_windows": 0
+      },
+      "scope": "Proposed-action and observation accuracy on labeled windows; not a household reliability guarantee."
+    }
+  },
+  "rows": [
+    {
+      "id": "0f87bea12e7eeffe0490be0a",
+      "task_type": "device_control",
+      "observation_supervised": true,
+      "original_result_failed": false,
+      "annotated_pairs": 9,
+      "correct": 1,
+      "incorrect": 1,
+      "missing": 7,
+      "covered": 2,
+      "coverage": 0.2222222222222222,
+      "accuracy_on_covered": 0.5,
+      "correct_fraction": 0.1111111111111111,
+      "unscored_extra_pairs": 1
+    },
+    {
+      "id": "003b6eb3870b05708f1bb569",
+      "task_type": "device_control",
+      "observation_supervised": true,
+      "original_result_failed": false,
+      "annotated_pairs": 0,
+      "correct": 0,
+      "incorrect": 0,
+      "missing": 0,
+      "covered": 0,
+      "coverage": null,
+      "accuracy_on_covered": null,
+      "correct_fraction": null,
+      "unscored_extra_pairs": 3
+    },
+    {
+      "id": "05397daacd48069d6fa20040",
+      "task_type": "device_control",
+      "observation_supervised": true,
+      "original_result_failed": false,
+      "annotated_pairs": 9,
+      "correct": 0,
+      "incorrect": 0,
+      "missing": 9,
+      "covered": 0,
+      "coverage": 0.0,
+      "accuracy_on_covered": null,
+      "correct_fraction": 0.0,
+      "unscored_extra_pairs": 0
+    },
+    {
+      "id": "11963250d2c5e9d5a069c7de",
+      "task_type": "device_control",
+      "observation_supervised": true,
+      "original_result_failed": false,
+      "annotated_pairs": 0,
+      "correct": 0,
+      "incorrect": 0,
+      "missing": 0,
+      "covered": 0,
+      "coverage": null,
+      "accuracy_on_covered": null,
+      "correct_fraction": null,
+      "unscored_extra_pairs": 0
+    },
+    {
+      "id": "7b375ece79f8005e838c9201",
+      "task_type": "visual_occupancy",
+      "observation_supervised": true,
+      "original_result_failed": false,
+      "annotated_pairs": 5,
+      "correct": 1,
+      "incorrect": 0,
+      "missing": 4,
+      "covered": 1,
+      "coverage": 0.2,
+      "accuracy_on_covered": 1.0,
+      "correct_fraction": 0.2,
+      "unscored_extra_pairs": 0
+    },
+    {
+      "id": "3191c2b354415e837c3e6077",
+      "task_type": "visual_occupancy",
+      "observation_supervised": true,
+      "original_result_failed": true,
+      "annotated_pairs": 0,
+      "correct": 0,
+      "incorrect": 0,
+      "missing": 0,
+      "covered": 0,
+      "coverage": null,
+      "accuracy_on_covered": null,
+      "correct_fraction": null,
+      "unscored_extra_pairs": 0
+    },
+    {
+      "id": "a811ccc1f25b564d02cc8391",
+      "task_type": "visual_occupancy",
+      "observation_supervised": true,
+      "original_result_failed": false,
+      "annotated_pairs": 5,
+      "correct": 0,
+      "incorrect": 0,
+      "missing": 5,
+      "covered": 0,
+      "coverage": 0.0,
+      "accuracy_on_covered": null,
+      "correct_fraction": 0.0,
+      "unscored_extra_pairs": 0
+    },
+    {
+      "id": "17c68884ec8057ed161bb910",
+      "task_type": "visual_occupancy",
+      "observation_supervised": true,
+      "original_result_failed": false,
+      "annotated_pairs": 0,
+      "correct": 0,
+      "incorrect": 0,
+      "missing": 0,
+      "covered": 0,
+      "coverage": null,
+      "accuracy_on_covered": null,
+      "correct_fraction": null,
+      "unscored_extra_pairs": 0
+    }
+  ],
+  "built_at": "2026-09-15T16:54:11+00:00",
+  "sources": [
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/base-fixed8/predictions.jsonl",
+      "sha256": "ea0d6c06976ac7468f05b8fe4cf4a98eacf6f67093ef5da0c8d0bc7ddc741f27",
+      "bytes": 50854,
+      "rows": 8
+    }
+  ],
+  "completeness": "File snapshot only; no full-release completion is inferred."
+}

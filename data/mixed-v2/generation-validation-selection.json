@@ -1,0 +1,63 @@
+{
+  "source": "validation.jsonl",
+  "selection": "fixed task/action/history strata ordered by opaque row ID; historical quiet rows require true noop; no model outputs used",
+  "test_rows_used": 0,
+  "rows": [
+    {
+      "id": "0f87bea12e7eeffe0490be0a",
+      "group_id": "synthetic:validation-household-routine-5",
+      "task_type": "device_control",
+      "action": true,
+      "context_mode": "none"
+    },
+    {
+      "id": "003b6eb3870b05708f1bb569",
+      "group_id": "synthetic:validation-household-routine-3",
+      "task_type": "device_control",
+      "action": true,
+      "context_mode": "same"
+    },
+    {
+      "id": "05397daacd48069d6fa20040",
+      "group_id": "synthetic:validation-household-routine-2",
+      "task_type": "device_control",
+      "action": false,
+      "context_mode": "none"
+    },
+    {
+      "id": "11963250d2c5e9d5a069c7de",
+      "group_id": "synthetic:validation-household-routine-4",
+      "task_type": "device_control",
+      "action": false,
+      "context_mode": "same"
+    },
+    {
+      "id": "7b375ece79f8005e838c9201",
+      "group_id": "synthetic:validation-household-routine-1",
+      "task_type": "visual_occupancy",
+      "action": true,
+      "context_mode": "none"
+    },
+    {
+      "id": "3191c2b354415e837c3e6077",
+      "group_id": "synthetic:validation-household-routine-3",
+      "task_type": "visual_occupancy",
+      "action": true,
+      "context_mode": "different"
+    },
+    {
+      "id": "a811ccc1f25b564d02cc8391",
+      "group_id": "synthetic:validation-household-routine-1",
+      "task_type": "visual_occupancy",
+      "action": false,
+      "context_mode": "none"
+    },
+    {
+      "id": "17c68884ec8057ed161bb910",
+      "group_id": "synthetic:validation-household-routine-0",
+      "task_type": "visual_occupancy",
+      "action": false,
+      "context_mode": "same"
+    }
+  ]
+}

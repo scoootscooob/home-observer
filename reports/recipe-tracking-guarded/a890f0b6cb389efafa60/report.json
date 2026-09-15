@@ -1,0 +1,597 @@
+{
+  "clip": "a890f0b6cb389efafa60",
+  "frames": 78,
+  "median_ms": 4.3500000028871,
+  "p95_ms": 14.020041807089001,
+  "max_ms": 14.606833981815726,
+  "elapsed_s": 0.431730541982688,
+  "full_loop_fps": 180.66824654515113,
+  "tracker": {
+    "frames_processed": 77,
+    "active_tracks": 1,
+    "flow_failures": 1,
+    "maximum_tracks": 8,
+    "scope": "Supplied-box propagation with appearance, scale, visibility and gap checks; no object discovery, semantic action recognition, or guaranteed identity.",
+    "backend": "OpenCV CSRT",
+    "scale": 0.5,
+    "loss_reasons": {
+      "mostly_outside_view": 1
+    },
+    "camera_compensated_frames": 77,
+    "guards": {
+      "min_points": 4,
+      "motion_threshold": 0.003,
+      "settle_seconds": 0.3,
+      "lost_ttl_seconds": 5.0,
+      "scale": 0.5,
+      "max_frame_gap_s": 0.25,
+      "max_appearance_distance": 0.65,
+      "min_visible_fraction": 0.65,
+      "min_area_ratio": 0.25,
+      "max_area_ratio": 4.0,
+      "max_step_area_ratio": 1.7,
+      "max_center_step": 0.12
+    },
+    "confidence_kind": "uncalibrated_heuristic",
+    "calibrated_confidence": null
+  },
+  "events": [
+    {
+      "event_id": "csrt_phys_nested_bowls_motion_started_2",
+      "kind": "motion_started",
+      "object_label": "bowl stack",
+      "subject_ids": [
+        "phys_nested_bowls"
+      ],
+      "started_at": 0.0,
+      "ended_at": 0.02,
+      "available_at": 1789496061.1302688,
+      "confidence": 0.7022786091947941,
+      "uncertainty": "CSRT with heuristic appearance/scale/visibility guards; confidence is an uncalibrated score, not a probability. Background compensation models translation only. Geometric change does not prove semantic pickup, placement, persistent identity, or physical absence.",
+      "description": "bowl stack: motion started in the camera view",
+      "pre_evidence_ids": [
+        "ego:1"
+      ],
+      "post_evidence_ids": [
+        "ego:2"
+      ],
+      "camera_compensated": true
+    },
+    {
+      "event_id": "csrt_phys_nested_bowls_visibility_lost_7",
+      "kind": "visibility_lost",
+      "object_label": "bowl stack",
+      "subject_ids": [
+        "phys_nested_bowls"
+      ],
+      "started_at": 0.1,
+      "ended_at": 0.12,
+      "available_at": 1789496061.201804,
+      "confidence": 0.0,
+      "uncertainty": "CSRT with heuristic appearance/scale/visibility guards; confidence is an uncalibrated score, not a probability. Background compensation models translation only. Geometric change does not prove semantic pickup, placement, persistent identity, or physical absence. Tracking became uncertain: mostly_outside_view.",
+      "description": "bowl stack: visibility lost in the camera view",
+      "pre_evidence_ids": [
+        "ego:6"
+      ],
+      "post_evidence_ids": [
+        "ego:7"
+      ],
+      "camera_compensated": true
+    }
+  ],
+  "states": [
+    {
+      "frame_index": 0,
+      "states": [],
+      "elapsed_s": 0.011740333982743323
+    },
+    {
+      "frame_index": 1,
+      "states": [
+        {
+          "track_id": "phys_nested_bowls",
+          "label": "bowl stack",
+          "box": [
+            0.11241217798594848,
+            0.6583333333333333,
+            0.3840749414519906,
+            1.0
+          ],
+          "timestamp": 0.02,
+          "evidence_id": "ego:2",
+          "visibility": "visible",
+          "confidence": 0.7022786091947941,
+          "confidence_kind": "uncalibrated_heuristic",
+          "calibrated_confidence": null,
+          "appearance_distance": 0.2977213908052058,
+          "visible_fraction": 0.931818181818182,
+          "relative_motion": 0.056844831031069507,
+          "camera_compensated": true,
+          "total_area_ratio": 0.9652954841172328
+        }
+      ],
+      "elapsed_s": 0.014218416006769985
+    },
+    {
+      "frame_index": 2,
+      "states": [
+        {
+          "track_id": "phys_nested_bowls",
+          "label": "bowl stack",
+          "box": [
+            0.1592505854800937,
+            0.6875,
+            0.4309133489461358,
+            1.0
+          ],
+          "timestamp": 0.04,
+          "evidence_id": "ego:3",
+          "visibility": "visible",
+          "confidence": 0.5769014413706814,
+          "confidence_kind": "uncalibrated_heuristic",
+          "calibrated_confidence": null,
+          "appearance_distance": 0.4230985586293185,
+          "visible_fraction": 0.8522727272727272,
+          "relative_motion": 0.06910114638841497,
+          "camera_compensated": true,
+          "total_area_ratio": 0.9652954841172331
+        }
+      ],
+      "elapsed_s": 0.014033833984285593
+    },
+    {
+      "frame_index": 3,
+      "states": [
+        {
+          "track_id": "phys_nested_bowls",
+          "label": "bowl stack",
+          "box": [
+            0.18969555035128804,
+            0.6916666666666667,
+            0.4707259953161593,
+            1.0
+          ],
+          "timestamp": 0.06,
+          "evidence_id": "ego:4",
+          "visibility": "visible",
+          "confidence": 0.5561979708969754,
+          "confidence_kind": "uncalibrated_heuristic",
+          "calibrated_confidence": null,
+          "appearance_distance": 0.4438020291030246,
+          "visible_fraction": 0.8043478260869565,
+          "relative_motion": 0.05886789430707464,
+          "camera_compensated": true,
+          "total_area_ratio": 1.0439716050797663
+        }
+      ],
+      "elapsed_s": 0.01401674997759983
+    },
+    {
+      "frame_index": 4,
+      "states": [
+        {
+          "track_id": "phys_nested_bowls",
+          "label": "bowl stack",
+          "box": [
+            0.21311475409836064,
+            0.7083333333333334,
+            0.5011709601873536,
+            1.0
+          ],
+          "timestamp": 0.08,
+          "evidence_id": "ego:5",
+          "visibility": "visible",
+          "confidence": 0.4935125477943859,
+          "confidence_kind": "uncalibrated_heuristic",
+          "calibrated_confidence": null,
+          "appearance_distance": 0.5064874522056141,
+          "visible_fraction": 0.7446808510638295,
+          "relative_motion": 0.06919202360414238,
+          "camera_compensated": true,
+          "total_area_ratio": 1.0933333059721249
+        }
+      ],
+      "elapsed_s": 0.013947041006758809
+    },
+    {
+      "frame_index": 5,
+      "states": [
+        {
+          "track_id": "phys_nested_bowls",
+          "label": "bowl stack",
+          "box": [
+            0.24121779859484777,
+            0.7375,
+            0.5292740046838408,
+            1.0
+          ],
+          "timestamp": 0.1,
+          "evidence_id": "ego:6",
+          "visibility": "visible",
+          "confidence": 0.48267112762115183,
+          "confidence_kind": "uncalibrated_heuristic",
+          "calibrated_confidence": null,
+          "appearance_distance": 0.5173288723788482,
+          "visible_fraction": 0.6702127659574468,
+          "relative_motion": 0.08899703646296916,
+          "camera_compensated": true,
+          "total_area_ratio": 1.0933333059721246
+        }
+      ],
+      "elapsed_s": 0.014461625018157065
+    },
+    {
+      "frame_index": 6,
+      "states": [
+        {
+          "track_id": "phys_nested_bowls",
+          "label": "bowl stack",
+          "visibility": "uncertain",
+          "timestamp": 0.12,
+          "box": null,
+          "evidence_id": "ego:7",
+          "confidence": 0.0,
+          "confidence_kind": "uncalibrated_heuristic",
+          "calibrated_confidence": null,
+          "failure_reason": "mostly_outside_view"
+        }
+      ],
+      "elapsed_s": 0.014607458957470953
+    },
+    {
+      "frame_index": 7,
+      "states": [],
+      "elapsed_s": 0.0047550000017508864
+    },
+    {
+      "frame_index": 8,
+      "states": [],
+      "elapsed_s": 0.0051842499524354935
+    },
+    {
+      "frame_index": 9,
+      "states": [],
+      "elapsed_s": 0.004594874975737184
+    },
+    {
+      "frame_index": 10,
+      "states": [],
+      "elapsed_s": 0.004533292027190328
+    },
+    {
+      "frame_index": 11,
+      "states": [],
+      "elapsed_s": 0.004413874994497746
+    },
+    {
+      "frame_index": 12,
+      "states": [],
+      "elapsed_s": 0.00443054101197049
+    },
+    {
+      "frame_index": 13,
+      "states": [],
+      "elapsed_s": 0.004338375001680106
+    },
+    {
+      "frame_index": 14,
+      "states": [],
+      "elapsed_s": 0.0045016660005785525
+    },
+    {
+      "frame_index": 15,
+      "states": [],
+      "elapsed_s": 0.0043819589773193
+    },
+    {
+      "frame_index": 16,
+      "states": [],
+      "elapsed_s": 0.0043540410115383565
+    },
+    {
+      "frame_index": 17,
+      "states": [],
+      "elapsed_s": 0.004434082948137075
+    },
+    {
+      "frame_index": 18,
+      "states": [],
+      "elapsed_s": 0.004433457972481847
+    },
+    {
+      "frame_index": 19,
+      "states": [],
+      "elapsed_s": 0.00442549999570474
+    },
+    {
+      "frame_index": 20,
+      "states": [],
+      "elapsed_s": 0.004250333004165441
+    },
+    {
+      "frame_index": 21,
+      "states": [],
+      "elapsed_s": 0.004391999973449856
+    },
+    {
+      "frame_index": 22,
+      "states": [],
+      "elapsed_s": 0.004322958004195243
+    },
+    {
+      "frame_index": 23,
+      "states": [],
+      "elapsed_s": 0.004211958032101393
+    },
+    {
+      "frame_index": 24,
+      "states": [],
+      "elapsed_s": 0.004490207997150719
+    },
+    {
+      "frame_index": 25,
+      "states": [],
+      "elapsed_s": 0.004468832979910076
+    },
+    {
+      "frame_index": 26,
+      "states": [],
+      "elapsed_s": 0.004389000008814037
+    },
+    {
+      "frame_index": 27,
+      "states": [],
+      "elapsed_s": 0.004376291995868087
+    },
+    {
+      "frame_index": 28,
+      "states": [],
+      "elapsed_s": 0.0043500420288182795
+    },
+    {
+      "frame_index": 29,
+      "states": [],
+      "elapsed_s": 0.004314416029956192
+    },
+    {
+      "frame_index": 30,
+      "states": [],
+      "elapsed_s": 0.0042955829994753
+    },
+    {
+      "frame_index": 31,
+      "states": [],
+      "elapsed_s": 0.004415333038195968
+    },
+    {
+      "frame_index": 32,
+      "states": [],
+      "elapsed_s": 0.0043807909823954105
+    },
+    {
+      "frame_index": 33,
+      "states": [],
+      "elapsed_s": 0.004319833999034017
+    },
+    {
+      "frame_index": 34,
+      "states": [],
+      "elapsed_s": 0.004497167014051229
+    },
+    {
+      "frame_index": 35,
+      "states": [],
+      "elapsed_s": 0.004357790981885046
+    },
+    {
+      "frame_index": 36,
+      "states": [],
+      "elapsed_s": 0.004351291048806161
+    },
+    {
+      "frame_index": 37,
+      "states": [],
+      "elapsed_s": 0.004183666023891419
+    },
+    {
+      "frame_index": 38,
+      "states": [],
+      "elapsed_s": 0.004339291015639901
+    },
+    {
+      "frame_index": 39,
+      "states": [],
+      "elapsed_s": 0.004246915981639177
+    },
+    {
+      "frame_index": 40,
+      "states": [],
+      "elapsed_s": 0.004188082995824516
+    },
+    {
+      "frame_index": 41,
+      "states": [],
+      "elapsed_s": 0.004347624955698848
+    },
+    {
+      "frame_index": 42,
+      "states": [],
+      "elapsed_s": 0.004225417040288448
+    },
+    {
+      "frame_index": 43,
+      "states": [],
+      "elapsed_s": 0.0042754579917527735
+    },
+    {
+      "frame_index": 44,
+      "states": [],
+      "elapsed_s": 0.004225916985888034
+    },
+    {
+      "frame_index": 45,
+      "states": [],
+      "elapsed_s": 0.004274250008165836
+    },
+    {
+      "frame_index": 46,
+      "states": [],
+      "elapsed_s": 0.004240540962200612
+    },
+    {
+      "frame_index": 47,
+      "states": [],
+      "elapsed_s": 0.0042139580473303795
+    },
+    {
+      "frame_index": 48,
+      "states": [],
+      "elapsed_s": 0.004323333036154509
+    },
+    {
+      "frame_index": 49,
+      "states": [],
+      "elapsed_s": 0.004335417004767805
+    },
+    {
+      "frame_index": 50,
+      "states": [],
+      "elapsed_s": 0.004320334002841264
+    },
+    {
+      "frame_index": 51,
+      "states": [],
+      "elapsed_s": 0.004315708996728063
+    },
+    {
+      "frame_index": 52,
+      "states": [],
+      "elapsed_s": 0.0044803330092690885
+    },
+    {
+      "frame_index": 53,
+      "states": [],
+      "elapsed_s": 0.0043413329985924065
+    },
+    {
+      "frame_index": 54,
+      "states": [],
+      "elapsed_s": 0.004350250004790723
+    },
+    {
+      "frame_index": 55,
+      "states": [],
+      "elapsed_s": 0.004420374985784292
+    },
+    {
+      "frame_index": 56,
+      "states": [],
+      "elapsed_s": 0.004448957974091172
+    },
+    {
+      "frame_index": 57,
+      "states": [],
+      "elapsed_s": 0.004571208031848073
+    },
+    {
+      "frame_index": 58,
+      "states": [],
+      "elapsed_s": 0.004362375009804964
+    },
+    {
+      "frame_index": 59,
+      "states": [],
+      "elapsed_s": 0.004376291995868087
+    },
+    {
+      "frame_index": 60,
+      "states": [],
+      "elapsed_s": 0.004322332970332354
+    },
+    {
+      "frame_index": 61,
+      "states": [],
+      "elapsed_s": 0.0043543329811654985
+    },
+    {
+      "frame_index": 62,
+      "states": [],
+      "elapsed_s": 0.0044448329717852175
+    },
+    {
+      "frame_index": 63,
+      "states": [],
+      "elapsed_s": 0.004240374953951687
+    },
+    {
+      "frame_index": 64,
+      "states": [],
+      "elapsed_s": 0.004250042024068534
+    },
+    {
+      "frame_index": 65,
+      "states": [],
+      "elapsed_s": 0.0041615000227466226
+    },
+    {
+      "frame_index": 66,
+      "states": [],
+      "elapsed_s": 0.004261082969605923
+    },
+    {
+      "frame_index": 67,
+      "states": [],
+      "elapsed_s": 0.004420167009811848
+    },
+    {
+      "frame_index": 68,
+      "states": [],
+      "elapsed_s": 0.004329583025537431
+    },
+    {
+      "frame_index": 69,
+      "states": [],
+      "elapsed_s": 0.00427991698961705
+    },
+    {
+      "frame_index": 70,
+      "states": [],
+      "elapsed_s": 0.00410945899784565
+    },
+    {
+      "frame_index": 71,
+      "states": [],
+      "elapsed_s": 0.0042375000193715096
+    },
+    {
+      "frame_index": 72,
+      "states": [],
+      "elapsed_s": 0.00410383305279538
+    },
+    {
+      "frame_index": 73,
+      "states": [],
+      "elapsed_s": 0.004060250008478761
+    },
+    {
+      "frame_index": 74,
+      "states": [],
+      "elapsed_s": 0.0039450000040233135
+    },
+    {
+      "frame_index": 75,
+      "states": [],
+      "elapsed_s": 0.004054916964378208
+    },
+    {
+      "frame_index": 76,
+      "states": [],
+      "elapsed_s": 0.003962916962336749
+    },
+    {
+      "frame_index": 77,
+      "states": [],
+      "elapsed_s": 0.004008041985798627
+    }
+  ]
+}

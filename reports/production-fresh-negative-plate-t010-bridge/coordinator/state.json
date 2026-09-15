@@ -1,0 +1,167 @@
+{
+  "seen_exports": [
+    "export_ecce8b1b96690b321721622dfaf754e0",
+    "export_3054314ab9bdeb1d5b19f9f883b2ca29",
+    "export_ebd796f11a5a084b609fec7caddb34be",
+    "export_3189f43f24d4005d0faa53774dd31982",
+    "export_8b339fe39de15d5e10d46486ffa18c32",
+    "export_9cb9f05727ebd90afc540fb23ea727e4",
+    "export_5774707a6d7e7521b260b4dfc462843c",
+    "export_0bef6a56f2607a6fb7c8fdce2d47b2e7",
+    "export_0fcff3f444260386b30bf4a96d46275f",
+    "export_baa1f0ad00d21287d667fd392845c0ae",
+    "export_60b55878bc4b0dbc41b77b74509da28c",
+    "export_2f02f31fecc9285ec6265747e3291432",
+    "export_bb489ebb833cfb1272379c584b0a8288",
+    "export_d0aa0a705bc3005e54c96e573ed7db8e",
+    "export_eac7bfacf331515f8c7c64eef325cad2",
+    "export_d2180dc5498c7649b1cfd1e8341c1ad8",
+    "export_03a1702d9a05b68927e27a6d21b2e981",
+    "export_5b88e0bfec358d194b38e27f7a12ac23"
+  ],
+  "acked_exports": [
+    "export_ecce8b1b96690b321721622dfaf754e0",
+    "export_3054314ab9bdeb1d5b19f9f883b2ca29",
+    "export_ebd796f11a5a084b609fec7caddb34be",
+    "export_3189f43f24d4005d0faa53774dd31982",
+    "export_8b339fe39de15d5e10d46486ffa18c32",
+    "export_9cb9f05727ebd90afc540fb23ea727e4",
+    "export_5774707a6d7e7521b260b4dfc462843c",
+    "export_0bef6a56f2607a6fb7c8fdce2d47b2e7",
+    "export_0fcff3f444260386b30bf4a96d46275f",
+    "export_baa1f0ad00d21287d667fd392845c0ae",
+    "export_60b55878bc4b0dbc41b77b74509da28c",
+    "export_2f02f31fecc9285ec6265747e3291432",
+    "export_bb489ebb833cfb1272379c584b0a8288",
+    "export_d0aa0a705bc3005e54c96e573ed7db8e",
+    "export_eac7bfacf331515f8c7c64eef325cad2",
+    "export_d2180dc5498c7649b1cfd1e8341c1ad8",
+    "export_03a1702d9a05b68927e27a6d21b2e981",
+    "export_5b88e0bfec358d194b38e27f7a12ac23"
+  ],
+  "commands": [
+    {
+      "command_id": "cmd-1-watch-move-cue",
+      "type": "create_watch",
+      "written_at": 1789508771.695416
+    },
+    {
+      "command_id": "cmd-2-ack-watch-created",
+      "type": "ack_export",
+      "written_at": 1789508778.7458591
+    },
+    {
+      "command_id": "cmd-3-ack-physical-event",
+      "type": "ack_export",
+      "written_at": 1789508790.811978
+    },
+    {
+      "command_id": "cmd-4-ack-perception-completed",
+      "type": "ack_export",
+      "written_at": 1789508790.812129
+    },
+    {
+      "command_id": "cmd-5-ack-response-verified",
+      "type": "ack_export",
+      "written_at": 1789508823.07972
+    },
+    {
+      "command_id": "cmd-6-ack-watch-matched",
+      "type": "ack_export",
+      "written_at": 1789508823.0798888
+    },
+    {
+      "command_id": "cmd-7-ack-motion-started",
+      "type": "ack_export",
+      "written_at": 1789508823.080001
+    },
+    {
+      "command_id": "cmd-8-ack-visibility-lost",
+      "type": "ack_export",
+      "written_at": 1789508823.08014
+    },
+    {
+      "command_id": "cmd-9-ack-learned-other",
+      "type": "ack_export",
+      "written_at": 1789508823.080257
+    },
+    {
+      "command_id": "cmd-10-ack-perception-completed-2",
+      "type": "ack_export",
+      "written_at": 1789508823.080359
+    },
+    {
+      "command_id": "cmd-11-verify-pickup",
+      "type": "verify",
+      "written_at": 1789508823.0804741
+    },
+    {
+      "command_id": "cmd-12-verify-clear",
+      "type": "verify",
+      "written_at": 1789508823.0806
+    },
+    {
+      "command_id": "ack-baa1f0ad00d21287-5",
+      "type": "ack_export",
+      "written_at": 1789508888.103292,
+      "auto": true
+    },
+    {
+      "command_id": "ack-60b55878bc4b0dbc-5",
+      "type": "ack_export",
+      "written_at": 1789508888.103731,
+      "auto": true
+    },
+    {
+      "command_id": "ack-2f02f31fecc9285e-5",
+      "type": "ack_export",
+      "written_at": 1789508888.103953,
+      "auto": true
+    },
+    {
+      "command_id": "ack-bb489ebb833cfb12-5",
+      "type": "ack_export",
+      "written_at": 1789508888.104149,
+      "auto": true
+    },
+    {
+      "command_id": "ack-d0aa0a705bc3005e-5",
+      "type": "ack_export",
+      "written_at": 1789508888.104359,
+      "auto": true
+    },
+    {
+      "command_id": "ack-eac7bfacf331515f-5",
+      "type": "ack_export",
+      "written_at": 1789508888.1045399,
+      "auto": true
+    },
+    {
+      "command_id": "ack-d2180dc5498c7649-5",
+      "type": "ack_export",
+      "written_at": 1789508888.1049159,
+      "auto": true
+    },
+    {
+      "command_id": "ack-03a1702d9a05b689-5",
+      "type": "ack_export",
+      "written_at": 1789508888.1051881,
+      "auto": true
+    },
+    {
+      "command_id": "ack-5b88e0bfec358d19-5",
+      "type": "ack_export",
+      "written_at": 1789508888.105477,
+      "auto": true
+    }
+  ],
+  "turns": 5,
+  "assessment": {
+    "recipe_step_complete": false,
+    "pickup_verified": "unknown",
+    "rationale": "Acked the six new exports. Geometric motion_started on phys_242cb24f plus a verified light cue do not complete the step; visibility_lost has 0.0 confidence. Asked pickup_completed and clear_of_support for that track; awaiting verifier verdicts.",
+    "wait": true
+  },
+  "started_at": 1789508760.8941271,
+  "restarts": 0
+}

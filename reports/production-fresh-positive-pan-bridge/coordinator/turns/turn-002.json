@@ -1,0 +1,379 @@
+{
+  "turn": 2,
+  "at": 1789508101.754037,
+  "prompt_sha256": "a592569031fc749743591e82fc86c8a038774dae8cf81fe20f0d2b6f24d53a04",
+  "prompt": {
+    "now": 1789508101.754,
+    "coordinator_id": "sandboxed-frontier-37a12cb40ee3",
+    "digital_context": {
+      "commitment_id": "recipe-cook-take-pan",
+      "text": "Recipe cooking: take the pan from the lower rack and lift it up to the hob. Give an immediate visual cue when the observed pan begins moving, then verify the pickup from local observation before marking the step complete.",
+      "source_ref": "Demonstration digital recipe instruction for the positive pan workflow; the footage contains the official narration 'take pan'.",
+      "source_clip": "data/continuous-v2-workflow/positive-take-pan-P27_03.mp4",
+      "response_registry": "configs/recipe-workflow/responses.json"
+    },
+    "approved_responses": [
+      {
+        "response_id": "recipe-movement-cue",
+        "kind": "ha_service",
+        "purpose": "Bowl movement detected; checking the recipe step."
+      }
+    ],
+    "exports_new": [
+      {
+        "created_at": 1789508100.747244,
+        "export_id": "export_933ebeb6f7aee4f50eae3e7ec5eb7ad1",
+        "export_sha256": "f276fabb5ec19b1703075f7d808da8962e46f1fcd6668eea2c6576b7f219ccaa",
+        "message": {
+          "audit_ref": "audit_2598307925e7034abeec79ad",
+          "commitment_id": "recipe-cook-take-pan",
+          "eligible_at": null,
+          "event_id": null,
+          "failure_class": null,
+          "matched_at": null,
+          "message_type": "watch_status",
+          "outcome_event_id": null,
+          "outcome_verified_at": null,
+          "readback_state": null,
+          "reported_at": 1789508100.747,
+          "response_id": "recipe-movement-cue",
+          "response_reserved_at": null,
+          "response_result": null,
+          "response_sent_at": null,
+          "response_timely": null,
+          "response_verified_at": null,
+          "status": "armed",
+          "verification_kind": null,
+          "watch_id": "watch-recipe-take-pan-motion"
+        },
+        "schema_version": "home-observer.production-export/1",
+        "topic": "watch.created",
+        "attempt": 1,
+        "exported_at": 1789508100.7472441
+      },
+      {
+        "created_at": 1789508101.023761,
+        "export_id": "export_140a74da9a54dba8c75ba389db18e193",
+        "export_sha256": "6a11e96bafa65d05eb7d86fc7609db290ce2b20809749f2636a3a46d02b34bf2",
+        "message": {
+          "audit_ref": "audit_268823b3ac630a04be7477a8",
+          "commitment_id": "recipe-cook-take-pan",
+          "eligible_at": 1789508100.896,
+          "event_id": "pevt_8d05122de1494ed6ade069b025dee011",
+          "failure_class": null,
+          "matched_at": 1789508101.004,
+          "message_type": "watch_status",
+          "outcome_event_id": null,
+          "outcome_verified_at": null,
+          "readback_state": "on",
+          "reported_at": null,
+          "response_id": "recipe-movement-cue",
+          "response_reserved_at": 1789508101.004,
+          "response_result": "verified",
+          "response_sent_at": 1789508101.006,
+          "response_timely": true,
+          "response_verified_at": 1789508101.023,
+          "status": "response_verified",
+          "verification_kind": "ha_state_readback",
+          "watch_id": "watch-recipe-take-pan-motion"
+        },
+        "schema_version": "home-observer.production-export/1",
+        "topic": "watch.response_verified",
+        "attempt": 1,
+        "exported_at": 1789508101.0237608
+      },
+      {
+        "created_at": 1789508101.023761,
+        "export_id": "export_c9003807dc6eb3eb2d09515c6e60b675",
+        "export_sha256": "83b748caff2f170564143e5531235af465045c4197fc1fc5c787111d28d5e791",
+        "message": {
+          "audit_ref": "audit_bd9781331e5384f1b3ee0473",
+          "commitment_id": "recipe-cook-take-pan",
+          "eligible_at": 1789508100.896,
+          "event_id": "pevt_8d05122de1494ed6ade069b025dee011",
+          "failure_class": null,
+          "matched_at": 1789508101.004,
+          "message_type": "watch_status",
+          "outcome_event_id": null,
+          "outcome_verified_at": null,
+          "readback_state": null,
+          "reported_at": null,
+          "response_id": "recipe-movement-cue",
+          "response_reserved_at": 1789508101.004,
+          "response_result": null,
+          "response_sent_at": null,
+          "response_timely": null,
+          "response_verified_at": null,
+          "status": "matched",
+          "verification_kind": null,
+          "watch_id": "watch-recipe-take-pan-motion"
+        },
+        "schema_version": "home-observer.production-export/1",
+        "topic": "watch.matched",
+        "attempt": 1,
+        "exported_at": 1789508101.0237608
+      },
+      {
+        "created_at": 1789508101.023761,
+        "export_id": "export_f587bf436cc7130019cf5f4aa1895bdb",
+        "export_sha256": "47b5a2a5963f37f8e55ceece451767c09ca6cc615e36cc5608d8008f31c388d0",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_3e1daf10c128b693628809ba",
+          "available_at": 1789508100.989,
+          "category_in_vocabulary": true,
+          "confidence": 0.79,
+          "ended_at": 1789508100.896,
+          "event_id": "pevt_8d05122de1494ed6ade069b025dee011",
+          "evidence_count": 2,
+          "kind": "motion_started",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "pan",
+          "origin": "geometric",
+          "started_at": 1789508100.846,
+          "subject_ids": [
+            "phys_ba861b22552642918b4c0a5080619d99"
+          ],
+          "uncertainty_level": "medium"
+        },
+        "schema_version": "home-observer.production-export/1",
+        "topic": "physical.event",
+        "attempt": 1,
+        "exported_at": 1789508101.0237608
+      }
+    ],
+    "exports_all_recent": [
+      {
+        "topic": "watch.created",
+        "export_id": "export_933ebeb6f7aee4f50eae3e7ec5eb7ad1",
+        "created_at": 1789508100.747244
+      },
+      {
+        "topic": "watch.response_verified",
+        "export_id": "export_140a74da9a54dba8c75ba389db18e193",
+        "created_at": 1789508101.023761
+      },
+      {
+        "topic": "watch.matched",
+        "export_id": "export_c9003807dc6eb3eb2d09515c6e60b675",
+        "created_at": 1789508101.023761
+      },
+      {
+        "topic": "physical.event",
+        "export_id": "export_f587bf436cc7130019cf5f4aa1895bdb",
+        "created_at": 1789508101.023761
+      }
+    ],
+    "export_messages_recent": [
+      {
+        "export_id": "export_933ebeb6f7aee4f50eae3e7ec5eb7ad1",
+        "topic": "watch.created",
+        "message": {
+          "audit_ref": "audit_2598307925e7034abeec79ad",
+          "commitment_id": "recipe-cook-take-pan",
+          "eligible_at": null,
+          "event_id": null,
+          "failure_class": null,
+          "matched_at": null,
+          "message_type": "watch_status",
+          "outcome_event_id": null,
+          "outcome_verified_at": null,
+          "readback_state": null,
+          "reported_at": 1789508100.747,
+          "response_id": "recipe-movement-cue",
+          "response_reserved_at": null,
+          "response_result": null,
+          "response_sent_at": null,
+          "response_timely": null,
+          "response_verified_at": null,
+          "status": "armed",
+          "verification_kind": null,
+          "watch_id": "watch-recipe-take-pan-motion"
+        }
+      },
+      {
+        "export_id": "export_140a74da9a54dba8c75ba389db18e193",
+        "topic": "watch.response_verified",
+        "message": {
+          "audit_ref": "audit_268823b3ac630a04be7477a8",
+          "commitment_id": "recipe-cook-take-pan",
+          "eligible_at": 1789508100.896,
+          "event_id": "pevt_8d05122de1494ed6ade069b025dee011",
+          "failure_class": null,
+          "matched_at": 1789508101.004,
+          "message_type": "watch_status",
+          "outcome_event_id": null,
+          "outcome_verified_at": null,
+          "readback_state": "on",
+          "reported_at": null,
+          "response_id": "recipe-movement-cue",
+          "response_reserved_at": 1789508101.004,
+          "response_result": "verified",
+          "response_sent_at": 1789508101.006,
+          "response_timely": true,
+          "response_verified_at": 1789508101.023,
+          "status": "response_verified",
+          "verification_kind": "ha_state_readback",
+          "watch_id": "watch-recipe-take-pan-motion"
+        }
+      },
+      {
+        "export_id": "export_c9003807dc6eb3eb2d09515c6e60b675",
+        "topic": "watch.matched",
+        "message": {
+          "audit_ref": "audit_bd9781331e5384f1b3ee0473",
+          "commitment_id": "recipe-cook-take-pan",
+          "eligible_at": 1789508100.896,
+          "event_id": "pevt_8d05122de1494ed6ade069b025dee011",
+          "failure_class": null,
+          "matched_at": 1789508101.004,
+          "message_type": "watch_status",
+          "outcome_event_id": null,
+          "outcome_verified_at": null,
+          "readback_state": null,
+          "reported_at": null,
+          "response_id": "recipe-movement-cue",
+          "response_reserved_at": 1789508101.004,
+          "response_result": null,
+          "response_sent_at": null,
+          "response_timely": null,
+          "response_verified_at": null,
+          "status": "matched",
+          "verification_kind": null,
+          "watch_id": "watch-recipe-take-pan-motion"
+        }
+      },
+      {
+        "export_id": "export_f587bf436cc7130019cf5f4aa1895bdb",
+        "topic": "physical.event",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_3e1daf10c128b693628809ba",
+          "available_at": 1789508100.989,
+          "category_in_vocabulary": true,
+          "confidence": 0.79,
+          "ended_at": 1789508100.896,
+          "event_id": "pevt_8d05122de1494ed6ade069b025dee011",
+          "evidence_count": 2,
+          "kind": "motion_started",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "pan",
+          "origin": "geometric",
+          "started_at": 1789508100.846,
+          "subject_ids": [
+            "phys_ba861b22552642918b4c0a5080619d99"
+          ],
+          "uncertainty_level": "medium"
+        }
+      }
+    ],
+    "command_results": [
+      {
+        "command_id": "cmd-1-create-watch-pan-motion",
+        "coordinator_id": "sandboxed-frontier-37a12cb40ee3",
+        "accepted_at": 1789508100.7472441,
+        "outcome": {
+          "watch_id": "watch-recipe-take-pan-motion",
+          "status": "armed"
+        }
+      }
+    ],
+    "rejected_commands": [],
+    "previous_assessment": {
+      "recipe_step_complete": false,
+      "pickup_verified": "unknown",
+      "rationale": "Turn 1: no exports received yet, so no phys_ track ID exists to verify. Created a single bounded watch for pan motion_started to fire the approved movement cue. Step stays pending until a verifier confirms pickup_completed or clear_of_support."
+    },
+    "already_acknowledged": [],
+    "turn": 2
+  },
+  "model_record": {
+    "model": "claude-opus-5",
+    "attempt": 1,
+    "latency_s": 18.490293979644775,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 5640,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5640
+      },
+      "output_tokens": 1055,
+      "output_tokens_details": {
+        "thinking_tokens": 81
+      },
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+    }
+  },
+  "model_text": "{\"commands\": [{\"command_id\": \"cmd-2-ack-watch-created\", \"coordinator_id\": \"sandboxed-frontier-37a12cb40ee3\", \"type\": \"ack_export\", \"export_id\": \"export_933ebeb6f7aee4f50eae3e7ec5eb7ad1\", \"export_sha256\": \"f276fabb5ec19b1703075f7d808da8962e46f1fcd6668eea2c6576b7f219ccaa\"}, {\"command_id\": \"cmd-2-ack-response-verified\", \"coordinator_id\": \"sandboxed-frontier-37a12cb40ee3\", \"type\": \"ack_export\", \"export_id\": \"export_140a74da9a54dba8c75ba389db18e193\", \"export_sha256\": \"6a11e96bafa65d05eb7d86fc7609db290ce2b20809749f2636a3a46d02b34bf2\"}, {\"command_id\": \"cmd-2-ack-watch-matched\", \"coordinator_id\": \"sandboxed-frontier-37a12cb40ee3\", \"type\": \"ack_export\", \"export_id\": \"export_c9003807dc6eb3eb2d09515c6e60b675\", \"export_sha256\": \"83b748caff2f170564143e5531235af465045c4197fc1fc5c787111d28d5e791\"}, {\"command_id\": \"cmd-2-ack-physical-event\", \"coordinator_id\": \"sandboxed-frontier-37a12cb40ee3\", \"type\": \"ack_export\", \"export_id\": \"export_f587bf436cc7130019cf5f4aa1895bdb\", \"export_sha256\": \"47b5a2a5963f37f8e55ceece451767c09ca6cc615e36cc5608d8008f31c388d0\"}, {\"command_id\": \"cmd-2-verify-pickup\", \"coordinator_id\": \"sandboxed-frontier-37a12cb40ee3\", \"type\": \"verify\", \"verification\": {\"request_id\": \"vrq-pan-pickup-1\", \"question\": \"pickup_completed\", \"subject_id\": \"phys_ba861b22552642918b4c0a5080619d99\", \"lookback_s\": 30}}, {\"command_id\": \"cmd-2-verify-clear\", \"coordinator_id\": \"sandboxed-frontier-37a12cb40ee3\", \"type\": \"verify\", \"verification\": {\"request_id\": \"vrq-pan-clear-1\", \"question\": \"clear_of_support\", \"subject_id\": \"phys_ba861b22552642918b4c0a5080619d99\", \"lookback_s\": 30}}], \"assessment\": {\"recipe_step_complete\": false, \"pickup_verified\": \"unknown\", \"rationale\": \"Turn 2: geometric pan motion_started matched and the approved cue was verified via HA readback, but a light cue and motion alone never complete the step. Acked all four exports and asked the local verifier for pickup_completed and clear_of_support on the pan track.\", \"wait\": true}, \"wait\": true}",
+  "error": null,
+  "commands_written": [
+    {
+      "command_id": "cmd-2-ack-watch-created",
+      "coordinator_id": "sandboxed-frontier-37a12cb40ee3",
+      "type": "ack_export",
+      "export_id": "export_933ebeb6f7aee4f50eae3e7ec5eb7ad1",
+      "export_sha256": "f276fabb5ec19b1703075f7d808da8962e46f1fcd6668eea2c6576b7f219ccaa"
+    },
+    {
+      "command_id": "cmd-2-ack-response-verified",
+      "coordinator_id": "sandboxed-frontier-37a12cb40ee3",
+      "type": "ack_export",
+      "export_id": "export_140a74da9a54dba8c75ba389db18e193",
+      "export_sha256": "6a11e96bafa65d05eb7d86fc7609db290ce2b20809749f2636a3a46d02b34bf2"
+    },
+    {
+      "command_id": "cmd-2-ack-watch-matched",
+      "coordinator_id": "sandboxed-frontier-37a12cb40ee3",
+      "type": "ack_export",
+      "export_id": "export_c9003807dc6eb3eb2d09515c6e60b675",
+      "export_sha256": "83b748caff2f170564143e5531235af465045c4197fc1fc5c787111d28d5e791"
+    },
+    {
+      "command_id": "cmd-2-ack-physical-event",
+      "coordinator_id": "sandboxed-frontier-37a12cb40ee3",
+      "type": "ack_export",
+      "export_id": "export_f587bf436cc7130019cf5f4aa1895bdb",
+      "export_sha256": "47b5a2a5963f37f8e55ceece451767c09ca6cc615e36cc5608d8008f31c388d0"
+    },
+    {
+      "command_id": "cmd-2-verify-pickup",
+      "coordinator_id": "sandboxed-frontier-37a12cb40ee3",
+      "type": "verify",
+      "verification": {
+        "request_id": "vrq-pan-pickup-1",
+        "question": "pickup_completed",
+        "subject_id": "phys_ba861b22552642918b4c0a5080619d99",
+        "lookback_s": 30
+      }
+    },
+    {
+      "command_id": "cmd-2-verify-clear",
+      "coordinator_id": "sandboxed-frontier-37a12cb40ee3",
+      "type": "verify",
+      "verification": {
+        "request_id": "vrq-pan-clear-1",
+        "question": "clear_of_support",
+        "subject_id": "phys_ba861b22552642918b4c0a5080619d99",
+        "lookback_s": 30
+      }
+    }
+  ],
+  "skipped": [],
+  "auto_acknowledged": [
+    "export_933ebeb6f7aee4f50eae3e7ec5eb7ad1",
+    "export_140a74da9a54dba8c75ba389db18e193",
+    "export_c9003807dc6eb3eb2d09515c6e60b675",
+    "export_f587bf436cc7130019cf5f4aa1895bdb"
+  ],
+  "assessment": {
+    "recipe_step_complete": false,
+    "pickup_verified": "unknown",
+    "rationale": "Turn 2: geometric pan motion_started matched and the approved cue was verified via HA readback, but a light cue and motion alone never complete the step. Acked all four exports and asked the local verifier for pickup_completed and clear_of_support on the pan track.",
+    "wait": true
+  }
+}

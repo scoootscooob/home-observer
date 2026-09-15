@@ -1,0 +1,82 @@
+{
+  "engine_health": {
+    "status": "ready",
+    "model_id": "google/gemma-4-E4B-it",
+    "model_revision": "ee0ef6023621cff504d758262d4e04895a5af4a2",
+    "adapter_configured": false,
+    "inference_backend": "VLLMModel",
+    "schema_constraints": true,
+    "model_identity_source": "deployment_configuration",
+    "context_mode": "bounded_window"
+  },
+  "steps": [
+    {
+      "command": [
+        "-m",
+        "home_observer.cli",
+        "evaluate",
+        "--backend",
+        "remote",
+        "--endpoint",
+        "http://127.0.0.1:18080",
+        "--data",
+        "data/mixed/test.jsonl",
+        "--dataset-root",
+        "data",
+        "--policy",
+        "data/mixed-v2/policy.json",
+        "--limit",
+        "1",
+        "--output",
+        "reports/vllm-upload-cli"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 5.801783800125122,
+      "log": "/Users/scottfan/Documents/Codex/2026-09-15/do/work/vllm-check-0.log"
+    },
+    {
+      "command": [
+        "scripts/evaluate_fixed_remote.py",
+        "--endpoint",
+        "http://127.0.0.1:18080",
+        "--output",
+        "reports/vllm-fixed8"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 20.88331174850464,
+      "log": "/Users/scottfan/Documents/Codex/2026-09-15/do/work/vllm-check-1.log"
+    },
+    {
+      "command": [
+        "scripts/verify_learned_ha.py",
+        "--endpoint",
+        "http://127.0.0.1:18080",
+        "--policy",
+        "data/mixed-v2/policy.json",
+        "--output",
+        "reports/learned-home-assistant-vllm"
+      ],
+      "exit_code": 1,
+      "elapsed_s": 11.115370035171509,
+      "log": "/Users/scottfan/Documents/Codex/2026-09-15/do/work/vllm-check-2.log"
+    },
+    {
+      "command": [
+        "scripts/run_live_demo.py",
+        "--endpoint",
+        "http://127.0.0.1:18080",
+        "--sources",
+        "/Users/scottfan/Documents/Codex/2026-09-15/do/work/live-distinct-inputs/sources.json",
+        "--audio",
+        "/Users/scottfan/Documents/Codex/2026-09-15/do/work/live-distinct-inputs/kitchen-offset-0s.mp4",
+        "--duration",
+        "60",
+        "--output",
+        "reports/live-home-assistant-vllm"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 64.38568687438965,
+      "log": "/Users/scottfan/Documents/Codex/2026-09-15/do/work/vllm-check-3.log"
+    }
+  ]
+}

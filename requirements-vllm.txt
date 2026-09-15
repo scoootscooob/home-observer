@@ -1,0 +1,5 @@
+# Install only in the isolated vLLM environment. Its torch/CUDA dependencies must
+# not replace requirements-gpu.txt in the training/native inference environment.
+vllm[audio]==0.29.0
+# FlashInfer compiles its sampling kernels during first engine startup.
+ninja>=1.11,<2

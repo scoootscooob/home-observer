@@ -1,0 +1,9 @@
+{
+  "command_id": "cmd-6-verify-still-present",
+  "coordinator_id": "sandboxed-frontier-37a12cb40ee3",
+  "accepted_at": 1789508213.9558852,
+  "outcome": {
+    "verification_id": "pver_0aacb39ec7814a6681fc9c688674cb53",
+    "status": "pending"
+  }
+}

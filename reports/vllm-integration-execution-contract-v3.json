@@ -1,0 +1,43 @@
+{
+  "engine_health": {
+    "status": "ready",
+    "model_id": "google/gemma-4-E4B-it",
+    "model_revision": "ee0ef6023621cff504d758262d4e04895a5af4a2",
+    "adapter_configured": false,
+    "inference_backend": "VLLMModel",
+    "schema_constraints": true,
+    "schema_contract": "executor_arguments_v3",
+    "brightness_enabled": false,
+    "decision_field_order": "summary-first",
+    "model_identity_source": "deployment_configuration",
+    "context_mode": "bounded_window"
+  },
+  "steps": [
+    {
+      "command": [
+        "scripts/evaluate_fixed_remote.py",
+        "--endpoint",
+        "http://127.0.0.1:18080",
+        "--output",
+        "reports/vllm-fixed8-contract-v3"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 19.3105309009552,
+      "log": "/Users/scottfan/Documents/Codex/2026-09-15/do/work/vllm-check-contract-v3-0.log"
+    },
+    {
+      "command": [
+        "scripts/verify_learned_ha.py",
+        "--endpoint",
+        "http://127.0.0.1:18080",
+        "--policy",
+        "data/mixed-v2/policy.json",
+        "--output",
+        "reports/learned-home-assistant-vllm-contract-v3"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 10.314503908157349,
+      "log": "/Users/scottfan/Documents/Codex/2026-09-15/do/work/vllm-check-contract-v3-1.log"
+    }
+  ]
+}

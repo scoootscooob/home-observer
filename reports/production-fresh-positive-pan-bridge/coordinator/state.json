@@ -1,0 +1,192 @@
+{
+  "seen_exports": [
+    "export_933ebeb6f7aee4f50eae3e7ec5eb7ad1",
+    "export_140a74da9a54dba8c75ba389db18e193",
+    "export_c9003807dc6eb3eb2d09515c6e60b675",
+    "export_f587bf436cc7130019cf5f4aa1895bdb",
+    "export_d8f8bd922d8fd4981655f3d6c33b2a23",
+    "export_423baff51d404adc443e2e6ac352f1db",
+    "export_2618c9e315c5bbe5ba19504eb4741a0c",
+    "export_eb6e22716b365841e8887041445eb53f",
+    "export_76f87db59aaac0f14547ec5f9c541763",
+    "export_31d9d7083db9c3f16483dd9e3fbdf858",
+    "export_532cee4b3b3fdc2f5f8ad5f2fbf4c2f3",
+    "export_c4414fdcfa525b0a10611ed81da08e3d",
+    "export_9d4fd46030b6a81ec73bb1da1d2d537c",
+    "export_67c94cf03e0b4b5284833370871be8fc",
+    "export_4f2f31ef5a7f2f082cd6ff23426b1bc7",
+    "export_956a5f0dfac887c6cc35932beedbd5b7",
+    "export_b1760043445ef8cbb7a5fd534f3102dc",
+    "export_4ee74c0d7f60237627f22eb504eab9f8",
+    "export_af3ff68fe962c57484e799cbb12661a5",
+    "export_a8db14cb220fe4724c712a5f3df95297"
+  ],
+  "acked_exports": [
+    "export_933ebeb6f7aee4f50eae3e7ec5eb7ad1",
+    "export_140a74da9a54dba8c75ba389db18e193",
+    "export_c9003807dc6eb3eb2d09515c6e60b675",
+    "export_f587bf436cc7130019cf5f4aa1895bdb",
+    "export_d8f8bd922d8fd4981655f3d6c33b2a23",
+    "export_423baff51d404adc443e2e6ac352f1db",
+    "export_2618c9e315c5bbe5ba19504eb4741a0c",
+    "export_eb6e22716b365841e8887041445eb53f",
+    "export_76f87db59aaac0f14547ec5f9c541763",
+    "export_31d9d7083db9c3f16483dd9e3fbdf858",
+    "export_532cee4b3b3fdc2f5f8ad5f2fbf4c2f3",
+    "export_c4414fdcfa525b0a10611ed81da08e3d",
+    "export_9d4fd46030b6a81ec73bb1da1d2d537c",
+    "export_67c94cf03e0b4b5284833370871be8fc",
+    "export_4f2f31ef5a7f2f082cd6ff23426b1bc7",
+    "export_956a5f0dfac887c6cc35932beedbd5b7",
+    "export_b1760043445ef8cbb7a5fd534f3102dc",
+    "export_4ee74c0d7f60237627f22eb504eab9f8",
+    "export_af3ff68fe962c57484e799cbb12661a5",
+    "export_a8db14cb220fe4724c712a5f3df95297"
+  ],
+  "commands": [
+    {
+      "command_id": "cmd-1-create-watch-pan-motion",
+      "type": "create_watch",
+      "written_at": 1789508100.747392
+    },
+    {
+      "command_id": "cmd-2-ack-watch-created",
+      "type": "ack_export",
+      "written_at": 1789508120.2451782
+    },
+    {
+      "command_id": "cmd-2-ack-response-verified",
+      "type": "ack_export",
+      "written_at": 1789508120.245321
+    },
+    {
+      "command_id": "cmd-2-ack-watch-matched",
+      "type": "ack_export",
+      "written_at": 1789508120.2454321
+    },
+    {
+      "command_id": "cmd-2-ack-physical-event",
+      "type": "ack_export",
+      "written_at": 1789508120.2456372
+    },
+    {
+      "command_id": "cmd-2-verify-pickup",
+      "type": "verify",
+      "written_at": 1789508120.2457511
+    },
+    {
+      "command_id": "cmd-2-verify-clear",
+      "type": "verify",
+      "written_at": 1789508120.246063
+    },
+    {
+      "command_id": "cmd-3-ack-visibility-lost",
+      "type": "ack_export",
+      "written_at": 1789508146.3313122
+    },
+    {
+      "command_id": "cmd-3-ack-pickup-event",
+      "type": "ack_export",
+      "written_at": 1789508146.331467
+    },
+    {
+      "command_id": "cmd-3-ack-perception-completed",
+      "type": "ack_export",
+      "written_at": 1789508146.331588
+    },
+    {
+      "command_id": "cmd-3-ack-verification-result",
+      "type": "ack_export",
+      "written_at": 1789508146.331706
+    },
+    {
+      "command_id": "cmd-3-verify-pickup-retry",
+      "type": "verify",
+      "written_at": 1789508146.331845
+    },
+    {
+      "command_id": "cmd-4-ack-pickup-event-a",
+      "type": "ack_export",
+      "written_at": 1789508175.490208
+    },
+    {
+      "command_id": "cmd-4-ack-perception-a",
+      "type": "ack_export",
+      "written_at": 1789508175.49036
+    },
+    {
+      "command_id": "cmd-4-ack-pickup-event-b",
+      "type": "ack_export",
+      "written_at": 1789508175.490473
+    },
+    {
+      "command_id": "cmd-4-ack-perception-b",
+      "type": "ack_export",
+      "written_at": 1789508175.490581
+    },
+    {
+      "command_id": "cmd-4-ack-verification-pickup2",
+      "type": "ack_export",
+      "written_at": 1789508175.490696
+    },
+    {
+      "command_id": "cmd-4-verify-clear-retry",
+      "type": "verify",
+      "written_at": 1789508175.49085
+    },
+    {
+      "command_id": "cmd-5-ack-pickup-event-c",
+      "type": "ack_export",
+      "written_at": 1789508201.351778
+    },
+    {
+      "command_id": "cmd-5-ack-perception-c",
+      "type": "ack_export",
+      "written_at": 1789508201.352035
+    },
+    {
+      "command_id": "cmd-5-ack-pickup-event-d",
+      "type": "ack_export",
+      "written_at": 1789508201.352385
+    },
+    {
+      "command_id": "cmd-5-ack-perception-d",
+      "type": "ack_export",
+      "written_at": 1789508201.352594
+    },
+    {
+      "command_id": "cmd-5-ack-verification-clear2",
+      "type": "ack_export",
+      "written_at": 1789508201.352793
+    },
+    {
+      "command_id": "cmd-5-verify-moved",
+      "type": "verify",
+      "written_at": 1789508201.3529978
+    },
+    {
+      "command_id": "cmd-6-ack-verification-moved1",
+      "type": "ack_export",
+      "written_at": 1789508213.936794
+    },
+    {
+      "command_id": "cmd-6-verify-still-present",
+      "type": "verify",
+      "written_at": 1789508213.937082
+    },
+    {
+      "command_id": "cmd-7-ack-verification-present1",
+      "type": "ack_export",
+      "written_at": 1789508225.8223119
+    }
+  ],
+  "turns": 7,
+  "assessment": {
+    "recipe_step_complete": false,
+    "pickup_verified": "unknown",
+    "rationale": "Turn 7: still_present also returned unknown (not_observed_in_window) on the same frozen evidence window; pickup_completed and clear_of_support each already asked twice with unknown. No confirmed verdict exists, so the step remains pending. Acked the new result; no further queries.",
+    "wait": true
+  },
+  "started_at": 1789508090.642944,
+  "restarts": 0
+}

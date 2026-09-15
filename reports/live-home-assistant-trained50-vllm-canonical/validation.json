@@ -1,0 +1,13 @@
+{
+  "kind": "bounded_live_protocol_validation",
+  "source_provenance": "source-provenance.json",
+  "windows": 37,
+  "distinct_decoded_camera_frames_every_window": true,
+  "audio_windows": 36,
+  "uploaded_equals_received_media_bytes_every_window": true,
+  "actual_ha_verified_action_count": 0,
+  "engine_reported_models": [
+    "observer"
+  ],
+  "interpretation": "Protocol acceptance is separate from semantic accuracy. Sources are time offsets of one public recording, with no annotated real-video action or occupancy ground truth."
+}

@@ -1,0 +1,10 @@
+{
+  "command_id": "cmd-008-ack-export-f48b986664",
+  "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+  "accepted_at": 1789507672.787265,
+  "outcome": {
+    "acknowledged": true,
+    "already_acknowledged": false,
+    "topic": "physical.event"
+  }
+}

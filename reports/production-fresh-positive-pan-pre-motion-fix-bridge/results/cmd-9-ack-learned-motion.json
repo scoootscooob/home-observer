@@ -1,0 +1,10 @@
+{
+  "command_id": "cmd-9-ack-learned-motion",
+  "coordinator_id": "sandboxed-frontier-37a12cb40ee3",
+  "accepted_at": 1789507231.441791,
+  "outcome": {
+    "acknowledged": true,
+    "already_acknowledged": false,
+    "topic": "physical.event"
+  }
+}

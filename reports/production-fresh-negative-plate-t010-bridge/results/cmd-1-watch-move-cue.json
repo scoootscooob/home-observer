@@ -1,0 +1,9 @@
+{
+  "command_id": "cmd-1-watch-move-cue",
+  "coordinator_id": "sandboxed-frontier-920d2cf72ced",
+  "accepted_at": 1789508771.724946,
+  "outcome": {
+    "watch_id": "watch-plate-move-cue",
+    "status": "armed"
+  }
+}

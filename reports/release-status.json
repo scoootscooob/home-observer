@@ -1,0 +1,14 @@
+{
+  "status": "validation_in_progress",
+  "selected_checkpoint": null,
+  "validation_candidate": "artifacts/training-v2-continuation/adapter/checkpoints/checkpoint-50",
+  "candidate_configuration": {
+    "merge_adapter": false,
+    "reference_batch_size": 1
+  },
+  "deployment_accepted": false,
+  "reason": "Continuation step50 was selected using fixed validation only. Canonicalizing policy JSON field order restored all8 fresh-loaded unmerged-single outputs byte-for-byte to the training callback; media tensors were identical and no numerical setting changed. Complete native and deployed-service evaluations are now pending. Deployment remains unaccepted; real-home reliability and72-hour stability are not established.",
+  "live_home_validated": false,
+  "stability_72h_completed": false,
+  "candidate_reload_parity_verified": true
+}

@@ -1,0 +1,34 @@
+{
+  "delivery_id": "delivery_805a67a8be1b8c1f34059eecd539779c",
+  "topic": "physical.event",
+  "payload": {
+    "confidence": 0.0,
+    "description": "bowl: visibility lost in the camera view",
+    "ended_at": 1789497577.459966,
+    "event_available_at": 1789497577.493303,
+    "event_id": "pevt_be31e22413d342248abcde9c4831440b",
+    "kind": "visibility_lost",
+    "object_label": "bowl",
+    "origin": "geometric",
+    "post_evidence_ids": [
+      "recipe:126"
+    ],
+    "pre_evidence_ids": [
+      "recipe:125"
+    ],
+    "received_at": 1789497577.500842,
+    "source_event_id": "csrt_phys_90534c9232004643bd8a6d61aa3d3754_visibility_lost_126",
+    "started_at": 1789497577.439966,
+    "subject_ids": [
+      "phys_90534c9232004643bd8a6d61aa3d3754"
+    ],
+    "uncertainty": "CSRT with heuristic appearance/scale/visibility guards; confidence is an uncalibrated score, not a probability. Background compensation models translation only. Geometric change does not prove semantic pickup, placement, persistent identity, or physical absence. Tracking became uncertain: appearance_changed.",
+    "window_id": "geometry_037b8c26d04dafeffcf9d7bc"
+  },
+  "payload_sha256": "7601add9c15bdfccaec4794a555bb6c2f36a070944907c10a5ec126cc99b55ce",
+  "created_at": 1789497577.500842,
+  "attempt": 6,
+  "lease_token": "d61254d9f68343b493b96fae8546ee65",
+  "delivered_at": 1789497577.501125,
+  "transport_delivered_at": 1789497639.550424
+}

@@ -1,0 +1,9 @@
+{
+  "command_id": "cmd-001-watch-plate-motion",
+  "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+  "accepted_at": 1789507619.752212,
+  "outcome": {
+    "watch_id": "watch-plate-motion-cue",
+    "status": "armed"
+  }
+}

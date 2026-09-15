@@ -1,0 +1,9 @@
+{
+  "command_id": "cmd-1-create-watch-pan-motion",
+  "coordinator_id": "sandboxed-frontier-1ec2a16050d1",
+  "accepted_at": 1789508963.3982878,
+  "outcome": {
+    "watch_id": "watch.recipe-pan-motion-cue",
+    "status": "armed"
+  }
+}

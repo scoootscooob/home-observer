@@ -1,0 +1,15 @@
+{
+  "name": "Put the bowl down",
+  "recipe_step": "Put the bowl down on the work surface.",
+  "recipe_step_origin": "Authored demonstration instruction; not an original recipe annotation",
+  "rows": [
+    "epic_a890f0b6cb389efafa60"
+  ],
+  "split": "test",
+  "recording_id": "P03_106",
+  "unobserved_gap_s": 0,
+  "continuous_video": true,
+  "workflow_completion_ground_truth": false,
+  "supported_ground_truth": "One source-labeled bowl placement and its source interval; recipe wording is authored",
+  "source_target_labels_are_not_model_input": true
+}

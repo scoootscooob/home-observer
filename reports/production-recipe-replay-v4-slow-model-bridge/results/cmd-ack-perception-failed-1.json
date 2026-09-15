@@ -1,0 +1,10 @@
+{
+  "command_id": "cmd-ack-perception-failed-1",
+  "coordinator_id": "sandboxed-frontier-8afa30f7dc91",
+  "accepted_at": 1789505952.8661702,
+  "outcome": {
+    "acknowledged": true,
+    "already_acknowledged": false,
+    "topic": "perception.failed"
+  }
+}

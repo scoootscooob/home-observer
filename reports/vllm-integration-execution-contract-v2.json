@@ -1,0 +1,83 @@
+{
+  "engine_health": {
+    "status": "ready",
+    "model_id": "google/gemma-4-E4B-it",
+    "model_revision": "ee0ef6023621cff504d758262d4e04895a5af4a2",
+    "adapter_configured": false,
+    "inference_backend": "VLLMModel",
+    "schema_constraints": true,
+    "schema_contract": "executor_arguments_v2",
+    "model_identity_source": "deployment_configuration",
+    "context_mode": "bounded_window"
+  },
+  "steps": [
+    {
+      "command": [
+        "-m",
+        "home_observer.cli",
+        "evaluate",
+        "--backend",
+        "remote",
+        "--endpoint",
+        "http://127.0.0.1:18080",
+        "--data",
+        "data/mixed/test.jsonl",
+        "--dataset-root",
+        "data",
+        "--policy",
+        "data/mixed-v2/policy.json",
+        "--limit",
+        "1",
+        "--output",
+        "reports/vllm-upload-cli-contract-v2"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 1.3918812274932861,
+      "log": "/Users/scottfan/Documents/Codex/2026-09-15/do/work/vllm-check-contract-v2-0.log"
+    },
+    {
+      "command": [
+        "scripts/evaluate_fixed_remote.py",
+        "--endpoint",
+        "http://127.0.0.1:18080",
+        "--output",
+        "reports/vllm-fixed8-contract-v2"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 19.242932081222534,
+      "log": "/Users/scottfan/Documents/Codex/2026-09-15/do/work/vllm-check-contract-v2-1.log"
+    },
+    {
+      "command": [
+        "scripts/verify_learned_ha.py",
+        "--endpoint",
+        "http://127.0.0.1:18080",
+        "--policy",
+        "data/mixed-v2/policy.json",
+        "--output",
+        "reports/learned-home-assistant-vllm-contract-v2"
+      ],
+      "exit_code": 1,
+      "elapsed_s": 13.788959980010986,
+      "log": "/Users/scottfan/Documents/Codex/2026-09-15/do/work/vllm-check-contract-v2-2.log"
+    },
+    {
+      "command": [
+        "scripts/run_live_demo.py",
+        "--endpoint",
+        "http://127.0.0.1:18080",
+        "--sources",
+        "/Users/scottfan/Documents/Codex/2026-09-15/do/work/live-distinct-inputs/sources.json",
+        "--audio",
+        "/Users/scottfan/Documents/Codex/2026-09-15/do/work/live-distinct-inputs/kitchen-offset-0s.mp4",
+        "--duration",
+        "60",
+        "--output",
+        "reports/live-home-assistant-vllm-contract-v2"
+      ],
+      "exit_code": 1,
+      "elapsed_s": 62.64023804664612,
+      "log": "/Users/scottfan/Documents/Codex/2026-09-15/do/work/vllm-check-contract-v2-3.log"
+    }
+  ]
+}

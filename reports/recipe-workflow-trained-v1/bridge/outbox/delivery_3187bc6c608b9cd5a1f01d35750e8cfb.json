@@ -1,0 +1,34 @@
+{
+  "delivery_id": "delivery_3187bc6c608b9cd5a1f01d35750e8cfb",
+  "topic": "physical.event",
+  "payload": {
+    "confidence": 0.8813407589413781,
+    "description": "bowl: motion started in the camera view",
+    "ended_at": 1789497575.0399659,
+    "event_available_at": 1789497575.150424,
+    "event_id": "pevt_6502879aa41a4be08addab31be2424cf",
+    "kind": "motion_started",
+    "object_label": "bowl",
+    "origin": "geometric",
+    "post_evidence_ids": [
+      "recipe:5"
+    ],
+    "pre_evidence_ids": [
+      "recipe:4"
+    ],
+    "received_at": 1789497575.160733,
+    "source_event_id": "csrt_phys_90534c9232004643bd8a6d61aa3d3754_motion_started_5",
+    "started_at": 1789497575.019966,
+    "subject_ids": [
+      "phys_90534c9232004643bd8a6d61aa3d3754"
+    ],
+    "uncertainty": "CSRT with heuristic appearance/scale/visibility guards; confidence is an uncalibrated score, not a probability. Background compensation models translation only. Geometric change does not prove semantic pickup, placement, persistent identity, or physical absence.",
+    "window_id": "geometry_a066c5cb15867313142caf10"
+  },
+  "payload_sha256": "c0610651ef20d1fac066d1eb52fab474b7d8588ced128ecd8205db74acd21a2b",
+  "created_at": 1789497575.160733,
+  "attempt": 6,
+  "lease_token": "f2114c9cb7de465295beb992925be0c5",
+  "delivered_at": 1789497575.2144651,
+  "transport_delivered_at": 1789497637.241855
+}

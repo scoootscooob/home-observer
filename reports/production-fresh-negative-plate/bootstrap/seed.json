@@ -1,0 +1,71 @@
+{
+  "seed": {
+    "label": "plate",
+    "box": {
+      "x_min": 0.33,
+      "y_min": 0.72,
+      "x_max": 0.56,
+      "y_max": 0.97
+    },
+    "confidence": 0.85,
+    "provenance": "Assistant visually selected initial box on the first frame of the negative demonstration clip (P22_105, source 55.0 s) from a coordinate-grid contact sheet; explicit demonstration bootstrap, not a learned detection or human ground-truth annotation.",
+    "uncertainty": "Approximate image box around the lower-left plate; the plate is later slid on the table (official narrations 'move plate'), never lifted. Persistent identity and calibrated confidence are not established."
+  },
+  "window": {
+    "window_id": "bootstrap",
+    "started_at": 55.0,
+    "ended_at": 55.0,
+    "clips": [
+      {
+        "clip_id": "bootstrap_clip",
+        "camera_id": "recipe",
+        "started_at": 55.0,
+        "ended_at": 55.0,
+        "frames": [
+          {
+            "evidence_id": "recipe:1",
+            "timestamp": 55.0,
+            "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-negative-plate/bootstrap/first-frame.jpg"
+          }
+        ]
+      }
+    ],
+    "audio": []
+  },
+  "decision": {
+    "summary": "Explicit box bootstrap from recorded provenance",
+    "objects": [
+      {
+        "confidence": 0.85,
+        "uncertainty": "Approximate image box around the lower-left plate; the plate is later slid on the table (official narrations 'move plate'), never lifted. Persistent identity and calibrated confidence are not established.",
+        "detection_id": "bootstrap_object",
+        "track_id": null,
+        "label": "plate",
+        "box": {
+          "x_min": 0.33,
+          "y_min": 0.72,
+          "x_max": 0.56,
+          "y_max": 0.97
+        },
+        "location": {
+          "camera_id": "recipe",
+          "area": null
+        },
+        "timestamp": 55.0,
+        "frame_evidence_id": "recipe:1",
+        "visibility": "partially_occluded",
+        "evidence_ids": [
+          "recipe:1"
+        ],
+        "attributes": {
+          "bootstrap_provenance": "Assistant visually selected initial box on the first frame of the negative demonstration clip (P22_105, source 55.0 s) from a coordinate-grid contact sheet; explicit demonstration bootstrap, not a learned detection or human ground-truth annotation."
+        }
+      }
+    ],
+    "observations": [],
+    "events": []
+  },
+  "mapping": {
+    "bootstrap_object": "phys_7fe841eec2e8496ebec7916e1ea90a11"
+  }
+}

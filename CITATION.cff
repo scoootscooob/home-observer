@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+title: "Home Observer: continuous physical sensing with an enforced privacy boundary"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - name: "scoootscooob"
+repository-code: "https://github.com/scoootscooob/home-observer"
+license: MIT
+date-released: "2026-09-15"

@@ -1,0 +1,7 @@
+{
+  "commitment_id": "recipe-cook-take-pan",
+  "text": "Recipe cooking: take the pan from the lower rack and lift it up to the hob. Give an immediate visual cue when the observed pan begins moving, then verify the pickup from local observation before marking the step complete.",
+  "source_ref": "Demonstration digital recipe instruction for the positive pan workflow; the footage contains the official narration 'take pan'.",
+  "source_clip": "data/continuous-v2-workflow/positive-take-pan-P27_03.mp4",
+  "response_registry": "configs/recipe-workflow/responses.json"
+}

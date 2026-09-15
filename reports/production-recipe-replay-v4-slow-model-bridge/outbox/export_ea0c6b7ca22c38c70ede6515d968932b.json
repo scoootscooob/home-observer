@@ -1,0 +1,29 @@
+{
+  "created_at": 1789505769.554517,
+  "export_id": "export_ea0c6b7ca22c38c70ede6515d968932b",
+  "export_sha256": "7f44f99a6413ecd43f37e9a58ef1f5d8476b0e3b8d1022f016482823fac6018b",
+  "message": {
+    "area": "kitchen",
+    "audit_ref": "audit_365fca25116a977afe55e340",
+    "available_at": 1789505769.55,
+    "category_in_vocabulary": true,
+    "confidence": 0.0,
+    "ended_at": 1789505767.617,
+    "event_id": "pevt_6d9b5d1c4a014dc2877ff727e31cb44f",
+    "evidence_count": 2,
+    "kind": "visibility_lost",
+    "kind_in_vocabulary": true,
+    "message_type": "physical_event",
+    "object_category": "bowl",
+    "origin": "geometric",
+    "started_at": 1789505767.597,
+    "subject_ids": [
+      "phys_39204ac4a8fe43779017df582f06cb20"
+    ],
+    "uncertainty_level": "high"
+  },
+  "schema_version": "home-observer.production-export/1",
+  "topic": "physical.event",
+  "attempt": 5,
+  "exported_at": 1789505799.582973
+}

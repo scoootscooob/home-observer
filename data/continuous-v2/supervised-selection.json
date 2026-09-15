@@ -1,0 +1,24 @@
+{
+  "rule": "training/validation rows keep windows with at least one target event or quiet windows (no narration of any verb overlaps); windows whose narrated actions overlap only partially (no target under the 50% rule) are excluded from supervision so an empty event list never contradicts visible partial actions; the test split is untouched",
+  "created_at_utc": "2026-09-15T22:13:03Z",
+  "splits": {
+    "train": {
+      "source_rows": 380,
+      "kept_rows": 195,
+      "with_targets": 147,
+      "quiet_negatives": 48,
+      "excluded_partial_overlap_rows": 185,
+      "file": "train-supervised.jsonl",
+      "sha256": "33061abac339e70eb247f12699bdbc7e47d77c266267e695f7ae6d47f66fa240"
+    },
+    "validation": {
+      "source_rows": 42,
+      "kept_rows": 22,
+      "with_targets": 19,
+      "quiet_negatives": 3,
+      "excluded_partial_overlap_rows": 20,
+      "file": "validation-supervised.jsonl",
+      "sha256": "9d18d0a3e4e5a51f0e5dd6194294ca4df74a8347af15a20354375524e33cc269"
+    }
+  }
+}

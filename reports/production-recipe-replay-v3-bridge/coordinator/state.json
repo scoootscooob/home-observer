@@ -1,0 +1,114 @@
+{
+  "seen_exports": [
+    "export_93c04ff156bf5654fe331a29b2751794",
+    "export_038093010c8a27c7003f4a94f99f44c4",
+    "export_28dea1e70123a97e56658dfaeea78cfb",
+    "export_962583c539a744237057fcb9a0e5d863",
+    "export_3604ef6500587336c6ce1cf2e4d7038c",
+    "export_88331e9d26eb5031bccfeb4c09492c6d",
+    "export_a86c0dd14539a8b83260c5b8e6a33d5d",
+    "export_0e6cf7991eb86a08ef8d6ec4408bd281",
+    "export_315addb610d9fa82113e0d31e9f3d708",
+    "export_da88cbf58d336eea7c921206f06d8571",
+    "export_a3d92b1a0f17e1b0d31e18df433fafc6"
+  ],
+  "acked_exports": [
+    "export_93c04ff156bf5654fe331a29b2751794",
+    "export_038093010c8a27c7003f4a94f99f44c4",
+    "export_28dea1e70123a97e56658dfaeea78cfb",
+    "export_962583c539a744237057fcb9a0e5d863",
+    "export_3604ef6500587336c6ce1cf2e4d7038c",
+    "export_88331e9d26eb5031bccfeb4c09492c6d",
+    "export_a86c0dd14539a8b83260c5b8e6a33d5d",
+    "export_0e6cf7991eb86a08ef8d6ec4408bd281",
+    "export_315addb610d9fa82113e0d31e9f3d708",
+    "export_da88cbf58d336eea7c921206f06d8571",
+    "export_a3d92b1a0f17e1b0d31e18df433fafc6"
+  ],
+  "commands": [
+    {
+      "command_id": "cmd-001-create-watch-bowl-motion",
+      "type": "create_watch",
+      "written_at": 1789505335.100929
+    },
+    {
+      "command_id": "cmd-002-ack-watch-created",
+      "type": "ack_export",
+      "written_at": 1789505349.39726
+    },
+    {
+      "command_id": "cmd-003-ack-motion-event",
+      "type": "ack_export",
+      "written_at": 1789505368.947455
+    },
+    {
+      "command_id": "cmd-004-ack-watch-matched",
+      "type": "ack_export",
+      "written_at": 1789505368.9478002
+    },
+    {
+      "command_id": "cmd-005-ack-response-verified",
+      "type": "ack_export",
+      "written_at": 1789505368.947914
+    },
+    {
+      "command_id": "cmd-006-ack-visibility-lost",
+      "type": "ack_export",
+      "written_at": 1789505368.9480278
+    },
+    {
+      "command_id": "cmd-007-verify-pickup",
+      "type": "verify",
+      "written_at": 1789505368.948141
+    },
+    {
+      "command_id": "cmd-008-ack-verification-result",
+      "type": "ack_export",
+      "written_at": 1789505382.651138
+    },
+    {
+      "command_id": "cmd-009-verify-clear-of-support",
+      "type": "verify",
+      "written_at": 1789505382.6512792
+    },
+    {
+      "command_id": "cmd-010-ack-clear-of-support-result",
+      "type": "ack_export",
+      "written_at": 1789505399.511439
+    },
+    {
+      "command_id": "cmd-011-verify-moved-from-initial",
+      "type": "verify",
+      "written_at": 1789505399.512173
+    },
+    {
+      "command_id": "cmd-012-ack-moved-from-initial-result",
+      "type": "ack_export",
+      "written_at": 1789505410.687457
+    },
+    {
+      "command_id": "cmd-013-ack-learned-pickup-event",
+      "type": "ack_export",
+      "written_at": 1789505613.1097898
+    },
+    {
+      "command_id": "cmd-014-ack-perception-completed",
+      "type": "ack_export",
+      "written_at": 1789505613.110715
+    },
+    {
+      "command_id": "cmd-015-ack-perception-failed",
+      "type": "ack_export",
+      "written_at": 1789505629.929611
+    }
+  ],
+  "turns": 8,
+  "assessment": {
+    "recipe_step_complete": false,
+    "pickup_verified": "unknown",
+    "rationale": "Perception run failed (ValidationError, 0 events/objects accepted), so no new evidence on the bowl track. All three verifier questions already returned unknown (localization_uncertain) over the same window; re-asking adds nothing. Watch stays armed; step pending.",
+    "wait": true
+  },
+  "started_at": 1789505325.683379,
+  "restarts": 0
+}

@@ -1,0 +1,9 @@
+{
+  "command_id": "cmd-27-verify-moved-retry",
+  "coordinator_id": "sandboxed-frontier-1ec2a16050d1",
+  "accepted_at": 1789509112.6752908,
+  "outcome": {
+    "verification_id": "pver_1bcc18aa08f54a1485649c4c6bc5a43a",
+    "status": "pending"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "created_at": 1789507206.115259,
+  "export_id": "export_ba21cdbed9a35449fe4448e8e4b358d1",
+  "export_sha256": "7a26ae8a26f30f8d69b9be4d394be580c16d09de2036b99d6c00d5409efc1876",
+  "message": {
+    "audit_ref": "audit_1a09a1448f05dc22be80abbe",
+    "confidence": 0.0,
+    "evaluated_at": 1789507206.115,
+    "evidence_ended_at": 1789507190.269,
+    "evidence_started_at": 1789507186.933,
+    "frames_examined": 201,
+    "message_type": "verification_result",
+    "question": "pickup_completed",
+    "reason_code": "localization_uncertain",
+    "request_id": "vrq-pan-pickup-1",
+    "subject_id": "phys_3c4a058e1308499a8b2885c554a3f8c9",
+    "uncertainty_level": "high",
+    "verdict": "unknown",
+    "verification_id": "pver_e9b9d5cdf63049cb93c18914ab3738cb"
+  },
+  "schema_version": "home-observer.production-export/1",
+  "topic": "verification.result",
+  "attempt": 4,
+  "exported_at": 1789507220.129607
+}

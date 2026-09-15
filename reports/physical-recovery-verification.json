@@ -1,0 +1,9 @@
+{
+  "verified_at": 1789497262.71614,
+  "physical_training_archive_sha256": "4d25b8c573e55f1fadb00c7a89365292d9baa36640a0f3eb545e607a29c7caa6",
+  "physical_training_files_verified": 70,
+  "baseline_evaluation_files_verified": 803,
+  "baseline_final_manifest_sha256": "ee233b87f02e95f0d74be30153dcb9ac7f4e30a3ad1e8481cf27ab4f8487faa7",
+  "baseline_checkpoint_files_verified": 84,
+  "checkpoint_verification_at": 1789497273.204264
+}

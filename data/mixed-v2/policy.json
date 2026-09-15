@@ -1,0 +1,38 @@
+{
+  "entities": [
+    "light.kitchen",
+    "light.entry",
+    "light.lounge",
+    "light.garage",
+    "room.kitchen",
+    "room.entry",
+    "room.lounge",
+    "room.garage",
+    "binary_sensor.motion_kitchen",
+    "binary_sensor.motion_entry",
+    "binary_sensor.motion_lounge",
+    "binary_sensor.motion_garage",
+    "sensor.ambient_lux",
+    "binary_sensor.water_leak",
+    "switch.buzzer"
+  ],
+  "allowed_services": [
+    "light.turn_on",
+    "switch.turn_on"
+  ],
+  "rules": [
+    "For each camera, room.<camera_id> occupied is true exactly when a person is visible; report uncertainty for ambiguous footage.",
+    "Turn on light.<room> when occupancy is supported by its camera frame or an explicit motion sensor, ambient_lux < 40, and that light is off.",
+    "Turn on switch.buzzer only when binary_sensor.water_leak is on and switch.buzzer is off.",
+    "Generated tones are fixture sounds; never interpret them as a real fire alarm.",
+    "Do not turn off lights or take any other action. Return noop=true with empty observations/actions when nothing should be recorded or executed.",
+    "For binary sensors, on, true and JSON true mean active; off, false and JSON false mean inactive. Unwrap a Home Assistant object using its state field. Parse numeric lux strings as numbers.",
+    "Current device states are authoritative. Prior state is historical context, never a replacement for current telemetry. Previously observing an active sensor does not imply that an action was executed. Use current sensor and actuator states to decide whether an action is still required.",
+    "Record clear room occupancy and motion/leak sensor states when absent from prior memory, stale, or changed. Do not repeat an unchanged fact. Other telemetry supplies action preconditions. If both new observations and permitted actions are empty, use noop=true."
+  ],
+  "min_confidence": 0.8,
+  "cooldown_seconds": 30,
+  "state_ttl_seconds": 300,
+  "max_actions_per_window": 2,
+  "max_window_seconds": 60
+}

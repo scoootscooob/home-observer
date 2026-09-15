@@ -1,0 +1,194 @@
+{
+  "run": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-recipe-replay-v4-slow-model",
+  "video_id": "P03_109",
+  "annotations_sha256": {
+    "../../work/temporal-source-probe/official-annotations/EPIC_100_train.csv": "a3a7ef2e397bd8af12bd0496b09d61b1f2c1f3f6e1726fa86af50a27f4855e87",
+    "../../work/temporal-source-probe/official-annotations/EPIC_100_validation.csv": "35f7932ba0a1127a96cac215a98d35398946f343e3cea9ad6688ed17eee9d75d"
+  },
+  "model_windows": 2,
+  "replay_source_span": [
+    608.99,
+    611.87
+  ],
+  "narrations_in_span": [
+    {
+      "narration_id": "P03_109_178",
+      "verb": "pick-up",
+      "noun": "bowl",
+      "start": 608.99,
+      "stop": 611.87
+    },
+    {
+      "narration_id": "P03_109_179",
+      "verb": "move",
+      "noun": "board:cutting",
+      "start": 611.45,
+      "stop": 612.5
+    }
+  ],
+  "scores": {
+    "schema_version": 1,
+    "scope": "physical sensing only; supplied annotations, never HA actions",
+    "windows": 2,
+    "usable_decisions": 1,
+    "prediction_provenance": {
+      "backend": [
+        "transformers-local"
+      ],
+      "model_id": [
+        "google/gemma-4-E4B-it"
+      ],
+      "adapter_merged": [
+        "False"
+      ]
+    },
+    "output_usable_rate": 0.5,
+    "validity_note": "Usable means a supplied decision without a reported error; run strict validation upstream.",
+    "event_matching": {
+      "kind_and_object_label": "case/whitespace-normalized exact match; no inferred aliases",
+      "temporal_iou_threshold": 0.5,
+      "algorithm": "maximum-cardinality matching; descending-IoU deterministic neighbors"
+    },
+    "events": {
+      "labeled": 1,
+      "matched": 0,
+      "missing": 1,
+      "predicted": 1,
+      "unsupported_target_events": 0,
+      "false_with_exhaustive_coverage": 0,
+      "unscored_extras": 1,
+      "labeled_event_recall": 0.0,
+      "mean_matched_temporal_iou": null,
+      "false_events_per_hour": null,
+      "false_events_per_hour_unavailable_reason": "Requires explicit exhaustive class/time coverage, labeled events (including empty negatives), and stable timeline IDs for every evaluated row; unannotated extras are not false events.",
+      "exhaustive_subset": {
+        "covered_seconds": 2.8799999999999955,
+        "false_events_per_hour": 0.0,
+        "false_events": 0,
+        "scope": "Only explicit exhaustive class/time intervals; overlapping intervals counted once per timeline"
+      },
+      "evaluated_classes": [
+        "close",
+        "open",
+        "pick-up",
+        "put",
+        "put-down",
+        "put-in",
+        "put-into",
+        "put-on",
+        "take"
+      ],
+      "per_kind_object": {
+        "pick-up:bowl": {
+          "labeled": 1,
+          "matched": 0,
+          "recall": 0.0
+        }
+      },
+      "pretrimmed_interval_warning": false
+    },
+    "event_confidence_calibration": {
+      "scorable_predictions": 0,
+      "correct": 0,
+      "incorrect": 0,
+      "positive_only": false,
+      "brier_known_labels": null,
+      "ece_known_labels": null,
+      "bins": [],
+      "scope": "Matched positives plus covered false events with numeric confidence only; selection-biased when annotation coverage is partial. Not population calibration.",
+      "textual_uncertainty_calibration": null,
+      "textual_uncertainty_reason": "No reference rubric for free-text uncertainty is supplied."
+    },
+    "timing": {
+      "model_latency_s": {
+        "count": 1,
+        "mean": 81.44794545800005,
+        "min": 81.44794545800005,
+        "max": 81.44794545800005
+      },
+      "event_start_to_emit_delay_s": {
+        "count": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "event_end_to_emit_delay_s": {
+        "count": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "detection_delay_unavailable_reason": "No matched events with explicit source-to-wall clock mapping and measured emission time.",
+      "delay_scope": "Only matched events; model latency is reported separately and is not detection delay."
+    },
+    "tracking": {
+      "annotated_boxes": 0,
+      "matched_boxes": 0,
+      "missing_boxes": 0,
+      "annotated_box_recall": null,
+      "mean_matched_iou": null,
+      "identity_switches": null,
+      "unavailable_reason": "No supervised frame boxes; source noun labels do not establish detections or tracks.",
+      "box_iou_threshold": 0.5,
+      "identity_switch_definition": "Changed predicted track ID between consecutive matched annotations of the same GT track/timeline; unmatched gaps do not reset identity; not IDF1 or HOTA.",
+      "idf1": null,
+      "hota": null
+    },
+    "rows": [
+      {
+        "id": "clip_6c8eaf67a88233477e7f0609",
+        "output_usable": true,
+        "labeled_events": 0,
+        "matched_events": 0,
+        "missing_events": 0,
+        "matches": [],
+        "false_events_with_coverage": 0,
+        "unscored_extra_events": 1,
+        "coverage_exhaustive": false,
+        "annotated_boxes": 0,
+        "matched_boxes": 0
+      },
+      {
+        "id": "clip_e2a3d757e78a0b8833cdfeea",
+        "output_usable": false,
+        "labeled_events": 1,
+        "matched_events": 0,
+        "missing_events": 1,
+        "matches": [],
+        "false_events_with_coverage": 0,
+        "unscored_extra_events": 0,
+        "coverage_exhaustive": true,
+        "annotated_boxes": 0,
+        "matched_boxes": 0
+      }
+    ]
+  },
+  "geometric_events": {
+    "count": 2,
+    "kinds": [
+      "motion_started",
+      "visibility_lost"
+    ]
+  },
+  "capture": {
+    "captured_frames": 145,
+    "losses": [],
+    "tracking_frame_losses": 0,
+    "capture_lateness_mean_s": 0.0026633607930150525,
+    "capture_lateness_max_s": 0.019298076629638672,
+    "spool": {
+      "clips": {
+        "complete": 1,
+        "failed": 1
+      },
+      "dropped_sequences": 0,
+      "dropped_frame_references": 0,
+      "limits": {
+        "pending_plus_processing": 16,
+        "completed_media": 16
+      },
+      "scope": "Activity scheduling and retained input coverage; semantic event recall requires labels."
+    }
+  },
+  "scope": "Learned decisions of activity-gated model windows scored against official narrations; recall is not comparable to dense offline tiling; geometric events are not semantic claims."
+}

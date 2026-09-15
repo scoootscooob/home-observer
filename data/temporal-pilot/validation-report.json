@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "rows": 96,
+  "participant_disjoint": true,
+  "recording_disjoint": true,
+  "clip_hash_disjoint": true,
+  "frame_hash_disjoint": true,
+  "physical_schema_valid": true,
+  "held_out_homes_verified": false,
+  "participants": {
+    "train": [
+      "P01",
+      "P02",
+      "P04",
+      "P06"
+    ],
+    "validation": [
+      "P11"
+    ],
+    "test": [
+      "P03"
+    ]
+  },
+  "row_counts": {
+    "train": 64,
+    "validation": 16,
+    "test": 16
+  },
+  "all_timestamps_causal": true,
+  "all_targets_partial": true,
+  "home_assistant_fields": false,
+  "pinned_hub_clip_sha256_verified": true,
+  "validation_script_sha256": "d627b1542cd1a8d20e31d4d29e180ee743152f35462fff0856e64166b47fb000"
+}

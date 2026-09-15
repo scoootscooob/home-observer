@@ -1,0 +1,152 @@
+{
+  "turn": 2,
+  "at": 1789505336.106594,
+  "prompt_sha256": "bd96b3404064fbd523285be815892ef028e788295fe639b0a0f87e0dab16efae",
+  "prompt": {
+    "now": 1789505336.107,
+    "coordinator_id": "sandboxed-frontier-98f0d757ea8e",
+    "digital_context": {
+      "commitment_id": "recipe-prep-lift-bowls",
+      "text": "Recipe preparation: lift the nested mixing bowls from the worktop. Give an immediate visual cue when the observed bowls begin moving, then verify the pickup from the physical sequence before marking the step complete.",
+      "source_ref": "Demonstration digital recipe instruction, not a claim about the user's actual kitchen.",
+      "source_clip": "data/temporal-pilot/clips/030c003244925eb728dd.mp4",
+      "response_registry": "configs/recipe-workflow/responses.json",
+      "scope": "Real public video replay and isolated Home Assistant service execution; frontier creates the watch and verifies the observed interaction."
+    },
+    "approved_responses": [
+      {
+        "response_id": "recipe-movement-cue",
+        "kind": "ha_service",
+        "purpose": "Bowl movement detected; checking the recipe step."
+      }
+    ],
+    "exports_new": [
+      {
+        "created_at": 1789505335.108741,
+        "export_id": "export_93c04ff156bf5654fe331a29b2751794",
+        "export_sha256": "e73ba70c94c4a798ac1fac1766904244b5e0f9a312820842438f02156da292be",
+        "message": {
+          "audit_ref": "audit_a584123589ba89095c4738c1",
+          "commitment_id": "recipe-prep-lift-bowls",
+          "eligible_at": null,
+          "event_id": null,
+          "failure_class": null,
+          "matched_at": null,
+          "message_type": "watch_status",
+          "outcome_event_id": null,
+          "outcome_verified_at": null,
+          "readback_state": null,
+          "reported_at": 1789505335.109,
+          "response_id": "recipe-movement-cue",
+          "response_reserved_at": null,
+          "response_result": null,
+          "response_sent_at": null,
+          "response_timely": null,
+          "response_verified_at": null,
+          "status": "armed",
+          "verification_kind": null,
+          "watch_id": "watch-bowl-motion-cue"
+        },
+        "schema_version": "home-observer.production-export/1",
+        "topic": "watch.created",
+        "attempt": 1,
+        "exported_at": 1789505335.108741
+      }
+    ],
+    "exports_all_recent": [
+      {
+        "topic": "watch.created",
+        "export_id": "export_93c04ff156bf5654fe331a29b2751794",
+        "created_at": 1789505335.108741
+      }
+    ],
+    "export_messages_recent": [
+      {
+        "export_id": "export_93c04ff156bf5654fe331a29b2751794",
+        "topic": "watch.created",
+        "message": {
+          "audit_ref": "audit_a584123589ba89095c4738c1",
+          "commitment_id": "recipe-prep-lift-bowls",
+          "eligible_at": null,
+          "event_id": null,
+          "failure_class": null,
+          "matched_at": null,
+          "message_type": "watch_status",
+          "outcome_event_id": null,
+          "outcome_verified_at": null,
+          "readback_state": null,
+          "reported_at": 1789505335.109,
+          "response_id": "recipe-movement-cue",
+          "response_reserved_at": null,
+          "response_result": null,
+          "response_sent_at": null,
+          "response_timely": null,
+          "response_verified_at": null,
+          "status": "armed",
+          "verification_kind": null,
+          "watch_id": "watch-bowl-motion-cue"
+        }
+      }
+    ],
+    "command_results": [
+      {
+        "command_id": "cmd-001-create-watch-bowl-motion",
+        "coordinator_id": "sandboxed-frontier-98f0d757ea8e",
+        "accepted_at": 1789505335.108741,
+        "outcome": {
+          "watch_id": "watch-bowl-motion-cue",
+          "status": "armed"
+        }
+      }
+    ],
+    "rejected_commands": [],
+    "previous_assessment": {
+      "recipe_step_complete": false,
+      "pickup_verified": "unknown",
+      "rationale": "Watch created for bowl motion_started to fire the approved cue. No physical events or verification results received yet, so no subject IDs exist to verify; step remains pending."
+    },
+    "already_acknowledged": [],
+    "turn": 2
+  },
+  "model_record": {
+    "model": "claude-opus-5",
+    "attempt": 1,
+    "latency_s": 6.341463088989258,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 2910,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 2910
+      },
+      "output_tokens": 261,
+      "output_tokens_details": {
+        "thinking_tokens": 0
+      },
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+    }
+  },
+  "model_text": "{\"commands\": [{\"command_id\": \"cmd-002-ack-watch-created\", \"coordinator_id\": \"sandboxed-frontier-98f0d757ea8e\", \"type\": \"ack_export\", \"export_id\": \"export_93c04ff156bf5654fe331a29b2751794\", \"export_sha256\": \"e73ba70c94c4a798ac1fac1766904244b5e0f9a312820842438f02156da292be\"}], \"assessment\": {\"recipe_step_complete\": false, \"pickup_verified\": \"unknown\", \"rationale\": \"Watch watch-bowl-motion-cue is armed for the approved cue; acknowledged its creation export. No physical events or phys_ track IDs yet, so no verification can be requested and the step stays pending.\", \"wait\": true}, \"wait\": true}",
+  "error": null,
+  "commands_written": [
+    {
+      "command_id": "cmd-002-ack-watch-created",
+      "coordinator_id": "sandboxed-frontier-98f0d757ea8e",
+      "type": "ack_export",
+      "export_id": "export_93c04ff156bf5654fe331a29b2751794",
+      "export_sha256": "e73ba70c94c4a798ac1fac1766904244b5e0f9a312820842438f02156da292be"
+    }
+  ],
+  "skipped": [],
+  "auto_acknowledged": [
+    "export_93c04ff156bf5654fe331a29b2751794"
+  ],
+  "assessment": {
+    "recipe_step_complete": false,
+    "pickup_verified": "unknown",
+    "rationale": "Watch watch-bowl-motion-cue is armed for the approved cue; acknowledged its creation export. No physical events or phys_ track IDs yet, so no verification can be requested and the step stays pending.",
+    "wait": true
+  }
+}

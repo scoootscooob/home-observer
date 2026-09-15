@@ -1,0 +1,101 @@
+{
+  "clip_id": "clip_f95cc16a400a04146deb28c9",
+  "reason": "initial_context",
+  "frames": [
+    {
+      "camera_id": "recipe",
+      "sequence": 1,
+      "timestamp": 52.5,
+      "captured_at": 1789508100.849919,
+      "evidence_id": "recipe:1",
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-positive-pan/sequences/clip_f95cc16a400a04146deb28c9/000000.jpg",
+      "sha256": "75b9217e56996094c0672fb1083c07167432e97786fa508ec129d0105da0ceff",
+      "activity": 0.0,
+      "selected_for_model": true
+    },
+    {
+      "camera_id": "recipe",
+      "sequence": 2,
+      "timestamp": 52.51668333333333,
+      "captured_at": 1789508100.859432,
+      "evidence_id": "recipe:2",
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-positive-pan/sequences/clip_f95cc16a400a04146deb28c9/000001.jpg",
+      "sha256": "b58a2d41e8ee15fa003bb047ef1770ade92f74eef5727849e5b502c91263d8bb",
+      "activity": 0.10566939890710382,
+      "selected_for_model": true
+    },
+    {
+      "camera_id": "recipe",
+      "sequence": 3,
+      "timestamp": 52.533366666666666,
+      "captured_at": 1789508100.863059,
+      "evidence_id": "recipe:3",
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-positive-pan/sequences/clip_f95cc16a400a04146deb28c9/000002.jpg",
+      "sha256": "8507771616fb383e94d7f6088014bff6b4cc44df484840707219fc1cc3e0f937",
+      "activity": 0.0,
+      "selected_for_model": true
+    },
+    {
+      "camera_id": "recipe",
+      "sequence": 4,
+      "timestamp": 52.55005,
+      "captured_at": 1789508100.865501,
+      "evidence_id": "recipe:4",
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-positive-pan/sequences/clip_f95cc16a400a04146deb28c9/000003.jpg",
+      "sha256": "c6ee120f8bc657df0515de726c023e88b6760d4a65a982eccc36f02edc51b7ad",
+      "activity": 0.11341725214676035,
+      "selected_for_model": true
+    },
+    {
+      "camera_id": "recipe",
+      "sequence": 5,
+      "timestamp": 52.56673333333333,
+      "captured_at": 1789508100.881998,
+      "evidence_id": "recipe:5",
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-positive-pan/sequences/clip_f95cc16a400a04146deb28c9/000004.jpg",
+      "sha256": "83191ac0a012b24c63424395081ecdf42c73030eaf7b6c60dbbc21e689ca9607",
+      "activity": 0.0,
+      "selected_for_model": true
+    },
+    {
+      "camera_id": "recipe",
+      "sequence": 6,
+      "timestamp": 52.583416666666665,
+      "captured_at": 1789508100.898738,
+      "evidence_id": "recipe:6",
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-positive-pan/sequences/clip_f95cc16a400a04146deb28c9/000005.jpg",
+      "sha256": "1cf3b234cd2bf9fbfed5f617ccc23f907645996126f30db7e27807518c4f2752",
+      "activity": 0.1256928181108509,
+      "selected_for_model": true
+    },
+    {
+      "camera_id": "recipe",
+      "sequence": 7,
+      "timestamp": 52.6001,
+      "captured_at": 1789508100.914606,
+      "evidence_id": "recipe:7",
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-positive-pan/sequences/clip_f95cc16a400a04146deb28c9/000006.jpg",
+      "sha256": "5c06b117b3509d29636a3d5090e38df5c1f69d29674c322b4b0b2bf32862c44c",
+      "activity": 4.3911007025761124e-05,
+      "selected_for_model": true
+    },
+    {
+      "camera_id": "recipe",
+      "sequence": 8,
+      "timestamp": 52.61678333333333,
+      "captured_at": 1789508100.931071,
+      "evidence_id": "recipe:8",
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-positive-pan/sequences/clip_f95cc16a400a04146deb28c9/000007.jpg",
+      "sha256": "1e7e04d0332278361da2683c731bbd2cbb94616605ca772bde05201b3f713305",
+      "activity": 0.13966139734582358,
+      "selected_for_model": true
+    }
+  ],
+  "started_at": 52.5,
+  "ended_at": 52.61678333333333,
+  "activity_started_at": null,
+  "activity_ended_at": null,
+  "full_sequence_frames": 8,
+  "selected_model_frames": 8,
+  "semantic_event_label": null
+}

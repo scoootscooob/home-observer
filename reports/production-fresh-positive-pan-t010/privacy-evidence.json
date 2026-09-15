@@ -1,0 +1,311 @@
+{
+  "declaration": {
+    "model_class": "PhysicalLocalModel",
+    "local_inference": true,
+    "sensory_media_leaves_host": false,
+    "coordinator_class": "ProductionCoordinator",
+    "exports_only": true
+  },
+  "runtime": {
+    "mode": "production",
+    "inference_backend": "local-mps",
+    "model_id": "google/gemma-4-E4B-it",
+    "revision": "ee0ef6023621cff504d758262d4e04895a5af4a2",
+    "adapter_path": "artifacts/physical-training-v1/adapter",
+    "export_policy": "configs/production/export-policy.json",
+    "export_key_file": "../../work/production-export.key",
+    "max_frames": 8,
+    "max_new_tokens": 768,
+    "output_contract": "judged-fields"
+  },
+  "policy_sha256": "410c8cba7a7ee49c421096becb475f6ae3e56cb544d5af11b25265ef4b271ae0",
+  "bridge_scan": {
+    "files": [
+      "context/digital-context.json",
+      "context/responses.json",
+      "coordinator/coordinator.log",
+      "coordinator/final-assessment.json",
+      "coordinator/state.json",
+      "coordinator/stop",
+      "coordinator/turns/turn-001.json",
+      "coordinator/turns/turn-002.json",
+      "coordinator/turns/turn-003.json",
+      "coordinator/turns/turn-004.json",
+      "coordinator/turns/turn-005.json",
+      "coordinator/turns/turn-006.json",
+      "coordinator/turns/turn-007.json",
+      "coordinator/turns/turn-008.json",
+      "outbox/export_087ce0bc14ebd77c368dc5aaf78cd2e2.json",
+      "outbox/export_19e99b80eb00e6e2e8ff62ecc2c381ea.json",
+      "outbox/export_217608be9108fb2425630cb748b9fab6.json",
+      "outbox/export_2601ea3a4ef0e00cdbd9ee45a7c2e474.json",
+      "outbox/export_28a04b0add0c3af1437f57fbb60d4443.json",
+      "outbox/export_435393e3e795b4cd41f99a3ce4c5c8ff.json",
+      "outbox/export_484e5b312e719ca16b1d37137135d729.json",
+      "outbox/export_70532f8bd06f8cddd87402b3dff3f3e2.json",
+      "outbox/export_8ad94be87cf321d004631ebb1f766b4d.json",
+      "outbox/export_8b8c3c9e98fe664849e6ad7cf1551f0d.json",
+      "outbox/export_8d066907c428843eb75423d0bfd92a42.json",
+      "outbox/export_99fefec20c99f7c6ada65c63643966d9.json",
+      "outbox/export_aefca1d0de8ceeabcafcd8481fdc8b76.json",
+      "outbox/export_b99b6b61c8e50bb1e6585b8de789f6b5.json",
+      "outbox/export_c737e862ff92bceae4d8af42e9affb8a.json",
+      "outbox/export_ce35628abf487b6e6486ab4c2d845250.json",
+      "outbox/export_dcd093ca353aae69ea5aae8640b5bc40.json",
+      "outbox/export_df7b9fb2d32fb0a427c81b0b85ac4f73.json",
+      "outbox/export_e96020687bd5633d2abd7eb49f6fb458.json",
+      "results/cmd-1-create-watch-pan-motion.json",
+      "results/cmd-10-ack-verify-clear-result.json",
+      "results/cmd-11-verify-moved-from-initial.json",
+      "results/cmd-12-verify-pickup-retry.json",
+      "results/cmd-13-ack-learned-pickup-2.json",
+      "results/cmd-14-ack-perception-2.json",
+      "results/cmd-15-ack-learned-pickup-3.json",
+      "results/cmd-16-ack-perception-3.json",
+      "results/cmd-17-ack-verify-moved-result.json",
+      "results/cmd-18-verify-clear-retry.json",
+      "results/cmd-19-verify-still-present.json",
+      "results/cmd-2-ack-watch-created.json",
+      "results/cmd-20-ack-learned-pickup-4.json",
+      "results/cmd-21-ack-perception-4.json",
+      "results/cmd-22-ack-learned-pickup-5.json",
+      "results/cmd-23-ack-perception-5.json",
+      "results/cmd-24-ack-verify-clear-2.json",
+      "results/cmd-25-verify-pickup-2.json",
+      "results/cmd-26-ack-verify-pickup-2.json",
+      "results/cmd-27-verify-moved-retry.json",
+      "results/cmd-28-ack-verify-moved-2.json",
+      "results/cmd-3-ack-motion-started.json",
+      "results/cmd-4-ack-visibility-lost.json",
+      "results/cmd-5-ack-learned-pickup.json",
+      "results/cmd-6-ack-perception-completed.json",
+      "results/cmd-7-verify-pickup.json",
+      "results/cmd-8-verify-clear-of-support.json",
+      "results/cmd-9-ack-verify-pickup-result.json"
+    ],
+    "violations": {},
+    "frontier_visible_files": 61
+  },
+  "export_store": {
+    "exports": 19,
+    "delivered": 19,
+    "acked": 19,
+    "blocked": 0,
+    "audit_records": 19
+  },
+  "blocked_exports": [],
+  "private_outbox_envelopes": 19,
+  "private_outbox_contains_paths": true,
+  "frontier": {
+    "mode": "sandboxed",
+    "model": "claude-opus-5",
+    "launches": 1,
+    "interruptions": [],
+    "sandbox_profile": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-positive-pan-t010/frontier-sandbox-profile.sb",
+    "allowed_port": 8317,
+    "final_assessment": {
+      "coordinator_id": "sandboxed-frontier-1ec2a16050d1",
+      "finished_at": 1789509151.8704052,
+      "turns": 8,
+      "restarts": 0,
+      "exports_seen": 19,
+      "exports_acknowledged": 19,
+      "commands_written": 28,
+      "assessment": {
+        "recipe_step_complete": false,
+        "pickup_verified": "unknown",
+        "rationale": "Second moved_from_initial_location query also returned unknown (localization_uncertain, conf 0.0). pickup_completed, clear_of_support and moved queries are each exhausted at two asks; no confirmed verdict exists, so the step stays pending. Acked the export; no new verifies.",
+        "wait": true
+      },
+      "model_calls": [
+        {
+          "model": "claude-opus-5",
+          "attempt": 1,
+          "latency_s": 8.386854887008667,
+          "usage": {
+            "input_tokens": 2,
+            "cache_creation_input_tokens": 1786,
+            "cache_read_input_tokens": 0,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 1786
+            },
+            "output_tokens": 716,
+            "output_tokens_details": {
+              "thinking_tokens": 241
+            },
+            "service_tier": "standard",
+            "inference_geo": "not_available"
+          }
+        },
+        {
+          "model": "claude-opus-5",
+          "attempt": 1,
+          "latency_s": 7.391582012176514,
+          "usage": {
+            "input_tokens": 2,
+            "cache_creation_input_tokens": 2909,
+            "cache_read_input_tokens": 0,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 2909
+            },
+            "output_tokens": 389,
+            "output_tokens_details": {
+              "thinking_tokens": 108
+            },
+            "service_tier": "standard",
+            "inference_geo": "not_available"
+          }
+        },
+        {
+          "model": "claude-opus-5",
+          "attempt": 1,
+          "latency_s": 20.518862009048462,
+          "usage": {
+            "input_tokens": 2,
+            "cache_creation_input_tokens": 5851,
+            "cache_read_input_tokens": 0,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 5851
+            },
+            "output_tokens": 1201,
+            "output_tokens_details": {
+              "thinking_tokens": 251
+            },
+            "service_tier": "standard",
+            "inference_geo": "not_available"
+          }
+        },
+        {
+          "model": "claude-opus-5",
+          "attempt": 1,
+          "latency_s": 16.33887004852295,
+          "usage": {
+            "input_tokens": 2,
+            "cache_creation_input_tokens": 6681,
+            "cache_read_input_tokens": 0,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 6681
+            },
+            "output_tokens": 1048,
+            "output_tokens_details": {
+              "thinking_tokens": 364
+            },
+            "service_tier": "standard",
+            "inference_geo": "not_available"
+          }
+        },
+        {
+          "model": "claude-opus-5",
+          "attempt": 1,
+          "latency_s": 30.377485036849976,
+          "usage": {
+            "input_tokens": 2,
+            "cache_creation_input_tokens": 10277,
+            "cache_read_input_tokens": 0,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 10277
+            },
+            "output_tokens": 1703,
+            "output_tokens_details": {
+              "thinking_tokens": 583
+            },
+            "service_tier": "standard",
+            "inference_geo": "not_available"
+          }
+        },
+        {
+          "model": "claude-opus-5",
+          "attempt": 1,
+          "latency_s": 32.03398013114929,
+          "usage": {
+            "input_tokens": 2,
+            "cache_creation_input_tokens": 13160,
+            "cache_read_input_tokens": 0,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 13160
+            },
+            "output_tokens": 2000,
+            "output_tokens_details": {
+              "thinking_tokens": 1213
+            },
+            "service_tier": "standard",
+            "inference_geo": "not_available"
+          }
+        },
+        {
+          "model": "claude-opus-5",
+          "attempt": 1,
+          "latency_s": 20.29583716392517,
+          "usage": {
+            "input_tokens": 2,
+            "cache_creation_input_tokens": 13188,
+            "cache_read_input_tokens": 0,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 13188
+            },
+            "output_tokens": 995,
+            "output_tokens_details": {
+              "thinking_tokens": 0
+            },
+            "service_tier": "standard",
+            "inference_geo": "not_available"
+          }
+        },
+        {
+          "model": "claude-opus-5",
+          "attempt": 1,
+          "latency_s": 16.248230934143066,
+          "usage": {
+            "input_tokens": 2,
+            "cache_creation_input_tokens": 12826,
+            "cache_read_input_tokens": 0,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 12826
+            },
+            "output_tokens": 1009,
+            "output_tokens_details": {
+              "thinking_tokens": 583
+            },
+            "service_tier": "standard",
+            "inference_geo": "not_available"
+          }
+        },
+        {
+          "model": "claude-opus-5",
+          "attempt": 1,
+          "latency_s": 14.08069109916687,
+          "usage": {
+            "input_tokens": 2,
+            "cache_creation_input_tokens": 13541,
+            "cache_read_input_tokens": 0,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 13541
+            },
+            "output_tokens": 821,
+            "output_tokens_details": {
+              "thinking_tokens": 521
+            },
+            "service_tier": "standard",
+            "inference_geo": "not_available"
+          }
+        }
+      ],
+      "stopped_by": "stop_file",
+      "media_access": "none: sandboxed to the bridge directory and the local inference proxy port"
+    }
+  },
+  "seed_track": "phys_6e6627def5b949ec858dea068e76c15d",
+  "stream_errors": [],
+  "captured_frames": 510,
+  "verified_at": 1789509151.9139059,
+  "claim": "Sensory media stayed on this host: in-process local inference, exports-only bridge, sandboxed frontier with no media/filesystem access. Field filtering and host isolation are both enforced and tested; this is not a claim about model correctness."
+}

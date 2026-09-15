@@ -1,0 +1,182 @@
+{
+  "status": "passed",
+  "tested_at": 1789488104.776041,
+  "home_assistant_version": "2026.9.2",
+  "instance": {
+    "container": "home-observer-ha-demo-20260915",
+    "network": "home-observer-ha-demo-net-20260915",
+    "url": "http://127.0.0.1:8124",
+    "image": "ghcr.io/home-assistant/home-assistant@sha256:624e1d662d7668e047a9405e1a5d25fa9b158b813e6fe5073348d82a563bc691",
+    "version": "2026.9.2",
+    "isolated": true
+  },
+  "method": "HomeAssistant.execute -> real HA REST service -> independent HA state read",
+  "device_kind": "isolated template lights/switch backed by input_boolean",
+  "service_calls": [
+    {
+      "action_id": "ha-demo-389b786f02384d78b2e03e93b6993f47",
+      "entity_id": "light.kitchen",
+      "state": "off",
+      "simulated": false,
+      "verified": true,
+      "verification_latency_s": 0.0021063340245746076,
+      "service": "turn_off",
+      "observed_state": "off",
+      "last_updated": "2026-09-15T16:01:44.666528+00:00"
+    },
+    {
+      "action_id": "ha-demo-725591e1133b499cb95ab20311652653",
+      "entity_id": "light.kitchen",
+      "state": "on",
+      "simulated": false,
+      "verified": true,
+      "verification_latency_s": 0.0025021250476129353,
+      "service": "turn_on",
+      "observed_state": "on",
+      "last_updated": "2026-09-15T16:01:44.674652+00:00"
+    },
+    {
+      "action_id": "ha-demo-3114a66044754eb1859bea606242b454",
+      "entity_id": "light.kitchen",
+      "state": "off",
+      "simulated": false,
+      "verified": true,
+      "verification_latency_s": 0.004038874991238117,
+      "service": "turn_off",
+      "observed_state": "off",
+      "last_updated": "2026-09-15T16:01:44.682247+00:00"
+    },
+    {
+      "action_id": "ha-demo-a2f2c61b36c3415d81f78768196dc6f5",
+      "entity_id": "light.entry",
+      "state": "off",
+      "simulated": false,
+      "verified": true,
+      "verification_latency_s": 0.0026644159806892276,
+      "service": "turn_off",
+      "observed_state": "off",
+      "last_updated": "2026-09-15T16:00:50.577154+00:00"
+    },
+    {
+      "action_id": "ha-demo-44ab1b97cda04a2ab8ce05b2d56b2d47",
+      "entity_id": "light.entry",
+      "state": "on",
+      "simulated": false,
+      "verified": true,
+      "verification_latency_s": 0.003946124983485788,
+      "service": "turn_on",
+      "observed_state": "on",
+      "last_updated": "2026-09-15T16:01:44.702279+00:00"
+    },
+    {
+      "action_id": "ha-demo-fc814da9b0214b9d8902fef736ce0681",
+      "entity_id": "light.entry",
+      "state": "off",
+      "simulated": false,
+      "verified": true,
+      "verification_latency_s": 0.002786375000141561,
+      "service": "turn_off",
+      "observed_state": "off",
+      "last_updated": "2026-09-15T16:01:44.712039+00:00"
+    },
+    {
+      "action_id": "ha-demo-76e579e72fcc4bfd865ade995b46729b",
+      "entity_id": "light.lounge",
+      "state": "off",
+      "simulated": false,
+      "verified": true,
+      "verification_latency_s": 0.0024796659708954394,
+      "service": "turn_off",
+      "observed_state": "off",
+      "last_updated": "2026-09-15T16:00:50.577557+00:00"
+    },
+    {
+      "action_id": "ha-demo-198a75893b62462c9edef75205997883",
+      "entity_id": "light.lounge",
+      "state": "on",
+      "simulated": false,
+      "verified": true,
+      "verification_latency_s": 0.0025958330370485783,
+      "service": "turn_on",
+      "observed_state": "on",
+      "last_updated": "2026-09-15T16:01:44.728531+00:00"
+    },
+    {
+      "action_id": "ha-demo-52e7e476a9a6410486b99e3911d3655f",
+      "entity_id": "light.lounge",
+      "state": "off",
+      "simulated": false,
+      "verified": true,
+      "verification_latency_s": 0.004144207981880754,
+      "service": "turn_off",
+      "observed_state": "off",
+      "last_updated": "2026-09-15T16:01:44.737960+00:00"
+    },
+    {
+      "action_id": "ha-demo-d8ab401508fc418180e50df6ac5527b2",
+      "entity_id": "light.garage",
+      "state": "off",
+      "simulated": false,
+      "verified": true,
+      "verification_latency_s": 0.0027069170027971268,
+      "service": "turn_off",
+      "observed_state": "off",
+      "last_updated": "2026-09-15T16:00:50.577898+00:00"
+    },
+    {
+      "action_id": "ha-demo-7aa4b532fdcb417aac93ec961e48e905",
+      "entity_id": "light.garage",
+      "state": "on",
+      "simulated": false,
+      "verified": true,
+      "verification_latency_s": 0.0021935830009169877,
+      "service": "turn_on",
+      "observed_state": "on",
+      "last_updated": "2026-09-15T16:01:44.759830+00:00"
+    },
+    {
+      "action_id": "ha-demo-18e44d8c9a0a4c758f0a4ea78f4c7a63",
+      "entity_id": "light.garage",
+      "state": "off",
+      "simulated": false,
+      "verified": true,
+      "verification_latency_s": 0.002461124968249351,
+      "service": "turn_off",
+      "observed_state": "off",
+      "last_updated": "2026-09-15T16:01:44.768541+00:00"
+    },
+    {
+      "action_id": "ha-demo-5dc5ac4a3f374aac974de71e7ecbf2e6",
+      "entity_id": "switch.buzzer",
+      "state": "off",
+      "simulated": false,
+      "verified": true,
+      "verification_latency_s": 0.002098208002280444,
+      "service": "turn_off",
+      "observed_state": "off",
+      "last_updated": "2026-09-15T16:00:50.578370+00:00"
+    },
+    {
+      "action_id": "ha-demo-a795835f62b94a3bb1820f83b4dfb7e6",
+      "entity_id": "switch.buzzer",
+      "state": "on",
+      "simulated": false,
+      "verified": true,
+      "verification_latency_s": 0.0022094169980846345,
+      "service": "turn_on",
+      "observed_state": "on",
+      "last_updated": "2026-09-15T16:01:44.785421+00:00"
+    },
+    {
+      "action_id": "ha-demo-0d875547e9dd4bb4a633602ccc1d9b32",
+      "entity_id": "switch.buzzer",
+      "state": "off",
+      "simulated": false,
+      "verified": true,
+      "verification_latency_s": 0.00241929100593552,
+      "service": "turn_off",
+      "observed_state": "off",
+      "last_updated": "2026-09-15T16:01:44.793236+00:00"
+    }
+  ]
+}

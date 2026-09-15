@@ -1,0 +1,246 @@
+{
+  "declaration": {
+    "model_class": "PhysicalLocalModel",
+    "local_inference": true,
+    "sensory_media_leaves_host": false,
+    "coordinator_class": "ProductionCoordinator",
+    "exports_only": true
+  },
+  "runtime": {
+    "mode": "production",
+    "inference_backend": "local-mps",
+    "model_id": "google/gemma-4-E4B-it",
+    "revision": "ee0ef6023621cff504d758262d4e04895a5af4a2",
+    "adapter_path": "artifacts/physical-training-v1/adapter",
+    "export_policy": "configs/production/export-policy.json",
+    "export_key_file": "../../work/production-export.key",
+    "max_frames": 8,
+    "max_new_tokens": 768,
+    "output_contract": "judged-fields"
+  },
+  "policy_sha256": "410c8cba7a7ee49c421096becb475f6ae3e56cb544d5af11b25265ef4b271ae0",
+  "bridge_scan": {
+    "files": [
+      "context/digital-context.json",
+      "context/responses.json",
+      "coordinator/coordinator.log",
+      "coordinator/final-assessment.json",
+      "coordinator/state.json",
+      "coordinator/stop",
+      "coordinator/turns/turn-001.json",
+      "coordinator/turns/turn-002.json",
+      "coordinator/turns/turn-003.json",
+      "coordinator/turns/turn-004.json",
+      "outbox/export_088f1f83fa1f603207b502216a944c7f.json",
+      "outbox/export_0919b9e35a712c5108059e4ac2baba56.json",
+      "outbox/export_13be7e65b78f5b13f988fbebb32428f2.json",
+      "outbox/export_1f82c8eb30ba455e68beb6dc0515af69.json",
+      "outbox/export_3563aaa4ea857587308c51e0903df356.json",
+      "outbox/export_38213ed6df95fc1c7358c128f194d29d.json",
+      "outbox/export_3e96ce1a84eb9c53d2237ddc1fcb528a.json",
+      "outbox/export_52d6679c37631b59203d39798600c81f.json",
+      "outbox/export_56eb388548ea5be8b1d417e8ecc05484.json",
+      "outbox/export_73ce0c5adae07e61aa7bb0e90abc953b.json",
+      "outbox/export_7f7e22c1dd20b7cfd8155ed82de17143.json",
+      "outbox/export_85ec228cada7c461eb0bced3c68f459e.json",
+      "outbox/export_86a983f567ab08d5f337c8532759feb4.json",
+      "outbox/export_8ae4a72a63fc0211ab4bfa0074f6b966.json",
+      "outbox/export_9e8a2b1a2d03cbc15c39214947519c38.json",
+      "outbox/export_a281c9daf909f7d7503c2168adbbec44.json",
+      "outbox/export_cf87e97abde7f26204f9ad0c86d242a4.json",
+      "outbox/export_d8bbe090d44d9e8c43334611778da0af.json",
+      "outbox/export_d988646145fb3bd0d7e34a2907aeafb3.json",
+      "outbox/export_dee47558213d25f051a724779af8b960.json",
+      "outbox/export_ed1b0f79bd77a8d2675eab1ab40d62e2.json",
+      "outbox/export_f334559a50a77cf13ec500630a9bb583.json",
+      "results/ack-088f1f83fa1f6032-3.json",
+      "results/ack-0919b9e35a712c51-4.json",
+      "results/ack-1f82c8eb30ba455e-4.json",
+      "results/ack-3563aaa4ea857587-4.json",
+      "results/ack-38213ed6df95fc1c-3.json",
+      "results/ack-52d6679c37631b59-4.json",
+      "results/ack-56eb388548ea5be8-3.json",
+      "results/ack-73ce0c5adae07e61-3.json",
+      "results/ack-7f7e22c1dd20b7cf-4.json",
+      "results/ack-85ec228cada7c461-4.json",
+      "results/ack-86a983f567ab08d5-4.json",
+      "results/ack-8ae4a72a63fc0211-3.json",
+      "results/ack-9e8a2b1a2d03cbc1-3.json",
+      "results/ack-cf87e97abde7f262-3.json",
+      "results/ack-d988646145fb3bd0-3.json",
+      "results/ack-dee47558213d25f0-3.json",
+      "results/ack-ed1b0f79bd77a8d2-4.json",
+      "results/ack-f334559a50a77cf1-3.json",
+      "results/cmd-ack-physical-event-1.json",
+      "results/cmd-ack-response-verified-1.json",
+      "results/cmd-ack-watch-created-1.json",
+      "results/cmd-ack-watch-matched-1.json",
+      "results/cmd-verify-clear-1.json",
+      "results/cmd-verify-pickup-1.json",
+      "results/cmd-watch-plate-motion-1.json"
+    ],
+    "violations": {},
+    "frontier_visible_files": 57
+  },
+  "export_store": {
+    "exports": 22,
+    "delivered": 22,
+    "acked": 22,
+    "blocked": 0,
+    "audit_records": 22
+  },
+  "blocked_exports": [],
+  "private_outbox_envelopes": 22,
+  "private_outbox_contains_paths": true,
+  "frontier": {
+    "mode": "sandboxed",
+    "model": "claude-opus-5",
+    "launches": 1,
+    "interruptions": [],
+    "sandbox_profile": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-negative-plate/frontier-sandbox-profile.sb",
+    "allowed_port": 8317,
+    "final_assessment": {
+      "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+      "finished_at": 1789508697.2825549,
+      "turns": 4,
+      "restarts": 0,
+      "exports_seen": 22,
+      "exports_acknowledged": 22,
+      "commands_written": 25,
+      "assessment": {
+        "recipe_step_complete": false,
+        "pickup_verified": "unknown",
+        "rationale": "Geometric motion_started on plate phys_7fe8 matched the watch and the cue response was verified, but a light cue and motion never prove a lift. Asked verifier for pickup_completed and clear_of_support; step stays pending until a confirmed verdict."
+      },
+      "model_calls": [
+        {
+          "model": "claude-opus-5",
+          "attempt": 1,
+          "latency_s": 12.329583168029785,
+          "usage": {
+            "input_tokens": 2,
+            "cache_creation_input_tokens": 1826,
+            "cache_read_input_tokens": 0,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 1826
+            },
+            "output_tokens": 1018,
+            "output_tokens_details": {
+              "thinking_tokens": 578
+            },
+            "service_tier": "standard",
+            "inference_geo": "not_available"
+          }
+        },
+        {
+          "model": "claude-opus-5",
+          "attempt": 1,
+          "latency_s": 18.323853015899658,
+          "usage": {
+            "input_tokens": 2,
+            "cache_creation_input_tokens": 5660,
+            "cache_read_input_tokens": 0,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 5660
+            },
+            "output_tokens": 1084,
+            "output_tokens_details": {
+              "thinking_tokens": 105
+            },
+            "service_tier": "standard",
+            "inference_geo": "not_available"
+          }
+        },
+        {
+          "model": "claude-opus-5",
+          "attempt": 1,
+          "latency_s": 36.314419984817505,
+          "usage": {
+            "input_tokens": 2,
+            "cache_creation_input_tokens": 12818,
+            "cache_read_input_tokens": 0,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 12818
+            },
+            "output_tokens": 2000,
+            "output_tokens_details": {
+              "thinking_tokens": 1353
+            },
+            "service_tier": "standard",
+            "inference_geo": "not_available"
+          }
+        },
+        {
+          "model": "claude-opus-5",
+          "attempt": 1,
+          "latency_s": 36.4800021648407,
+          "usage": {
+            "input_tokens": 2,
+            "cache_creation_input_tokens": 12846,
+            "cache_read_input_tokens": 0,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 12846
+            },
+            "output_tokens": 2000,
+            "output_tokens_details": {
+              "thinking_tokens": 1078
+            },
+            "service_tier": "standard",
+            "inference_geo": "not_available"
+          }
+        },
+        {
+          "model": "claude-opus-5",
+          "attempt": 1,
+          "latency_s": 32.42810130119324,
+          "usage": {
+            "input_tokens": 2,
+            "cache_creation_input_tokens": 16123,
+            "cache_read_input_tokens": 0,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 16123
+            },
+            "output_tokens": 2000,
+            "output_tokens_details": {
+              "thinking_tokens": 1074
+            },
+            "service_tier": "standard",
+            "inference_geo": "not_available"
+          }
+        },
+        {
+          "model": "claude-opus-5",
+          "attempt": 1,
+          "latency_s": 28.622876167297363,
+          "usage": {
+            "input_tokens": 2,
+            "cache_creation_input_tokens": 16151,
+            "cache_read_input_tokens": 0,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 16151
+            },
+            "output_tokens": 1694,
+            "output_tokens_details": {
+              "thinking_tokens": 323
+            },
+            "service_tier": "standard",
+            "inference_geo": "not_available"
+          }
+        }
+      ],
+      "stopped_by": "stop_file",
+      "media_access": "none: sandboxed to the bridge directory and the local inference proxy port"
+    }
+  },
+  "seed_track": "phys_7fe841eec2e8496ebec7916e1ea90a11",
+  "stream_errors": [],
+  "captured_frames": 600,
+  "verified_at": 1789508697.316577,
+  "claim": "Sensory media stayed on this host: in-process local inference, exports-only bridge, sandboxed frontier with no media/filesystem access. Field filtering and host isolation are both enforced and tested; this is not a claim about model correctness."
+}

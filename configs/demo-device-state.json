@@ -1,0 +1,13 @@
+{
+  "light.kitchen": "off",
+  "light.entry": "off",
+  "light.lounge": "off",
+  "light.garage": "off",
+  "binary_sensor.motion_kitchen": "off",
+  "binary_sensor.motion_entry": "off",
+  "binary_sensor.motion_lounge": "off",
+  "binary_sensor.motion_garage": "off",
+  "sensor.ambient_lux": 120,
+  "binary_sensor.water_leak": "off",
+  "switch.buzzer": "off"
+}

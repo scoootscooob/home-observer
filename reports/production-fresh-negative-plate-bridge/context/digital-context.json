@@ -1,0 +1,8 @@
+{
+  "commitment_id": "recipe-serve-lift-plate",
+  "text": "Recipe serving: lift the dinner plate from the table to carry it to the counter. Give an immediate visual cue when the observed plate begins moving, then verify the pickup from local observation before marking the step complete.",
+  "source_ref": "Demonstration digital recipe instruction for the negative workflow; the recorded footage only slides the plate on the table.",
+  "source_clip": "data/continuous-v2-workflow/negative-move-plate-P22_105.mp4",
+  "response_registry": "configs/recipe-workflow/responses.json",
+  "expected_outcome": "The plate is repositioned but never lifted; the step must remain pending and pickup must not be verified."
+}

@@ -1,0 +1,226 @@
+{
+  "pairs": 8,
+  "passed_pairs": 0,
+  "results": [
+    {
+      "pair_id": "31fd114da5c91651981f511c",
+      "identical_model_visible_text": true,
+      "identical_audio": true,
+      "changed_cameras": [
+        "kitchen"
+      ],
+      "members": [
+        {
+          "id": "31fd114da5c91651981f511c-0",
+          "member": "empty",
+          "valid": true,
+          "exact_occupancy": true,
+          "strict_all_observations_match": false,
+          "exact_actions": true
+        },
+        {
+          "id": "31fd114da5c91651981f511c-1",
+          "member": "occupied",
+          "valid": true,
+          "exact_occupancy": false,
+          "strict_all_observations_match": false,
+          "exact_actions": false
+        }
+      ],
+      "passed": false
+    },
+    {
+      "pair_id": "577c9263ca3202f8a078ef01",
+      "identical_model_visible_text": true,
+      "identical_audio": true,
+      "changed_cameras": [
+        "kitchen"
+      ],
+      "members": [
+        {
+          "id": "577c9263ca3202f8a078ef01-0",
+          "member": "empty",
+          "valid": true,
+          "exact_occupancy": true,
+          "strict_all_observations_match": false,
+          "exact_actions": true
+        },
+        {
+          "id": "577c9263ca3202f8a078ef01-1",
+          "member": "occupied",
+          "valid": true,
+          "exact_occupancy": false,
+          "strict_all_observations_match": false,
+          "exact_actions": false
+        }
+      ],
+      "passed": false
+    },
+    {
+      "pair_id": "5510d2c8886dabdcc2e0c218",
+      "identical_model_visible_text": true,
+      "identical_audio": true,
+      "changed_cameras": [
+        "entry"
+      ],
+      "members": [
+        {
+          "id": "5510d2c8886dabdcc2e0c218-0",
+          "member": "empty",
+          "valid": true,
+          "exact_occupancy": true,
+          "strict_all_observations_match": false,
+          "exact_actions": true
+        },
+        {
+          "id": "5510d2c8886dabdcc2e0c218-1",
+          "member": "occupied",
+          "valid": true,
+          "exact_occupancy": true,
+          "strict_all_observations_match": false,
+          "exact_actions": false
+        }
+      ],
+      "passed": false
+    },
+    {
+      "pair_id": "bc32f5371414fe21235dee90",
+      "identical_model_visible_text": true,
+      "identical_audio": true,
+      "changed_cameras": [
+        "entry"
+      ],
+      "members": [
+        {
+          "id": "bc32f5371414fe21235dee90-0",
+          "member": "empty",
+          "valid": true,
+          "exact_occupancy": true,
+          "strict_all_observations_match": false,
+          "exact_actions": true
+        },
+        {
+          "id": "bc32f5371414fe21235dee90-1",
+          "member": "occupied",
+          "valid": true,
+          "exact_occupancy": true,
+          "strict_all_observations_match": false,
+          "exact_actions": false
+        }
+      ],
+      "passed": false
+    },
+    {
+      "pair_id": "f58360ccb8c9dae28d817c82",
+      "identical_model_visible_text": true,
+      "identical_audio": true,
+      "changed_cameras": [
+        "lounge"
+      ],
+      "members": [
+        {
+          "id": "f58360ccb8c9dae28d817c82-0",
+          "member": "empty",
+          "valid": true,
+          "exact_occupancy": true,
+          "strict_all_observations_match": false,
+          "exact_actions": true
+        },
+        {
+          "id": "f58360ccb8c9dae28d817c82-1",
+          "member": "occupied",
+          "valid": true,
+          "exact_occupancy": true,
+          "strict_all_observations_match": false,
+          "exact_actions": false
+        }
+      ],
+      "passed": false
+    },
+    {
+      "pair_id": "c67014a7af95afd396b5be6e",
+      "identical_model_visible_text": true,
+      "identical_audio": true,
+      "changed_cameras": [
+        "lounge"
+      ],
+      "members": [
+        {
+          "id": "c67014a7af95afd396b5be6e-0",
+          "member": "empty",
+          "valid": true,
+          "exact_occupancy": true,
+          "strict_all_observations_match": false,
+          "exact_actions": true
+        },
+        {
+          "id": "c67014a7af95afd396b5be6e-1",
+          "member": "occupied",
+          "valid": true,
+          "exact_occupancy": true,
+          "strict_all_observations_match": false,
+          "exact_actions": false
+        }
+      ],
+      "passed": false
+    },
+    {
+      "pair_id": "450a81e155d9b9765fc7647d",
+      "identical_model_visible_text": true,
+      "identical_audio": true,
+      "changed_cameras": [
+        "garage"
+      ],
+      "members": [
+        {
+          "id": "450a81e155d9b9765fc7647d-0",
+          "member": "empty",
+          "valid": true,
+          "exact_occupancy": true,
+          "strict_all_observations_match": false,
+          "exact_actions": true
+        },
+        {
+          "id": "450a81e155d9b9765fc7647d-1",
+          "member": "occupied",
+          "valid": true,
+          "exact_occupancy": true,
+          "strict_all_observations_match": false,
+          "exact_actions": false
+        }
+      ],
+      "passed": false
+    },
+    {
+      "pair_id": "2f2302b7e953258156a51e16",
+      "identical_model_visible_text": true,
+      "identical_audio": true,
+      "changed_cameras": [
+        "garage"
+      ],
+      "members": [
+        {
+          "id": "2f2302b7e953258156a51e16-0",
+          "member": "empty",
+          "valid": true,
+          "exact_occupancy": true,
+          "strict_all_observations_match": false,
+          "exact_actions": true
+        },
+        {
+          "id": "2f2302b7e953258156a51e16-1",
+          "member": "occupied",
+          "valid": true,
+          "exact_occupancy": false,
+          "strict_all_observations_match": false,
+          "exact_actions": false
+        }
+      ],
+      "passed": false
+    }
+  ],
+  "source_sha256": "54122b5b262e253d99ee49ba75432ff7eff367f41de76b741f5f0b151695351d",
+  "policy_sha256": "dc6efa42ac18eefc2da2436720732244a769972a7f7ad9ca77de3836d48d5559",
+  "predictions_sha256": "90b0cccaeed5baa1a91fed2ddc4e01f0fcf51367a3f4c8aeddef2dfdea397c8d",
+  "scope": "Authored visual counterfactuals, identical text/audio within each pair; no real-home generalization claim."
+}

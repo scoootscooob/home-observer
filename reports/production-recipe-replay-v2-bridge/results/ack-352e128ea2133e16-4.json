@@ -1,0 +1,10 @@
+{
+  "command_id": "ack-352e128ea2133e16-4",
+  "coordinator_id": "sandboxed-frontier-a75d38c6a948",
+  "accepted_at": 1789503281.978976,
+  "outcome": {
+    "acknowledged": true,
+    "already_acknowledged": false,
+    "topic": "verification.result"
+  }
+}

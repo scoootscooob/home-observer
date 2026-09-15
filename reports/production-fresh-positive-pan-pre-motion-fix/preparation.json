@@ -1,0 +1,28 @@
+{
+  "entity_id": "light.kitchen",
+  "state_before": {
+    "state": "on",
+    "attributes": {}
+  },
+  "prepared_at": 1789507163.984324,
+  "reset_result": {
+    "action_id": "preparation",
+    "entity_id": "light.kitchen",
+    "state": "off",
+    "simulated": false,
+    "verified": true,
+    "attributes": {
+      "supported_color_modes": [
+        "onoff"
+      ],
+      "color_mode": null,
+      "friendly_name": "Kitchen",
+      "supported_features": 0
+    },
+    "verification_latency_s": 0.0012537919997157587
+  },
+  "state_after": {
+    "state": "off",
+    "attributes": {}
+  }
+}

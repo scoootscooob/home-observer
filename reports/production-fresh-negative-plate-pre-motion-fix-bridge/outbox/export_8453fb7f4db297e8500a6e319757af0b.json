@@ -1,0 +1,25 @@
+{
+  "created_at": 1789507640.976273,
+  "export_id": "export_8453fb7f4db297e8500a6e319757af0b",
+  "export_sha256": "4430128f222bf6d27d5639706341a325def59ec69de417ce60b69aadbdd30f3e",
+  "message": {
+    "audit_ref": "audit_ca1eadce009ef4fe4e385040",
+    "confidence": 0.0,
+    "evaluated_at": 1789507640.959,
+    "evidence_ended_at": 1789507631.175,
+    "evidence_started_at": 1789507619.835,
+    "frames_examined": 568,
+    "message_type": "verification_result",
+    "question": "pickup_completed",
+    "reason_code": "localization_uncertain",
+    "request_id": "vr-pickup-plate-001",
+    "subject_id": "phys_392326cbd2e147038b9e753469e7c484",
+    "uncertainty_level": "high",
+    "verdict": "unknown",
+    "verification_id": "pver_4a7cabd7609f4aa79c15d9294a084c6b"
+  },
+  "schema_version": "home-observer.production-export/1",
+  "topic": "verification.result",
+  "attempt": 5,
+  "exported_at": 1789507671.000992
+}

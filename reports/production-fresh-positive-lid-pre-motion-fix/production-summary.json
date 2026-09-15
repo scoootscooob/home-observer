@@ -1,0 +1,165 @@
+{
+  "captured_frames": 509,
+  "journal": {
+    "windows": 8,
+    "tracks": 1,
+    "detections": 1,
+    "observations": 0,
+    "events": 7,
+    "evidence": 53
+  },
+  "errors": [],
+  "exports": {
+    "exports": 18,
+    "delivered": 18,
+    "acked": 18,
+    "blocked": 0,
+    "audit_records": 18
+  },
+  "bridge_violations": {},
+  "final_assessment": {
+    "coordinator_id": "sandboxed-frontier-cdbda4751e05",
+    "finished_at": 1789507598.054656,
+    "turns": 6,
+    "restarts": 0,
+    "exports_seen": 18,
+    "exports_acknowledged": 18,
+    "commands_written": 23,
+    "assessment": {
+      "recipe_step_complete": false,
+      "pickup_verified": "unknown",
+      "rationale": "Third clear_of_support verdict is again unknown (localization_uncertain). Both pickup_completed and clear_of_support have now been asked to the repeat limit on phys_f87c6b0c, so no new verifies. Learned pick-up events lack subject IDs. Step stays pending."
+    },
+    "model_calls": [
+      {
+        "model": "claude-opus-5",
+        "attempt": 1,
+        "latency_s": 11.634243726730347,
+        "usage": {
+          "input_tokens": 2,
+          "cache_creation_input_tokens": 1783,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 1783
+          },
+          "output_tokens": 925,
+          "output_tokens_details": {
+            "thinking_tokens": 490
+          },
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      },
+      {
+        "model": "claude-opus-5",
+        "attempt": 1,
+        "latency_s": 18.304818868637085,
+        "usage": {
+          "input_tokens": 2,
+          "cache_creation_input_tokens": 5638,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 5638
+          },
+          "output_tokens": 1092,
+          "output_tokens_details": {
+            "thinking_tokens": 108
+          },
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      },
+      {
+        "model": "claude-opus-5",
+        "attempt": 1,
+        "latency_s": 30.104480028152466,
+        "usage": {
+          "input_tokens": 2,
+          "cache_creation_input_tokens": 7805,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 7805
+          },
+          "output_tokens": 1724,
+          "output_tokens_details": {
+            "thinking_tokens": 1035
+          },
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      },
+      {
+        "model": "claude-opus-5",
+        "attempt": 1,
+        "latency_s": 25.91496229171753,
+        "usage": {
+          "input_tokens": 2,
+          "cache_creation_input_tokens": 9774,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 9774
+          },
+          "output_tokens": 1468,
+          "output_tokens_details": {
+            "thinking_tokens": 606
+          },
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      },
+      {
+        "model": "claude-opus-5",
+        "attempt": 1,
+        "latency_s": 26.962494134902954,
+        "usage": {
+          "input_tokens": 2,
+          "cache_creation_input_tokens": 12788,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 12788
+          },
+          "output_tokens": 1572,
+          "output_tokens_details": {
+            "thinking_tokens": 855
+          },
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      },
+      {
+        "model": "claude-opus-5",
+        "attempt": 1,
+        "latency_s": 13.229319334030151,
+        "usage": {
+          "input_tokens": 2,
+          "cache_creation_input_tokens": 12460,
+          "cache_read_input_tokens": 0,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 12460
+          },
+          "output_tokens": 816,
+          "output_tokens_details": {
+            "thinking_tokens": 521
+          },
+          "service_tier": "standard",
+          "inference_geo": "not_available"
+        }
+      }
+    ],
+    "stopped_by": "stop_file",
+    "media_access": "none: sandboxed to the bridge directory and the local inference proxy port"
+  },
+  "watches": [
+    {
+      "watch_id": "watch-recipe-lid-motion",
+      "status": "verified"
+    }
+  ],
+  "output": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-positive-lid"
+}

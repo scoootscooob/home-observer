@@ -1,0 +1,10 @@
+{
+  "command_id": "cmd-25-ack-clear-retry-result",
+  "coordinator_id": "sandboxed-frontier-37a12cb40ee3",
+  "accepted_at": 1789507296.517529,
+  "outcome": {
+    "acknowledged": true,
+    "already_acknowledged": false,
+    "topic": "verification.result"
+  }
+}

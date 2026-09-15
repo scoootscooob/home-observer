@@ -1,0 +1,169 @@
+{
+  "seen_exports": [
+    "export_1d506622bcea4b95067d88991c485fd1",
+    "export_1b339eecb1ea5dd444c9617a207f6164",
+    "export_579adc5cf160e417c732fef06ac5a93e",
+    "export_929ea46a7a07e2d6dadf760a4f89befa",
+    "export_19a83aebb2d0d6a057a4c8894c60d7df",
+    "export_9750b46341a5adf82a1ea8f194746ce0",
+    "export_e3ec5d665c76893218c68e7108deee62",
+    "export_980381216d32baa2f9083c6974f08186",
+    "export_0b5435157af0041c1de37971e19ff03f",
+    "export_6b71b56eedcb8ce80f68e6c31a38d9c8",
+    "export_3385c0c7ae5566fc1036e2d57a18c89e",
+    "export_03fe7d0e84243bc12dff83843ee5bd58",
+    "export_6ca8459d916431fe2c3b6d61dd3db50e",
+    "export_5201877c4e139f42701c27ff33042efa",
+    "export_b8f8373d808d071182f3bebb70a942f0",
+    "export_eb5afc744c34d1d4fa342d5d0415154e",
+    "export_950f1fb0ccaf5cc3cd230b97d7c13694",
+    "export_daa0ab24d885bf2dc623e1010dd384d0"
+  ],
+  "acked_exports": [
+    "export_1d506622bcea4b95067d88991c485fd1",
+    "export_1b339eecb1ea5dd444c9617a207f6164",
+    "export_579adc5cf160e417c732fef06ac5a93e",
+    "export_929ea46a7a07e2d6dadf760a4f89befa",
+    "export_19a83aebb2d0d6a057a4c8894c60d7df",
+    "export_9750b46341a5adf82a1ea8f194746ce0",
+    "export_e3ec5d665c76893218c68e7108deee62",
+    "export_980381216d32baa2f9083c6974f08186",
+    "export_0b5435157af0041c1de37971e19ff03f",
+    "export_6b71b56eedcb8ce80f68e6c31a38d9c8",
+    "export_3385c0c7ae5566fc1036e2d57a18c89e",
+    "export_03fe7d0e84243bc12dff83843ee5bd58",
+    "export_b8f8373d808d071182f3bebb70a942f0",
+    "export_eb5afc744c34d1d4fa342d5d0415154e",
+    "export_950f1fb0ccaf5cc3cd230b97d7c13694",
+    "export_6ca8459d916431fe2c3b6d61dd3db50e",
+    "export_5201877c4e139f42701c27ff33042efa",
+    "export_daa0ab24d885bf2dc623e1010dd384d0"
+  ],
+  "commands": [
+    {
+      "command_id": "cmd-1-watch-lid-motion",
+      "type": "create_watch",
+      "written_at": 1789507399.060071
+    },
+    {
+      "command_id": "cmd-2-ack-watch-created",
+      "type": "ack_export",
+      "written_at": 1789507418.372373
+    },
+    {
+      "command_id": "cmd-3-ack-watch-matched",
+      "type": "ack_export",
+      "written_at": 1789507418.3725939
+    },
+    {
+      "command_id": "cmd-4-ack-response-verified",
+      "type": "ack_export",
+      "written_at": 1789507418.37274
+    },
+    {
+      "command_id": "cmd-5-ack-physical-event",
+      "type": "ack_export",
+      "written_at": 1789507418.3730218
+    },
+    {
+      "command_id": "cmd-6-verify-pickup",
+      "type": "verify",
+      "written_at": 1789507418.3732429
+    },
+    {
+      "command_id": "cmd-7-verify-clear",
+      "type": "verify",
+      "written_at": 1789507418.373502
+    },
+    {
+      "command_id": "cmd-8-ack-visibility-lost",
+      "type": "ack_export",
+      "written_at": 1789507449.48718
+    },
+    {
+      "command_id": "cmd-9-ack-learned-motion",
+      "type": "ack_export",
+      "written_at": 1789507449.4874
+    },
+    {
+      "command_id": "cmd-10-ack-perception-completed",
+      "type": "ack_export",
+      "written_at": 1789507449.487555
+    },
+    {
+      "command_id": "cmd-11-ack-verification-result",
+      "type": "ack_export",
+      "written_at": 1789507449.487673
+    },
+    {
+      "command_id": "cmd-12-ack-learned-motion-2",
+      "type": "ack_export",
+      "written_at": 1789507476.4156868
+    },
+    {
+      "command_id": "cmd-13-ack-perception-2",
+      "type": "ack_export",
+      "written_at": 1789507476.415832
+    },
+    {
+      "command_id": "cmd-14-ack-learned-pickup",
+      "type": "ack_export",
+      "written_at": 1789507476.415946
+    },
+    {
+      "command_id": "cmd-15-ack-perception-3",
+      "type": "ack_export",
+      "written_at": 1789507476.41606
+    },
+    {
+      "command_id": "cmd-16-verify-clear-of-support",
+      "type": "verify",
+      "written_at": 1789507476.416194
+    },
+    {
+      "command_id": "cmd-17-ack-verification-clear-2",
+      "type": "ack_export",
+      "written_at": 1789507504.3905642
+    },
+    {
+      "command_id": "cmd-18-ack-learned-pickup-3",
+      "type": "ack_export",
+      "written_at": 1789507504.39125
+    },
+    {
+      "command_id": "cmd-19-ack-perception-4",
+      "type": "ack_export",
+      "written_at": 1789507504.3915079
+    },
+    {
+      "command_id": "cmd-20-verify-clear-of-support-2",
+      "type": "verify",
+      "written_at": 1789507504.3917592
+    },
+    {
+      "command_id": "ack-6ca8459d916431fe-5",
+      "type": "ack_export",
+      "written_at": 1789507504.392123,
+      "auto": true
+    },
+    {
+      "command_id": "ack-5201877c4e139f42-5",
+      "type": "ack_export",
+      "written_at": 1789507504.392452,
+      "auto": true
+    },
+    {
+      "command_id": "cmd-21-ack-verification-clear-3",
+      "type": "ack_export",
+      "written_at": 1789507518.639711
+    }
+  ],
+  "turns": 6,
+  "assessment": {
+    "recipe_step_complete": false,
+    "pickup_verified": "unknown",
+    "rationale": "Third clear_of_support verdict is again unknown (localization_uncertain). Both pickup_completed and clear_of_support have now been asked to the repeat limit on phys_f87c6b0c, so no new verifies. Learned pick-up events lack subject IDs. Step stays pending."
+  },
+  "started_at": 1789507387.424722,
+  "restarts": 0
+}

@@ -1,0 +1,176 @@
+{
+  "scope": "Learned cloud inference and actual isolated Home Assistant REST execution; synthetic test conditions. Devices are simulated entities in the actual isolated HA container.",
+  "passed": 2,
+  "total": 3,
+  "runtime": {
+    "server_pid": 2177,
+    "health": {
+      "status": "ready",
+      "model_id": "google/gemma-4-E4B-it",
+      "adapter_loaded": false,
+      "context_mode": "bounded_window"
+    },
+    "prompt_sha256": "5ffe7120c015f9a90c57cbb05368c661c6afbea27f6c8d4bbaeda35eb3fb87c1",
+    "quantization": "none (BF16)",
+    "max_new_tokens": 512,
+    "verification_exit_code": 1,
+    "scope": "Actual isolated Home Assistant API and simulated entities, authored three-case test. Base model with current causal engine and explicit device evidence ID prompt."
+  },
+  "cases": [
+    {
+      "id": "09a634e3dc82c5846a9a5dd2",
+      "passed": true,
+      "expected_actions": [
+        {
+          "data": {},
+          "domain": "light",
+          "entity_id": "light.lounge",
+          "evidence_ids": [
+            "device:binary_sensor.motion_lounge",
+            "device:sensor.ambient_lux",
+            "device:light.lounge"
+          ],
+          "reason": "Motion is on, ambient light is below 40 lux, and this light is off.",
+          "service": "turn_on"
+        }
+      ],
+      "decision": {
+        "summary": "A person is visible in the lounge area, and motion is detected in the lounge. The ambient light level is low.",
+        "observations": [
+          {
+            "entity_id": "binary_sensor.motion_lounge",
+            "attribute": "state",
+            "value": "on",
+            "confidence": 1.0,
+            "evidence_ids": [
+              "09a634e3dc82c5846a9a5dd2:frame:lounge"
+            ]
+          },
+          {
+            "entity_id": "sensor.ambient_lux",
+            "attribute": "current_lux",
+            "value": "12",
+            "confidence": 1.0,
+            "evidence_ids": [
+              "09a634e3dc82c5846a9a5dd2:frame:lounge"
+            ]
+          },
+          {
+            "entity_id": "room.lounge",
+            "attribute": "occupied",
+            "value": "true",
+            "confidence": 0.9,
+            "evidence_ids": [
+              "09a634e3dc82c5846a9a5dd2:frame:lounge"
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "domain": "light",
+            "service": "turn_on",
+            "entity_id": "light.lounge",
+            "data": {},
+            "reason": "Occupancy is supported by the camera frame and motion sensor, ambient light is below 40, and the light is off.",
+            "evidence_ids": [
+              "09a634e3dc82c5846a9a5dd2:frame:lounge"
+            ]
+          }
+        ],
+        "noop": false
+      },
+      "error": null,
+      "rejections": [],
+      "actions": [
+        {
+          "action_id": "8ac6a132ef95c072c8711704",
+          "status": "complete",
+          "result": {
+            "action_id": "8ac6a132ef95c072c8711704",
+            "entity_id": "light.lounge",
+            "state": "on",
+            "simulated": false,
+            "verified": true,
+            "attributes": {
+              "supported_color_modes": [
+                "onoff"
+              ],
+              "color_mode": "onoff",
+              "friendly_name": "Lounge",
+              "supported_features": 0
+            },
+            "verification_latency_s": 0.0015795829822309315
+          }
+        }
+      ],
+      "metrics": {
+        "latency_s": 19.915188444778323,
+        "preprocess_s": 0.9172165663912892,
+        "input_tokens": 1920,
+        "output_tokens": 334,
+        "model_id": "google/gemma-4-E4B-it",
+        "adapter": null,
+        "adapter_merged": false,
+        "peak_allocated_gb": 15.159429550170898,
+        "context_mode": "bounded_window",
+        "remote_roundtrip_s": 20.531155625008978,
+        "uploaded_media_bytes": 0
+      },
+      "total_latency_s": 20.542367417016067,
+      "duplicate_replay_skipped": true
+    },
+    {
+      "id": "30cd0455a9376a04a5a2d8a2-integration-only-leak",
+      "passed": false,
+      "expected_actions": [
+        {
+          "domain": "switch",
+          "service": "turn_on",
+          "entity_id": "switch.buzzer",
+          "data": {},
+          "reason": "Configured leak rule",
+          "evidence_ids": [
+            "device:binary_sensor.water_leak",
+            "device:switch.buzzer"
+          ]
+        }
+      ],
+      "decision": null,
+      "error": "HTTPStatusError: Client error '422 Unprocessable Entity' for url 'http://127.0.0.1:18080/observe'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422",
+      "rejections": [],
+      "actions": [],
+      "metrics": null,
+      "total_latency_s": 9.738128208031412,
+      "duplicate_replay_skipped": true
+    },
+    {
+      "id": "30cd0455a9376a04a5a2d8a2",
+      "passed": true,
+      "expected_actions": [],
+      "decision": {
+        "summary": "No relevant activity detected.",
+        "observations": [],
+        "actions": [],
+        "noop": true
+      },
+      "error": null,
+      "rejections": [],
+      "actions": [],
+      "metrics": {
+        "latency_s": 1.7362531637772918,
+        "preprocess_s": 0.1176625657826662,
+        "input_tokens": 1926,
+        "output_tokens": 23,
+        "model_id": "google/gemma-4-E4B-it",
+        "adapter": null,
+        "adapter_merged": false,
+        "peak_allocated_gb": 15.158613204956055,
+        "context_mode": "bounded_window",
+        "remote_roundtrip_s": 2.1154044159920886,
+        "uploaded_media_bytes": 0
+      },
+      "total_latency_s": 2.1179578749579377,
+      "duplicate_replay_skipped": true
+    }
+  ]
+}

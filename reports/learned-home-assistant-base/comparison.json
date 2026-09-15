@@ -1,0 +1,107 @@
+{
+  "scope": "Same three authored test cases against actual isolated Home Assistant REST service controlling simulated entities. No physical home devices.",
+  "server_model": "google/gemma-4-E4B-it",
+  "base_adapter_loaded": false,
+  "quantization": "none (BF16)",
+  "max_new_tokens": 512,
+  "server_pid": 1533,
+  "endpoint": "http://127.0.0.1:18080",
+  "cases_identical_to_v1": true,
+  "base_passed": 1,
+  "v1_passed": 1,
+  "total_cases": 3,
+  "verification_script_sha256": "13f2766ef99f4449e23150c0811095e6efa159198492d127fea60389ba06922c",
+  "comparison": [
+    {
+      "case_id": "09a634e3dc82c5846a9a5dd2",
+      "expected_actions": [
+        {
+          "data": {},
+          "domain": "light",
+          "entity_id": "light.lounge",
+          "evidence_ids": [
+            "device:binary_sensor.motion_lounge",
+            "device:sensor.ambient_lux",
+            "device:light.lounge"
+          ],
+          "reason": "Motion is on, ambient light is below 40 lux, and this light is off.",
+          "service": "turn_on"
+        }
+      ],
+      "base": {
+        "passed": false,
+        "error": "HTTPStatusError: Client error '422 Unprocessable Entity' for url 'http://127.0.0.1:18080/observe'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422",
+        "rejections": [],
+        "proposed_actions": [],
+        "execution_results": [],
+        "total_latency_s": 14.359600834024604,
+        "duplicate_replay_skipped": true
+      },
+      "v1": {
+        "passed": false,
+        "error": null,
+        "rejections": [],
+        "proposed_actions": [],
+        "execution_results": [],
+        "total_latency_s": 17.091760999988765,
+        "duplicate_replay_skipped": true
+      }
+    },
+    {
+      "case_id": "30cd0455a9376a04a5a2d8a2-integration-only-leak",
+      "expected_actions": [
+        {
+          "domain": "switch",
+          "service": "turn_on",
+          "entity_id": "switch.buzzer",
+          "data": {},
+          "reason": "Configured leak rule",
+          "evidence_ids": [
+            "device:binary_sensor.water_leak",
+            "device:switch.buzzer"
+          ]
+        }
+      ],
+      "base": {
+        "passed": false,
+        "error": "HTTPStatusError: Client error '422 Unprocessable Entity' for url 'http://127.0.0.1:18080/observe'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/422",
+        "rejections": [],
+        "proposed_actions": [],
+        "execution_results": [],
+        "total_latency_s": 10.107909124984872,
+        "duplicate_replay_skipped": true
+      },
+      "v1": {
+        "passed": false,
+        "error": null,
+        "rejections": [],
+        "proposed_actions": [],
+        "execution_results": [],
+        "total_latency_s": 3.1501809589681216,
+        "duplicate_replay_skipped": true
+      }
+    },
+    {
+      "case_id": "30cd0455a9376a04a5a2d8a2",
+      "expected_actions": [],
+      "base": {
+        "passed": true,
+        "error": null,
+        "rejections": [],
+        "proposed_actions": [],
+        "execution_results": [],
+        "total_latency_s": 2.17044779099524,
+        "duplicate_replay_skipped": true
+      },
+      "v1": {
+        "passed": true,
+        "error": null,
+        "rejections": [],
+        "proposed_actions": [],
+        "execution_results": [],
+        "total_latency_s": 3.1271625829976983,
+        "duplicate_replay_skipped": true
+      }
+    }
+  ]
+}

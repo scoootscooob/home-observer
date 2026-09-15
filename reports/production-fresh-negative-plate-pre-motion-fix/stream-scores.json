@@ -1,0 +1,303 @@
+{
+  "run": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-negative-plate",
+  "video_id": "P22_105",
+  "annotations_sha256": {
+    "../../work/temporal-source-probe/official-annotations/EPIC_100_train.csv": "a3a7ef2e397bd8af12bd0496b09d61b1f2c1f3f6e1726fa86af50a27f4855e87"
+  },
+  "model_windows": 6,
+  "replay_source_span": [
+    55.0,
+    66.98
+  ],
+  "narrations_in_span": [
+    {
+      "narration_id": "P22_105_11",
+      "verb": "cut",
+      "noun": "mozzarella",
+      "start": 43.25,
+      "stop": 57.44
+    },
+    {
+      "narration_id": "P22_105_12",
+      "verb": "move",
+      "noun": "plate",
+      "start": 57.95,
+      "stop": 59.0
+    },
+    {
+      "narration_id": "P22_105_13",
+      "verb": "pick-up",
+      "noun": "mozzarella",
+      "start": 59.76,
+      "stop": 60.99
+    },
+    {
+      "narration_id": "P22_105_14",
+      "verb": "put-down",
+      "noun": "mozzarella",
+      "start": 61.02,
+      "stop": 61.83
+    },
+    {
+      "narration_id": "P22_105_15",
+      "verb": "put-down",
+      "noun": "cutlery",
+      "start": 62.08,
+      "stop": 63.94
+    },
+    {
+      "narration_id": "P22_105_16",
+      "verb": "move",
+      "noun": "plate",
+      "start": 64.27,
+      "stop": 65.25
+    }
+  ],
+  "scores": {
+    "schema_version": 1,
+    "scope": "physical sensing only; supplied annotations, never HA actions",
+    "windows": 6,
+    "usable_decisions": 5,
+    "prediction_provenance": {
+      "backend": [
+        "transformers-local"
+      ],
+      "model_id": [
+        "google/gemma-4-E4B-it"
+      ],
+      "adapter_merged": [
+        "False"
+      ]
+    },
+    "output_usable_rate": 0.8333333333333334,
+    "validity_note": "Usable means a supplied decision without a reported error; run strict validation upstream.",
+    "event_matching": {
+      "kind_and_object_label": "case/whitespace-normalized exact match; no inferred aliases",
+      "temporal_iou_threshold": 0.5,
+      "algorithm": "maximum-cardinality matching; descending-IoU deterministic neighbors"
+    },
+    "events": {
+      "labeled": 8,
+      "matched": 0,
+      "missing": 8,
+      "predicted": 5,
+      "unsupported_target_events": 0,
+      "false_with_exhaustive_coverage": 1,
+      "unscored_extras": 4,
+      "labeled_event_recall": 0.0,
+      "mean_matched_temporal_iou": null,
+      "false_events_per_hour": 300.5008347245408,
+      "false_events_per_hour_unavailable_reason": null,
+      "exhaustive_subset": {
+        "covered_seconds": 11.980000000000004,
+        "false_events_per_hour": 300.5008347245408,
+        "false_events": 1,
+        "scope": "Only explicit exhaustive class/time intervals; overlapping intervals counted once per timeline"
+      },
+      "evaluated_classes": [
+        "close",
+        "open",
+        "pick-up",
+        "put",
+        "put-down",
+        "put-in",
+        "put-into",
+        "put-on",
+        "take"
+      ],
+      "per_kind_object": {
+        "move:plate": {
+          "labeled": 3,
+          "matched": 0,
+          "recall": 0.0
+        },
+        "pick-up:mozzarella": {
+          "labeled": 2,
+          "matched": 0,
+          "recall": 0.0
+        },
+        "put-down:cutlery": {
+          "labeled": 2,
+          "matched": 0,
+          "recall": 0.0
+        },
+        "put-down:mozzarella": {
+          "labeled": 1,
+          "matched": 0,
+          "recall": 0.0
+        }
+      },
+      "pretrimmed_interval_warning": false
+    },
+    "event_confidence_calibration": {
+      "scorable_predictions": 1,
+      "correct": 0,
+      "incorrect": 1,
+      "positive_only": false,
+      "brier_known_labels": 0.25,
+      "ece_known_labels": 0.5,
+      "bins": [
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "count": 1,
+          "mean_confidence": 0.5,
+          "accuracy": 0
+        }
+      ],
+      "scope": "Matched positives plus covered false events with numeric confidence only; selection-biased when annotation coverage is partial. Not population calibration.",
+      "textual_uncertainty_calibration": null,
+      "textual_uncertainty_reason": "No reference rubric for free-text uncertainty is supplied."
+    },
+    "timing": {
+      "model_latency_s": {
+        "count": 6,
+        "mean": 26.650815979333327,
+        "min": 13.393443916999786,
+        "max": 37.89924895900003
+      },
+      "event_start_to_emit_delay_s": {
+        "count": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "event_end_to_emit_delay_s": {
+        "count": 0,
+        "mean": null,
+        "min": null,
+        "max": null
+      },
+      "detection_delay_unavailable_reason": "No matched events with explicit source-to-wall clock mapping and measured emission time.",
+      "delay_scope": "Only matched events; model latency is reported separately and is not detection delay."
+    },
+    "tracking": {
+      "annotated_boxes": 0,
+      "matched_boxes": 0,
+      "missing_boxes": 0,
+      "annotated_box_recall": null,
+      "mean_matched_iou": null,
+      "identity_switches": null,
+      "unavailable_reason": "No supervised frame boxes; source noun labels do not establish detections or tracks.",
+      "box_iou_threshold": 0.5,
+      "identity_switch_definition": "Changed predicted track ID between consecutive matched annotations of the same GT track/timeline; unmatched gaps do not reset identity; not IDF1 or HOTA.",
+      "idf1": null,
+      "hota": null
+    },
+    "rows": [
+      {
+        "id": "clip_dfee33c637238c5a44bd27d1",
+        "output_usable": true,
+        "labeled_events": 0,
+        "matched_events": 0,
+        "missing_events": 0,
+        "matches": [],
+        "false_events_with_coverage": 0,
+        "unscored_extra_events": 1,
+        "coverage_exhaustive": true,
+        "annotated_boxes": 0,
+        "matched_boxes": 0
+      },
+      {
+        "id": "clip_edde081daed0a6ea11dadd61",
+        "output_usable": true,
+        "labeled_events": 1,
+        "matched_events": 0,
+        "missing_events": 1,
+        "matches": [],
+        "false_events_with_coverage": 0,
+        "unscored_extra_events": 1,
+        "coverage_exhaustive": true,
+        "annotated_boxes": 0,
+        "matched_boxes": 0
+      },
+      {
+        "id": "clip_263b30c7600d7a74b4ff2de0",
+        "output_usable": true,
+        "labeled_events": 2,
+        "matched_events": 0,
+        "missing_events": 2,
+        "matches": [],
+        "false_events_with_coverage": 0,
+        "unscored_extra_events": 1,
+        "coverage_exhaustive": true,
+        "annotated_boxes": 0,
+        "matched_boxes": 0
+      },
+      {
+        "id": "clip_4f9d0edb6629791c0fc7f9ec",
+        "output_usable": true,
+        "labeled_events": 3,
+        "matched_events": 0,
+        "missing_events": 3,
+        "matches": [],
+        "false_events_with_coverage": 0,
+        "unscored_extra_events": 1,
+        "coverage_exhaustive": true,
+        "annotated_boxes": 0,
+        "matched_boxes": 0
+      },
+      {
+        "id": "clip_3940de456ec4663a72f9e1b8",
+        "output_usable": true,
+        "labeled_events": 2,
+        "matched_events": 0,
+        "missing_events": 2,
+        "matches": [],
+        "false_events_with_coverage": 1,
+        "unscored_extra_events": 0,
+        "coverage_exhaustive": true,
+        "annotated_boxes": 0,
+        "matched_boxes": 0
+      },
+      {
+        "id": "clip_1dd8eec0fdff99505d9b1421",
+        "output_usable": false,
+        "labeled_events": 0,
+        "matched_events": 0,
+        "missing_events": 0,
+        "matches": [],
+        "false_events_with_coverage": 0,
+        "unscored_extra_events": 0,
+        "coverage_exhaustive": true,
+        "annotated_boxes": 0,
+        "matched_boxes": 0
+      }
+    ]
+  },
+  "family_diagnostic": {
+    "labeled_family_events": 5,
+    "family_matches": 0,
+    "family_recall": 0.0,
+    "scope": "diagnostic near-match across verbs of one family; never replaces exact-verb recall"
+  },
+  "geometric_events": {
+    "count": 6,
+    "kinds": [
+      "motion_settled",
+      "motion_started",
+      "visibility_lost"
+    ]
+  },
+  "capture": {
+    "captured_frames": 600,
+    "losses": [],
+    "tracking_frame_losses": 0,
+    "capture_lateness_mean_s": 0.00299036979675293,
+    "capture_lateness_max_s": 0.03937697410583496,
+    "spool": {
+      "clips": {
+        "complete": 5,
+        "failed": 1
+      },
+      "dropped_sequences": 0,
+      "dropped_frame_references": 0,
+      "limits": {
+        "pending_plus_processing": 16,
+        "completed_media": 16
+      },
+      "scope": "Activity scheduling and retained input coverage; semantic event recall requires labels."
+    }
+  },
+  "scope": "Learned decisions of activity-gated model windows scored against official narrations; recall is not comparable to dense offline tiling; geometric events are not semantic claims."
+}

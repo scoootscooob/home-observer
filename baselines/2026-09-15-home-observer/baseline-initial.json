@@ -1,0 +1,14 @@
+{
+  "preserved_at_unix": 1789494530.2879272,
+  "scope": "Immutable source/data and report snapshot at sensing-only refocus; baseline full GPU evaluations still running and will be added separately.",
+  "archives": {
+    "source-and-data.tar.gz": "3fc05e7bd58be1cb6bf27396bb48343a18a15bcbd732d047df7c954c6c8e3056",
+    "reports-at-refocus.tar.gz": "bc0201bb20da5fa261c364f267585eac8c78319e441bd09dc5354cd06e45aa42"
+  },
+  "checkpoint_roots": [
+    "artifacts/training-v1",
+    "artifacts/training-v2",
+    "artifacts/training-v2-continuation"
+  ],
+  "final_evaluation_pending": true
+}

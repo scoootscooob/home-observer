@@ -1,0 +1,10 @@
+{
+  "command_id": "cmd-012-ack-moved-from-initial-result",
+  "coordinator_id": "sandboxed-frontier-98f0d757ea8e",
+  "accepted_at": 1789505410.689829,
+  "outcome": {
+    "acknowledged": true,
+    "already_acknowledged": false,
+    "topic": "verification.result"
+  }
+}

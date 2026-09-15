@@ -1,0 +1,17 @@
+{
+  "completed_at_utc": "2026-09-15T17:20:09.959565+00:00",
+  "commands": [
+    {
+      "command": ".venv/bin/python -m pytest -q",
+      "result": "131 passed,4 skipped",
+      "elapsed_s": 14.12,
+      "notes": "Optional tests requiring additional model/GPU dependencies or explicit HA flag skipped. Model worker separately verifies tiny-model checkpoint recovery."
+    },
+    {
+      "command": "HA_DEMO_TEST=1 .venv/bin/python -m pytest tests/test_ha_integration.py -q",
+      "result": "6 passed",
+      "elapsed_s": 0.43
+    }
+  ],
+  "scope": "Software verification; learned model accuracy and live throughput have separate evidence."
+}

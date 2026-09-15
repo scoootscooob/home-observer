@@ -1,0 +1,14 @@
+{
+  "server_pid": 2177,
+  "health": {
+    "status": "ready",
+    "model_id": "google/gemma-4-E4B-it",
+    "adapter_loaded": false,
+    "context_mode": "bounded_window"
+  },
+  "prompt_sha256": "5ffe7120c015f9a90c57cbb05368c661c6afbea27f6c8d4bbaeda35eb3fb87c1",
+  "quantization": "none (BF16)",
+  "max_new_tokens": 512,
+  "verification_exit_code": 1,
+  "scope": "Actual isolated Home Assistant API and simulated entities, authored three-case test. Base model with current causal engine and explicit device evidence ID prompt."
+}

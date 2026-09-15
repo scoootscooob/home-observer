@@ -1,0 +1,166 @@
+{
+  "source_artifacts": [
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard0/manifest.json",
+      "sha256": "21d9d683623b763c959c40bfdaf8043c26858be74c9abd7efec63dbc9328a05a",
+      "bytes": 10989
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard0/report.json",
+      "sha256": "3ffac13aa22d7511659bae1d6fe156e3846e619c76fdb0fbfb438b1fe1f14f82",
+      "bytes": 26884
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard0/native-outputs.jsonl",
+      "sha256": "e1a5060d76fc1ef7deba070c7b304ecf316282de58d4a98901f612f6ba06d309",
+      "bytes": 153587
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard0/heldout-inputs.jsonl",
+      "sha256": "0df79582cceda35e7e86d94e6de310d806ae75a95c6fa916ca7b95d9f5ecab95",
+      "bytes": 190929
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard0/heldout/predictions.jsonl",
+      "sha256": "1b7c5333bedc899ec49594d3ad83f9ab963db38b8f71b320cdce35996aeff853",
+      "bytes": 202947
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard0/heldout/metrics.json",
+      "sha256": "ae1341afa51f590ffac5daebb7f8b64cfd41db3a822cd618aa649170575d5e14",
+      "bytes": 16948
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard0/counterfactual-inputs.jsonl",
+      "sha256": "56bc6a064e5659a3f5648665d01ed255136e3b6e9ba43e887831c578c10e0913",
+      "bytes": 21531
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard0/counterfactual/predictions.jsonl",
+      "sha256": "a0ce96ddc82107f46e0679841e1ab31a3c25de72aaa4eeb3d7f9c7ba2dd42057",
+      "bytes": 23861
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard0/counterfactual/metrics.json",
+      "sha256": "b4b40f97a64bfc4b56594290a65600ee4dfe20f315fcf1b93a81795f2db095c5",
+      "bytes": 2969
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard0/public_video-inputs.jsonl",
+      "sha256": "5b853023dab4830b18802e694bf56655465fd546504781a7158851ca80fe7bbb",
+      "bytes": 4362
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard0/public_video/predictions.jsonl",
+      "sha256": "9bfda3d332fb225fe5f60604bc1abc21b514019a03db4cb3b06af5f94604836e",
+      "bytes": 6763
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard0/public_video/metrics.json",
+      "sha256": "dd35e505b70add6c1b1171a76408c6b23de49aeefbc6baabc8c1860dbe9affd7",
+      "bytes": 1815
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard1/manifest.json",
+      "sha256": "7bba9a32f4324e55f4e86abfcfe5b1f1469b6a2d08047ade4b5c3cc7c35c81c9",
+      "bytes": 10989
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard1/report.json",
+      "sha256": "7bbaa1c23a906af16e6e55dc5eeca6c62f7019f790588bd08608df461e0838a0",
+      "bytes": 26060
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard1/native-outputs.jsonl",
+      "sha256": "6f5f37ef79a91e930b78e7d79fca4bc1e76a35d9b16ecb6683c83a1292c4006f",
+      "bytes": 154242
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard1/heldout-inputs.jsonl",
+      "sha256": "82ec3251b0c7c6de8560ea17900479f160f110fbb13bcd3c1bc39c47333c68cc",
+      "bytes": 212300
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard1/heldout/predictions.jsonl",
+      "sha256": "925d7eb7bbd729d925db114f111aff6b958d1b4e2d931de71eddb63267a0b23f",
+      "bytes": 225878
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard1/heldout/metrics.json",
+      "sha256": "2c69446573aac63e03b0085b45bcda2f233ab3587981153fbcbee934f18d5845",
+      "bytes": 17071
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard1/counterfactual-inputs.jsonl",
+      "sha256": "28fd6c88e3562e3ba623c152c2a8cdcc194e2b7762ed16a703b0597119a99da5",
+      "bytes": 23755
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard1/counterfactual/predictions.jsonl",
+      "sha256": "3a9920e08c4bd2df53cb88a9e20f26976ed3df871e1991c0750136c392546e84",
+      "bytes": 25768
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard1/counterfactual/metrics.json",
+      "sha256": "26f54f00d8826f537f41a081576426529d57931aed92f316347227c72a1ab505",
+      "bytes": 3144
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard1/public_video-inputs.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard1/public_video/predictions.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard1/public_video/metrics.json",
+      "sha256": "8971ac9648ea250c43f15a9a6312321937a5d222afab81a5fb013f5b7b4a39a6",
+      "bytes": 769
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/data/mixed/test.jsonl",
+      "sha256": "6e4e422bc0e1eefe650513b484fd34aad12ea3414f9f91a27e61ad50ae951fb7",
+      "bytes": 356779,
+      "role": "original_release_source"
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/data/counterfactuals/pairs.jsonl",
+      "sha256": "54122b5b262e253d99ee49ba75432ff7eff367f41de76b741f5f0b151695351d",
+      "bytes": 39184,
+      "role": "original_release_source"
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/data/public-egolife/replay.jsonl",
+      "sha256": "ea872cd3e8d7d51e506bac2036b6b9c681104dd9454c47494d60f115bc98bf42",
+      "bytes": 3926,
+      "role": "original_release_source"
+    }
+  ],
+  "execution": {
+    "workers": [
+      {
+        "shard_index": 0,
+        "source": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard0",
+        "windows": 90,
+        "sum_suite_elapsed_s": 1926.6103673130274,
+        "windows_per_second_during_suites": 0.04671416780836682,
+        "scope": "One shard worker; measured suite elapsed excludes model loading/setup. Not combined GPU throughput."
+      },
+      {
+        "shard_index": 1,
+        "source": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard1",
+        "windows": 88,
+        "sum_suite_elapsed_s": 1970.0057366080582,
+        "windows_per_second_during_suites": 0.04466992068333657,
+        "scope": "One shard worker; measured suite elapsed excludes model loading/setup. Not combined GPU throughput."
+      }
+    ],
+    "single_gpu_throughput": null,
+    "parallel_wall_throughput": null,
+    "reason": "No shared cross-worker wall-clock measurement is supplied. Rates are reported separately per worker; no summed or single-GPU rate is inferred."
+  },
+  "verification": "Complete matching-config shard union; original JSONL lines retained in source order."
+}

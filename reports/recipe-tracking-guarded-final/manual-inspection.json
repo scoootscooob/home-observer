@@ -1,0 +1,8 @@
+{
+  "reviewer": "Codex assistant visual inspection",
+  "independent_tracking_ground_truth": false,
+  "source_selection": "nested bowls selected for first/middle/last visibility before any model results",
+  "sampled_review": "Raw CSRT boxes remain on the bowl stack across8samples; guarded tracker conservatively marks uncertainty from frame125 due initial appearance difference, and does not claim final localization.",
+  "geometric_result": "motion_started at0.08seconds; no motion_settled event; visibility_lost/uncertain at2.50seconds",
+  "semantic_outcome": "Not evaluated by this tracker; separate learned observation is required."
+}

@@ -1,0 +1,77 @@
+{
+  "role": "negative",
+  "source_video": "data/continuous-v2/videos/P22_105.mp4",
+  "source_video_sha256": "9ea469a2bde9c55a528778e28b6c23f15cea66c0f96e5385e58edc9e57489bd5",
+  "video_id": "P22_105",
+  "source_start_s": 55.0,
+  "source_end_s": 67.0,
+  "duration_s": 12.0,
+  "clip_sha256": "ef4c57ff24a9cb0189edfe782561b9d429f78fa98c5068dae29f95e2cd7d2595",
+  "encode_seconds": 0.48,
+  "annotations_sha256": "a3a7ef2e397bd8af12bd0496b09d61b1f2c1f3f6e1726fa86af50a27f4855e87",
+  "overlapping_narrations": [
+    {
+      "narration_id": "P22_105_11",
+      "narration": "cut mozzarella",
+      "verb": "cut",
+      "noun": "mozzarella",
+      "start": 43.25,
+      "stop": 57.44,
+      "clip_relative_start": -11.75,
+      "clip_relative_stop": 2.44
+    },
+    {
+      "narration_id": "P22_105_12",
+      "narration": "move plate",
+      "verb": "move",
+      "noun": "plate",
+      "start": 57.95,
+      "stop": 59.0,
+      "clip_relative_start": 2.95,
+      "clip_relative_stop": 4.0
+    },
+    {
+      "narration_id": "P22_105_13",
+      "narration": "pick up mozzarella",
+      "verb": "pick-up",
+      "noun": "mozzarella",
+      "start": 59.76,
+      "stop": 60.99,
+      "clip_relative_start": 4.76,
+      "clip_relative_stop": 5.99
+    },
+    {
+      "narration_id": "P22_105_14",
+      "narration": "put down mozzarella",
+      "verb": "put-down",
+      "noun": "mozzarella",
+      "start": 61.02,
+      "stop": 61.83,
+      "clip_relative_start": 6.02,
+      "clip_relative_stop": 6.83
+    },
+    {
+      "narration_id": "P22_105_15",
+      "narration": "put down cutlery",
+      "verb": "put-down",
+      "noun": "cutlery",
+      "start": 62.08,
+      "stop": 63.94,
+      "clip_relative_start": 7.08,
+      "clip_relative_stop": 8.94
+    },
+    {
+      "narration_id": "P22_105_16",
+      "narration": "move plate",
+      "verb": "move",
+      "noun": "plate",
+      "start": 64.27,
+      "stop": 65.25,
+      "clip_relative_start": 9.27,
+      "clip_relative_stop": 10.25
+    }
+  ],
+  "note": "Candidate negative: official narrations P22_105_12 and _16 'move plate' (repositioning without pickup)",
+  "time_basis": "clip-relative seconds; add source_start_s for recording time",
+  "selection": "chosen by inspecting footage and official narrations only; no model predictions used"
+}

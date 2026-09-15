@@ -1,0 +1,17 @@
+{
+  "schema_version": "home-observer.production-export/1",
+  "event_kinds": [
+    "motion_started", "motion_settled", "visibility_lost", "entered_zone",
+    "pick-up", "pickup", "take", "lift", "grab",
+    "put-down", "put", "put-on", "put-in", "put-into", "place", "placed", "release",
+    "open", "close", "object_moved"
+  ],
+  "object_categories": [
+    "bowl", "cup", "mug", "pan", "pot", "spoon", "knife", "plate", "drawer", "cupboard",
+    "bottle", "board", "lid", "tap", "container", "bag", "box", "fridge", "oven", "glass",
+    "fork", "jar", "kettle", "sponge", "cloth", "tray", "colander", "cookware"
+  ],
+  "areas": {"recipe": "kitchen", "kitchen": "kitchen", "camera": "kitchen"},
+  "time_decimals": 3,
+  "confidence_decimals": 2
+}

@@ -1,0 +1,29 @@
+{
+  "delivery_id": "delivery_b20a4925d2c0c0b5fc029c0a308274ea",
+  "topic": "watch.matched",
+  "payload": {
+    "candidate_end": 1789497575.0399659,
+    "candidate_key": "[\"phys_90534c9232004643bd8a6d61aa3d3754\"]",
+    "candidate_observed_s": 0.019999980926513672,
+    "candidate_start": 1789497575.019966,
+    "eligible_at": 1789497575.0399659,
+    "event_available_at": 1789497575.150424,
+    "event_id": "pevt_6502879aa41a4be08addab31be2424cf",
+    "event_source_ended_at": 1789497575.0399659,
+    "event_source_started_at": 1789497575.019966,
+    "evidence_ids": [
+      "recipe:4",
+      "recipe:5"
+    ],
+    "matched_at": 1789497575.160733,
+    "response_key": "response_a54609eed883620f1f8955539d365698",
+    "response_reserved_at": 1789497575.160733,
+    "watch_id": "recipe-bowls-movement-cue-1"
+  },
+  "payload_sha256": "48babf585076d0478e4770c5cebc8b3656680572f1028113a28e15529fdbe224",
+  "created_at": 1789497575.160733,
+  "attempt": 6,
+  "lease_token": "a86cb415fdca4c6b881b2688a772ecd7",
+  "delivered_at": 1789497575.2144651,
+  "transport_delivered_at": 1789497637.241855
+}

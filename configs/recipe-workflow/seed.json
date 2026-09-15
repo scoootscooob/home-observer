@@ -1,0 +1,12 @@
+{
+  "label": "bowl",
+  "box": {
+    "x_min": 0.373536299765808,
+    "y_min": 0.13958333333333334,
+    "x_max": 0.6709601873536299,
+    "y_max": 0.68125
+  },
+  "confidence": 0.9,
+  "provenance": "Assistant visually selected initial box on the first frame of real clip030c003244925eb728dd; this is an explicit demonstration bootstrap, not a learned detection or human ground-truth annotation.",
+  "uncertainty": "Approximate image box around nested bowls. Count, persistent identity, and calibrated confidence are not established."
+}

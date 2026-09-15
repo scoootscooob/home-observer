@@ -1,0 +1,1683 @@
+{
+  "started_at": 1789507186.951929,
+  "finished_at": 1789507342.151201,
+  "clock_mapping": {
+    "source_origin": 52.5,
+    "wall_origin": 1789507186.916086,
+    "scale": 1.0
+  },
+  "captured_frames": 510,
+  "capture": [
+    {
+      "source_time": 58.87303333333333,
+      "captured_at": 1789507193.291074,
+      "processing_s": 0.0010532090000197059,
+      "capture_lateness_s": 0.001954793930053711
+    },
+    {
+      "source_time": 58.889716666666665,
+      "captured_at": 1789507193.306344,
+      "processing_s": 0.0011053749999518914,
+      "capture_lateness_s": 0.0005414485931396484
+    },
+    {
+      "source_time": 58.9064,
+      "captured_at": 1789507193.329358,
+      "processing_s": 0.0010658329997568217,
+      "capture_lateness_s": 0.0068721771240234375
+    },
+    {
+      "source_time": 58.92308333333333,
+      "captured_at": 1789507193.3429859,
+      "processing_s": 0.001052249999702326,
+      "capture_lateness_s": 0.0038166046142578125
+    },
+    {
+      "source_time": 58.93976666666667,
+      "captured_at": 1789507193.3612192,
+      "processing_s": 0.0009557920002407627,
+      "capture_lateness_s": 0.00536656379699707
+    },
+    {
+      "source_time": 58.956450000000004,
+      "captured_at": 1789507193.3736372,
+      "processing_s": 0.001126916999965033,
+      "capture_lateness_s": 0.0011012554168701172
+    },
+    {
+      "source_time": 58.97313333333334,
+      "captured_at": 1789507193.390523,
+      "processing_s": 0.0010332080000807764,
+      "capture_lateness_s": 0.0013036727905273438
+    },
+    {
+      "source_time": 58.98981666666667,
+      "captured_at": 1789507193.412508,
+      "processing_s": 0.0009642499999245047,
+      "capture_lateness_s": 0.006605386734008789
+    },
+    {
+      "source_time": 59.0065,
+      "captured_at": 1789507193.425567,
+      "processing_s": 0.001077958000223589,
+      "capture_lateness_s": 0.002980947494506836
+    },
+    {
+      "source_time": 59.023183333333336,
+      "captured_at": 1789507193.444961,
+      "processing_s": 0.0010096659998453106,
+      "capture_lateness_s": 0.0056917667388916016
+    },
+    {
+      "source_time": 59.03986666666667,
+      "captured_at": 1789507193.460394,
+      "processing_s": 0.0009891250001601293,
+      "capture_lateness_s": 0.004441261291503906
+    },
+    {
+      "source_time": 59.05655,
+      "captured_at": 1789507193.475651,
+      "processing_s": 0.001097542000024987,
+      "capture_lateness_s": 0.0030150413513183594
+    },
+    {
+      "source_time": 59.073233333333334,
+      "captured_at": 1789507193.491068,
+      "processing_s": 0.001066165999873192,
+      "capture_lateness_s": 0.0017485618591308594
+    },
+    {
+      "source_time": 59.08991666666667,
+      "captured_at": 1789507193.511981,
+      "processing_s": 0.000999500000034459,
+      "capture_lateness_s": 0.00597834587097168
+    },
+    {
+      "source_time": 59.1066,
+      "captured_at": 1789507193.526892,
+      "processing_s": 0.0010985419999087753,
+      "capture_lateness_s": 0.004205942153930664
+    },
+    {
+      "source_time": 59.12328333333333,
+      "captured_at": 1789507193.541068,
+      "processing_s": 0.0010380419998909929,
+      "capture_lateness_s": 0.0016987323760986328
+    },
+    {
+      "source_time": 59.139966666666666,
+      "captured_at": 1789507193.5576792,
+      "processing_s": 0.0010387500001343142,
+      "capture_lateness_s": 0.0016264915466308594
+    },
+    {
+      "source_time": 59.15665,
+      "captured_at": 1789507193.5740612,
+      "processing_s": 0.0010516249999454885,
+      "capture_lateness_s": 0.0013251304626464844
+    },
+    {
+      "source_time": 59.17333333333333,
+      "captured_at": 1789507193.5935628,
+      "processing_s": 0.0010583749999568681,
+      "capture_lateness_s": 0.004143476486206055
+    },
+    {
+      "source_time": 59.190016666666665,
+      "captured_at": 1789507193.610733,
+      "processing_s": 0.001036415999806195,
+      "capture_lateness_s": 0.004630327224731445
+    },
+    {
+      "source_time": 59.2067,
+      "captured_at": 1789507193.624417,
+      "processing_s": 0.0010494160001144337,
+      "capture_lateness_s": 0.001631021499633789
+    },
+    {
+      "source_time": 59.22338333333333,
+      "captured_at": 1789507193.641093,
+      "processing_s": 0.00105770800018945,
+      "capture_lateness_s": 0.0016236305236816406
+    },
+    {
+      "source_time": 59.240066666666664,
+      "captured_at": 1789507193.6607401,
+      "processing_s": 0.0010950420000881422,
+      "capture_lateness_s": 0.004587411880493164
+    },
+    {
+      "source_time": 59.25675,
+      "captured_at": 1789507193.676893,
+      "processing_s": 0.0010691249999581487,
+      "capture_lateness_s": 0.0040569305419921875
+    },
+    {
+      "source_time": 59.27343333333334,
+      "captured_at": 1789507193.6897879,
+      "processing_s": 0.001444875000288448,
+      "capture_lateness_s": 0.0002684593200683594
+    },
+    {
+      "source_time": 59.29011666666667,
+      "captured_at": 1789507193.708962,
+      "processing_s": 0.0011659159999908297,
+      "capture_lateness_s": 0.0027594566345214844
+    },
+    {
+      "source_time": 59.3068,
+      "captured_at": 1789507193.72447,
+      "processing_s": 0.001175959000192961,
+      "capture_lateness_s": 0.0015840530395507812
+    },
+    {
+      "source_time": 59.323483333333336,
+      "captured_at": 1789507193.739667,
+      "processing_s": 0.0015723340002296027,
+      "capture_lateness_s": 9.775161743164062e-05
+    },
+    {
+      "source_time": 59.34016666666667,
+      "captured_at": 1789507193.757747,
+      "processing_s": 0.0011697499999172578,
+      "capture_lateness_s": 0.0014944076538085938
+    },
+    {
+      "source_time": 59.35685,
+      "captured_at": 1789507193.774403,
+      "processing_s": 0.001043209000272327,
+      "capture_lateness_s": 0.0014672279357910156
+    },
+    {
+      "source_time": 59.373533333333334,
+      "captured_at": 1789507193.793217,
+      "processing_s": 0.001168166999832465,
+      "capture_lateness_s": 0.003597736358642578
+    },
+    {
+      "source_time": 59.39021666666667,
+      "captured_at": 1789507193.8078039,
+      "processing_s": 0.0010959169999296137,
+      "capture_lateness_s": 0.001501321792602539
+    },
+    {
+      "source_time": 59.4069,
+      "captured_at": 1789507193.824398,
+      "processing_s": 0.0009856670003500767,
+      "capture_lateness_s": 0.0014121532440185547
+    },
+    {
+      "source_time": 59.42358333333333,
+      "captured_at": 1789507193.844067,
+      "processing_s": 0.001251334000244242,
+      "capture_lateness_s": 0.004397869110107422
+    },
+    {
+      "source_time": 59.440266666666666,
+      "captured_at": 1789507193.85886,
+      "processing_s": 0.0010151250003218593,
+      "capture_lateness_s": 0.002507448196411133
+    },
+    {
+      "source_time": 59.45695,
+      "captured_at": 1789507193.876976,
+      "processing_s": 0.0009966249999706633,
+      "capture_lateness_s": 0.003940105438232422
+    },
+    {
+      "source_time": 59.47363333333333,
+      "captured_at": 1789507193.891121,
+      "processing_s": 0.0011650000001282024,
+      "capture_lateness_s": 0.001401662826538086
+    },
+    {
+      "source_time": 59.490316666666665,
+      "captured_at": 1789507193.906708,
+      "processing_s": 0.02398595899967404,
+      "capture_lateness_s": 0.00030541419982910156
+    },
+    {
+      "source_time": 59.507,
+      "captured_at": 1789507193.931764,
+      "processing_s": 0.0010128750000149012,
+      "capture_lateness_s": 0.008677959442138672
+    },
+    {
+      "source_time": 59.52368333333333,
+      "captured_at": 1789507193.94098,
+      "processing_s": 0.0011286250000921427,
+      "capture_lateness_s": 0.0012106895446777344
+    },
+    {
+      "source_time": 59.54036666666667,
+      "captured_at": 1789507193.96306,
+      "processing_s": 0.0010906249999607098,
+      "capture_lateness_s": 0.0066072940826416016
+    },
+    {
+      "source_time": 59.557050000000004,
+      "captured_at": 1789507193.974406,
+      "processing_s": 0.0011051249998672574,
+      "capture_lateness_s": 0.0012700557708740234
+    },
+    {
+      "source_time": 59.57373333333334,
+      "captured_at": 1789507193.995121,
+      "processing_s": 0.0011456669999461155,
+      "capture_lateness_s": 0.005301713943481445
+    },
+    {
+      "source_time": 59.59041666666667,
+      "captured_at": 1789507194.010989,
+      "processing_s": 0.0010727920002864266,
+      "capture_lateness_s": 0.0044863224029541016
+    },
+    {
+      "source_time": 59.6071,
+      "captured_at": 1789507194.024662,
+      "processing_s": 0.0010897910001403943,
+      "capture_lateness_s": 0.0014760494232177734
+    },
+    {
+      "source_time": 59.623783333333336,
+      "captured_at": 1789507194.0411,
+      "processing_s": 0.0010412920000817394,
+      "capture_lateness_s": 0.0012307167053222656
+    },
+    {
+      "source_time": 59.64046666666667,
+      "captured_at": 1789507194.0631611,
+      "processing_s": 0.0010155420000046433,
+      "capture_lateness_s": 0.006608486175537109
+    },
+    {
+      "source_time": 59.65715,
+      "captured_at": 1789507194.074514,
+      "processing_s": 0.001028583000334038,
+      "capture_lateness_s": 0.001277923583984375
+    },
+    {
+      "source_time": 59.673833333333334,
+      "captured_at": 1789507194.096542,
+      "processing_s": 0.0011445410000305856,
+      "capture_lateness_s": 0.0066225528717041016
+    },
+    {
+      "source_time": 59.69051666666667,
+      "captured_at": 1789507194.110494,
+      "processing_s": 0.0011080000003858004,
+      "capture_lateness_s": 0.0038912296295166016
+    },
+    {
+      "source_time": 59.7072,
+      "captured_at": 1789507194.1285279,
+      "processing_s": 0.0010465420000400627,
+      "capture_lateness_s": 0.005241870880126953
+    },
+    {
+      "source_time": 59.72388333333333,
+      "captured_at": 1789507194.141002,
+      "processing_s": 0.0010352079998483532,
+      "capture_lateness_s": 0.0010325908660888672
+    },
+    {
+      "source_time": 59.740566666666666,
+      "captured_at": 1789507194.160233,
+      "processing_s": 0.0010400410001238924,
+      "capture_lateness_s": 0.003580331802368164
+    },
+    {
+      "source_time": 59.75725,
+      "captured_at": 1789507194.1744251,
+      "processing_s": 0.001122541000313504,
+      "capture_lateness_s": 0.0010890960693359375
+    },
+    {
+      "source_time": 59.77393333333333,
+      "captured_at": 1789507194.1910882,
+      "processing_s": 0.0010308330001862487,
+      "capture_lateness_s": 0.0010688304901123047
+    },
+    {
+      "source_time": 59.790616666666665,
+      "captured_at": 1789507194.2077389,
+      "processing_s": 0.0011360840003362682,
+      "capture_lateness_s": 0.0010361671447753906
+    },
+    {
+      "source_time": 59.8073,
+      "captured_at": 1789507194.2297091,
+      "processing_s": 0.0010168339999836462,
+      "capture_lateness_s": 0.006323099136352539
+    },
+    {
+      "source_time": 59.82398333333333,
+      "captured_at": 1789507194.241089,
+      "processing_s": 0.0010671249997358245,
+      "capture_lateness_s": 0.0010197162628173828
+    },
+    {
+      "source_time": 59.840666666666664,
+      "captured_at": 1789507194.257405,
+      "processing_s": 0.001033916999858775,
+      "capture_lateness_s": 0.000652313232421875
+    },
+    {
+      "source_time": 59.85735,
+      "captured_at": 1789507194.280226,
+      "processing_s": 0.0010597499999676074,
+      "capture_lateness_s": 0.0067899227142333984
+    },
+    {
+      "source_time": 59.87403333333334,
+      "captured_at": 1789507194.294028,
+      "processing_s": 0.0010273750003761961,
+      "capture_lateness_s": 0.003908634185791016
+    },
+    {
+      "source_time": 59.89071666666667,
+      "captured_at": 1789507194.312153,
+      "processing_s": 0.0010223340000266035,
+      "capture_lateness_s": 0.005350589752197266
+    },
+    {
+      "source_time": 59.9074,
+      "captured_at": 1789507194.328086,
+      "processing_s": 0.0010261659999741823,
+      "capture_lateness_s": 0.004600048065185547
+    },
+    {
+      "source_time": 59.924083333333336,
+      "captured_at": 1789507194.3414242,
+      "processing_s": 0.0009896659998958057,
+      "capture_lateness_s": 0.001255035400390625
+    },
+    {
+      "source_time": 59.94076666666667,
+      "captured_at": 1789507194.363591,
+      "processing_s": 0.0013347920003070612,
+      "capture_lateness_s": 0.006738424301147461
+    },
+    {
+      "source_time": 59.95745,
+      "captured_at": 1789507194.377072,
+      "processing_s": 0.001048083000114275,
+      "capture_lateness_s": 0.003536224365234375
+    },
+    {
+      "source_time": 59.974133333333334,
+      "captured_at": 1789507194.390273,
+      "processing_s": 0.001077542000075482,
+      "capture_lateness_s": 5.3882598876953125e-05
+    },
+    {
+      "source_time": 59.99081666666667,
+      "captured_at": 1789507194.410252,
+      "processing_s": 0.0010237080000479182,
+      "capture_lateness_s": 0.0033495426177978516
+    },
+    {
+      "source_time": 60.0075,
+      "captured_at": 1789507194.424494,
+      "processing_s": 0.0012343749999672582,
+      "capture_lateness_s": 0.0009081363677978516
+    },
+    {
+      "source_time": 60.02418333333333,
+      "captured_at": 1789507194.444085,
+      "processing_s": 0.0010855410000658594,
+      "capture_lateness_s": 0.0038156509399414062
+    },
+    {
+      "source_time": 60.040866666666666,
+      "captured_at": 1789507194.45778,
+      "processing_s": 0.0009909999998853891,
+      "capture_lateness_s": 0.0008273124694824219
+    },
+    {
+      "source_time": 60.05755,
+      "captured_at": 1789507194.477408,
+      "processing_s": 0.0010798329999488487,
+      "capture_lateness_s": 0.0037720203399658203
+    },
+    {
+      "source_time": 60.07423333333333,
+      "captured_at": 1789507194.494071,
+      "processing_s": 0.0010754580002867442,
+      "capture_lateness_s": 0.0037517547607421875
+    },
+    {
+      "source_time": 60.090916666666665,
+      "captured_at": 1789507194.51023,
+      "processing_s": 0.0009769590001269535,
+      "capture_lateness_s": 0.0032274723052978516
+    },
+    {
+      "source_time": 60.1076,
+      "captured_at": 1789507194.524405,
+      "processing_s": 0.001077917000202433,
+      "capture_lateness_s": 0.0007190704345703125
+    },
+    {
+      "source_time": 60.12428333333333,
+      "captured_at": 1789507194.541101,
+      "processing_s": 0.0010661249998520361,
+      "capture_lateness_s": 0.0007317066192626953
+    },
+    {
+      "source_time": 60.14096666666667,
+      "captured_at": 1789507194.560257,
+      "processing_s": 0.0010209580000264395,
+      "capture_lateness_s": 0.003204345703125
+    },
+    {
+      "source_time": 60.157650000000004,
+      "captured_at": 1789507194.57467,
+      "processing_s": 0.0010848749998331186,
+      "capture_lateness_s": 0.0009341239929199219
+    },
+    {
+      "source_time": 60.17433333333334,
+      "captured_at": 1789507194.594223,
+      "processing_s": 0.0010557499999777065,
+      "capture_lateness_s": 0.003803730010986328
+    },
+    {
+      "source_time": 60.19101666666667,
+      "captured_at": 1789507194.612478,
+      "processing_s": 0.001010167000004003,
+      "capture_lateness_s": 0.005375385284423828
+    },
+    {
+      "source_time": 60.2077,
+      "captured_at": 1789507194.626503,
+      "processing_s": 0.0010124999998879503,
+      "capture_lateness_s": 0.0027170181274414062
+    },
+    {
+      "source_time": 60.224383333333336,
+      "captured_at": 1789507194.6463842,
+      "processing_s": 0.0011434170000939048,
+      "capture_lateness_s": 0.005914926528930664
+    },
+    {
+      "source_time": 60.24106666666667,
+      "captured_at": 1789507194.660745,
+      "processing_s": 0.0010461249999025313,
+      "capture_lateness_s": 0.003592252731323242
+    },
+    {
+      "source_time": 60.25775,
+      "captured_at": 1789507194.67444,
+      "processing_s": 0.001006915999823832,
+      "capture_lateness_s": 0.0006039142608642578
+    },
+    {
+      "source_time": 60.274433333333334,
+      "captured_at": 1789507194.6972978,
+      "processing_s": 0.0010680000000320433,
+      "capture_lateness_s": 0.0067784786224365234
+    },
+    {
+      "source_time": 60.29111666666667,
+      "captured_at": 1789507194.7110069,
+      "processing_s": 0.0010407079998913105,
+      "capture_lateness_s": 0.0038042068481445312
+    },
+    {
+      "source_time": 60.3078,
+      "captured_at": 1789507194.729286,
+      "processing_s": 0.0010828330000549613,
+      "capture_lateness_s": 0.005399942398071289
+    },
+    {
+      "source_time": 60.32448333333333,
+      "captured_at": 1789507194.743584,
+      "processing_s": 0.0010916660003204015,
+      "capture_lateness_s": 0.0030145645141601562
+    },
+    {
+      "source_time": 60.341166666666666,
+      "captured_at": 1789507194.757765,
+      "processing_s": 0.0010347079996790853,
+      "capture_lateness_s": 0.0005123615264892578
+    },
+    {
+      "source_time": 60.35785,
+      "captured_at": 1789507194.780309,
+      "processing_s": 0.0010716250003497407,
+      "capture_lateness_s": 0.006372928619384766
+    },
+    {
+      "source_time": 60.37453333333333,
+      "captured_at": 1789507194.791147,
+      "processing_s": 0.0012620000002243614,
+      "capture_lateness_s": 0.0005276203155517578
+    },
+    {
+      "source_time": 60.391216666666665,
+      "captured_at": 1789507194.808212,
+      "processing_s": 0.0010938330001408758,
+      "capture_lateness_s": 0.0009093284606933594
+    },
+    {
+      "source_time": 60.4079,
+      "captured_at": 1789507194.8304992,
+      "processing_s": 0.0009680419998403522,
+      "capture_lateness_s": 0.006513118743896484
+    },
+    {
+      "source_time": 60.42458333333333,
+      "captured_at": 1789507194.8411589,
+      "processing_s": 0.001089166999918234,
+      "capture_lateness_s": 0.0004894733428955078
+    },
+    {
+      "source_time": 60.441266666666664,
+      "captured_at": 1789507194.85944,
+      "processing_s": 0.001138332999744307,
+      "capture_lateness_s": 0.0020873546600341797
+    },
+    {
+      "source_time": 60.45795,
+      "captured_at": 1789507194.8797288,
+      "processing_s": 0.001060374999724445,
+      "capture_lateness_s": 0.005692720413208008
+    },
+    {
+      "source_time": 60.47463333333334,
+      "captured_at": 1789507194.8910751,
+      "processing_s": 0.001063541999883455,
+      "capture_lateness_s": 0.0003559589385986328
+    },
+    {
+      "source_time": 60.49131666666667,
+      "captured_at": 1789507194.914164,
+      "processing_s": 0.0010679580000214628,
+      "capture_lateness_s": 0.0067615509033203125
+    },
+    {
+      "source_time": 60.508,
+      "captured_at": 1789507194.926678,
+      "processing_s": 0.0010164579998672707,
+      "capture_lateness_s": 0.0025920867919921875
+    },
+    {
+      "source_time": 60.524683333333336,
+      "captured_at": 1789507194.9467158,
+      "processing_s": 0.0010637079999469279,
+      "capture_lateness_s": 0.005946636199951172
+    },
+    {
+      "source_time": 60.54136666666667,
+      "captured_at": 1789507194.9598231,
+      "processing_s": 0.0010327079999115085,
+      "capture_lateness_s": 0.002370595932006836
+    },
+    {
+      "source_time": 60.55805,
+      "captured_at": 1789507194.97442,
+      "processing_s": 0.0010941660002572462,
+      "capture_lateness_s": 0.0002841949462890625
+    },
+    {
+      "source_time": 60.574733333333334,
+      "captured_at": 1789507194.9977548,
+      "processing_s": 0.0010729159998845716,
+      "capture_lateness_s": 0.006935596466064453
+    },
+    {
+      "source_time": 60.59141666666667,
+      "captured_at": 1789507195.007658,
+      "processing_s": 0.0012949169999956212,
+      "capture_lateness_s": 0.00015544891357421875
+    },
+    {
+      "source_time": 60.6081,
+      "captured_at": 1789507195.026902,
+      "processing_s": 0.0010479590000613825,
+      "capture_lateness_s": 0.002716064453125
+    },
+    {
+      "source_time": 60.62478333333333,
+      "captured_at": 1789507195.046746,
+      "processing_s": 0.0011138750001009612,
+      "capture_lateness_s": 0.005876779556274414
+    },
+    {
+      "source_time": 60.641466666666666,
+      "captured_at": 1789507195.0617971,
+      "processing_s": 0.0010449170003994368,
+      "capture_lateness_s": 0.004244565963745117
+    },
+    {
+      "source_time": 60.65815,
+      "captured_at": 1789507195.079381,
+      "processing_s": 0.0010547920001044986,
+      "capture_lateness_s": 0.005145072937011719
+    },
+    {
+      "source_time": 60.67483333333333,
+      "captured_at": 1789507195.094124,
+      "processing_s": 0.0009795840001061151,
+      "capture_lateness_s": 0.003204822540283203
+    },
+    {
+      "source_time": 60.691516666666665,
+      "captured_at": 1789507195.113319,
+      "processing_s": 0.0010557499999777065,
+      "capture_lateness_s": 0.0057163238525390625
+    },
+    {
+      "source_time": 60.7082,
+      "captured_at": 1789507195.128711,
+      "processing_s": 0.0010319170000911981,
+      "capture_lateness_s": 0.004425048828125
+    },
+    {
+      "source_time": 60.72488333333334,
+      "captured_at": 1789507195.141089,
+      "processing_s": 0.001013375000184169,
+      "capture_lateness_s": 0.00011968612670898438
+    },
+    {
+      "source_time": 60.74156666666667,
+      "captured_at": 1789507195.164643,
+      "processing_s": 0.0010258339998472366,
+      "capture_lateness_s": 0.0069904327392578125
+    },
+    {
+      "source_time": 60.758250000000004,
+      "captured_at": 1789507195.1774101,
+      "processing_s": 0.001058042000295245,
+      "capture_lateness_s": 0.003074169158935547
+    },
+    {
+      "source_time": 60.77493333333334,
+      "captured_at": 1789507195.191046,
+      "processing_s": 0.001111833999857481,
+      "capture_lateness_s": 2.6702880859375e-05
+    },
+    {
+      "source_time": 60.79161666666667,
+      "captured_at": 1789507195.20784,
+      "processing_s": 0.0011551669999789738,
+      "capture_lateness_s": 0.0001373291015625
+    },
+    {
+      "source_time": 60.8083,
+      "captured_at": 1789507195.2244039,
+      "processing_s": 0.0010012090001509932,
+      "capture_lateness_s": 1.7881393432617188e-05
+    },
+    {
+      "source_time": 60.824983333333336,
+      "captured_at": 1789507195.248388,
+      "processing_s": 0.0014344169999276346,
+      "capture_lateness_s": 0.007318735122680664
+    },
+    {
+      "source_time": 60.84166666666667,
+      "captured_at": 1789507195.261149,
+      "processing_s": 0.0012268330001461436,
+      "capture_lateness_s": 0.003396272659301758
+    },
+    {
+      "source_time": 60.85835,
+      "captured_at": 1789507195.2754471,
+      "processing_s": 0.0010164169998461148,
+      "capture_lateness_s": 0.0010111331939697266
+    },
+    {
+      "source_time": 60.875033333333334,
+      "captured_at": 1789507195.297889,
+      "processing_s": 0.0009980410000025586,
+      "capture_lateness_s": 0.006769657135009766
+    },
+    {
+      "source_time": 60.89171666666667,
+      "captured_at": 1789507195.3099148,
+      "processing_s": 0.0011017080000783608,
+      "capture_lateness_s": 0.002112150192260742
+    },
+    {
+      "source_time": 60.9084,
+      "captured_at": 1789507195.3304808,
+      "processing_s": 0.0011317919997964054,
+      "capture_lateness_s": 0.0059947967529296875
+    },
+    {
+      "source_time": 60.92508333333333,
+      "captured_at": 1789507195.3454132,
+      "processing_s": 0.0011163750000378059,
+      "capture_lateness_s": 0.0042438507080078125
+    },
+    {
+      "source_time": 60.941766666666666,
+      "captured_at": 1789507195.362953,
+      "processing_s": 0.0010674160002963617,
+      "capture_lateness_s": 0.005100250244140625
+    },
+    {
+      "source_time": 60.95845,
+      "captured_at": 1789507195.379276,
+      "processing_s": 0.0010230830002910807,
+      "capture_lateness_s": 0.004739999771118164
+    },
+    {
+      "source_time": 60.97513333333333,
+      "captured_at": 1789507195.39612,
+      "processing_s": 0.0010320829996999237,
+      "capture_lateness_s": 0.004900693893432617
+    },
+    {
+      "source_time": 60.991816666666665,
+      "captured_at": 1789507195.411566,
+      "processing_s": 0.0010520419996282726,
+      "capture_lateness_s": 0.003663301467895508
+    }
+  ],
+  "capture_trace_tail_limit": 128,
+  "capture_lateness_mean_s": 0.004106947487475825,
+  "capture_lateness_max_s": 0.028774023056030273,
+  "tracker": {
+    "frames_processed": 510,
+    "active_tracks": 0,
+    "flow_failures": 1,
+    "maximum_tracks": 8,
+    "scope": "Supplied-box propagation with appearance, scale, visibility and gap checks; no object discovery, semantic action recognition, or guaranteed identity.",
+    "backend": "OpenCV CSRT",
+    "scale": 0.5,
+    "loss_reasons": {
+      "implausible_center_step": 1
+    },
+    "camera_compensated_frames": 509,
+    "backend_updates": 201,
+    "visible_tracks": 0,
+    "uncertain_tracks": 0,
+    "guards": {
+      "min_points": 4,
+      "motion_threshold": 0.003,
+      "settle_seconds": 0.3,
+      "lost_ttl_seconds": 5.0,
+      "scale": 0.5,
+      "max_frame_gap_s": 0.25,
+      "max_appearance_distance": 0.65,
+      "min_visible_fraction": 0.65,
+      "min_area_ratio": 0.25,
+      "max_area_ratio": 4.0,
+      "max_step_area_ratio": 1.7,
+      "max_center_step": 0.12
+    },
+    "confidence_kind": "uncalibrated_heuristic",
+    "calibrated_confidence": null
+  },
+  "tracking_queue_frame_limit": 128,
+  "tracking_frame_losses": 0,
+  "tracking_timing_tail": [
+    {
+      "timestamp": 58.87303333333333,
+      "processing_s": 0.00373387499985256,
+      "capture_to_tracking_s": 0.005591154098510742
+    },
+    {
+      "timestamp": 58.889716666666665,
+      "processing_s": 0.0037782499998684216,
+      "capture_to_tracking_s": 0.005629777908325195
+    },
+    {
+      "timestamp": 58.9064,
+      "processing_s": 0.0038392920000660524,
+      "capture_to_tracking_s": 0.0056078433990478516
+    },
+    {
+      "timestamp": 58.92308333333333,
+      "processing_s": 0.003971207999711623,
+      "capture_to_tracking_s": 0.0057260990142822266
+    },
+    {
+      "timestamp": 58.93976666666667,
+      "processing_s": 0.0035317910001140262,
+      "capture_to_tracking_s": 0.005182981491088867
+    },
+    {
+      "timestamp": 58.956450000000004,
+      "processing_s": 0.004002417000265268,
+      "capture_to_tracking_s": 0.0058345794677734375
+    },
+    {
+      "timestamp": 58.97313333333334,
+      "processing_s": 0.0037007079999966663,
+      "capture_to_tracking_s": 0.0054628849029541016
+    },
+    {
+      "timestamp": 58.98981666666667,
+      "processing_s": 0.003692040999794699,
+      "capture_to_tracking_s": 0.005343914031982422
+    },
+    {
+      "timestamp": 59.0065,
+      "processing_s": 0.0037300419999155565,
+      "capture_to_tracking_s": 0.005527019500732422
+    },
+    {
+      "timestamp": 59.023183333333336,
+      "processing_s": 0.004003708000254846,
+      "capture_to_tracking_s": 0.005724906921386719
+    },
+    {
+      "timestamp": 59.03986666666667,
+      "processing_s": 0.0034887920000983286,
+      "capture_to_tracking_s": 0.005187034606933594
+    },
+    {
+      "timestamp": 59.05655,
+      "processing_s": 0.004116124999654858,
+      "capture_to_tracking_s": 0.005960941314697266
+    },
+    {
+      "timestamp": 59.073233333333334,
+      "processing_s": 0.0039706249999653664,
+      "capture_to_tracking_s": 0.00578618049621582
+    },
+    {
+      "timestamp": 59.08991666666667,
+      "processing_s": 0.0038758340001550096,
+      "capture_to_tracking_s": 0.005568027496337891
+    },
+    {
+      "timestamp": 59.1066,
+      "processing_s": 0.0037984589998814045,
+      "capture_to_tracking_s": 0.005609035491943359
+    },
+    {
+      "timestamp": 59.12328333333333,
+      "processing_s": 0.004012207999949169,
+      "capture_to_tracking_s": 0.005760908126831055
+    },
+    {
+      "timestamp": 59.139966666666666,
+      "processing_s": 0.003373292000105721,
+      "capture_to_tracking_s": 0.005211830139160156
+    },
+    {
+      "timestamp": 59.15665,
+      "processing_s": 0.004121333000057348,
+      "capture_to_tracking_s": 0.006025791168212891
+    },
+    {
+      "timestamp": 59.17333333333333,
+      "processing_s": 0.0036150840001027973,
+      "capture_to_tracking_s": 0.005398988723754883
+    },
+    {
+      "timestamp": 59.190016666666665,
+      "processing_s": 0.004341124999882595,
+      "capture_to_tracking_s": 0.006102085113525391
+    },
+    {
+      "timestamp": 59.2067,
+      "processing_s": 0.0037954590002300392,
+      "capture_to_tracking_s": 0.005638837814331055
+    },
+    {
+      "timestamp": 59.22338333333333,
+      "processing_s": 0.004327584000293427,
+      "capture_to_tracking_s": 0.0062618255615234375
+    },
+    {
+      "timestamp": 59.240066666666664,
+      "processing_s": 0.0034462909998183022,
+      "capture_to_tracking_s": 0.0052759647369384766
+    },
+    {
+      "timestamp": 59.25675,
+      "processing_s": 0.005094375000226137,
+      "capture_to_tracking_s": 0.0068988800048828125
+    },
+    {
+      "timestamp": 59.27343333333334,
+      "processing_s": 0.0037699580002481525,
+      "capture_to_tracking_s": 0.0060710906982421875
+    },
+    {
+      "timestamp": 59.29011666666667,
+      "processing_s": 0.004162541999903624,
+      "capture_to_tracking_s": 0.00621795654296875
+    },
+    {
+      "timestamp": 59.3068,
+      "processing_s": 0.003569874999811873,
+      "capture_to_tracking_s": 0.006178140640258789
+    },
+    {
+      "timestamp": 59.323483333333336,
+      "processing_s": 0.004346749999967869,
+      "capture_to_tracking_s": 0.0067310333251953125
+    },
+    {
+      "timestamp": 59.34016666666667,
+      "processing_s": 0.0037320419996831333,
+      "capture_to_tracking_s": 0.006439924240112305
+    },
+    {
+      "timestamp": 59.35685,
+      "processing_s": 0.003957832999731181,
+      "capture_to_tracking_s": 0.0062448978424072266
+    },
+    {
+      "timestamp": 59.373533333333334,
+      "processing_s": 0.003714959000262752,
+      "capture_to_tracking_s": 0.005606889724731445
+    },
+    {
+      "timestamp": 59.39021666666667,
+      "processing_s": 0.0040760829997452674,
+      "capture_to_tracking_s": 0.006270170211791992
+    },
+    {
+      "timestamp": 59.4069,
+      "processing_s": 0.003464291999989655,
+      "capture_to_tracking_s": 0.005178928375244141
+    },
+    {
+      "timestamp": 59.42358333333333,
+      "processing_s": 0.004213458999856812,
+      "capture_to_tracking_s": 0.006206035614013672
+    },
+    {
+      "timestamp": 59.440266666666666,
+      "processing_s": 0.0037412500000755244,
+      "capture_to_tracking_s": 0.005496025085449219
+    },
+    {
+      "timestamp": 59.45695,
+      "processing_s": 0.00387662499997532,
+      "capture_to_tracking_s": 0.005620002746582031
+    },
+    {
+      "timestamp": 59.47363333333333,
+      "processing_s": 0.004064374999870779,
+      "capture_to_tracking_s": 0.006078243255615234
+    },
+    {
+      "timestamp": 59.490316666666665,
+      "processing_s": 0.004092042000138463,
+      "capture_to_tracking_s": 0.006332874298095703
+    },
+    {
+      "timestamp": 59.507,
+      "processing_s": 0.0034704169997894496,
+      "capture_to_tracking_s": 0.00518035888671875
+    },
+    {
+      "timestamp": 59.52368333333333,
+      "processing_s": 0.004186082999694918,
+      "capture_to_tracking_s": 0.006072044372558594
+    },
+    {
+      "timestamp": 59.54036666666667,
+      "processing_s": 0.004225541000323574,
+      "capture_to_tracking_s": 0.006066083908081055
+    },
+    {
+      "timestamp": 59.557050000000004,
+      "processing_s": 0.003878250000070693,
+      "capture_to_tracking_s": 0.005758047103881836
+    },
+    {
+      "timestamp": 59.57373333333334,
+      "processing_s": 0.003967290999753459,
+      "capture_to_tracking_s": 0.005908966064453125
+    },
+    {
+      "timestamp": 59.59041666666667,
+      "processing_s": 0.00415362500007177,
+      "capture_to_tracking_s": 0.005954265594482422
+    },
+    {
+      "timestamp": 59.6071,
+      "processing_s": 0.0035041669998463476,
+      "capture_to_tracking_s": 0.005388021469116211
+    },
+    {
+      "timestamp": 59.623783333333336,
+      "processing_s": 0.004118041999845445,
+      "capture_to_tracking_s": 0.005922079086303711
+    },
+    {
+      "timestamp": 59.64046666666667,
+      "processing_s": 0.0037921660000392876,
+      "capture_to_tracking_s": 0.005548000335693359
+    },
+    {
+      "timestamp": 59.65715,
+      "processing_s": 0.003948125000079017,
+      "capture_to_tracking_s": 0.005710124969482422
+    },
+    {
+      "timestamp": 59.673833333333334,
+      "processing_s": 0.0038005000001248845,
+      "capture_to_tracking_s": 0.005681276321411133
+    },
+    {
+      "timestamp": 59.69051666666667,
+      "processing_s": 0.004050832999837439,
+      "capture_to_tracking_s": 0.005916118621826172
+    },
+    {
+      "timestamp": 59.7072,
+      "processing_s": 0.003468291999979556,
+      "capture_to_tracking_s": 0.005277156829833984
+    },
+    {
+      "timestamp": 59.72388333333333,
+      "processing_s": 0.0041096669997386925,
+      "capture_to_tracking_s": 0.005948066711425781
+    },
+    {
+      "timestamp": 59.740566666666666,
+      "processing_s": 0.003810083000189479,
+      "capture_to_tracking_s": 0.005572080612182617
+    },
+    {
+      "timestamp": 59.75725,
+      "processing_s": 0.004487624999910622,
+      "capture_to_tracking_s": 0.006768941879272461
+    },
+    {
+      "timestamp": 59.77393333333333,
+      "processing_s": 0.0034868329998971603,
+      "capture_to_tracking_s": 0.00581669807434082
+    },
+    {
+      "timestamp": 59.790616666666665,
+      "processing_s": 0.004223333000027196,
+      "capture_to_tracking_s": 0.006765127182006836
+    },
+    {
+      "timestamp": 59.8073,
+      "processing_s": 0.004166749999967578,
+      "capture_to_tracking_s": 0.0059430599212646484
+    },
+    {
+      "timestamp": 59.82398333333333,
+      "processing_s": 0.0038206660001378623,
+      "capture_to_tracking_s": 0.005891084671020508
+    },
+    {
+      "timestamp": 59.840666666666664,
+      "processing_s": 0.0043754170001193415,
+      "capture_to_tracking_s": 0.006199836730957031
+    },
+    {
+      "timestamp": 59.85735,
+      "processing_s": 0.004647666999971989,
+      "capture_to_tracking_s": 0.006443023681640625
+    },
+    {
+      "timestamp": 59.87403333333334,
+      "processing_s": 0.0035618330002762377,
+      "capture_to_tracking_s": 0.005305767059326172
+    },
+    {
+      "timestamp": 59.89071666666667,
+      "processing_s": 0.004095166000297468,
+      "capture_to_tracking_s": 0.005826711654663086
+    },
+    {
+      "timestamp": 59.9074,
+      "processing_s": 0.0037097919998814177,
+      "capture_to_tracking_s": 0.005455970764160156
+    },
+    {
+      "timestamp": 59.924083333333336,
+      "processing_s": 0.003653000000213069,
+      "capture_to_tracking_s": 0.005345582962036133
+    },
+    {
+      "timestamp": 59.94076666666667,
+      "processing_s": 0.00448641699995278,
+      "capture_to_tracking_s": 0.006592988967895508
+    },
+    {
+      "timestamp": 59.95745,
+      "processing_s": 0.004293333000077837,
+      "capture_to_tracking_s": 0.006157875061035156
+    },
+    {
+      "timestamp": 59.974133333333334,
+      "processing_s": 0.003920332999769016,
+      "capture_to_tracking_s": 0.0057659149169921875
+    },
+    {
+      "timestamp": 59.99081666666667,
+      "processing_s": 0.0038490419997287972,
+      "capture_to_tracking_s": 0.005608797073364258
+    },
+    {
+      "timestamp": 60.0075,
+      "processing_s": 0.004364541000086319,
+      "capture_to_tracking_s": 0.006737947463989258
+    },
+    {
+      "timestamp": 60.02418333333333,
+      "processing_s": 0.004358291000244208,
+      "capture_to_tracking_s": 0.006201267242431641
+    },
+    {
+      "timestamp": 60.040866666666666,
+      "processing_s": 0.0033821659999375697,
+      "capture_to_tracking_s": 0.0054149627685546875
+    },
+    {
+      "timestamp": 60.05755,
+      "processing_s": 0.004696833000252809,
+      "capture_to_tracking_s": 0.006543159484863281
+    },
+    {
+      "timestamp": 60.07423333333333,
+      "processing_s": 0.003708249999817781,
+      "capture_to_tracking_s": 0.0054929256439208984
+    },
+    {
+      "timestamp": 60.090916666666665,
+      "processing_s": 0.003914708000138489,
+      "capture_to_tracking_s": 0.005594015121459961
+    },
+    {
+      "timestamp": 60.1076,
+      "processing_s": 0.003777124999942316,
+      "capture_to_tracking_s": 0.005697011947631836
+    },
+    {
+      "timestamp": 60.12428333333333,
+      "processing_s": 0.004246541999691544,
+      "capture_to_tracking_s": 0.006254911422729492
+    },
+    {
+      "timestamp": 60.14096666666667,
+      "processing_s": 0.0033830410002337885,
+      "capture_to_tracking_s": 0.005111217498779297
+    },
+    {
+      "timestamp": 60.157650000000004,
+      "processing_s": 0.004180750000159605,
+      "capture_to_tracking_s": 0.0062520503997802734
+    },
+    {
+      "timestamp": 60.17433333333334,
+      "processing_s": 0.004005000000233849,
+      "capture_to_tracking_s": 0.00580596923828125
+    },
+    {
+      "timestamp": 60.19101666666667,
+      "processing_s": 0.00432600000021921,
+      "capture_to_tracking_s": 0.006042003631591797
+    },
+    {
+      "timestamp": 60.2077,
+      "processing_s": 0.004154749999997875,
+      "capture_to_tracking_s": 0.00588679313659668
+    },
+    {
+      "timestamp": 60.224383333333336,
+      "processing_s": 0.004475082999761071,
+      "capture_to_tracking_s": 0.006341695785522461
+    },
+    {
+      "timestamp": 60.24106666666667,
+      "processing_s": 0.00392233299999134,
+      "capture_to_tracking_s": 0.0057201385498046875
+    },
+    {
+      "timestamp": 60.25775,
+      "processing_s": 0.0038608749996456027,
+      "capture_to_tracking_s": 0.0060160160064697266
+    },
+    {
+      "timestamp": 60.274433333333334,
+      "processing_s": 0.004272749999927328,
+      "capture_to_tracking_s": 0.006077289581298828
+    },
+    {
+      "timestamp": 60.29111666666667,
+      "processing_s": 0.00481916699982321,
+      "capture_to_tracking_s": 0.006594181060791016
+    },
+    {
+      "timestamp": 60.3078,
+      "processing_s": 0.004396833000100742,
+      "capture_to_tracking_s": 0.006187915802001953
+    },
+    {
+      "timestamp": 60.32448333333333,
+      "processing_s": 0.005346708000161016,
+      "capture_to_tracking_s": 0.007194995880126953
+    },
+    {
+      "timestamp": 60.341166666666666,
+      "processing_s": 0.003946374999941327,
+      "capture_to_tracking_s": 0.006350994110107422
+    },
+    {
+      "timestamp": 60.35785,
+      "processing_s": 0.003908291999778157,
+      "capture_to_tracking_s": 0.005719184875488281
+    },
+    {
+      "timestamp": 60.37453333333333,
+      "processing_s": 0.003969041999880574,
+      "capture_to_tracking_s": 0.006291866302490234
+    },
+    {
+      "timestamp": 60.391216666666665,
+      "processing_s": 0.004006791999927373,
+      "capture_to_tracking_s": 0.006344795227050781
+    },
+    {
+      "timestamp": 60.4079,
+      "processing_s": 0.004165708000073209,
+      "capture_to_tracking_s": 0.005850791931152344
+    },
+    {
+      "timestamp": 60.42458333333333,
+      "processing_s": 0.0042320000002291636,
+      "capture_to_tracking_s": 0.006273031234741211
+    },
+    {
+      "timestamp": 60.441266666666664,
+      "processing_s": 0.003628417000072659,
+      "capture_to_tracking_s": 0.00554203987121582
+    },
+    {
+      "timestamp": 60.45795,
+      "processing_s": 0.004075833000115381,
+      "capture_to_tracking_s": 0.0058422088623046875
+    },
+    {
+      "timestamp": 60.47463333333334,
+      "processing_s": 0.005135625000093569,
+      "capture_to_tracking_s": 0.007543802261352539
+    },
+    {
+      "timestamp": 60.49131666666667,
+      "processing_s": 0.00462408300018069,
+      "capture_to_tracking_s": 0.006433010101318359
+    },
+    {
+      "timestamp": 60.508,
+      "processing_s": 0.0037997499998709827,
+      "capture_to_tracking_s": 0.005566120147705078
+    },
+    {
+      "timestamp": 60.524683333333336,
+      "processing_s": 0.00433495800007222,
+      "capture_to_tracking_s": 0.00617218017578125
+    },
+    {
+      "timestamp": 60.54136666666667,
+      "processing_s": 0.0035709579997273977,
+      "capture_to_tracking_s": 0.00534510612487793
+    },
+    {
+      "timestamp": 60.55805,
+      "processing_s": 0.0040789999998196436,
+      "capture_to_tracking_s": 0.005999088287353516
+    },
+    {
+      "timestamp": 60.574733333333334,
+      "processing_s": 0.003808458999628783,
+      "capture_to_tracking_s": 0.005614042282104492
+    },
+    {
+      "timestamp": 60.59141666666667,
+      "processing_s": 0.004423584000051051,
+      "capture_to_tracking_s": 0.006456136703491211
+    },
+    {
+      "timestamp": 60.6081,
+      "processing_s": 0.004256959000031202,
+      "capture_to_tracking_s": 0.006088972091674805
+    },
+    {
+      "timestamp": 60.62478333333333,
+      "processing_s": 0.004289708000214887,
+      "capture_to_tracking_s": 0.0061359405517578125
+    },
+    {
+      "timestamp": 60.641466666666666,
+      "processing_s": 0.003859583000121347,
+      "capture_to_tracking_s": 0.005638837814331055
+    },
+    {
+      "timestamp": 60.65815,
+      "processing_s": 0.004206749999866588,
+      "capture_to_tracking_s": 0.006010770797729492
+    },
+    {
+      "timestamp": 60.67483333333333,
+      "processing_s": 0.003964542000176152,
+      "capture_to_tracking_s": 0.005646705627441406
+    },
+    {
+      "timestamp": 60.691516666666665,
+      "processing_s": 0.004005540999969526,
+      "capture_to_tracking_s": 0.005780935287475586
+    },
+    {
+      "timestamp": 60.7082,
+      "processing_s": 0.0042895000001408334,
+      "capture_to_tracking_s": 0.00604701042175293
+    },
+    {
+      "timestamp": 60.72488333333334,
+      "processing_s": 0.00377058300000499,
+      "capture_to_tracking_s": 0.006042003631591797
+    },
+    {
+      "timestamp": 60.74156666666667,
+      "processing_s": 0.0036074580002605217,
+      "capture_to_tracking_s": 0.00537872314453125
+    },
+    {
+      "timestamp": 60.758250000000004,
+      "processing_s": 0.00405624999984866,
+      "capture_to_tracking_s": 0.005825042724609375
+    },
+    {
+      "timestamp": 60.77493333333334,
+      "processing_s": 0.0032976249999592255,
+      "capture_to_tracking_s": 0.005204916000366211
+    },
+    {
+      "timestamp": 60.79161666666667,
+      "processing_s": 0.004037499999867578,
+      "capture_to_tracking_s": 0.005969047546386719
+    },
+    {
+      "timestamp": 60.8083,
+      "processing_s": 0.0037364170002547326,
+      "capture_to_tracking_s": 0.005439043045043945
+    },
+    {
+      "timestamp": 60.824983333333336,
+      "processing_s": 0.004341291999935493,
+      "capture_to_tracking_s": 0.006505012512207031
+    },
+    {
+      "timestamp": 60.84166666666667,
+      "processing_s": 0.0037642920001417224,
+      "capture_to_tracking_s": 0.005759000778198242
+    },
+    {
+      "timestamp": 60.85835,
+      "processing_s": 0.004299499999888212,
+      "capture_to_tracking_s": 0.006032705307006836
+    },
+    {
+      "timestamp": 60.875033333333334,
+      "processing_s": 0.003949832999751379,
+      "capture_to_tracking_s": 0.005671977996826172
+    },
+    {
+      "timestamp": 60.89171666666667,
+      "processing_s": 0.004478749999634601,
+      "capture_to_tracking_s": 0.0063381195068359375
+    },
+    {
+      "timestamp": 60.9084,
+      "processing_s": 0.0043164999997316045,
+      "capture_to_tracking_s": 0.006186008453369141
+    },
+    {
+      "timestamp": 60.92508333333333,
+      "processing_s": 0.003927583999939088,
+      "capture_to_tracking_s": 0.005767822265625
+    },
+    {
+      "timestamp": 60.941766666666666,
+      "processing_s": 0.003921083000022918,
+      "capture_to_tracking_s": 0.005724191665649414
+    },
+    {
+      "timestamp": 60.95845,
+      "processing_s": 0.004055041999890818,
+      "capture_to_tracking_s": 0.005815982818603516
+    },
+    {
+      "timestamp": 60.97513333333333,
+      "processing_s": 0.003652999999758322,
+      "capture_to_tracking_s": 0.005391836166381836
+    },
+    {
+      "timestamp": 60.991816666666665,
+      "processing_s": 0.004621416999725625,
+      "capture_to_tracking_s": 0.006620883941650391
+    }
+  ],
+  "buffer_capacity_splits": 3,
+  "spool": {
+    "clips": {
+      "complete": 5
+    },
+    "dropped_sequences": 0,
+    "dropped_frame_references": 0,
+    "limits": {
+      "pending_plus_processing": 16,
+      "completed_media": 16
+    },
+    "scope": "Activity scheduling and retained input coverage; semantic event recall requires labels."
+  },
+  "seed_reconciliation": [
+    {
+      "track_id": "phys_3c4a058e1308499a8b2885c554a3f8c9",
+      "status": "replayed_to_current",
+      "replayed_frames": 0,
+      "recovered_events": 0,
+      "anchor_timestamp": 52.5
+    }
+  ],
+  "seeds_pending_at_eof": 0,
+  "losses": [],
+  "local_event_losses": 0,
+  "errors": [],
+  "journal": {
+    "windows": 8,
+    "tracks": 1,
+    "detections": 1,
+    "observations": 0,
+    "events": 7,
+    "evidence": 53
+  },
+  "artificial_inference_delay_s": 0,
+  "tracking_journal": {
+    "updates": 201,
+    "tracks": 1,
+    "first_source_time": 52.51668333333333,
+    "last_source_time": 55.85335
+  },
+  "physical_registry_at_eof": [
+    {
+      "track_id": "phys_3c4a058e1308499a8b2885c554a3f8c9",
+      "first_seen_at": 52.5,
+      "last_seen_at": 52.5,
+      "window_id": "bootstrap",
+      "age_seconds": 8.491816666666665,
+      "stale": false,
+      "last_detection": {
+        "attributes": {
+          "bootstrap_provenance": "Assistant visually selected initial box on the first frame of the positive demonstration clip (P27_03, source 52.5 s) from a coordinate-grid contact sheet; explicit demonstration bootstrap, not a learned detection or human ground-truth annotation."
+        },
+        "box": {
+          "x_max": 0.71,
+          "x_min": 0.47,
+          "y_max": 0.84,
+          "y_min": 0.52
+        },
+        "confidence": 0.8,
+        "detection_id": "bootstrap_object",
+        "evidence_ids": [
+          "recipe:1"
+        ],
+        "frame_evidence_id": "recipe:1",
+        "label": "pan",
+        "location": {
+          "area": null,
+          "camera_id": "recipe"
+        },
+        "timestamp": 52.5,
+        "track_id": "phys_3c4a058e1308499a8b2885c554a3f8c9",
+        "uncertainty": "Approximate image box around a dark pan resting in the lower rack; the official narration P27_03_9 'take pan' covers 56.54-57.99 s. Strong egocentric camera motion is expected. Identity and calibrated confidence are not established.",
+        "visibility": "partially_occluded"
+      },
+      "current_tracking_state": {
+        "track_id": "phys_3c4a058e1308499a8b2885c554a3f8c9",
+        "timestamp": 55.85335,
+        "camera_id": "recipe",
+        "frame_evidence_id": "recipe:202",
+        "source_sequence": 202,
+        "visibility": "uncertain",
+        "heuristic_confidence": 0.0,
+        "method": "CSRTContinuousTracker",
+        "evidence_sha256": "83450e6b41635a89c1453b6e84fa5b0cb2fe682df258fa01b45d011368273d99",
+        "payload_sha256": "afd6362433f9bfb0dd3a1a2b2aaecf77a643290072edbe21cef23cd0a52d1915",
+        "captured_at": 1789507190.274226,
+        "recorded_at": 1789507190.292875,
+        "box": null,
+        "details": {
+          "calibrated_confidence": null,
+          "confidence_kind": "uncalibrated_heuristic",
+          "failure_reason": "implausible_center_step",
+          "label": "pan"
+        },
+        "age_seconds": 5.138466666666666
+      }
+    }
+  ],
+  "event_evidence_retention_limit": 256,
+  "initial_context_frames": 8,
+  "expired_event_evidence": 0,
+  "watches_at_shutdown": [
+    {
+      "watch_id": "watch-pan-motion-cue",
+      "digest": "f3fdba1f6f33264a00301d7a8a44b1625e7a32208278f864af25969d28aed827",
+      "status": "verified",
+      "spec": {
+        "condition": {
+          "kind": "motion_started",
+          "max_gap_s": 0.5,
+          "min_confidence": 0.5,
+          "min_duration_s": 0.0,
+          "object_label": "pan",
+          "origin": "geometric",
+          "reset_kinds": [],
+          "subject_ids": [],
+          "type": "event"
+        },
+        "context": {
+          "commitment_id": "recipe-cook-take-pan",
+          "coordinator_id": "sandboxed-frontier-37a12cb40ee3",
+          "source_ref": null,
+          "text": "Cue when the pan starts moving off the lower rack toward the hob."
+        },
+        "created_at": 1789507177.02,
+        "deadline_at": null,
+        "max_event_age_s": 2.0,
+        "max_responses": 1,
+        "not_before": null,
+        "outcome": null,
+        "response_deadline_s": 1.0,
+        "response_id": "recipe-movement-cue",
+        "ttl_s": 3600.0,
+        "watch_id": "watch-pan-motion-cue"
+      },
+      "response": {
+        "approval_ref": "User authorized end-to-end recipe demonstration; isolated Home Assistant test light, local response registry.",
+        "data": {},
+        "domain": "light",
+        "ha_entity_id": "light.kitchen",
+        "kind": "ha_service",
+        "message": "Bowl movement detected; checking the recipe step.",
+        "response_id": "recipe-movement-cue",
+        "service": "turn_on"
+      },
+      "progress": {
+        "candidate_end": 1789507186.9327693,
+        "candidate_key": "[\"phys_3c4a058e1308499a8b2885c554a3f8c9\"]",
+        "candidate_observed_s": 0.016683340072631836,
+        "candidate_start": 1789507186.916086,
+        "eligible_at": 1789507186.9327693,
+        "event_available_at": 1789507186.997099,
+        "event_id": "pevt_ae1d46b3fd0d4d8dbc916edf414e0e5f",
+        "event_source_ended_at": 1789507186.9327693,
+        "event_source_started_at": 1789507186.916086,
+        "evidence_ids": [
+          "recipe:1",
+          "recipe:2"
+        ],
+        "matched_at": 1789507186.999739,
+        "response_key": "response_a5f4c26fd5e147edf812b093c2a0a40f",
+        "response_reserved_at": 1789507186.999739,
+        "response_sent_at": 1789507187.001214,
+        "response_timely": true,
+        "response_verified_at": 1789507187.10703,
+        "verification_kind": "ha_state_readback"
+      },
+      "execution": {
+        "response_key": "response_a5f4c26fd5e147edf812b093c2a0a40f",
+        "watch_id": "watch-pan-motion-cue",
+        "status": "verified",
+        "reserved_at": 1789507186.999739,
+        "sent_at": 1789507187.001214,
+        "verified_at": 1789507187.10703,
+        "result": {
+          "action_id": "response_a5f4c26fd5e147edf812b093c2a0a40f",
+          "attributes": {
+            "color_mode": "onoff",
+            "friendly_name": "Kitchen",
+            "supported_color_modes": [
+              "onoff"
+            ],
+            "supported_features": 0
+          },
+          "entity_id": "light.kitchen",
+          "simulated": false,
+          "state": "on",
+          "verification_latency_s": 0.004216959000132192,
+          "verified": true
+        }
+      },
+      "clocks": {
+        "eligible_at": 1789507186.9327693,
+        "event_source_started_at": 1789507186.916086,
+        "event_source_ended_at": 1789507186.9327693,
+        "event_available_at": 1789507186.997099,
+        "matched_at": 1789507186.999739,
+        "response_reserved_at": 1789507186.999739,
+        "response_queued_at": null,
+        "response_sent_at": 1789507187.001214,
+        "response_verified_at": 1789507187.10703,
+        "outcome_source_ended_at": null,
+        "outcome_available_at": null,
+        "outcome_verified_at": null,
+        "event_delivered_at": 1789507187.10746,
+        "event_acked_at": 1789507206.115259,
+        "outcome_delivered_at": null,
+        "outcome_acked_at": null
+      },
+      "latencies_s": {
+        "source_to_available": 0.06432962417602539,
+        "available_to_match": 0.0026400089263916016,
+        "source_to_delivery": 0.17469072341918945,
+        "source_to_response": 0.06844472885131836,
+        "source_to_verified_response": 0.17426061630249023,
+        "response_to_verified_outcome": null
+      }
+    }
+  ],
+  "post_source_watch_seconds": 90.0,
+  "source_eof": true,
+  "watch_runtime_continues_after_return": false,
+  "scope": "One continuous video source; activity coverage and geometry are separate from learned event accuracy."
+}

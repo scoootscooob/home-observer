@@ -1,0 +1,8 @@
+{
+  "version": "2026.9.2",
+  "images": {
+    "arm64": "ghcr.io/home-assistant/home-assistant@sha256:624e1d662d7668e047a9405e1a5d25fa9b158b813e6fe5073348d82a563bc691",
+    "amd64": "ghcr.io/home-assistant/home-assistant@sha256:542890f4a7ef9269b7a5ac23ada303b327537c62fa0f866e49daebc61cb44caa"
+  },
+  "source": "https://github.com/home-assistant/core/releases/tag/2026.9.2"
+}

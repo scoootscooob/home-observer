@@ -1,0 +1,10 @@
+{
+  "command_id": "cmd-003-ack-response-verified",
+  "coordinator_id": "sandboxed-frontier-267e8c45a0bd",
+  "accepted_at": 1789507640.9592261,
+  "outcome": {
+    "acknowledged": true,
+    "already_acknowledged": false,
+    "topic": "watch.response_verified"
+  }
+}

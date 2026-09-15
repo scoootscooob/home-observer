@@ -1,0 +1,37 @@
+{
+  "role": "positive",
+  "source_video": "data/continuous-v2/videos/P28_07.mp4",
+  "source_video_sha256": "34eaa2144fa2300cf30ab9146f6b81c34ca8569ee5a0ebcb9c6b316e71bac9a6",
+  "video_id": "P28_07",
+  "source_start_s": 16.0,
+  "source_end_s": 27.0,
+  "duration_s": 11.0,
+  "clip_sha256": "d83620ac6045b0668e9ba7815b53fd675f8e596923a63c3c6322ef9e7ff6796e",
+  "encode_seconds": 0.55,
+  "annotations_sha256": "a3a7ef2e397bd8af12bd0496b09d61b1f2c1f3f6e1726fa86af50a27f4855e87",
+  "overlapping_narrations": [
+    {
+      "narration_id": "P28_07_5",
+      "narration": "take spoon",
+      "verb": "take",
+      "noun": "spoon",
+      "start": 22.15,
+      "stop": 22.9,
+      "clip_relative_start": 6.15,
+      "clip_relative_stop": 6.9
+    },
+    {
+      "narration_id": "P28_07_6",
+      "narration": "stir food",
+      "verb": "stir",
+      "noun": "food",
+      "start": 23.99,
+      "stop": 30.73,
+      "clip_relative_start": 7.99,
+      "clip_relative_stop": 14.73
+    }
+  ],
+  "note": "Candidate positive: official narration P28_07_5 'take spoon' 22.15-22.90 s with 7 s quiet before",
+  "time_basis": "clip-relative seconds; add source_start_s for recording time",
+  "selection": "chosen by inspecting footage and official narrations only; no model predictions used"
+}

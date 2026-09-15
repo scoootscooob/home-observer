@@ -1,0 +1,32 @@
+{
+  "tracker": "MIL",
+  "source_fps": 50.0,
+  "source_declared_frames": 78,
+  "frames_decoded": 78,
+  "frames_updated": 77,
+  "api_success_updates": 77,
+  "first_api_failure_frame": null,
+  "init_s": 0.003110957972239703,
+  "update_total_s": 0.6835057074786164,
+  "decode_total_s": 0.018587540835142136,
+  "update_median_ms": 8.857291017193347,
+  "update_p95_ms": 10.617857985198498,
+  "update_max_ms": 11.877750046551228,
+  "update_only_fps": 112.65450918331791,
+  "full_decode_track_inspection_loop_s": 0.7075051249703392,
+  "full_decode_track_inspection_loop_fps": 110.24655122218373,
+  "frame_budget_ms": 20.0,
+  "updates_exceeding_source_frame_budget": 0,
+  "sampled_frames": [
+    0,
+    11,
+    22,
+    33,
+    44,
+    55,
+    66,
+    77
+  ],
+  "manual_localization_quality": "pending visual inspection; no supplied tracking ground truth",
+  "scope": "Actual continuous frames, one initial assistant-observed box, no reseeding or model detections. API success does not prove identity or localization; no calibrated confidence or semantic event claim."
+}

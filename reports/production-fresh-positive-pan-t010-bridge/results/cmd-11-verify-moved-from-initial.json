@@ -1,0 +1,9 @@
+{
+  "command_id": "cmd-11-verify-moved-from-initial",
+  "coordinator_id": "sandboxed-frontier-1ec2a16050d1",
+  "accepted_at": 1789509010.658914,
+  "outcome": {
+    "verification_id": "pver_4f8d66555541466793e8aa75defbff95",
+    "status": "pending"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "pod_id": "fszm4l6p59bl7o",
+  "status": "completed",
+  "artifacts_verified": true,
+  "cleanup": "terminated",
+  "cleanup_confirmed": true,
+  "cleanup_at": 1789497705.4977589,
+  "recovery": "../artifacts/physical-runtime/consumer-recovery-verification.json"
+}

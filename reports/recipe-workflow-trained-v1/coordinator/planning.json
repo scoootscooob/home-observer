@@ -1,0 +1,33 @@
+{
+  "coordinator_id": "/root/frontier_coordinator",
+  "role": "Actual frontier subagent reasoning over the digital recipe context and initial physical observation",
+  "created_at": 1789496289.351596,
+  "phase": "watch_planned_before_runtime",
+  "status": "pending_physical_evidence",
+  "input_sha256": {
+    "configs/recipe-workflow/digital-context.json": "01d535603bc49be88d5eeed6aad0b426b10fe09c0a77d52344b3f9c565d6b566",
+    "configs/recipe-workflow/responses.json": "2a17116c478017eaa43ae7b3a6af72c8175d7d67d4a9e27c99668a496419051a",
+    "configs/recipe-workflow/seed.json": "c10849c208765d884f4437ea990ccaa83c439dac26ff938a74c7e4f2825076e8"
+  },
+  "command_sha256": "408b40754f0cae10c99bd57399b165f444f108e6c591f66eec2bfdf8a93dba74",
+  "command_id": "recipe-frontier-create-movement-watch-1",
+  "watch_id": "recipe-bowls-movement-cue-1",
+  "rationale": [
+    "The recipe explicitly requests a cue at the start of bowl movement. An evidence-backed geometric motion_started event is the local trigger; semantic pickup recognition is not needed to issue this cue.",
+    "The approved local response registry supplies recipe-movement-cue. The watch contains only its response ID and cannot select arbitrary Home Assistant commands.",
+    "No persistent physical identity is yet available. Matching the bowl label is appropriate for this bounded single-seed replay, but would be ambiguous if other bowl tracks were present.",
+    "The 0.5 threshold is an operational cutoff for an uncalibrated geometric score, not a 50% probability claim. A one-second response deadline and freshness limit reflect the requested immediate cue.",
+    "A one-hour TTL allows setup and replay; the immediate response still depends on newly available evidence within its source-relative deadline.",
+    "Motion alone cannot establish pickup. No automated physical outcome predicate is installed; I will assess the delivered sequence independently after the runtime."
+  ],
+  "required_pickup_evidence": [
+    "Chronological real frames showing the initially observed nested bowls on the worktop, followed by hand contact or a grasp and visible displacement of the same bowl group away from its original support.",
+    "Multiple frames supporting lift or carry, with the bowl movement distinguishable from camera motion, occlusion, tracker drift, or motion of a nearby object.",
+    "Source media and timing references sufficient to associate the interaction with this recipe step. The initial box is an assistant-selected bootstrap, not ground-truth tracking annotation.",
+    "Separate records for cue execution/readback, transport acknowledgement, and the physical completion judgment. An HA state change or an event delivery alone is insufficient."
+  ],
+  "completion": {
+    "recipe_step_complete": false,
+    "reason": "Runtime has not started and no interaction evidence has been reviewed."
+  }
+}

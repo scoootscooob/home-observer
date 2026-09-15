@@ -1,0 +1,10 @@
+{
+  "kind": "bounded_live_protocol_validation",
+  "source_provenance": "source-provenance.json",
+  "windows": 21,
+  "distinct_decoded_camera_frames_every_window": true,
+  "audio_windows": 20,
+  "uploaded_equals_received_media_bytes_every_window": true,
+  "actual_ha_verified_action_count": 1,
+  "interpretation": "Protocol acceptance verifies schema, configured action surface and evidence references. It does not verify semantic perception or prove that cited media supports each claim. Real video has no action or occupancy ground truth; camera sources are time offsets of one recording."
+}

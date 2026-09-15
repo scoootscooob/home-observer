@@ -1,0 +1,9 @@
+{
+  "command_id": "cmd-16-verify-clear-of-support",
+  "coordinator_id": "sandboxed-frontier-cdbda4751e05",
+  "accepted_at": 1789507476.4220319,
+  "outcome": {
+    "verification_id": "pver_727b907d0bb54f92b1a5051c90a4e74b",
+    "status": "pending"
+  }
+}

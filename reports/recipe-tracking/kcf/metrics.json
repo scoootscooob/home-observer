@@ -1,0 +1,32 @@
+{
+  "tracker": "KCF",
+  "source_fps": 50.0,
+  "source_declared_frames": 78,
+  "frames_decoded": 78,
+  "frames_updated": 77,
+  "api_success_updates": 65,
+  "first_api_failure_frame": 66,
+  "init_s": 0.0006754589849151671,
+  "update_total_s": 0.9022399579989724,
+  "decode_total_s": 0.01792400242993608,
+  "update_median_ms": 12.64304103096947,
+  "update_p95_ms": 13.504974998068064,
+  "update_max_ms": 14.62725002784282,
+  "update_only_fps": 85.3431499207528,
+  "full_decode_track_inspection_loop_s": 0.923433666001074,
+  "full_decode_track_inspection_loop_fps": 84.46735577421462,
+  "frame_budget_ms": 20.0,
+  "updates_exceeding_source_frame_budget": 0,
+  "sampled_frames": [
+    0,
+    11,
+    22,
+    33,
+    44,
+    55,
+    66,
+    77
+  ],
+  "manual_localization_quality": "pending visual inspection; no supplied tracking ground truth",
+  "scope": "Actual continuous frames, one initial assistant-observed box, no reseeding or model detections. API success does not prove identity or localization; no calibrated confidence or semantic event claim."
+}

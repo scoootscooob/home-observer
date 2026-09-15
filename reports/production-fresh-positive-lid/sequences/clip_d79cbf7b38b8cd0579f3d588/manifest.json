@@ -1,0 +1,101 @@
+{
+  "clip_id": "clip_d79cbf7b38b8cd0579f3d588",
+  "reason": "initial_context",
+  "frames": [
+    {
+      "camera_id": "recipe",
+      "sequence": 1,
+      "timestamp": 44.5,
+      "captured_at": 1789508312.534299,
+      "evidence_id": "recipe:1",
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-positive-lid/sequences/clip_d79cbf7b38b8cd0579f3d588/000000.jpg",
+      "sha256": "f4c5193d18a06763f972126c0db36b7ad985c1408e52a748fd7914320999ce40",
+      "activity": 0.0,
+      "selected_for_model": true
+    },
+    {
+      "camera_id": "recipe",
+      "sequence": 2,
+      "timestamp": 44.51668333333333,
+      "captured_at": 1789508312.542165,
+      "evidence_id": "recipe:2",
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-positive-lid/sequences/clip_d79cbf7b38b8cd0579f3d588/000001.jpg",
+      "sha256": "a638e380b5f29e2f5b920bc6a114951b6232362c09a83bc6cdcecbb69b4903aa",
+      "activity": 0.00020979703356752537,
+      "selected_for_model": true
+    },
+    {
+      "camera_id": "recipe",
+      "sequence": 3,
+      "timestamp": 44.533366666666666,
+      "captured_at": 1789508312.561481,
+      "evidence_id": "recipe:3",
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-positive-lid/sequences/clip_d79cbf7b38b8cd0579f3d588/000002.jpg",
+      "sha256": "c7d5e88baf574c56212dd39203fc45fe052a754045daa6b5b87a888ca2151204",
+      "activity": 0.05191744730679157,
+      "selected_for_model": true
+    },
+    {
+      "camera_id": "recipe",
+      "sequence": 4,
+      "timestamp": 44.55005,
+      "captured_at": 1789508312.577543,
+      "evidence_id": "recipe:4",
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-positive-lid/sequences/clip_d79cbf7b38b8cd0579f3d588/000003.jpg",
+      "sha256": "4bb7a9c1b90a9fbb871d84cc36589f3ccb5dd4c1c326ac586fec8311c457d519",
+      "activity": 0.0,
+      "selected_for_model": true
+    },
+    {
+      "camera_id": "recipe",
+      "sequence": 5,
+      "timestamp": 44.56673333333333,
+      "captured_at": 1789508312.5944571,
+      "evidence_id": "recipe:5",
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-positive-lid/sequences/clip_d79cbf7b38b8cd0579f3d588/000004.jpg",
+      "sha256": "72332666a49e6dec7c7077b45427ad076b0d353eed7c4e8108bf770c5bd17d20",
+      "activity": 0.06177546838407494,
+      "selected_for_model": true
+    },
+    {
+      "camera_id": "recipe",
+      "sequence": 6,
+      "timestamp": 44.583416666666665,
+      "captured_at": 1789508312.608963,
+      "evidence_id": "recipe:6",
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-positive-lid/sequences/clip_d79cbf7b38b8cd0579f3d588/000005.jpg",
+      "sha256": "f4e25266c2856408358f38e0822be295652517d576fd2072f04c49e8a3aac014",
+      "activity": 0.0,
+      "selected_for_model": true
+    },
+    {
+      "camera_id": "recipe",
+      "sequence": 7,
+      "timestamp": 44.6001,
+      "captured_at": 1789508312.62829,
+      "evidence_id": "recipe:7",
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-positive-lid/sequences/clip_d79cbf7b38b8cd0579f3d588/000006.jpg",
+      "sha256": "4282e84c074739d28eba0db465e246e52a358167f48f6a1829b2e6f877de6120",
+      "activity": 0.07234582357533177,
+      "selected_for_model": true
+    },
+    {
+      "camera_id": "recipe",
+      "sequence": 8,
+      "timestamp": 44.61678333333333,
+      "captured_at": 1789508312.64432,
+      "evidence_id": "recipe:8",
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-positive-lid/sequences/clip_d79cbf7b38b8cd0579f3d588/000007.jpg",
+      "sha256": "62ccd89f9e1a525d4b9bea183e477c764ecdb8b1e62fa0a8b5aecb512ac12ec1",
+      "activity": 0.00016832552693208432,
+      "selected_for_model": true
+    }
+  ],
+  "started_at": 44.5,
+  "ended_at": 44.61678333333333,
+  "activity_started_at": null,
+  "activity_ended_at": null,
+  "full_sequence_frames": 8,
+  "selected_model_frames": 8,
+  "semantic_event_label": null
+}

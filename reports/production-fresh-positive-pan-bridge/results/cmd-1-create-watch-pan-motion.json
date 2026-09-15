@@ -1,0 +1,9 @@
+{
+  "command_id": "cmd-1-create-watch-pan-motion",
+  "coordinator_id": "sandboxed-frontier-37a12cb40ee3",
+  "accepted_at": 1789508100.7472441,
+  "outcome": {
+    "watch_id": "watch-recipe-take-pan-motion",
+    "status": "armed"
+  }
+}

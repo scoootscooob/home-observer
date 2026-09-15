@@ -1,0 +1,8 @@
+{
+  "previous_pod_id": "co6anwxnzan075",
+  "failure": "SSH operation failed with exit 255; see retained remote logs",
+  "artifacts_verified": true,
+  "archive_sha256": "4073c9c2e84c4bc2b7c655f5bc1abdbed0233798f06aad98e60e0e9d0788bc68",
+  "cleanup_confirmed": true,
+  "poll_resilience_fix": "Running-job read-only SSH polls retry for300seconds bounded by execution deadline, refresh provider endpoints, and never relaunch the job."
+}

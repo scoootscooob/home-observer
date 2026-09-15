@@ -1,0 +1,91 @@
+{
+  "scope": "Two inference-only requests with identical HA readback, policy and media; only explicit prior state differs. No actions executed. Same base server process and old prompt.",
+  "variants": [
+    {
+      "variant": "duplicated-current-state",
+      "request_bytes": 4226,
+      "request_sha256": "ca40a015a19661eda8000ca11eeb94a0d0106c60c2cb3c5dd6da5f7ce3837a72",
+      "response_bytes": 1178,
+      "response_sha256": "201573a03993d7d9a27040625690a55aa88b181f4facf8797b6b9ef2668d3958",
+      "status_code": 200,
+      "elapsed_s": 18.137814083020203,
+      "response": {
+        "decision": {
+          "summary": "A person is visible in the lounge area, and motion is detected in the lounge. The ambient light level is low.",
+          "observations": [
+            {
+              "entity_id": "room.lounge",
+              "attribute": "occupied",
+              "value": true,
+              "confidence": 0.9,
+              "evidence_ids": [
+                "09a634e3dc82c5846a9a5dd2:frame:lounge"
+              ]
+            },
+            {
+              "entity_id": "binary_sensor.motion_lounge",
+              "attribute": "state",
+              "value": "on",
+              "confidence": 1.0,
+              "evidence_ids": [
+                "device:binary_sensor.motion_lounge"
+              ]
+            },
+            {
+              "entity_id": "sensor.ambient_lux",
+              "attribute": "state",
+              "value": "12",
+              "confidence": 1.0,
+              "evidence_ids": [
+                "device:sensor.ambient_lux"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "domain": "light",
+              "service": "turn_on",
+              "entity_id": "light.lounge",
+              "data": {},
+              "reason": "Occupancy is supported by the camera frame, motion sensor is on, ambient light is below 40, and the light is off.",
+              "evidence_ids": [
+                "09a634e3dc82c5846a9a5dd2:frame:lounge",
+                "device:binary_sensor.motion_lounge",
+                "device:sensor.ambient_lux"
+              ]
+            }
+          ],
+          "noop": false
+        },
+        "metrics": {
+          "latency_s": 17.568930168636143,
+          "preprocess_s": 0.2006927877664566,
+          "input_tokens": 2461,
+          "output_tokens": 317,
+          "model_id": "google/gemma-4-E4B-it",
+          "adapter": null,
+          "adapter_merged": false,
+          "peak_allocated_gb": 15.256264686584473,
+          "context_mode": "bounded_window"
+        }
+      }
+    },
+    {
+      "variant": "empty-prior-state",
+      "request_bytes": 2513,
+      "request_sha256": "0a0a53a833f234869401a11cf7cc6a8925bb4c105fbeae8b06f8cbf0f83df3de",
+      "response_bytes": 148,
+      "response_sha256": "476551941ebddac755f1dddbcc3b08375dc4bf90d2cf6462d2c6f036a2f6959c",
+      "status_code": 422,
+      "elapsed_s": 12.41724720800994,
+      "response": {
+        "detail": "model did not return a valid grounded Decision: model cited evidence outside the current window: 09a634e3dc82c5846a9a5dd2:device_states"
+      }
+    }
+  ],
+  "finding": "With identical original HA readback, media, policy and old server prompt, duplicated current device facts in prior memory returned200 with valid evidence citations; empty prior memory returned422 because the model cited <window_id>:device_states, which is not a valid evidence ID.",
+  "interpretation": "Device fact memory supplied explicit device:<entity> evidence IDs that the old prompt did not explain. This controlled pair supports the missing-instruction diagnosis. Current telemetry must remain separate from prior memory; the prompt should explain device evidence IDs.",
+  "server_pid": 1533,
+  "prompt_sha256": "f8f3d9dce0e6b6922b21d70d0c9c80d452b60de382d7e5b218083bb1c144e03c",
+  "request_difference": "Only state changed:10 current device facts versus an empty mapping. All other request fields identical."
+}

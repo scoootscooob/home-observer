@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "complete": true,
+  "dataset": "EPIC-KITCHENS-100 bounded physical temporal pilot",
+  "repo_id": "lightly-ai/epic-kitchens-100-clips",
+  "revision": "e1739df818cbfb7e528fb1ef5005dbb51e96aacd",
+  "access": "Public unauthenticated Hugging Face SDK",
+  "license": "CC-BY-NC-4.0",
+  "license_path": "sources/license.txt",
+  "official_annotations": {
+    "url": "https://github.com/epic-kitchens/epic-kitchens-100-annotations",
+    "revision": "ea8b40457a400c3fffa1c7f406ef3dc169cc2522",
+    "sha256": {
+      "train": "a3a7ef2e397bd8af12bd0496b09d61b1f2c1f3f6e1726fa86af50a27f4855e87",
+      "validation": "35f7932ba0a1127a96cac215a98d35398946f343e3cea9ad6688ed17eee9d75d"
+    },
+    "mirror_byte_identical_verified": true
+  },
+  "preparer_sha256": "1574fdf48821867592cda7640d4cb05d6e43479dd64d57e1760c65331fe53743",
+  "seed": "epic-temporal-v1 hash ordering",
+  "split_policy": "Fixed participant-disjoint custom split; not the official benchmark split",
+  "split_participants": {
+    "train": [
+      "P01",
+      "P02",
+      "P04",
+      "P06"
+    ],
+    "validation": [
+      "P11"
+    ],
+    "test": [
+      "P03"
+    ]
+  },
+  "counts": {
+    "train": 64,
+    "validation": 16,
+    "test": 16
+  },
+  "recordings": {
+    "train": [
+      "P01_103",
+      "P01_104",
+      "P01_105",
+      "P01_108",
+      "P01_109",
+      "P02_104",
+      "P02_108",
+      "P02_115",
+      "P02_118",
+      "P02_120",
+      "P02_122",
+      "P02_123",
+      "P02_129",
+      "P02_130",
+      "P02_131",
+      "P02_133",
+      "P02_135",
+      "P04_101",
+      "P04_104",
+      "P04_107",
+      "P04_109",
+      "P04_110",
+      "P04_113",
+      "P04_115",
+      "P04_119",
+      "P04_120",
+      "P06_101",
+      "P06_102",
+      "P06_105",
+      "P06_107",
+      "P06_108",
+      "P06_113"
+    ],
+    "validation": [
+      "P11_101",
+      "P11_102",
+      "P11_103",
+      "P11_104",
+      "P11_107",
+      "P11_109"
+    ],
+    "test": [
+      "P03_101",
+      "P03_102",
+      "P03_106",
+      "P03_107",
+      "P03_109",
+      "P03_117",
+      "P03_119",
+      "P03_120",
+      "P03_123"
+    ]
+  },
+  "interaction_families": {
+    "train": {
+      "pickup": 16,
+      "placement": 16,
+      "opening": 16,
+      "closing": 16
+    },
+    "validation": {
+      "pickup": 4,
+      "placement": 4,
+      "opening": 4,
+      "closing": 4
+    },
+    "test": {
+      "pickup": 4,
+      "placement": 4,
+      "opening": 4,
+      "closing": 4
+    }
+  },
+  "frames_per_clip": 8,
+  "download_bytes": 48168694,
+  "download_budget_bytes": 200000000,
+  "output_bytes_before_manifest": 94176623,
+  "source_video_seconds": 145.76000000000005,
+  "files": {
+    "train.jsonl": "4ac42a8ca36a607852193f444d88d29c27fae3fc11a09e9e97d14c757a02122c",
+    "validation.jsonl": "2b1373d0ab7e9702df936249c721a8daddd8d9c4325f48fee952bb9709f221a2",
+    "test.jsonl": "0113de6db55c1df51103b5fc6d5be92afaf5491d80df7b6ab68651940f6be960"
+  },
+  "coverage": {
+    "positive_action_trimmed_clips_only": true,
+    "exhaustive": false,
+    "verified_home_ids": false,
+    "false_events_per_hour_supported": false,
+    "supports_free_stream_temporal_localization": false,
+    "unlabeled_absence_is_negative": false
+  },
+  "preserved_baseline": true,
+  "no_home_assistant_training_fields": true
+}

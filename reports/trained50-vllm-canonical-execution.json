@@ -1,0 +1,61 @@
+{
+  "engine_health": {
+    "status": "ready",
+    "model_id": "google/gemma-4-E4B-it",
+    "model_revision": "ee0ef6023621cff504d758262d4e04895a5af4a2",
+    "adapter_configured": true,
+    "inference_backend": "VLLMModel",
+    "schema_constraints": true,
+    "schema_contract": "executor_arguments_v3",
+    "brightness_enabled": false,
+    "decision_field_order": "actions-first",
+    "model_identity_source": "deployment_configuration",
+    "context_mode": "bounded_window"
+  },
+  "steps": [
+    {
+      "command": [
+        "scripts/evaluate_fixed_remote.py",
+        "--endpoint",
+        "http://127.0.0.1:18080",
+        "--output",
+        "reports/trained50-vllm-canonical-fixed8"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 37.78189492225647,
+      "log": "/Users/scottfan/Documents/Codex/2026-09-15/do/work/trained50-vllm-canonical-check-0.log"
+    },
+    {
+      "command": [
+        "scripts/verify_learned_ha.py",
+        "--endpoint",
+        "http://127.0.0.1:18080",
+        "--policy",
+        "data/mixed-v2/policy.json",
+        "--output",
+        "reports/learned-home-assistant-trained50-vllm-canonical"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 28.73868727684021,
+      "log": "/Users/scottfan/Documents/Codex/2026-09-15/do/work/trained50-vllm-canonical-check-1.log"
+    },
+    {
+      "command": [
+        "scripts/run_live_demo.py",
+        "--endpoint",
+        "http://127.0.0.1:18080",
+        "--sources",
+        "/Users/scottfan/Documents/Codex/2026-09-15/do/work/live-distinct-inputs/sources.json",
+        "--audio",
+        "/Users/scottfan/Documents/Codex/2026-09-15/do/work/live-distinct-inputs/kitchen-offset-0s.mp4",
+        "--duration",
+        "60",
+        "--output",
+        "reports/live-home-assistant-trained50-vllm-canonical"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 61.93254780769348,
+      "log": "/Users/scottfan/Documents/Codex/2026-09-15/do/work/trained50-vllm-canonical-check-2.log"
+    }
+  ]
+}

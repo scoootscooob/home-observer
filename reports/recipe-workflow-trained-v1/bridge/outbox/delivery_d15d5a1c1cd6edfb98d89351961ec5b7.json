@@ -1,0 +1,34 @@
+{
+  "delivery_id": "delivery_d15d5a1c1cd6edfb98d89351961ec5b7",
+  "topic": "physical.event",
+  "payload": {
+    "confidence": 0.9,
+    "description": "pick up bowl from counter",
+    "ended_at": 1789497575.099966,
+    "event_available_at": 1789497587.224066,
+    "event_id": "pevt_118a138400114fb28dfb78e5aed887b7",
+    "kind": "pick-up",
+    "object_label": "bowl",
+    "origin": "learned",
+    "post_evidence_ids": [
+      "recipe:8"
+    ],
+    "pre_evidence_ids": [
+      "recipe:1"
+    ],
+    "received_at": 1789497587.225466,
+    "source_event_id": "pick-up-bowl-from-counter-608.99-609.13",
+    "started_at": 1789497574.959966,
+    "subject_ids": [
+      "phys_90534c9232004643bd8a6d61aa3d3754"
+    ],
+    "uncertainty": "Approximate image box around nested bowls. Count, persistent identity, and calibrated confidence are not established.",
+    "window_id": "clip_dc6dae3031f8f2182ac2fa7f"
+  },
+  "payload_sha256": "6f86f66a5de0677aecb217f5d0fdcf20c7603d07d95f2b7b2784a950aff9abed",
+  "created_at": 1789497587.225466,
+  "attempt": 6,
+  "lease_token": "d48103e4c5a14b2ea13035917b0858bd",
+  "delivered_at": 1789497587.225832,
+  "transport_delivered_at": 1789497649.2676039
+}

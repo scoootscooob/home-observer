@@ -1,0 +1,65 @@
+{
+  "elapsed_s": 63.317281917028595,
+  "model_windows": 21,
+  "actual_windows_per_s": 0.3316630051731934,
+  "accepted_windows": 21,
+  "rejected_windows": 0,
+  "uncertain_action_windows": 0,
+  "accepted_windows_per_s": 0.3316630051731934,
+  "requested_windows_per_s": 1.0,
+  "errors": [],
+  "error_count": 0,
+  "errors_retained_limit": 100,
+  "snapshot_retention": {
+    "retained_completed_windows": 8,
+    "limit": 8,
+    "active_windows": 0,
+    "expired_windows": 13,
+    "scope": "Snapshot media from this invocation; text audit logs and older runs are retained separately."
+  },
+  "cameras": {
+    "kitchen": {
+      "captured": 125,
+      "model_sampled": 21,
+      "not_model_sampled": 104,
+      "sample_events": 21,
+      "capture_error": null
+    },
+    "entry": {
+      "captured": 125,
+      "model_sampled": 21,
+      "not_model_sampled": 104,
+      "sample_events": 21,
+      "capture_error": null
+    },
+    "lounge": {
+      "captured": 125,
+      "model_sampled": 21,
+      "not_model_sampled": 104,
+      "sample_events": 21,
+      "capture_error": null
+    },
+    "garage": {
+      "captured": 125,
+      "model_sampled": 21,
+      "not_model_sampled": 104,
+      "sample_events": 21,
+      "capture_error": null
+    }
+  },
+  "microphone": {
+    "captured_chunks": 31,
+    "capture_error": null
+  },
+  "journal": {
+    "windows": {
+      "complete": 21
+    },
+    "actions": {
+      "complete": 1
+    },
+    "events": 35,
+    "facts": 12
+  },
+  "scope": "Continuous capture with latest-frame model sampling. Captured frames omitted by the model are counted; no full-rate awareness claim."
+}

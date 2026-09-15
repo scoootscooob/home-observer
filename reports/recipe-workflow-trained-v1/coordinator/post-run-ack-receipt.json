@@ -1,0 +1,197 @@
+{
+  "started_at": 1789497733.329385,
+  "finished_at": 1789497733.339242,
+  "scope": "Post-run processing of actual frontier ACKs only; no capture, inference, device send, or physical-outcome inference performed. Original stream-report shutdown snapshot is preserved.",
+  "acknowledgements_processed": 8,
+  "accepted_commands": [
+    {
+      "command_id": "stage2-runpod-ack-2d345541ee5d77465f2e7660d99f31ce",
+      "coordinator_id": "/root/runpod_impl",
+      "accepted_at": 1789497733.329386,
+      "result": {
+        "acknowledged": true,
+        "already_acknowledged": false
+      }
+    },
+    {
+      "command_id": "stage2-runpod-ack-3187bc6c608b9cd5a1f01d35750e8cfb",
+      "coordinator_id": "/root/runpod_impl",
+      "accepted_at": 1789497733.329386,
+      "result": {
+        "acknowledged": true,
+        "already_acknowledged": false
+      }
+    },
+    {
+      "command_id": "stage2-runpod-ack-805a67a8be1b8c1f34059eecd539779c",
+      "coordinator_id": "/root/runpod_impl",
+      "accepted_at": 1789497733.329386,
+      "result": {
+        "acknowledged": true,
+        "already_acknowledged": false
+      }
+    },
+    {
+      "command_id": "stage2-runpod-ack-98eca00c2fddea44a4ce6062b9517af0",
+      "coordinator_id": "/root/runpod_impl",
+      "accepted_at": 1789497733.329386,
+      "result": {
+        "acknowledged": true,
+        "already_acknowledged": false
+      }
+    },
+    {
+      "command_id": "stage2-runpod-ack-b20a4925d2c0c0b5fc029c0a308274ea",
+      "coordinator_id": "/root/runpod_impl",
+      "accepted_at": 1789497733.329386,
+      "result": {
+        "acknowledged": true,
+        "already_acknowledged": false
+      }
+    },
+    {
+      "command_id": "stage2-runpod-ack-b36453181cbc40c69331c968a8a14cdb",
+      "coordinator_id": "/root/runpod_impl",
+      "accepted_at": 1789497733.329386,
+      "result": {
+        "acknowledged": true,
+        "already_acknowledged": false
+      }
+    },
+    {
+      "command_id": "stage2-runpod-ack-d15d5a1c1cd6edfb98d89351961ec5b7",
+      "coordinator_id": "/root/runpod_impl",
+      "accepted_at": 1789497733.329386,
+      "result": {
+        "acknowledged": true,
+        "already_acknowledged": false
+      }
+    },
+    {
+      "command_id": "stage2-runpod-ack-e7fabffb9e738e081acf8f3fd57ab8ae",
+      "coordinator_id": "/root/runpod_impl",
+      "accepted_at": 1789497733.329386,
+      "result": {
+        "acknowledged": true,
+        "already_acknowledged": false
+      }
+    }
+  ],
+  "watch": {
+    "watch_id": "recipe-bowls-movement-cue-1",
+    "digest": "292d8b52d376da6ffaa47f81e3867bf4e9c64174f6dbec4a71b71d37be0bd70b",
+    "status": "verified",
+    "spec": {
+      "condition": {
+        "kind": "motion_started",
+        "max_gap_s": 0.5,
+        "min_confidence": 0.5,
+        "min_duration_s": 0.0,
+        "object_label": "bowl",
+        "origin": "geometric",
+        "reset_kinds": [],
+        "subject_ids": [],
+        "type": "event"
+      },
+      "context": {
+        "commitment_id": "recipe-prep-lift-bowls",
+        "coordinator_id": "/root/frontier_coordinator",
+        "source_ref": "configs/recipe-workflow/digital-context.json",
+        "text": "Recipe preparation: lift the nested mixing bowls from the worktop. Give an immediate visual cue when the observed bowls begin moving, then verify the pickup from the physical sequence before marking the step complete."
+      },
+      "created_at": 1789496289.351596,
+      "deadline_at": null,
+      "max_event_age_s": 1.0,
+      "max_responses": 1,
+      "not_before": null,
+      "outcome": null,
+      "response_deadline_s": 1.0,
+      "response_id": "recipe-movement-cue",
+      "ttl_s": 3600.0,
+      "watch_id": "recipe-bowls-movement-cue-1"
+    },
+    "response": {
+      "approval_ref": "User authorized end-to-end recipe demonstration; isolated Home Assistant test light, local response registry.",
+      "data": {},
+      "domain": "light",
+      "ha_entity_id": "light.kitchen",
+      "kind": "ha_service",
+      "message": "Bowl movement detected; checking the recipe step.",
+      "response_id": "recipe-movement-cue",
+      "service": "turn_on"
+    },
+    "progress": {
+      "candidate_end": 1789497575.0399659,
+      "candidate_key": "[\"phys_90534c9232004643bd8a6d61aa3d3754\"]",
+      "candidate_observed_s": 0.019999980926513672,
+      "candidate_start": 1789497575.019966,
+      "eligible_at": 1789497575.0399659,
+      "event_available_at": 1789497575.150424,
+      "event_id": "pevt_6502879aa41a4be08addab31be2424cf",
+      "event_source_ended_at": 1789497575.0399659,
+      "event_source_started_at": 1789497575.019966,
+      "evidence_ids": [
+        "recipe:4",
+        "recipe:5"
+      ],
+      "matched_at": 1789497575.160733,
+      "response_key": "response_a54609eed883620f1f8955539d365698",
+      "response_reserved_at": 1789497575.160733,
+      "response_sent_at": 1789497575.162482,
+      "response_timely": true,
+      "response_verified_at": 1789497575.213751,
+      "verification_kind": "ha_state_readback"
+    },
+    "execution": {
+      "response_key": "response_a54609eed883620f1f8955539d365698",
+      "watch_id": "recipe-bowls-movement-cue-1",
+      "status": "verified",
+      "reserved_at": 1789497575.160733,
+      "sent_at": 1789497575.162482,
+      "verified_at": 1789497575.213751,
+      "result": {
+        "action_id": "response_a54609eed883620f1f8955539d365698",
+        "attributes": {
+          "color_mode": "onoff",
+          "friendly_name": "Kitchen",
+          "supported_color_modes": [
+            "onoff"
+          ],
+          "supported_features": 0
+        },
+        "entity_id": "light.kitchen",
+        "simulated": false,
+        "state": "on",
+        "verification_latency_s": 0.002306167036294937,
+        "verified": true
+      }
+    },
+    "clocks": {
+      "eligible_at": 1789497575.0399659,
+      "event_source_started_at": 1789497575.019966,
+      "event_source_ended_at": 1789497575.0399659,
+      "event_available_at": 1789497575.150424,
+      "matched_at": 1789497575.160733,
+      "response_reserved_at": 1789497575.160733,
+      "response_queued_at": null,
+      "response_sent_at": 1789497575.162482,
+      "response_verified_at": 1789497575.213751,
+      "outcome_source_ended_at": null,
+      "outcome_available_at": null,
+      "outcome_verified_at": null,
+      "event_delivered_at": 1789497575.2144651,
+      "event_acked_at": 1789497733.329386,
+      "outcome_delivered_at": null,
+      "outcome_acked_at": null
+    },
+    "latencies_s": {
+      "source_to_available": 0.1104581356048584,
+      "available_to_match": 0.010308980941772461,
+      "source_to_delivery": 0.1744992733001709,
+      "source_to_response": 0.12251615524291992,
+      "source_to_verified_response": 0.17378520965576172,
+      "response_to_verified_outcome": null
+    }
+  },
+  "original_shutdown_report_sha256": "e2498867b215bbf26766a608b2cb2bcba6a395b192c9bf5a6c21ff84c01c50f6"
+}

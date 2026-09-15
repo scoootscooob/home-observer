@@ -1,0 +1,48 @@
+{
+  "reviewer": "Codex assistant visual inspection",
+  "sample_indices": [
+    0,
+    11,
+    22,
+    33,
+    44,
+    55,
+    66,
+    77
+  ],
+  "independent_tracking_ground_truth": false,
+  "semantic_annotation_used_for_tracking": false,
+  "assessment": {
+    "CSRT": [
+      "box contains partly visible target",
+      "box contains partly visible target",
+      "box contains partly visible target",
+      "box contains partly visible target",
+      "box contains partly visible target",
+      "box contains partly visible target",
+      "only target rim visible at lower edge; localization/identity uncertain",
+      "target out of view; box has drifted to cutting board while API reports success"
+    ],
+    "KCF": [
+      "box contains partly visible target",
+      "box contains partly visible target",
+      "box contains partly visible target",
+      "box contains partly visible target",
+      "box contains partly visible target",
+      "box contains partly visible target",
+      "API failure as target approaches view boundary",
+      "API failure; target not tracked"
+    ],
+    "MIL": [
+      "initial supplied target box",
+      "box already displaced above target, covers background",
+      "box on counter/cabinet edge; target largely outside box",
+      "box on background; not reliable bowl localization",
+      "box on background; not reliable bowl localization",
+      "box on background; not reliable bowl localization",
+      "box on background",
+      "box on cooker/background despite API success"
+    ]
+  },
+  "decision": "Do not promote any single tested tracker as robust fullclip bowl tracking. CSRT supports a bounded visible portion only; API success is not confidence. KCF loss is useful failure evidence but no general detector guarantee. Original failure remains included."
+}

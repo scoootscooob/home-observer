@@ -1,0 +1,152 @@
+{
+  "purpose": "Human selection of one positive pickup and one negative handling-without-pickup demonstration from the test split; no model output was consulted",
+  "test_videos": [
+    "P28_07",
+    "P30_01",
+    "P22_105",
+    "P27_03"
+  ],
+  "noun_set": [
+    "bowl",
+    "cup",
+    "mug",
+    "pan",
+    "pot",
+    "plate",
+    "jar",
+    "bottle",
+    "container",
+    "glass",
+    "lid",
+    "board"
+  ],
+  "noun_match_rule": "noun equals a listed noun, or its head before ':' does (e.g. board:chopping)",
+  "positive_verbs": [
+    "take",
+    "pick-up"
+  ],
+  "negative_verbs": [
+    "wash",
+    "stir",
+    "move",
+    "wipe",
+    "cut",
+    "mix",
+    "shake",
+    "scoop"
+  ],
+  "positive_candidates": [
+    {
+      "narration_id": "P30_01_27",
+      "video_id": "P30_01",
+      "participant_id": "P30",
+      "narration": "take chopping board",
+      "verb": "take",
+      "noun": "board:chopping",
+      "noun_head": "board",
+      "noun_match": "head",
+      "start_timestamp": "00:01:05.05",
+      "stop_timestamp": "00:01:05.75",
+      "start_s": 65.05,
+      "stop_s": 65.75,
+      "duration_s": 0.7,
+      "target_row_ids": [
+        "cont_7c6c01e47a2e6529a125",
+        "cont_f08f55e162f33e9d678a"
+      ],
+      "overlapping_unselected_row_ids": []
+    },
+    {
+      "narration_id": "P27_03_7",
+      "video_id": "P27_03",
+      "participant_id": "P27",
+      "narration": "take lid",
+      "verb": "take",
+      "noun": "lid",
+      "noun_head": "lid",
+      "noun_match": "exact",
+      "start_timestamp": "00:00:47.68",
+      "stop_timestamp": "00:00:49.90",
+      "start_s": 47.68,
+      "stop_s": 49.9,
+      "duration_s": 2.22,
+      "target_row_ids": [
+        "cont_625a64c60f89b27f4cae",
+        "cont_64cd9c4abc5ad77fbef7"
+      ],
+      "overlapping_unselected_row_ids": [
+        "cont_3a898c3ec01a83712e34",
+        "cont_16f5a588bcecde19e1e5"
+      ]
+    },
+    {
+      "narration_id": "P27_03_9",
+      "video_id": "P27_03",
+      "participant_id": "P27",
+      "narration": "take pan",
+      "verb": "take",
+      "noun": "pan",
+      "noun_head": "pan",
+      "noun_match": "exact",
+      "start_timestamp": "00:00:56.54",
+      "stop_timestamp": "00:00:57.99",
+      "start_s": 56.54,
+      "stop_s": 57.99,
+      "duration_s": 1.45,
+      "target_row_ids": [
+        "cont_985ef5791a01097e5fdc",
+        "cont_bed6cf9b7a4276e5092c"
+      ],
+      "overlapping_unselected_row_ids": [
+        "cont_ff958e2dd6dbaa2d58f6"
+      ]
+    }
+  ],
+  "negative_candidates": [
+    {
+      "narration_id": "P22_105_12",
+      "video_id": "P22_105",
+      "participant_id": "P22",
+      "narration": "move plate",
+      "verb": "move",
+      "noun": "plate",
+      "noun_head": "plate",
+      "noun_match": "exact",
+      "start_timestamp": "00:00:57.95",
+      "stop_timestamp": "00:00:59.00",
+      "start_s": 57.95,
+      "stop_s": 59.0,
+      "duration_s": 1.05,
+      "target_row_ids": [
+        "cont_1fa00f5a7c38f31ba02d",
+        "cont_9583676bb0985928d201"
+      ],
+      "overlapping_unselected_row_ids": [
+        "cont_1e140dd6ada76f03a798"
+      ]
+    },
+    {
+      "narration_id": "P22_105_16",
+      "video_id": "P22_105",
+      "participant_id": "P22",
+      "narration": "move plate",
+      "verb": "move",
+      "noun": "plate",
+      "noun_head": "plate",
+      "noun_match": "exact",
+      "start_timestamp": "00:01:04.27",
+      "stop_timestamp": "00:01:05.25",
+      "start_s": 64.27,
+      "stop_s": 65.25,
+      "duration_s": 0.98,
+      "target_row_ids": [
+        "cont_f5467337e25f004d0a96",
+        "cont_efe46be83c1a1807e9cb"
+      ],
+      "overlapping_unselected_row_ids": [
+        "cont_b4343cce20c2cd431099"
+      ]
+    }
+  ],
+  "time_basis": "recording_relative_seconds"
+}

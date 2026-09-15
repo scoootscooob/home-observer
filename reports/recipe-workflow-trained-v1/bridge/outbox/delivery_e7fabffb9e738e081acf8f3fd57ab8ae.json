@@ -1,0 +1,200 @@
+{
+  "delivery_id": "delivery_e7fabffb9e738e081acf8f3fd57ab8ae",
+  "topic": "perception.completed",
+  "payload": {
+    "clock_mapping": {
+      "scale": 1.0,
+      "source_origin": 608.99,
+      "wall_origin": 1789497574.959966
+    },
+    "emitted_at": 1789497587.224066,
+    "full_sequence_frames": 8,
+    "full_sequence_manifest": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/recipe-workflow-trained-v1/sequences/clip_dc6dae3031f8f2182ac2fa7f/manifest.json",
+    "result": {
+      "decision": {
+        "events": [
+          {
+            "confidence": 0.9,
+            "description": "pick up bowl from counter",
+            "ended_at": 609.13,
+            "event_id": "pick-up-bowl-from-counter-608.99-609.13",
+            "kind": "pick-up",
+            "object_label": "bowl",
+            "post_evidence_ids": [
+              "recipe:8"
+            ],
+            "pre_evidence_ids": [
+              "recipe:1"
+            ],
+            "started_at": 608.99,
+            "subject_ids": [
+              "phys_90534c9232004643bd8a6d61aa3d3754"
+            ],
+            "uncertainty": "Approximate image box around nested bowls. Count, persistent identity, and calibrated confidence are not established."
+          }
+        ],
+        "objects": [
+          {
+            "attributes": {
+              "bootstrap_provenance": "Assistant visually selected initial box on the first frame of real clip030c003244925eb728dd; this is an explicit demonstration bootstrap, not a learned detection or human ground-truth annotation."
+            },
+            "box": {
+              "x_max": 0.67096,
+              "x_min": 0.373536,
+              "y_max": 0.68125,
+              "y_min": 0.139583
+            },
+            "confidence": 0.9,
+            "detection_id": "det_2",
+            "evidence_ids": [
+              "recipe:1"
+            ],
+            "frame_evidence_id": "recipe:1",
+            "label": "bowl",
+            "location": {
+              "area": null,
+              "camera_id": "recipe"
+            },
+            "timestamp": 608.99,
+            "track_id": "phys_90534c9232004643bd8a6d61aa3d3754",
+            "uncertainty": "Approximate image box around nested bowls. Count, persistent identity, and calibrated confidence are not established.",
+            "visibility": "partially_occluded"
+          }
+        ],
+        "observations": [
+          {
+            "attribute": "pick-up",
+            "confidence": 0.9,
+            "evidence_ids": [
+              "recipe:8"
+            ],
+            "observation_id": "pick-up-bowl-from-counter-608.99-609.13",
+            "observed_at": 609.13,
+            "subject_id": "phys_90534c9232004643bd8a6d61aa3d3754",
+            "uncertainty": "Approximate image box around nested bowls. Count, persistent identity, and calibrated confidence are not established.",
+            "value": {
+              "pick-up": "bowl"
+            }
+          }
+        ],
+        "summary": "pick up bowl from counter"
+      },
+      "error": null,
+      "metrics": {
+        "adapter": "/workspace/home-observer-physical/artifacts/physical-training-v1/adapter",
+        "adapter_merged": false,
+        "backend": "vllm",
+        "context_sha256": "500f07bb34eb913e6fddc6ba3ff8a40a134f4511ea78fe6bcd3eaee9e3d8052a",
+        "decision_field_order": [
+          "events",
+          "objects",
+          "observations",
+          "summary"
+        ],
+        "engine_reported_model": "physical-trained",
+        "engine_url": "http://127.0.0.1:8001/v1",
+        "finish_reason": "stop",
+        "frame_evidence_ids": [
+          "recipe:1",
+          "recipe:2",
+          "recipe:3",
+          "recipe:4",
+          "recipe:5",
+          "recipe:6",
+          "recipe:7",
+          "recipe:8"
+        ],
+        "gpu_memory_available": false,
+        "greedy": true,
+        "input_tokens": 3619,
+        "latency_s": 10.743232937064022,
+        "max_items_per_list": 2,
+        "model_id": "google/gemma-4-E4B-it",
+        "model_revision_source": "deployment_config_not_remote_attestation",
+        "native_batch_size": 1,
+        "output_tokens": 565,
+        "preprocess_s": 0.08171579916961491,
+        "revision": "ee0ef6023621cff504d758262d4e04895a5af4a2",
+        "sampled_frames": 8,
+        "schema_constraints": true,
+        "schema_contract": "physical_events_first_bounded_v3",
+        "schema_sha256": "8221682cece2c7359449531ffa2721e4a786ed8edb437db4dfddd7639b052740",
+        "served_model": "physical-trained",
+        "structured_decoding": true,
+        "system_prompt_sha256": "ca42695799facd6f81bcb4c9875120771e67d79151ae8f30c3c8b6c55e1ac33f",
+        "task": "physical_perception",
+        "token_usage": {
+          "completion_tokens": 565,
+          "completion_tokens_details": null,
+          "prompt_tokens": 3619,
+          "prompt_tokens_details": null,
+          "total_tokens": 4184
+        }
+      },
+      "raw_output": "{\"events\":[{\"kind\":\"pick-up\",\"object_label\":\"bowl\",\"started_at\":608.99,\"ended_at\":609.13,\"description\":\"pick up bowl from counter\",\"confidence\":0.9,\"uncertainty\":\"Approximate image box around nested bowls. Count, persistent identity, and calibrated confidence are not established.\",\"event_id\":\"pick-up-bowl-from-counter-608.99-609.13\",\"subject_ids\":[\"phys_90534c9232004643bd8a6d61aa3d3754\"],\"pre_evidence_ids\":[\"recipe:1\"],\"post_evidence_ids\":[\"recipe:8\"]}]\n, \"objects\":[{\"confidence\":0.9,\"uncertainty\":\"Approximate image box around nested bowls. Count, persistent identity, and calibrated confidence are not established.\",\"detection_id\":\"det_2\",\"track_id\":\"phys_90534c9232004643bd8a6d61aa3d3754\",\"label\":\"bowl\",\"box\":{\"x_min\":0.373536,\"y_min\":0.139583,\"x_max\":0.67096,\"y_max\":0.68125},\"location\":{\"camera_id\":\"recipe\"},\"timestamp\":608.99000000000001,\"frame_evidence_id\":\"recipe:1\",\"visibility\":\"partially_occluded\",\"evidence_ids\":[\"recipe:1\"]\n    ,\"attributes\":{\"bootstrap_provenance\":\"Assistant visually selected initial box on the first frame of real clip030c003244925eb728dd; this is an explicit demonstration bootstrap, not a learned detection or human ground-truth annotation.\"}}\n  ]\n  ,\"observations\":[{\"confidence\":0.9,\"uncertainty\":\"Approximate image box around nested bowls. Count, persistent identity, and calibrated confidence are not established.\",\"observation_id\":\"pick-up-bowl-from-counter-608.99-609.13\",\"subject_id\":\"phys_90534c9232004643bd8a6d61aa3d3754\",\"attribute\":\"pick-up\",\"value\":{\"pick-up\":\"bowl\"},\"observed_at\":609.13,\"evidence_ids\":[\"recipe:8\"]}]\n  ,\"summary\":\"pick up bowl from counter\"}"
+    },
+    "sampled_frames": 8,
+    "window": {
+      "audio": [],
+      "clips": [
+        {
+          "camera_id": "recipe",
+          "clip_id": "clip_dc6dae3031f8f2182ac2fa7f_camera",
+          "ended_at": 609.13,
+          "frames": [
+            {
+              "evidence_id": "recipe:1",
+              "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/recipe-workflow-trained-v1/sequences/clip_dc6dae3031f8f2182ac2fa7f/000000.jpg",
+              "timestamp": 608.99
+            },
+            {
+              "evidence_id": "recipe:2",
+              "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/recipe-workflow-trained-v1/sequences/clip_dc6dae3031f8f2182ac2fa7f/000001.jpg",
+              "timestamp": 609.01
+            },
+            {
+              "evidence_id": "recipe:3",
+              "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/recipe-workflow-trained-v1/sequences/clip_dc6dae3031f8f2182ac2fa7f/000002.jpg",
+              "timestamp": 609.03
+            },
+            {
+              "evidence_id": "recipe:4",
+              "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/recipe-workflow-trained-v1/sequences/clip_dc6dae3031f8f2182ac2fa7f/000003.jpg",
+              "timestamp": 609.05
+            },
+            {
+              "evidence_id": "recipe:5",
+              "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/recipe-workflow-trained-v1/sequences/clip_dc6dae3031f8f2182ac2fa7f/000004.jpg",
+              "timestamp": 609.07
+            },
+            {
+              "evidence_id": "recipe:6",
+              "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/recipe-workflow-trained-v1/sequences/clip_dc6dae3031f8f2182ac2fa7f/000005.jpg",
+              "timestamp": 609.09
+            },
+            {
+              "evidence_id": "recipe:7",
+              "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/recipe-workflow-trained-v1/sequences/clip_dc6dae3031f8f2182ac2fa7f/000006.jpg",
+              "timestamp": 609.11
+            },
+            {
+              "evidence_id": "recipe:8",
+              "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/recipe-workflow-trained-v1/sequences/clip_dc6dae3031f8f2182ac2fa7f/000007.jpg",
+              "timestamp": 609.13
+            }
+          ],
+          "started_at": 608.99
+        }
+      ],
+      "ended_at": 609.13,
+      "started_at": 608.99,
+      "window_id": "clip_dc6dae3031f8f2182ac2fa7f"
+    }
+  },
+  "payload_sha256": "552fb6dbd4bf1bd5aa752c0f85762a92db4f8f933d67e2cf89329fec312df982",
+  "created_at": 1789497587.226828,
+  "attempt": 6,
+  "lease_token": "57f1e77a1db84b05a11a61494b3b8eca",
+  "delivered_at": 1789497587.2271109,
+  "transport_delivered_at": 1789497649.2676039
+}

@@ -1,0 +1,203 @@
+{
+  "seen_exports": [
+    "export_a281c9daf909f7d7503c2168adbbec44",
+    "export_13be7e65b78f5b13f988fbebb32428f2",
+    "export_3e96ce1a84eb9c53d2237ddc1fcb528a",
+    "export_d8bbe090d44d9e8c43334611778da0af",
+    "export_56eb388548ea5be8b1d417e8ecc05484",
+    "export_f334559a50a77cf13ec500630a9bb583",
+    "export_38213ed6df95fc1c7358c128f194d29d",
+    "export_dee47558213d25f051a724779af8b960",
+    "export_73ce0c5adae07e61aa7bb0e90abc953b",
+    "export_8ae4a72a63fc0211ab4bfa0074f6b966",
+    "export_9e8a2b1a2d03cbc15c39214947519c38",
+    "export_cf87e97abde7f26204f9ad0c86d242a4",
+    "export_088f1f83fa1f603207b502216a944c7f",
+    "export_d988646145fb3bd0d7e34a2907aeafb3",
+    "export_1f82c8eb30ba455e68beb6dc0515af69",
+    "export_86a983f567ab08d5f337c8532759feb4",
+    "export_3563aaa4ea857587308c51e0903df356",
+    "export_85ec228cada7c461eb0bced3c68f459e",
+    "export_52d6679c37631b59203d39798600c81f",
+    "export_0919b9e35a712c5108059e4ac2baba56",
+    "export_7f7e22c1dd20b7cfd8155ed82de17143",
+    "export_ed1b0f79bd77a8d2675eab1ab40d62e2"
+  ],
+  "acked_exports": [
+    "export_a281c9daf909f7d7503c2168adbbec44",
+    "export_13be7e65b78f5b13f988fbebb32428f2",
+    "export_3e96ce1a84eb9c53d2237ddc1fcb528a",
+    "export_d8bbe090d44d9e8c43334611778da0af",
+    "export_56eb388548ea5be8b1d417e8ecc05484",
+    "export_f334559a50a77cf13ec500630a9bb583",
+    "export_38213ed6df95fc1c7358c128f194d29d",
+    "export_dee47558213d25f051a724779af8b960",
+    "export_73ce0c5adae07e61aa7bb0e90abc953b",
+    "export_8ae4a72a63fc0211ab4bfa0074f6b966",
+    "export_9e8a2b1a2d03cbc15c39214947519c38",
+    "export_cf87e97abde7f26204f9ad0c86d242a4",
+    "export_088f1f83fa1f603207b502216a944c7f",
+    "export_d988646145fb3bd0d7e34a2907aeafb3",
+    "export_1f82c8eb30ba455e68beb6dc0515af69",
+    "export_86a983f567ab08d5f337c8532759feb4",
+    "export_3563aaa4ea857587308c51e0903df356",
+    "export_85ec228cada7c461eb0bced3c68f459e",
+    "export_52d6679c37631b59203d39798600c81f",
+    "export_0919b9e35a712c5108059e4ac2baba56",
+    "export_7f7e22c1dd20b7cfd8155ed82de17143",
+    "export_ed1b0f79bd77a8d2675eab1ab40d62e2"
+  ],
+  "commands": [
+    {
+      "command_id": "cmd-watch-plate-motion-1",
+      "type": "create_watch",
+      "written_at": 1789508508.9024372
+    },
+    {
+      "command_id": "cmd-ack-watch-created-1",
+      "type": "ack_export",
+      "written_at": 1789508528.233244
+    },
+    {
+      "command_id": "cmd-ack-response-verified-1",
+      "type": "ack_export",
+      "written_at": 1789508528.233386
+    },
+    {
+      "command_id": "cmd-ack-watch-matched-1",
+      "type": "ack_export",
+      "written_at": 1789508528.2335842
+    },
+    {
+      "command_id": "cmd-ack-physical-event-1",
+      "type": "ack_export",
+      "written_at": 1789508528.233873
+    },
+    {
+      "command_id": "cmd-verify-pickup-1",
+      "type": "verify",
+      "written_at": 1789508528.234022
+    },
+    {
+      "command_id": "cmd-verify-clear-1",
+      "type": "verify",
+      "written_at": 1789508528.2344398
+    },
+    {
+      "command_id": "ack-56eb388548ea5be8-3",
+      "type": "ack_export",
+      "written_at": 1789508602.037333,
+      "auto": true
+    },
+    {
+      "command_id": "ack-f334559a50a77cf1-3",
+      "type": "ack_export",
+      "written_at": 1789508602.037513,
+      "auto": true
+    },
+    {
+      "command_id": "ack-38213ed6df95fc1c-3",
+      "type": "ack_export",
+      "written_at": 1789508602.037673,
+      "auto": true
+    },
+    {
+      "command_id": "ack-dee47558213d25f0-3",
+      "type": "ack_export",
+      "written_at": 1789508602.0378082,
+      "auto": true
+    },
+    {
+      "command_id": "ack-73ce0c5adae07e61-3",
+      "type": "ack_export",
+      "written_at": 1789508602.037961,
+      "auto": true
+    },
+    {
+      "command_id": "ack-8ae4a72a63fc0211-3",
+      "type": "ack_export",
+      "written_at": 1789508602.03809,
+      "auto": true
+    },
+    {
+      "command_id": "ack-9e8a2b1a2d03cbc1-3",
+      "type": "ack_export",
+      "written_at": 1789508602.038234,
+      "auto": true
+    },
+    {
+      "command_id": "ack-cf87e97abde7f262-3",
+      "type": "ack_export",
+      "written_at": 1789508602.038361,
+      "auto": true
+    },
+    {
+      "command_id": "ack-088f1f83fa1f6032-3",
+      "type": "ack_export",
+      "written_at": 1789508602.0384939,
+      "auto": true
+    },
+    {
+      "command_id": "ack-d988646145fb3bd0-3",
+      "type": "ack_export",
+      "written_at": 1789508602.038623,
+      "auto": true
+    },
+    {
+      "command_id": "ack-1f82c8eb30ba455e-4",
+      "type": "ack_export",
+      "written_at": 1789508664.103103,
+      "auto": true
+    },
+    {
+      "command_id": "ack-86a983f567ab08d5-4",
+      "type": "ack_export",
+      "written_at": 1789508664.103471,
+      "auto": true
+    },
+    {
+      "command_id": "ack-3563aaa4ea857587-4",
+      "type": "ack_export",
+      "written_at": 1789508664.103786,
+      "auto": true
+    },
+    {
+      "command_id": "ack-85ec228cada7c461-4",
+      "type": "ack_export",
+      "written_at": 1789508664.104067,
+      "auto": true
+    },
+    {
+      "command_id": "ack-52d6679c37631b59-4",
+      "type": "ack_export",
+      "written_at": 1789508664.104435,
+      "auto": true
+    },
+    {
+      "command_id": "ack-0919b9e35a712c51-4",
+      "type": "ack_export",
+      "written_at": 1789508664.1048179,
+      "auto": true
+    },
+    {
+      "command_id": "ack-7f7e22c1dd20b7cf-4",
+      "type": "ack_export",
+      "written_at": 1789508664.1049721,
+      "auto": true
+    },
+    {
+      "command_id": "ack-ed1b0f79bd77a8d2-4",
+      "type": "ack_export",
+      "written_at": 1789508664.105085,
+      "auto": true
+    }
+  ],
+  "turns": 4,
+  "assessment": {
+    "recipe_step_complete": false,
+    "pickup_verified": "unknown",
+    "rationale": "Geometric motion_started on plate phys_7fe8 matched the watch and the cue response was verified, but a light cue and motion never prove a lift. Asked verifier for pickup_completed and clear_of_support; step stays pending until a confirmed verdict."
+  },
+  "started_at": 1789508496.571533,
+  "restarts": 0
+}

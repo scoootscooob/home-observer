@@ -1,0 +1,10 @@
+{
+  "command_id": "cmd-6-ack-perception-completed",
+  "coordinator_id": "sandboxed-frontier-1ec2a16050d1",
+  "accepted_at": 1789508993.3172832,
+  "outcome": {
+    "acknowledged": true,
+    "already_acknowledged": false,
+    "topic": "perception.completed"
+  }
+}

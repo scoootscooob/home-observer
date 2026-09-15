@@ -1,0 +1,401 @@
+{
+  "turn": 3,
+  "at": 1789508972.7894511,
+  "prompt_sha256": "77bf125bf3ce74b3e69849d4819fee3a4bff5b044631c47fcd2fb84a6009cfe9",
+  "prompt": {
+    "now": 1789508972.789,
+    "coordinator_id": "sandboxed-frontier-1ec2a16050d1",
+    "digital_context": {
+      "commitment_id": "recipe-cook-take-pan",
+      "text": "Recipe cooking: take the pan from the lower rack and lift it up to the hob. Give an immediate visual cue when the observed pan begins moving, then verify the pickup from local observation before marking the step complete.",
+      "source_ref": "Demonstration digital recipe instruction for the positive pan workflow; the footage contains the official narration 'take pan'.",
+      "source_clip": "data/continuous-v2-workflow/positive-take-pan-P27_03.mp4",
+      "response_registry": "configs/recipe-workflow/responses.json"
+    },
+    "approved_responses": [
+      {
+        "response_id": "recipe-movement-cue",
+        "kind": "ha_service",
+        "purpose": "Bowl movement detected; checking the recipe step."
+      }
+    ],
+    "exports_new": [
+      {
+        "created_at": 1789508966.868406,
+        "export_id": "export_70532f8bd06f8cddd87402b3dff3f3e2",
+        "export_sha256": "3ed20160ec059032f4640fe19cc0252723894194ccc5446a69f942bfad63afe9",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_b246a48c0abf883a488c8e22",
+          "available_at": 1789508966.856,
+          "category_in_vocabulary": true,
+          "confidence": 0.37,
+          "ended_at": 1789508966.779,
+          "event_id": "pevt_1e93c472c85b42cf9dee00362b4e481f",
+          "evidence_count": 2,
+          "kind": "motion_started",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "pan",
+          "origin": "geometric",
+          "started_at": 1789508966.696,
+          "subject_ids": [
+            "phys_6e6627def5b949ec858dea068e76c15d"
+          ],
+          "uncertainty_level": "high"
+        },
+        "schema_version": "home-observer.production-export/1",
+        "topic": "physical.event",
+        "attempt": 2,
+        "exported_at": 1789508968.879949
+      },
+      {
+        "created_at": 1789508966.898944,
+        "export_id": "export_435393e3e795b4cd41f99a3ce4c5c8ff",
+        "export_sha256": "dc57bc4be27cb25e9db08afeda2880ee9909fe9f53742a8b9169aa905ae00643",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_e6741d543b1ed30e54b626fd",
+          "available_at": 1789508966.888,
+          "category_in_vocabulary": true,
+          "confidence": 0.0,
+          "ended_at": 1789508966.813,
+          "event_id": "pevt_450a134152a34c34b4bd43eec2d1135f",
+          "evidence_count": 2,
+          "kind": "visibility_lost",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "pan",
+          "origin": "geometric",
+          "started_at": 1789508966.796,
+          "subject_ids": [
+            "phys_6e6627def5b949ec858dea068e76c15d"
+          ],
+          "uncertainty_level": "high"
+        },
+        "schema_version": "home-observer.production-export/1",
+        "topic": "physical.event",
+        "attempt": 2,
+        "exported_at": 1789508968.908704
+      },
+      {
+        "created_at": 1789508971.902481,
+        "export_id": "export_087ce0bc14ebd77c368dc5aaf78cd2e2",
+        "export_sha256": "cdbf7b048d6b30f83cc938f7e22f5a4c17f1fee26df436cafb55525120adbc45",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_ba2475ce609049bfa43ba613",
+          "available_at": 1789508971.889,
+          "category_in_vocabulary": true,
+          "confidence": 0.5,
+          "ended_at": 1789508963.576,
+          "event_id": "pevt_835c987af0c845d1bd34014795724029",
+          "evidence_count": 2,
+          "kind": "pick-up",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "pan",
+          "origin": "learned",
+          "started_at": 1789508963.459,
+          "subject_ids": [],
+          "uncertainty_level": "medium"
+        },
+        "schema_version": "home-observer.production-export/1",
+        "topic": "physical.event",
+        "attempt": 1,
+        "exported_at": 1789508971.9024808
+      },
+      {
+        "created_at": 1789508971.904243,
+        "export_id": "export_e96020687bd5633d2abd7eb49f6fb458",
+        "export_sha256": "2c818090e5daa81dcc8e3ef75bb9d5cec49d38607e28585fe38fde7468ece830",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_0503b16d94bd100d884d8892",
+          "emitted_at": 1789508971.889,
+          "events_accepted": 1,
+          "failure_class": null,
+          "full_sequence_frames": 8,
+          "inference_started_at": null,
+          "latency_s": 8.298,
+          "message_type": "perception_status",
+          "objects_accepted": 0,
+          "observations_accepted": 0,
+          "sampled_frames": 8,
+          "source_ended_at": 1789508963.576,
+          "source_started_at": 1789508963.459,
+          "status": "completed"
+        },
+        "schema_version": "home-observer.production-export/1",
+        "topic": "perception.completed",
+        "attempt": 1,
+        "exported_at": 1789508971.904243
+      }
+    ],
+    "exports_all_recent": [
+      {
+        "topic": "watch.created",
+        "export_id": "export_dcd093ca353aae69ea5aae8640b5bc40",
+        "created_at": 1789508963.398288
+      },
+      {
+        "topic": "physical.event",
+        "export_id": "export_70532f8bd06f8cddd87402b3dff3f3e2",
+        "created_at": 1789508966.868406
+      },
+      {
+        "topic": "physical.event",
+        "export_id": "export_435393e3e795b4cd41f99a3ce4c5c8ff",
+        "created_at": 1789508966.898944
+      },
+      {
+        "topic": "physical.event",
+        "export_id": "export_087ce0bc14ebd77c368dc5aaf78cd2e2",
+        "created_at": 1789508971.902481
+      },
+      {
+        "topic": "perception.completed",
+        "export_id": "export_e96020687bd5633d2abd7eb49f6fb458",
+        "created_at": 1789508971.904243
+      }
+    ],
+    "export_messages_recent": [
+      {
+        "export_id": "export_dcd093ca353aae69ea5aae8640b5bc40",
+        "topic": "watch.created",
+        "message": {
+          "audit_ref": "audit_b157bc3368be1b56e95f8ae1",
+          "commitment_id": "recipe-cook-take-pan",
+          "eligible_at": null,
+          "event_id": null,
+          "failure_class": null,
+          "matched_at": null,
+          "message_type": "watch_status",
+          "outcome_event_id": null,
+          "outcome_verified_at": null,
+          "readback_state": null,
+          "reported_at": 1789508963.398,
+          "response_id": "recipe-movement-cue",
+          "response_reserved_at": null,
+          "response_result": null,
+          "response_sent_at": null,
+          "response_timely": null,
+          "response_verified_at": null,
+          "status": "armed",
+          "verification_kind": null,
+          "watch_id": "watch.recipe-pan-motion-cue"
+        }
+      },
+      {
+        "export_id": "export_70532f8bd06f8cddd87402b3dff3f3e2",
+        "topic": "physical.event",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_b246a48c0abf883a488c8e22",
+          "available_at": 1789508966.856,
+          "category_in_vocabulary": true,
+          "confidence": 0.37,
+          "ended_at": 1789508966.779,
+          "event_id": "pevt_1e93c472c85b42cf9dee00362b4e481f",
+          "evidence_count": 2,
+          "kind": "motion_started",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "pan",
+          "origin": "geometric",
+          "started_at": 1789508966.696,
+          "subject_ids": [
+            "phys_6e6627def5b949ec858dea068e76c15d"
+          ],
+          "uncertainty_level": "high"
+        }
+      },
+      {
+        "export_id": "export_435393e3e795b4cd41f99a3ce4c5c8ff",
+        "topic": "physical.event",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_e6741d543b1ed30e54b626fd",
+          "available_at": 1789508966.888,
+          "category_in_vocabulary": true,
+          "confidence": 0.0,
+          "ended_at": 1789508966.813,
+          "event_id": "pevt_450a134152a34c34b4bd43eec2d1135f",
+          "evidence_count": 2,
+          "kind": "visibility_lost",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "pan",
+          "origin": "geometric",
+          "started_at": 1789508966.796,
+          "subject_ids": [
+            "phys_6e6627def5b949ec858dea068e76c15d"
+          ],
+          "uncertainty_level": "high"
+        }
+      },
+      {
+        "export_id": "export_087ce0bc14ebd77c368dc5aaf78cd2e2",
+        "topic": "physical.event",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_ba2475ce609049bfa43ba613",
+          "available_at": 1789508971.889,
+          "category_in_vocabulary": true,
+          "confidence": 0.5,
+          "ended_at": 1789508963.576,
+          "event_id": "pevt_835c987af0c845d1bd34014795724029",
+          "evidence_count": 2,
+          "kind": "pick-up",
+          "kind_in_vocabulary": true,
+          "message_type": "physical_event",
+          "object_category": "pan",
+          "origin": "learned",
+          "started_at": 1789508963.459,
+          "subject_ids": [],
+          "uncertainty_level": "medium"
+        }
+      },
+      {
+        "export_id": "export_e96020687bd5633d2abd7eb49f6fb458",
+        "topic": "perception.completed",
+        "message": {
+          "area": "kitchen",
+          "audit_ref": "audit_0503b16d94bd100d884d8892",
+          "emitted_at": 1789508971.889,
+          "events_accepted": 1,
+          "failure_class": null,
+          "full_sequence_frames": 8,
+          "inference_started_at": null,
+          "latency_s": 8.298,
+          "message_type": "perception_status",
+          "objects_accepted": 0,
+          "observations_accepted": 0,
+          "sampled_frames": 8,
+          "source_ended_at": 1789508963.576,
+          "source_started_at": 1789508963.459,
+          "status": "completed"
+        }
+      }
+    ],
+    "command_results": [
+      {
+        "command_id": "cmd-1-create-watch-pan-motion",
+        "coordinator_id": "sandboxed-frontier-1ec2a16050d1",
+        "accepted_at": 1789508963.3982878,
+        "outcome": {
+          "watch_id": "watch.recipe-pan-motion-cue",
+          "status": "armed"
+        }
+      },
+      {
+        "command_id": "cmd-2-ack-watch-created",
+        "coordinator_id": "sandboxed-frontier-1ec2a16050d1",
+        "accepted_at": 1789508971.7955,
+        "outcome": {
+          "acknowledged": true,
+          "already_acknowledged": false,
+          "topic": "watch.created"
+        }
+      }
+    ],
+    "rejected_commands": [],
+    "previous_assessment": {
+      "recipe_step_complete": false,
+      "pickup_verified": "unknown",
+      "rationale": "Only export is the watch.created confirmation (watch armed for the movement cue). No physical events and no phys_ track IDs yet, so no verify question can be asked. Step stays pending until a verification_result confirms pickup_completed or clear_of_support.",
+      "wait": true
+    },
+    "already_acknowledged": [
+      "export_dcd093ca353aae69ea5aae8640b5bc40"
+    ],
+    "turn": 3
+  },
+  "model_record": {
+    "model": "claude-opus-5",
+    "attempt": 1,
+    "latency_s": 20.518862009048462,
+    "usage": {
+      "input_tokens": 2,
+      "cache_creation_input_tokens": 5851,
+      "cache_read_input_tokens": 0,
+      "cache_creation": {
+        "ephemeral_5m_input_tokens": 0,
+        "ephemeral_1h_input_tokens": 5851
+      },
+      "output_tokens": 1201,
+      "output_tokens_details": {
+        "thinking_tokens": 251
+      },
+      "service_tier": "standard",
+      "inference_geo": "not_available"
+    }
+  },
+  "model_text": "{\"commands\":[{\"command_id\":\"cmd-3-ack-motion-started\",\"coordinator_id\":\"sandboxed-frontier-1ec2a16050d1\",\"type\":\"ack_export\",\"export_id\":\"export_70532f8bd06f8cddd87402b3dff3f3e2\",\"export_sha256\":\"3ed20160ec059032f4640fe19cc0252723894194ccc5446a69f942bfad63afe9\"},{\"command_id\":\"cmd-4-ack-visibility-lost\",\"coordinator_id\":\"sandboxed-frontier-1ec2a16050d1\",\"type\":\"ack_export\",\"export_id\":\"export_435393e3e795b4cd41f99a3ce4c5c8ff\",\"export_sha256\":\"dc57bc4be27cb25e9db08afeda2880ee9909fe9f53742a8b9169aa905ae00643\"},{\"command_id\":\"cmd-5-ack-learned-pickup\",\"coordinator_id\":\"sandboxed-frontier-1ec2a16050d1\",\"type\":\"ack_export\",\"export_id\":\"export_087ce0bc14ebd77c368dc5aaf78cd2e2\",\"export_sha256\":\"cdbf7b048d6b30f83cc938f7e22f5a4c17f1fee26df436cafb55525120adbc45\"},{\"command_id\":\"cmd-6-ack-perception-completed\",\"coordinator_id\":\"sandboxed-frontier-1ec2a16050d1\",\"type\":\"ack_export\",\"export_id\":\"export_e96020687bd5633d2abd7eb49f6fb458\",\"export_sha256\":\"2c818090e5daa81dcc8e3ef75bb9d5cec49d38607e28585fe38fde7468ece830\"},{\"command_id\":\"cmd-7-verify-pickup\",\"coordinator_id\":\"sandboxed-frontier-1ec2a16050d1\",\"type\":\"verify\",\"verification\":{\"request_id\":\"verify.pan.pickup.1\",\"question\":\"pickup_completed\",\"subject_id\":\"phys_6e6627def5b949ec858dea068e76c15d\",\"lookback_s\":30}},{\"command_id\":\"cmd-8-verify-clear-of-support\",\"coordinator_id\":\"sandboxed-frontier-1ec2a16050d1\",\"type\":\"verify\",\"verification\":{\"request_id\":\"verify.pan.clear.1\",\"question\":\"clear_of_support\",\"subject_id\":\"phys_6e6627def5b949ec858dea068e76c15d\",\"lookback_s\":30}}],\"assessment\":{\"recipe_step_complete\":false,\"pickup_verified\":\"unknown\",\"rationale\":\"Geometric motion_started plus visibility_lost on phys_6e66..., and a learned pick-up with no subject. None of these complete the step. Asked verifier pickup_completed and clear_of_support for that track; step pending until a confirmed verdict returns.\",\"wait\":true},\"wait\":true}",
+  "error": null,
+  "commands_written": [
+    {
+      "command_id": "cmd-3-ack-motion-started",
+      "coordinator_id": "sandboxed-frontier-1ec2a16050d1",
+      "type": "ack_export",
+      "export_id": "export_70532f8bd06f8cddd87402b3dff3f3e2",
+      "export_sha256": "3ed20160ec059032f4640fe19cc0252723894194ccc5446a69f942bfad63afe9"
+    },
+    {
+      "command_id": "cmd-4-ack-visibility-lost",
+      "coordinator_id": "sandboxed-frontier-1ec2a16050d1",
+      "type": "ack_export",
+      "export_id": "export_435393e3e795b4cd41f99a3ce4c5c8ff",
+      "export_sha256": "dc57bc4be27cb25e9db08afeda2880ee9909fe9f53742a8b9169aa905ae00643"
+    },
+    {
+      "command_id": "cmd-5-ack-learned-pickup",
+      "coordinator_id": "sandboxed-frontier-1ec2a16050d1",
+      "type": "ack_export",
+      "export_id": "export_087ce0bc14ebd77c368dc5aaf78cd2e2",
+      "export_sha256": "cdbf7b048d6b30f83cc938f7e22f5a4c17f1fee26df436cafb55525120adbc45"
+    },
+    {
+      "command_id": "cmd-6-ack-perception-completed",
+      "coordinator_id": "sandboxed-frontier-1ec2a16050d1",
+      "type": "ack_export",
+      "export_id": "export_e96020687bd5633d2abd7eb49f6fb458",
+      "export_sha256": "2c818090e5daa81dcc8e3ef75bb9d5cec49d38607e28585fe38fde7468ece830"
+    },
+    {
+      "command_id": "cmd-7-verify-pickup",
+      "coordinator_id": "sandboxed-frontier-1ec2a16050d1",
+      "type": "verify",
+      "verification": {
+        "request_id": "verify.pan.pickup.1",
+        "question": "pickup_completed",
+        "subject_id": "phys_6e6627def5b949ec858dea068e76c15d",
+        "lookback_s": 30
+      }
+    },
+    {
+      "command_id": "cmd-8-verify-clear-of-support",
+      "coordinator_id": "sandboxed-frontier-1ec2a16050d1",
+      "type": "verify",
+      "verification": {
+        "request_id": "verify.pan.clear.1",
+        "question": "clear_of_support",
+        "subject_id": "phys_6e6627def5b949ec858dea068e76c15d",
+        "lookback_s": 30
+      }
+    }
+  ],
+  "skipped": [],
+  "auto_acknowledged": [
+    "export_70532f8bd06f8cddd87402b3dff3f3e2",
+    "export_435393e3e795b4cd41f99a3ce4c5c8ff",
+    "export_087ce0bc14ebd77c368dc5aaf78cd2e2",
+    "export_e96020687bd5633d2abd7eb49f6fb458"
+  ],
+  "assessment": {
+    "recipe_step_complete": false,
+    "pickup_verified": "unknown",
+    "rationale": "Geometric motion_started plus visibility_lost on phys_6e66..., and a learned pick-up with no subject. None of these complete the step. Asked verifier pickup_completed and clear_of_support for that track; step pending until a confirmed verdict returns.",
+    "wait": true
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "command_id": "cmd-8-ack-visibility-lost",
+  "coordinator_id": "sandboxed-frontier-cdbda4751e05",
+  "accepted_at": 1789507449.498611,
+  "outcome": {
+    "acknowledged": true,
+    "already_acknowledged": false,
+    "topic": "physical.event"
+  }
+}

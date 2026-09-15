@@ -1,0 +1,71 @@
+{
+  "seed": {
+    "label": "pan",
+    "box": {
+      "x_min": 0.47,
+      "y_min": 0.52,
+      "x_max": 0.71,
+      "y_max": 0.84
+    },
+    "confidence": 0.8,
+    "provenance": "Assistant visually selected initial box on the first frame of the positive demonstration clip (P27_03, source 52.5 s) from a coordinate-grid contact sheet; explicit demonstration bootstrap, not a learned detection or human ground-truth annotation.",
+    "uncertainty": "Approximate image box around a dark pan resting in the lower rack; the official narration P27_03_9 'take pan' covers 56.54-57.99 s. Strong egocentric camera motion is expected. Identity and calibrated confidence are not established."
+  },
+  "window": {
+    "window_id": "bootstrap",
+    "started_at": 52.5,
+    "ended_at": 52.5,
+    "clips": [
+      {
+        "clip_id": "bootstrap_clip",
+        "camera_id": "recipe",
+        "started_at": 52.5,
+        "ended_at": 52.5,
+        "frames": [
+          {
+            "evidence_id": "recipe:1",
+            "timestamp": 52.5,
+            "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-positive-pan/bootstrap/first-frame.jpg"
+          }
+        ]
+      }
+    ],
+    "audio": []
+  },
+  "decision": {
+    "summary": "Explicit box bootstrap from recorded provenance",
+    "objects": [
+      {
+        "confidence": 0.8,
+        "uncertainty": "Approximate image box around a dark pan resting in the lower rack; the official narration P27_03_9 'take pan' covers 56.54-57.99 s. Strong egocentric camera motion is expected. Identity and calibrated confidence are not established.",
+        "detection_id": "bootstrap_object",
+        "track_id": null,
+        "label": "pan",
+        "box": {
+          "x_min": 0.47,
+          "y_min": 0.52,
+          "x_max": 0.71,
+          "y_max": 0.84
+        },
+        "location": {
+          "camera_id": "recipe",
+          "area": null
+        },
+        "timestamp": 52.5,
+        "frame_evidence_id": "recipe:1",
+        "visibility": "partially_occluded",
+        "evidence_ids": [
+          "recipe:1"
+        ],
+        "attributes": {
+          "bootstrap_provenance": "Assistant visually selected initial box on the first frame of the positive demonstration clip (P27_03, source 52.5 s) from a coordinate-grid contact sheet; explicit demonstration bootstrap, not a learned detection or human ground-truth annotation."
+        }
+      }
+    ],
+    "observations": [],
+    "events": []
+  },
+  "mapping": {
+    "bootstrap_object": "phys_ba861b22552642918b4c0a5080619d99"
+  }
+}

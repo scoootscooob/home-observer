@@ -1,0 +1,27 @@
+{
+  "created_at": 1789509018.676373,
+  "export_id": "export_aefca1d0de8ceeabcafcd8481fdc8b76",
+  "export_sha256": "2417b15806891ebb8864356d5c6f2545bbd44c3b267bd7f5b65db6b649fb5268",
+  "message": {
+    "area": "kitchen",
+    "audit_ref": "audit_91f8c5d2a76d6f4f1eefec54",
+    "available_at": 1789509018.665,
+    "category_in_vocabulary": true,
+    "confidence": 0.5,
+    "ended_at": 1789508970.45,
+    "event_id": "pevt_4b857005dbd54cfbae34f813d6d67a24",
+    "evidence_count": 2,
+    "kind": "pick-up",
+    "kind_in_vocabulary": true,
+    "message_type": "physical_event",
+    "object_category": "pan",
+    "origin": "learned",
+    "started_at": 1789508967.463,
+    "subject_ids": [],
+    "uncertainty_level": "medium"
+  },
+  "schema_version": "home-observer.production-export/1",
+  "topic": "physical.event",
+  "attempt": 6,
+  "exported_at": 1789509080.743446
+}

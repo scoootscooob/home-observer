@@ -1,0 +1,10 @@
+{
+  "command_id": "ack-d0aa0a705bc3005e-5",
+  "coordinator_id": "sandboxed-frontier-920d2cf72ced",
+  "accepted_at": 1789508888.11045,
+  "outcome": {
+    "acknowledged": true,
+    "already_acknowledged": false,
+    "topic": "physical.event"
+  }
+}

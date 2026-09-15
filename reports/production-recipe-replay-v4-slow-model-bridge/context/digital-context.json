@@ -1,0 +1,8 @@
+{
+  "commitment_id": "recipe-prep-lift-bowls",
+  "text": "Recipe preparation: lift the nested mixing bowls from the worktop. Give an immediate visual cue when the observed bowls begin moving, then verify the pickup from the physical sequence before marking the step complete.",
+  "source_ref": "Demonstration digital recipe instruction, not a claim about the user's actual kitchen.",
+  "source_clip": "data/temporal-pilot/clips/030c003244925eb728dd.mp4",
+  "response_registry": "configs/recipe-workflow/responses.json",
+  "scope": "Real public video replay and isolated Home Assistant service execution; frontier creates the watch and verifies the observed interaction."
+}

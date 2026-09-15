@@ -1,0 +1,7 @@
+{
+  "entities": [],
+  "allowed_services": [],
+  "rules": [
+    "Describe only what is supported by the input image. No devices are configured."
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "windows": 16,
+  "targeted_windows": 16,
+  "invalid_or_failed_windows": 2,
+  "valid_response_rate": 0.875,
+  "action_precision": 0.5,
+  "action_recall": 0.375,
+  "observation_precision": 0.3968253968253968,
+  "observation_recall": 0.78125,
+  "false_action_window_rate": 0.0,
+  "latency_p50_s": 28.668238535523415,
+  "latency_p95_s": 34.456057250499725,
+  "latency_mean_s": 30.74427807633765,
+  "counts": {
+    "action_tp": 3,
+    "action_fp": 3,
+    "action_fn": 5,
+    "obs_tp": 50,
+    "obs_fp": 76,
+    "obs_fn": 14,
+    "action_scored": 16,
+    "observation_scored": 16,
+    "no_action_windows": 8,
+    "false_action_windows": 0
+  },
+  "scope": "Proposed-action and observation accuracy on labeled windows; not a household reliability guarantee.",
+  "by_task_type": {
+    "visual_counterfactual": {
+      "windows": 16,
+      "targeted_windows": 16,
+      "invalid_or_failed_windows": 2,
+      "valid_response_rate": 0.875,
+      "action_precision": 0.5,
+      "action_recall": 0.375,
+      "observation_precision": 0.3968253968253968,
+      "observation_recall": 0.78125,
+      "false_action_window_rate": 0.0,
+      "latency_p50_s": 28.668238535523415,
+      "latency_p95_s": 34.456057250499725,
+      "latency_mean_s": 30.74427807633765,
+      "counts": {
+        "action_tp": 3,
+        "action_fp": 3,
+        "action_fn": 5,
+        "obs_tp": 50,
+        "obs_fp": 76,
+        "obs_fn": 14,
+        "action_scored": 16,
+        "observation_scored": 16,
+        "no_action_windows": 8,
+        "false_action_windows": 0
+      },
+      "scope": "Proposed-action and observation accuracy on labeled windows; not a household reliability guarantee."
+    }
+  },
+  "context_mode": "isolated_snapshot",
+  "native_batch_size": 1,
+  "accuracy_interpretation": "Independent annotated snapshot accuracy, with empty prior observation history.",
+  "latency_interpretation": "Pooled original per-event service latencies from separate workers; no division by workers or batch size.",
+  "per_worker_runtime": [
+    {
+      "shard_index": 0,
+      "windows": 8,
+      "elapsed_s": 225.58875568583608,
+      "windows_per_second": 0.03546276043625649
+    },
+    {
+      "shard_index": 1,
+      "windows": 8,
+      "elapsed_s": 266.3829834908247,
+      "windows_per_second": 0.030031948344311384
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "response_id": "recipe-movement-cue",
+    "kind": "ha_service",
+    "message": "Bowl movement detected; checking the recipe step.",
+    "ha_entity_id": "light.kitchen",
+    "domain": "light",
+    "service": "turn_on",
+    "data": {},
+    "approval_ref": "User authorized end-to-end recipe demonstration; isolated Home Assistant test light, local response registry."
+  }
+]

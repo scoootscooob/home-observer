@@ -1,0 +1,29 @@
+{
+  "created_at": 1789507633.049781,
+  "export_id": "export_ecb6813a08ec2b741e8a6bbcb0553ebb",
+  "export_sha256": "c712eea8c00c2b3b5749bebd32c25eaeecaac7f133a22a02b89b61d30ecacdca",
+  "message": {
+    "area": "kitchen",
+    "audit_ref": "audit_0e4ffa84a151c6ed7f23a070",
+    "available_at": 1789507633.042,
+    "category_in_vocabulary": true,
+    "confidence": 0.0,
+    "ended_at": 1789507631.175,
+    "event_id": "pevt_d9f7e298e1734b64b7a249512c556cb4",
+    "evidence_count": 2,
+    "kind": "visibility_lost",
+    "kind_in_vocabulary": true,
+    "message_type": "physical_event",
+    "object_category": "plate",
+    "origin": "geometric",
+    "started_at": 1789507631.155,
+    "subject_ids": [
+      "phys_392326cbd2e147038b9e753469e7c484"
+    ],
+    "uncertainty_level": "high"
+  },
+  "schema_version": "home-observer.production-export/1",
+  "topic": "physical.event",
+  "attempt": 5,
+  "exported_at": 1789507663.063974
+}

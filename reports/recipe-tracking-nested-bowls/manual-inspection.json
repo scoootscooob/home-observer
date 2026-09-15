@@ -1,0 +1,16 @@
+{
+  "reviewer": "Codex assistant visual inspection",
+  "independent_tracking_ground_truth": false,
+  "sample_indices": [
+    0,
+    21,
+    41,
+    62,
+    82,
+    103,
+    123,
+    144
+  ],
+  "result": "In all8sampledframes, CSRT box remains on the visible dark nested bowl/colander stack. Coverage changes; no framewise IoU or identity ground truth is available. This is sampled review of one visibility-selected demo, not a benchmark accuracy claim.",
+  "model_results_used_for_selection": false
+}

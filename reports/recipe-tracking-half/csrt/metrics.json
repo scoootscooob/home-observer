@@ -1,0 +1,32 @@
+{
+  "tracker": "CSRT",
+  "source_fps": 50.0,
+  "source_declared_frames": 78,
+  "frames_decoded": 78,
+  "frames_updated": 77,
+  "api_success_updates": 77,
+  "first_api_failure_frame": null,
+  "init_s": 0.009377833979669958,
+  "update_total_s": 0.8196897110319696,
+  "decode_total_s": 0.018728666414972395,
+  "update_median_ms": 10.720167018007487,
+  "update_p95_ms": 11.524924810510129,
+  "update_max_ms": 11.849583010189235,
+  "update_only_fps": 93.93798526891213,
+  "full_decode_track_inspection_loop_s": 0.8550429579918273,
+  "full_decode_track_inspection_loop_fps": 91.22348680958969,
+  "frame_budget_ms": 20.0,
+  "updates_exceeding_source_frame_budget": 0,
+  "sampled_frames": [
+    0,
+    11,
+    22,
+    33,
+    44,
+    55,
+    66,
+    77
+  ],
+  "manual_localization_quality": "pending visual inspection; no supplied tracking ground truth",
+  "scope": "Actual continuous frames, one initial assistant-observed box, no reseeding or model detections. API success does not prove identity or localization; no calibrated confidence or semantic event claim."
+}

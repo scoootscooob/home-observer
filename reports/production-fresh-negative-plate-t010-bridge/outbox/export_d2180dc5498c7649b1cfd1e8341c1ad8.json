@@ -1,0 +1,27 @@
+{
+  "created_at": 1789508822.973051,
+  "export_id": "export_d2180dc5498c7649b1cfd1e8341c1ad8",
+  "export_sha256": "b17cf5a4616b592bc88dfc15aad8afb592fb78bd552bfa3d3e7632cd81d0384c",
+  "message": {
+    "area": "kitchen",
+    "audit_ref": "audit_d77f3b606c70c9dfbdfc564f",
+    "available_at": 1789508822.97,
+    "category_in_vocabulary": true,
+    "confidence": 0.5,
+    "ended_at": 1789508783.77,
+    "event_id": "pevt_1057babb8f3f4c7c8eeba640b3550265",
+    "evidence_count": 2,
+    "kind": "other",
+    "kind_in_vocabulary": false,
+    "message_type": "physical_event",
+    "object_category": "plate",
+    "origin": "learned",
+    "started_at": 1789508782.11,
+    "subject_ids": [],
+    "uncertainty_level": "medium"
+  },
+  "schema_version": "home-observer.production-export/1",
+  "topic": "physical.event",
+  "attempt": 6,
+  "exported_at": 1789508885.042924
+}

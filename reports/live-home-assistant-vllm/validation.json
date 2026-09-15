@@ -1,0 +1,27 @@
+{
+  "scope": "Actual isolated Home Assistant telemetry and public audio/video upload; four time-offset inputs from one recording, not synchronized physical cameras.",
+  "windows": 16,
+  "distinct_decoded_frames_per_window": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "rejected_windows": 15,
+  "transport_errors": 0,
+  "verified_action_calls": 0,
+  "upload_matches_received_bytes": true,
+  "historical_exit_status_note": "This initial live runner returned0 for transport success even when policy rejected decisions. Later runner versions return failure for any rejected window or uncertain action."
+}

@@ -1,0 +1,18 @@
+{
+  "prepared_at": 1789497199.023199,
+  "scope": "owned isolated Home Assistant template light; no physical home connected",
+  "container": "home-observer-ha-demo-20260915",
+  "before": {
+    "light.kitchen": {
+      "state": "off",
+      "attributes": {}
+    }
+  },
+  "preparation_execution": null,
+  "after": {
+    "light.kitchen": {
+      "state": "off",
+      "attributes": {}
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "kind": "public_real",
+  "dataset": "COCO_household_human_caption_subset",
+  "counts": {
+    "train": 64,
+    "validation": 16,
+    "test": 16
+  },
+  "metadata_repo": "mlgym/coco-captioning",
+  "metadata_revision": "96f5cf8784404ffd62ff541c5aeaea7b7a4d550d",
+  "metadata_files": [
+    {
+      "filename": "train_images.parquet",
+      "bytes": 9476233,
+      "sha256": "a1c63ba7173ac75c920f235bd5755e087ee7a5c0d03f7d4d2248b4a74b248be3"
+    },
+    {
+      "filename": "val_images.parquet",
+      "bytes": 2442288,
+      "sha256": "a6a7ae7f7f243d5201e5f96f4b68abd6df455e53d57b5e703d634d26133818c4"
+    },
+    {
+      "filename": "test_images.parquet",
+      "bytes": 2442437,
+      "sha256": "2b4a68b9f5468af4d84a86fa19d1dd12ddfae84d234322b82edd1fa89ff9e100"
+    }
+  ],
+  "downloaded_bytes": 27928622,
+  "download_budget_bytes": 250000000,
+  "split_unit": "COCO image ID and image-byte SHA256",
+  "filtered_by": "\\b(kitchen|bathroom|bedroom|living room|dining room|couch|sofa|refrigerator|toilet)\\b",
+  "supervision_mask": {
+    "summary": true,
+    "actions": false,
+    "observations": false,
+    "noop": false
+  },
+  "failures": [],
+  "limitations": [
+    "Still images, not temporal video",
+    "Household rooms/objects, not necessarily private-home camera views",
+    "Small human-caption subset; labels may contain normal annotation noise",
+    "No action/no-op competence measured"
+  ]
+}

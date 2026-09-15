@@ -1,0 +1,38 @@
+{
+  "mode": "production",
+  "runtime": {
+    "mode": "production",
+    "inference_backend": "local-mps",
+    "model_id": "google/gemma-4-E4B-it",
+    "revision": "ee0ef6023621cff504d758262d4e04895a5af4a2",
+    "adapter_path": "artifacts/physical-training-v1/adapter",
+    "export_policy": "configs/production/export-policy.json",
+    "export_key_file": "../../work/production-export.key",
+    "max_frames": 8,
+    "max_new_tokens": 768,
+    "output_contract": "judged-fields"
+  },
+  "declaration": {
+    "model_class": "PhysicalLocalModel",
+    "local_inference": true,
+    "sensory_media_leaves_host": false,
+    "coordinator_class": "ProductionCoordinator",
+    "exports_only": true
+  },
+  "bridge": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/reports/production-fresh-positive-pan-t010-bridge",
+  "coordinator_id": "sandboxed-frontier-1ec2a16050d1",
+  "approved_response_ids": [
+    "recipe-movement-cue"
+  ],
+  "ready_at": 1789508954.932352,
+  "source_kind": "continuous_file_replay",
+  "source_sha256": "3c3cea12449ec4b432cdf1e3a8bc827172fc13d7fe74460db4cddc1f522b29eb",
+  "source_origin": 52.5,
+  "camera_id": "recipe",
+  "frontier": "sandboxed",
+  "tracker": {
+    "kind": "csrt",
+    "motion_threshold": 0.01,
+    "motion_confirm_frames": 5
+  }
+}

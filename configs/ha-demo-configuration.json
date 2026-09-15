@@ -1,0 +1,246 @@
+{
+  "homeassistant": {
+    "name": "Home Observer isolated demo",
+    "latitude": 0,
+    "longitude": 0,
+    "elevation": 0,
+    "time_zone": "UTC",
+    "unit_system": "metric"
+  },
+  "api": {},
+  "http": {
+    "server_host": "0.0.0.0"
+  },
+  "frontend": {},
+  "config": {},
+  "onboarding": {},
+  "websocket_api": {},
+  "logger": {
+    "default": "warning"
+  },
+  "input_boolean": {
+    "demo_kitchen": {
+      "name": "Demo kitchen state",
+      "initial": false
+    },
+    "demo_entry": {
+      "name": "Demo entry state",
+      "initial": false
+    },
+    "demo_lounge": {
+      "name": "Demo lounge state",
+      "initial": false
+    },
+    "demo_garage": {
+      "name": "Demo garage state",
+      "initial": false
+    },
+    "demo_buzzer": {
+      "name": "Demo buzzer state",
+      "initial": false
+    },
+    "motion_kitchen": {
+      "name": "Demo motion_kitchen",
+      "initial": false
+    },
+    "motion_entry": {
+      "name": "Demo motion_entry",
+      "initial": false
+    },
+    "motion_lounge": {
+      "name": "Demo motion_lounge",
+      "initial": false
+    },
+    "motion_garage": {
+      "name": "Demo motion_garage",
+      "initial": false
+    },
+    "water_leak": {
+      "name": "Demo water_leak",
+      "initial": false
+    }
+  },
+  "input_number": {
+    "ambient_lux": {
+      "name": "Demo ambient lux",
+      "initial": 20,
+      "min": 0,
+      "max": 1000,
+      "step": 1,
+      "unit_of_measurement": "lx"
+    }
+  },
+  "template": [
+    {
+      "light": [
+        {
+          "name": "Kitchen",
+          "default_entity_id": "light.kitchen",
+          "unique_id": "home_observer_kitchen",
+          "state": "{{ is_state('input_boolean.demo_kitchen', 'on') }}",
+          "turn_on": {
+            "action": "input_boolean.turn_on",
+            "target": {
+              "entity_id": "input_boolean.demo_kitchen"
+            }
+          },
+          "turn_off": {
+            "action": "input_boolean.turn_off",
+            "target": {
+              "entity_id": "input_boolean.demo_kitchen"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "light": [
+        {
+          "name": "Entry",
+          "default_entity_id": "light.entry",
+          "unique_id": "home_observer_entry",
+          "state": "{{ is_state('input_boolean.demo_entry', 'on') }}",
+          "turn_on": {
+            "action": "input_boolean.turn_on",
+            "target": {
+              "entity_id": "input_boolean.demo_entry"
+            }
+          },
+          "turn_off": {
+            "action": "input_boolean.turn_off",
+            "target": {
+              "entity_id": "input_boolean.demo_entry"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "light": [
+        {
+          "name": "Lounge",
+          "default_entity_id": "light.lounge",
+          "unique_id": "home_observer_lounge",
+          "state": "{{ is_state('input_boolean.demo_lounge', 'on') }}",
+          "turn_on": {
+            "action": "input_boolean.turn_on",
+            "target": {
+              "entity_id": "input_boolean.demo_lounge"
+            }
+          },
+          "turn_off": {
+            "action": "input_boolean.turn_off",
+            "target": {
+              "entity_id": "input_boolean.demo_lounge"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "light": [
+        {
+          "name": "Garage",
+          "default_entity_id": "light.garage",
+          "unique_id": "home_observer_garage",
+          "state": "{{ is_state('input_boolean.demo_garage', 'on') }}",
+          "turn_on": {
+            "action": "input_boolean.turn_on",
+            "target": {
+              "entity_id": "input_boolean.demo_garage"
+            }
+          },
+          "turn_off": {
+            "action": "input_boolean.turn_off",
+            "target": {
+              "entity_id": "input_boolean.demo_garage"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "switch": [
+        {
+          "name": "Buzzer",
+          "default_entity_id": "switch.buzzer",
+          "unique_id": "home_observer_buzzer",
+          "state": "{{ is_state('input_boolean.demo_buzzer', 'on') }}",
+          "turn_on": {
+            "action": "input_boolean.turn_on",
+            "target": {
+              "entity_id": "input_boolean.demo_buzzer"
+            }
+          },
+          "turn_off": {
+            "action": "input_boolean.turn_off",
+            "target": {
+              "entity_id": "input_boolean.demo_buzzer"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "binary_sensor": [
+        {
+          "name": "Motion Kitchen",
+          "default_entity_id": "binary_sensor.motion_kitchen",
+          "unique_id": "home_observer_motion_kitchen",
+          "state": "{{ is_state('input_boolean.motion_kitchen', 'on') }}"
+        }
+      ]
+    },
+    {
+      "binary_sensor": [
+        {
+          "name": "Motion Entry",
+          "default_entity_id": "binary_sensor.motion_entry",
+          "unique_id": "home_observer_motion_entry",
+          "state": "{{ is_state('input_boolean.motion_entry', 'on') }}"
+        }
+      ]
+    },
+    {
+      "binary_sensor": [
+        {
+          "name": "Motion Lounge",
+          "default_entity_id": "binary_sensor.motion_lounge",
+          "unique_id": "home_observer_motion_lounge",
+          "state": "{{ is_state('input_boolean.motion_lounge', 'on') }}"
+        }
+      ]
+    },
+    {
+      "binary_sensor": [
+        {
+          "name": "Motion Garage",
+          "default_entity_id": "binary_sensor.motion_garage",
+          "unique_id": "home_observer_motion_garage",
+          "state": "{{ is_state('input_boolean.motion_garage', 'on') }}"
+        }
+      ]
+    },
+    {
+      "binary_sensor": [
+        {
+          "name": "Water Leak",
+          "default_entity_id": "binary_sensor.water_leak",
+          "unique_id": "home_observer_water_leak",
+          "state": "{{ is_state('input_boolean.water_leak', 'on') }}"
+        }
+      ]
+    },
+    {
+      "sensor": [
+        {
+          "name": "Ambient lux",
+          "default_entity_id": "sensor.ambient_lux",
+          "unique_id": "home_observer_ambient_lux",
+          "unit_of_measurement": "lx",
+          "state": "{{ states('input_number.ambient_lux') | float(0) }}"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "delivery_id": "delivery_b36453181cbc40c69331c968a8a14cdb",
+  "topic": "watch.response_verified",
+  "payload": {
+    "candidate_end": 1789497575.0399659,
+    "candidate_key": "[\"phys_90534c9232004643bd8a6d61aa3d3754\"]",
+    "candidate_observed_s": 0.019999980926513672,
+    "candidate_start": 1789497575.019966,
+    "eligible_at": 1789497575.0399659,
+    "event_available_at": 1789497575.150424,
+    "event_id": "pevt_6502879aa41a4be08addab31be2424cf",
+    "event_source_ended_at": 1789497575.0399659,
+    "event_source_started_at": 1789497575.019966,
+    "evidence_ids": [
+      "recipe:4",
+      "recipe:5"
+    ],
+    "matched_at": 1789497575.160733,
+    "response_key": "response_a54609eed883620f1f8955539d365698",
+    "response_reserved_at": 1789497575.160733,
+    "response_sent_at": 1789497575.162482,
+    "response_timely": true,
+    "response_verified_at": 1789497575.213751,
+    "result": {
+      "action_id": "response_a54609eed883620f1f8955539d365698",
+      "attributes": {
+        "color_mode": "onoff",
+        "friendly_name": "Kitchen",
+        "supported_color_modes": [
+          "onoff"
+        ],
+        "supported_features": 0
+      },
+      "entity_id": "light.kitchen",
+      "simulated": false,
+      "state": "on",
+      "verification_latency_s": 0.002306167036294937,
+      "verified": true
+    },
+    "verification_kind": "ha_state_readback",
+    "watch_id": "recipe-bowls-movement-cue-1"
+  },
+  "payload_sha256": "0305e4c84d03032a6bd063e2760a20842b3a05a4e9d956265d714b0dfdc5a2d7",
+  "created_at": 1789497575.213751,
+  "attempt": 6,
+  "lease_token": "e7113ef3305c407cb99f41dc2672f265",
+  "delivered_at": 1789497575.2144651,
+  "transport_delivered_at": 1789497637.241855
+}

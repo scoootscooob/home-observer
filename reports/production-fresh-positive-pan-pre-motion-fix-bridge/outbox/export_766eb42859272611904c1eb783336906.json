@@ -1,0 +1,31 @@
+{
+  "created_at": 1789507186.845542,
+  "export_id": "export_766eb42859272611904c1eb783336906",
+  "export_sha256": "eb401bfbd950e9c5ea612d5fa736d603958f13418a5389ad21ed8d9f7385f0d3",
+  "message": {
+    "audit_ref": "audit_04ce2b28afc3a3af6ff8086d",
+    "commitment_id": "recipe-cook-take-pan",
+    "eligible_at": null,
+    "event_id": null,
+    "failure_class": null,
+    "matched_at": null,
+    "message_type": "watch_status",
+    "outcome_event_id": null,
+    "outcome_verified_at": null,
+    "readback_state": null,
+    "reported_at": 1789507186.846,
+    "response_id": "recipe-movement-cue",
+    "response_reserved_at": null,
+    "response_result": null,
+    "response_sent_at": null,
+    "response_timely": null,
+    "response_verified_at": null,
+    "status": "armed",
+    "verification_kind": null,
+    "watch_id": "watch-pan-motion-cue"
+  },
+  "schema_version": "home-observer.production-export/1",
+  "topic": "watch.created",
+  "attempt": 4,
+  "exported_at": 1789507200.8533509
+}

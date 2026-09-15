@@ -1,0 +1,12 @@
+{
+  "entity_id": "light.kitchen",
+  "state_before": {
+    "state": "off",
+    "attributes": {}
+  },
+  "prepared_at": 1789505313.281985,
+  "state_after": {
+    "state": "off",
+    "attributes": {}
+  }
+}

@@ -1,0 +1,435 @@
+{
+  "model_config": {
+    "model_id": "google/gemma-4-E4B-it",
+    "revision": "ee0ef6023621cff504d758262d4e04895a5af4a2",
+    "adapter_path": "artifacts/training-v2-continuation/adapter/checkpoints/checkpoint-50",
+    "dataset_root": "/workspace/home-observer/data",
+    "quantization": "none",
+    "max_frames": 8,
+    "max_audio_seconds": 30.0,
+    "max_input_tokens": 8192,
+    "max_new_tokens": 768,
+    "max_soft_tokens": 140,
+    "max_context_chars": 24000,
+    "max_media_bytes": 33554432,
+    "max_batch_size": 4,
+    "merge_adapter": false
+  },
+  "suites": [
+    {
+      "name": "heldout",
+      "source": "/workspace/home-observer/data/mixed/test.jsonl",
+      "source_sha256": "6e4e422bc0e1eefe650513b484fd34aad12ea3414f9f91a27e61ad50ae951fb7",
+      "source_rows": 160,
+      "selected_rows": 160,
+      "context_mode": "isolated_snapshot",
+      "unsharded_selected_ids": [
+        "30cd0455a9376a04a5a2d8a2",
+        "09a634e3dc82c5846a9a5dd2",
+        "dc688900115ba85a09f22490",
+        "314374603b28b248033eb57b",
+        "ee13f203586a1bcfbf5c16c4",
+        "3bdcacf194370877c8f6afaa",
+        "d9db9a136fdd89307dec487e",
+        "beba0219fcaf7a0155c9ac57",
+        "8a4c2a4f0b946f7740676c78",
+        "d84088e357b07c265c658ad2",
+        "efea4221bfb1c27c47cfcb21",
+        "deee6c9eabb7e645c392b8eb",
+        "8e59fc6a87a6b54365803d27",
+        "4ca0785f51e3a97b882dd31c",
+        "c11f2b8f2bd13f4268675cb7",
+        "28d1f92997fc223cda737eb2",
+        "208b2cd4146810d13ed3fc14",
+        "9c7d9d9f6cf7ae69d5555ca0",
+        "20b2152e00c3811f41589c23",
+        "0cf5b0c1cd22620ceb40b343",
+        "96c3baad0ce4f4f59cc5b8e5",
+        "075758dddfe1bb1317331db0",
+        "6eea11992d00b49da53cbf8c",
+        "0d13a2656b9e9ed651dbc403",
+        "24c101adac5ff567ea3731c7",
+        "b49b4c9d60e3868d363b4a0b",
+        "17142ea6f16b03d704184d3a",
+        "c92ca86d9005122f6a3f1a9d",
+        "ba05d2bb0a1a5d3b339a842c",
+        "21b82786b65022279a781d8a",
+        "153f83911c6026297591b8c7",
+        "1fd93025bb7c5169677a32dd",
+        "4bcd2849492b1cc0aed3aa52",
+        "43a4594df9f97dcc40c04607",
+        "71dfd8b7a46efb62f93ae4c8",
+        "09fbe59bff30da3ebb2df752",
+        "a73219b7b577365e0aa52dd9",
+        "137a7d81e0cde74d36f5ea41",
+        "adbbc0036075a1f3be94a4b0",
+        "8926573613d4f45286261524",
+        "34ac62bc1ab61d23e1b3de8e",
+        "026a2f1cba5da66f8f77491c",
+        "91dea9932844cdc1f63e5384",
+        "cb6cdd42475d8890f78d7e1b",
+        "eb0e25cc8d8d29f053e7ac85",
+        "faadfc2535f40df56c312b44",
+        "4415bf8004f35afbc159f760",
+        "1045055cf67baa0754cff152",
+        "1ac3b2b5e0468ad8aee1ac12",
+        "513d4e2631ae41c1a75d4959",
+        "819e593f43030f87937c8344",
+        "9fd0abbbb416f293f46bf7c9",
+        "273a4ceef5e2e0e66a89a6c9",
+        "ca79948eb7e95d4b59b4e63c",
+        "f40b0aafcb8c2f32bb633acd",
+        "7131d6ec86b21ce87d24fab5",
+        "e26918cf46625194c9069384",
+        "9e728bfcae74833c24d57764",
+        "c4aea5921e4b4a8b5b413a51",
+        "2cb73898422a38319a902d75",
+        "091e56e7cb03eac377032eca",
+        "330e20c51b172332b374a711",
+        "add88a0d99558817e6584c43",
+        "67295884c9697bb64eeff7f9",
+        "6ab96523f5c79b4518db78b4",
+        "f2b41592f5172b10e3089c8f",
+        "e41e709eee6cdcf436e55c7f",
+        "31952e958454eafe80ef1027",
+        "5195d3abcff9e7e997ee2f95",
+        "adbdba89f9482c9eb2a7e9cb",
+        "f88908b355f4ced9aee16d46",
+        "7cd6c3b5a95dc0c88eff838d",
+        "98af23fedeaa91daa6c2647e",
+        "8b3665c23931e176db125d67",
+        "2297970207d91a7ba817a6fd",
+        "d68f69df451bd115195aede6",
+        "374731db4371ed0ef97f1685",
+        "7885d6b6acc5f9905775d68b",
+        "bf41d3603e94c2ef552071c3",
+        "68c13190ca3ecc9270fac21a",
+        "dd7856fa77e339d34484590a",
+        "d46ebbd126de0c2fcd65865b",
+        "89440458ec6eecbe3e420dd9",
+        "5dcff6bed9bbbb76315c6ca0",
+        "efa5ca985a012b729dd88d80",
+        "5c4702d836217e2decf006e2",
+        "b4e23c6d310c21b384fdd1e2",
+        "3e71a8f6b6ed54cf40127832",
+        "caf3eb1e48484d83a3a1a70d",
+        "b90f9c0b06b5b8fe11e6b205",
+        "1711c2abd908e20ac39aaed5",
+        "e4670a45a6045150c428082a",
+        "9e71511ff2597cdc50ab3aae",
+        "de10027a697101b0b67cb1d1",
+        "7e145324f1e14932ef31d5cf",
+        "908118f19ab5f29f3f9cd4b0",
+        "15fdd77d6b9decd8e0bf85b1",
+        "bcc88d05ba50bd4eb00b2a28",
+        "e7f9e1aabfb2a43612e8dbbd",
+        "5e3fd5b971cf44b1450b6cd5",
+        "886ea49f9d7928c4d5a4c0ae",
+        "aea72278ec65e37ca1054cf5",
+        "8eadbfb496981b8ba52d3d61",
+        "7d24015714cfa481666252d8",
+        "10ef5c441ca9646336ef02c5",
+        "aa75d10f148037d44be24c33",
+        "88d6afba4455bf5c24d73346",
+        "cdb49b8e681298574fa9125c",
+        "7023b825ea71d73113224fd0",
+        "afe74d4a2b8db3e173b0e6da",
+        "aa15fc2c1b3ad0b7b386a27d",
+        "2c80ade4349591a3c5ac8504",
+        "6d2c4140f8261994bdbe38fb",
+        "e9ff8ff152b48f8999242214",
+        "0e516f075e9309cc114dc709",
+        "972461f64e323282063f05b6",
+        "6a36d41f49a3f98c83023772",
+        "a596474513c5b025a4000b6f",
+        "3fc1c2b0edf204f957493f64",
+        "b13db8c5da6348edc4e401c4",
+        "4848e4c3a00df996c7aab335",
+        "dff1ab8d0571834c9274615f",
+        "11a202401c8eb4eae85a6e1c",
+        "1ba78e4ff03b8d381b0cb3b2",
+        "a01362040fc2f950ef8192fc",
+        "fee35dcf90db925b2be0c81a",
+        "551ae3876f4fa3d9d54d9775",
+        "1e949353a8d23e781763b7f1",
+        "e7719c77d993360ec989b89a",
+        "db73def73fbdbbb3058e749c",
+        "3bfe3b7104adeaf0128b0227",
+        "c81db6f67a9aed884a0fdeeb",
+        "55803c36e88d39dde2828ca8",
+        "389d566adc2754d53cb57244",
+        "de781be36843328f9c60e623",
+        "aca638a20cdab2d705c82b8c",
+        "50c780319cb122959c69c9e4",
+        "7a4deea716748732c91b3ed3",
+        "d7e2d8586fa8b8e8c1a960ef",
+        "025264b742fe2a0b29006523",
+        "3ae3f0a3265c6f933114297d",
+        "05c96c02ba24ea93340dff95",
+        "401957da7925efd660460eb2",
+        "93b8424e67b1cac0d928e76e",
+        "coco-16523",
+        "coco-16896",
+        "coco-16958",
+        "coco-17235",
+        "coco-17655",
+        "coco-17909",
+        "coco-17921",
+        "coco-17953",
+        "coco-18461",
+        "coco-18903",
+        "coco-18918",
+        "coco-19028",
+        "coco-19455",
+        "coco-19484",
+        "coco-19559",
+        "coco-19589"
+      ],
+      "targets_changed": false,
+      "window_ids_changed": false
+    },
+    {
+      "name": "counterfactual",
+      "source": "/workspace/home-observer/data/counterfactuals/pairs.jsonl",
+      "source_sha256": "54122b5b262e253d99ee49ba75432ff7eff367f41de76b741f5f0b151695351d",
+      "source_rows": 16,
+      "selected_rows": 16,
+      "context_mode": "isolated_snapshot",
+      "unsharded_selected_ids": [
+        "31fd114da5c91651981f511c-0",
+        "31fd114da5c91651981f511c-1",
+        "577c9263ca3202f8a078ef01-0",
+        "577c9263ca3202f8a078ef01-1",
+        "5510d2c8886dabdcc2e0c218-0",
+        "5510d2c8886dabdcc2e0c218-1",
+        "bc32f5371414fe21235dee90-0",
+        "bc32f5371414fe21235dee90-1",
+        "f58360ccb8c9dae28d817c82-0",
+        "f58360ccb8c9dae28d817c82-1",
+        "c67014a7af95afd396b5be6e-0",
+        "c67014a7af95afd396b5be6e-1",
+        "450a81e155d9b9765fc7647d-0",
+        "450a81e155d9b9765fc7647d-1",
+        "2f2302b7e953258156a51e16-0",
+        "2f2302b7e953258156a51e16-1"
+      ],
+      "targets_changed": false,
+      "window_ids_changed": false
+    },
+    {
+      "name": "public_video",
+      "source": "/workspace/home-observer/data/public-egolife/replay.jsonl",
+      "source_sha256": "ea872cd3e8d7d51e506bac2036b6b9c681104dd9454c47494d60f115bc98bf42",
+      "source_rows": 2,
+      "selected_rows": 2,
+      "context_mode": "chronological_unscored",
+      "unsharded_selected_ids": [
+        "egolife-a1-day1-sample-00000",
+        "egolife-a1-day1-sample-00001"
+      ],
+      "targets_changed": false,
+      "window_ids_changed": false
+    }
+  ],
+  "policy": {
+    "entities": [
+      "light.kitchen",
+      "light.entry",
+      "light.lounge",
+      "light.garage",
+      "room.kitchen",
+      "room.entry",
+      "room.lounge",
+      "room.garage",
+      "binary_sensor.motion_kitchen",
+      "binary_sensor.motion_entry",
+      "binary_sensor.motion_lounge",
+      "binary_sensor.motion_garage",
+      "sensor.ambient_lux",
+      "binary_sensor.water_leak",
+      "switch.buzzer"
+    ],
+    "rules": [
+      "For each camera, room.<camera_id> occupied is true exactly when a person is visible; report uncertainty for ambiguous footage.",
+      "Turn on light.<room> when occupancy is supported by its camera frame or an explicit motion sensor, ambient_lux < 40, and that light is off.",
+      "Turn on switch.buzzer only when binary_sensor.water_leak is on and switch.buzzer is off.",
+      "Generated tones are fixture sounds; never interpret them as a real fire alarm.",
+      "Do not turn off lights or take any other action. Return noop=true with empty observations/actions when nothing should be recorded or executed.",
+      "For binary sensors, on, true and JSON true mean active; off, false and JSON false mean inactive. Unwrap a Home Assistant object using its state field. Parse numeric lux strings as numbers.",
+      "Current device states are authoritative. Prior state is historical context, never a replacement for current telemetry. Previously observing an active sensor does not imply that an action was executed. Use current sensor and actuator states to decide whether an action is still required.",
+      "Record clear room occupancy and motion/leak sensor states when absent from prior memory, stale, or changed. Do not repeat an unchanged fact. Other telemetry supplies action preconditions. If both new observations and permitted actions are empty, use noop=true."
+    ],
+    "allowed_services": [
+      "light.turn_on",
+      "switch.turn_on"
+    ],
+    "min_confidence": 0.8,
+    "cooldown_seconds": 30,
+    "state_ttl_seconds": 300,
+    "max_actions_per_window": 2,
+    "max_window_seconds": 60
+  },
+  "model_revision": "ee0ef6023621cff504d758262d4e04895a5af4a2",
+  "system_prompt_sha256": "3e92b2ef2af1f5abacecadc3d36f113af6725c9cfc98224aab6c653dd2346813",
+  "policy_sha256": "a756632394beb041bd82d878acb5ab69ff2b2c9ddf682a3dbfcc24509126600e",
+  "native_batch_size": 1,
+  "adapter_sha256": "66447232ab59f37d29b5ccbdbe8c095ef113667b65cfbcc886d676a7e556b683",
+  "implementation_sha256": {
+    "/workspace/home-observer/scripts/evaluate_release.py": "43dfbc90e477748c3336d0022523a4c88716b8059b88e53673932dbc2d398c10",
+    "src/home_observer/model.py": "01cb1d0e6c0c41945f03566c4b47929e1919e557566fb32f64906108e70f68dd",
+    "src/home_observer/prompts.py": "77361735ade32a5f75931f3a6980c8f011f3c996b7d7aed04f91f948aa973378",
+    "src/home_observer/engine.py": "e5b64d4932b4759b3b9589abf1aa96eaf543da345b0cab94dd7723b55eb5775a"
+  },
+  "combined_shards": {
+    "count": 2,
+    "indices": [
+      0,
+      1
+    ],
+    "source_directories": [
+      "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard0",
+      "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard1"
+    ],
+    "scope": "Complete disjoint source-order union; inputs, targets and generated text unchanged."
+  },
+  "source_artifacts": [
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard0/manifest.json",
+      "sha256": "21d9d683623b763c959c40bfdaf8043c26858be74c9abd7efec63dbc9328a05a",
+      "bytes": 10989
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard0/report.json",
+      "sha256": "3ffac13aa22d7511659bae1d6fe156e3846e619c76fdb0fbfb438b1fe1f14f82",
+      "bytes": 26884
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard0/native-outputs.jsonl",
+      "sha256": "e1a5060d76fc1ef7deba070c7b304ecf316282de58d4a98901f612f6ba06d309",
+      "bytes": 153587
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard0/heldout-inputs.jsonl",
+      "sha256": "0df79582cceda35e7e86d94e6de310d806ae75a95c6fa916ca7b95d9f5ecab95",
+      "bytes": 190929
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard0/heldout/predictions.jsonl",
+      "sha256": "1b7c5333bedc899ec49594d3ad83f9ab963db38b8f71b320cdce35996aeff853",
+      "bytes": 202947
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard0/heldout/metrics.json",
+      "sha256": "ae1341afa51f590ffac5daebb7f8b64cfd41db3a822cd618aa649170575d5e14",
+      "bytes": 16948
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard0/counterfactual-inputs.jsonl",
+      "sha256": "56bc6a064e5659a3f5648665d01ed255136e3b6e9ba43e887831c578c10e0913",
+      "bytes": 21531
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard0/counterfactual/predictions.jsonl",
+      "sha256": "a0ce96ddc82107f46e0679841e1ab31a3c25de72aaa4eeb3d7f9c7ba2dd42057",
+      "bytes": 23861
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard0/counterfactual/metrics.json",
+      "sha256": "b4b40f97a64bfc4b56594290a65600ee4dfe20f315fcf1b93a81795f2db095c5",
+      "bytes": 2969
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard0/public_video-inputs.jsonl",
+      "sha256": "5b853023dab4830b18802e694bf56655465fd546504781a7158851ca80fe7bbb",
+      "bytes": 4362
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard0/public_video/predictions.jsonl",
+      "sha256": "9bfda3d332fb225fe5f60604bc1abc21b514019a03db4cb3b06af5f94604836e",
+      "bytes": 6763
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard0/public_video/metrics.json",
+      "sha256": "dd35e505b70add6c1b1171a76408c6b23de49aeefbc6baabc8c1860dbe9affd7",
+      "bytes": 1815
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard1/manifest.json",
+      "sha256": "7bba9a32f4324e55f4e86abfcfe5b1f1469b6a2d08047ade4b5c3cc7c35c81c9",
+      "bytes": 10989
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard1/report.json",
+      "sha256": "7bbaa1c23a906af16e6e55dc5eeca6c62f7019f790588bd08608df461e0838a0",
+      "bytes": 26060
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard1/native-outputs.jsonl",
+      "sha256": "6f5f37ef79a91e930b78e7d79fca4bc1e76a35d9b16ecb6683c83a1292c4006f",
+      "bytes": 154242
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard1/heldout-inputs.jsonl",
+      "sha256": "82ec3251b0c7c6de8560ea17900479f160f110fbb13bcd3c1bc39c47333c68cc",
+      "bytes": 212300
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard1/heldout/predictions.jsonl",
+      "sha256": "925d7eb7bbd729d925db114f111aff6b958d1b4e2d931de71eddb63267a0b23f",
+      "bytes": 225878
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard1/heldout/metrics.json",
+      "sha256": "2c69446573aac63e03b0085b45bcda2f233ab3587981153fbcbee934f18d5845",
+      "bytes": 17071
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard1/counterfactual-inputs.jsonl",
+      "sha256": "28fd6c88e3562e3ba623c152c2a8cdcc194e2b7762ed16a703b0597119a99da5",
+      "bytes": 23755
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard1/counterfactual/predictions.jsonl",
+      "sha256": "3a9920e08c4bd2df53cb88a9e20f26976ed3df871e1991c0750136c392546e84",
+      "bytes": 25768
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard1/counterfactual/metrics.json",
+      "sha256": "26f54f00d8826f537f41a081576426529d57931aed92f316347227c72a1ab505",
+      "bytes": 3144
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard1/public_video-inputs.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard1/public_video/predictions.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/artifacts/release-continuation-selected-shard1/public_video/metrics.json",
+      "sha256": "8971ac9648ea250c43f15a9a6312321937a5d222afab81a5fb013f5b7b4a39a6",
+      "bytes": 769
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/data/mixed/test.jsonl",
+      "sha256": "6e4e422bc0e1eefe650513b484fd34aad12ea3414f9f91a27e61ad50ae951fb7",
+      "bytes": 356779,
+      "role": "original_release_source"
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/data/counterfactuals/pairs.jsonl",
+      "sha256": "54122b5b262e253d99ee49ba75432ff7eff367f41de76b741f5f0b151695351d",
+      "bytes": 39184,
+      "role": "original_release_source"
+    },
+    {
+      "path": "/Users/scottfan/Documents/Codex/2026-09-15/do/outputs/home-observer/data/public-egolife/replay.jsonl",
+      "sha256": "ea872cd3e8d7d51e506bac2036b6b9c681104dd9454c47494d60f115bc98bf42",
+      "bytes": 3926,
+      "role": "original_release_source"
+    }
+  ]
+}

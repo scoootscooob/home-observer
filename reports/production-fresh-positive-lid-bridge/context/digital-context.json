@@ -1,0 +1,7 @@
+{
+  "commitment_id": "recipe-cook-take-lid",
+  "text": "Recipe cooking: take the lid off the pot on the hob and lift it away. Give an immediate visual cue when the observed lid begins moving, then verify the pickup from local observation before marking the step complete.",
+  "source_ref": "Demonstration digital recipe instruction for the positive lid workflow; the footage contains the official narration 'take lid'.",
+  "source_clip": "data/continuous-v2-workflow/positive-take-lid-P27_03.mp4",
+  "response_registry": "configs/recipe-workflow/responses.json"
+}

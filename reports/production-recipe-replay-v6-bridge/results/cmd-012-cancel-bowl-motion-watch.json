@@ -1,0 +1,8 @@
+{
+  "command_id": "cmd-012-cancel-bowl-motion-watch",
+  "coordinator_id": "sandboxed-frontier-b33d9d1fe618",
+  "accepted_at": 1789506718.178782,
+  "outcome": {
+    "cancelled": false
+  }
+}

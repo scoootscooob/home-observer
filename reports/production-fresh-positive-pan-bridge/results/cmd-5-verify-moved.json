@@ -1,0 +1,9 @@
+{
+  "command_id": "cmd-5-verify-moved",
+  "coordinator_id": "sandboxed-frontier-37a12cb40ee3",
+  "accepted_at": 1789508201.370356,
+  "outcome": {
+    "verification_id": "pver_0d8fd25a2fc4423f8742dee270c8fa63",
+    "status": "pending"
+  }
+}

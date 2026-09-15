@@ -1,0 +1,10 @@
+{
+  "command_id": "cmd-17-ack-verification-clear-2",
+  "coordinator_id": "sandboxed-frontier-cdbda4751e05",
+  "accepted_at": 1789507504.408899,
+  "outcome": {
+    "acknowledged": true,
+    "already_acknowledged": false,
+    "topic": "verification.result"
+  }
+}

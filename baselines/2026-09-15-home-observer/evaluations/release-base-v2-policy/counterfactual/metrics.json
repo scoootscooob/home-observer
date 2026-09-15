@@ -1,0 +1,191 @@
+{
+  "windows": 16,
+  "targeted_windows": 16,
+  "invalid_or_failed_windows": 6,
+  "valid_response_rate": 0.625,
+  "action_precision": null,
+  "action_recall": 0.0,
+  "observation_precision": 0.5,
+  "observation_recall": 0.015625,
+  "false_action_window_rate": 0.0,
+  "latency_p50_s": 7.105760836973786,
+  "latency_p95_s": 7.276966959238052,
+  "latency_mean_s": 7.148749038344249,
+  "counts": {
+    "action_tp": 0,
+    "action_fp": 0,
+    "action_fn": 8,
+    "obs_tp": 1,
+    "obs_fp": 1,
+    "obs_fn": 63,
+    "action_scored": 16,
+    "observation_scored": 16,
+    "no_action_windows": 8,
+    "false_action_windows": 0
+  },
+  "scope": "Proposed-action and observation accuracy on labeled windows; not a household reliability guarantee.",
+  "elapsed_s": 28.719446688890457,
+  "by_task_type": {
+    "visual_counterfactual": {
+      "windows": 16,
+      "targeted_windows": 16,
+      "invalid_or_failed_windows": 6,
+      "valid_response_rate": 0.625,
+      "action_precision": null,
+      "action_recall": 0.0,
+      "observation_precision": 0.5,
+      "observation_recall": 0.015625,
+      "false_action_window_rate": 0.0,
+      "latency_p50_s": 7.105760836973786,
+      "latency_p95_s": 7.276966959238052,
+      "latency_mean_s": 7.148749038344249,
+      "counts": {
+        "action_tp": 0,
+        "action_fp": 0,
+        "action_fn": 8,
+        "obs_tp": 1,
+        "obs_fp": 1,
+        "obs_fn": 63,
+        "action_scored": 16,
+        "observation_scored": 16,
+        "no_action_windows": 8,
+        "false_action_windows": 0
+      },
+      "scope": "Proposed-action and observation accuracy on labeled windows; not a household reliability guarantee."
+    }
+  },
+  "journals": {
+    "snapshot-9279fcbc9dac6dfe74ef7a16": {
+      "windows": {
+        "complete": 1
+      },
+      "actions": {},
+      "events": 1,
+      "facts": 5
+    },
+    "snapshot-320586e222400855addd810a": {
+      "windows": {
+        "error": 1
+      },
+      "actions": {},
+      "events": 0,
+      "facts": 5
+    },
+    "snapshot-a3c4441a1762768b094e9d07": {
+      "windows": {
+        "complete": 1
+      },
+      "actions": {},
+      "events": 1,
+      "facts": 5
+    },
+    "snapshot-52b72c6e6bc6b452bf3ff482": {
+      "windows": {
+        "error": 1
+      },
+      "actions": {},
+      "events": 0,
+      "facts": 5
+    },
+    "snapshot-b1ca06e081135de6c693891b": {
+      "windows": {
+        "complete": 1
+      },
+      "actions": {},
+      "events": 1,
+      "facts": 5
+    },
+    "snapshot-d10b3b096ef7d8cf160ab2a4": {
+      "windows": {
+        "error": 1
+      },
+      "actions": {},
+      "events": 0,
+      "facts": 5
+    },
+    "snapshot-d9793e6bcca888deb65a1cb8": {
+      "windows": {
+        "complete": 1
+      },
+      "actions": {},
+      "events": 1,
+      "facts": 5
+    },
+    "snapshot-65743fadd0d1501ce40b3a8b": {
+      "windows": {
+        "error": 1
+      },
+      "actions": {},
+      "events": 0,
+      "facts": 5
+    },
+    "snapshot-944aceb7e83c052e7c56b981": {
+      "windows": {
+        "complete": 1
+      },
+      "actions": {},
+      "events": 1,
+      "facts": 5
+    },
+    "snapshot-85b38cf2ecdda7009208f91b": {
+      "windows": {
+        "error": 1
+      },
+      "actions": {},
+      "events": 0,
+      "facts": 5
+    },
+    "snapshot-8bc1836bd64477211665439a": {
+      "windows": {
+        "complete": 1
+      },
+      "actions": {},
+      "events": 1,
+      "facts": 5
+    },
+    "snapshot-4fcb997b598fe74146dfffe7": {
+      "windows": {
+        "complete": 1
+      },
+      "actions": {},
+      "events": 1,
+      "facts": 6
+    },
+    "snapshot-06b6a668c7416b517a33fb7c": {
+      "windows": {
+        "complete": 1
+      },
+      "actions": {},
+      "events": 1,
+      "facts": 5
+    },
+    "snapshot-cfb826c91dcdbe8383c2685a": {
+      "windows": {
+        "error": 1
+      },
+      "actions": {},
+      "events": 0,
+      "facts": 5
+    },
+    "snapshot-3034fac98f0a5bfcb0b7bf24": {
+      "windows": {
+        "complete": 1
+      },
+      "actions": {},
+      "events": 1,
+      "facts": 5
+    },
+    "snapshot-b29743cb70975216549f2842": {
+      "windows": {
+        "complete": 1
+      },
+      "actions": {},
+      "events": 1,
+      "facts": 6
+    }
+  },
+  "native_batch_size": 4,
+  "batch_formation_wait_included": false,
+  "latency_interpretation": "Independent snapshots are already available. Every event waits the full native batch latency; no streaming deadline claim.",
+  "observed_windows_per_second": 0.5571137972581234
+}
