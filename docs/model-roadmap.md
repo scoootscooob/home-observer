@@ -108,23 +108,49 @@ First-pass numbers (2026-09-16):
 | Pass | Footage | Ticks | Pushes | Checked against narrations |
 |---|---|---|---|---|
 | interactive (this session) | four clips at 2 Hz, one 29 s segment at 1 Hz | 109 | 12 | all pushes inside narrated spans after one correction (lid placed on pan read as pan lifted) and one miss at 1 Hz (a plate put down) |
-| API teacher (`scripts/teacher_label.py`) | lid clip at 2 Hz | 17 | 3 | 3 of 3 inside narrated spans, including the pan put-down the interactive pass missed |
+| frontier teacher through the pipeline (`scripts/teacher_label.py`, blind) | all five sources | 138 | 19 | silent on 86 percent of ticks; 18 of 19 pushes inside a narrated manipulation; 10 of 16 durable narrated events get a push of a compatible kind within 1.5 s; 15 of 19 pushes judged right; agreement with the interactive pass 0.52 |
 
-Agreement between the two passes and against narrations on all five sources is measured by
-`scripts/teacher_agreement.py` (results in `data/teacher-seed/` when the background runs
-finish).
+The scorer is `scripts/teacher_agreement.py` (`data/teacher-seed/agreement-2026-09-16.json`).
+The four frontier errors and the two misses are analysed in `docs/teacher-distillation.md`
+section 4.1 and drive protocol v2: worked examples in the prompt, a second look on every
+candidate pickup or placement, goal-conditioned kinds, chunks that always start with a journal,
+and kind-aware audits. Teacher-to-teacher agreement at 0.52 is the number to raise before
+labeling at scale; the target is above 0.8 on a 1 hour calibration set.
 
-Sources, in the order the teacher should label them (license conclusions in
-`docs/research/datasets-2026-09.md`; fixed-camera and simulator sets pending note):
+Sources, in the order the teacher should label them (survey and licenses in
+`docs/research/streaming-data-2026-09.md` and `docs/research/datasets-2026-09.md`):
 
-1. The licensed egocentric kitchen footage already on disk: object, container and food events;
-   presence and location do not transfer from a head camera.
-2. Fixed multi-camera home sets, as their licenses allow: presence, location, appliance and
-   door state, whole quiet hours.
-3. Simulator replays with ground-truth object state: dense, exact timestamps, unlimited
-   negatives, the only cheap source of `act` situations when paired with scripted device
-   rules.
-4. Our own consented recordings, last, to close the domain gap.
+1. **CASTLE 2024, the five static streams, one day first (about 50 h).** The only public source
+   with fixed indoor cameras running for days over several people in a real home; no labels,
+   so the teacher's decisions are the labels and the quiet periods are real. Research-only.
+2. **EgoLife exocentric cameras, if the release contains them (verify first).** Fifteen fixed
+   GoPros synchronized with the egocentric streams and about 1200 narrated phrases per hour,
+   which makes blind teacher labeling auditable at scale. Held out entirely if it is used for
+   the EgoLife benchmarks (shared cameras make a participant-disjoint split impossible).
+3. **HOMAGE, all 25 h, as the precision audit set.** Frame-precise atomic actions at about 800
+   per hour and scene graphs give ground truth for taken, placed and activity-start onsets, and
+   its sensors seed the device-state text format. Research-only.
+4. **BEHAVIOR-1K 2026 replays, 50 to 100 h re-rendered from one fixed room camera per scene.**
+   Exact timestamps for every container, appliance and object-state change, free of human
+   labeling; the only cheap source of `act` situations when paired with device rules; useless
+   for presence (robot embodiment). Needs OmniGibson and Isaac Sim pinned to the collection
+   versions; demos under an MIT card, assets under a research EULA.
+5. **The egocentric kitchen footage already on disk**, plus HoloAssist and CaptainCook4D
+   (commercially clean) for object and food events; Charades later for home diversity only.
+6. **Our own consented recordings**, last, to close the domain gap; no public fixed-camera home
+   footage is usable in a product except possibly EgoLife exo, so this tier is not optional.
+
+Device-state text streams: HOMAGE sensors thresholded into transition lines (presence, light,
+door), BEHAVIOR predicates polled during replay into Home-Assistant-style entity lines (exact and
+free), and the acon96 generator's vocabulary and service-call format with a small Markov
+simulator for dwell times. Synthesized device text is paired with real video only where the two
+are consistent; otherwise it stays on the simulation tier.
+
+First training set: 100 h of real fixed cameras, 50 h egocentric, 50 h simulation, about 200 h,
+roughly 1.44M ticks at 2 Hz of which 1 to 3 percent are journal lines; about 300 to 350M teacher
+input tokens at 1.7M per footage hour. Held out and never trained on: CASTLE day 4, EgoLife
+entirely, the HoloAssist and CaptainCook4D validation splits used by EgoServe, SmartHome-Bench,
+OVO-Bench forward-active and StreamingBench proactive output.
 
 Rules that keep the dataset honest: whole hours are labeled including quiet ones, never
 positive-selected clips; device-state text streams are synthesized from sensor logs, simulator

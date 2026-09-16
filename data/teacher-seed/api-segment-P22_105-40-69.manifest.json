@@ -1,0 +1,27 @@
+{
+ "runs": [
+  {
+   "video": "data/continuous-v2/videos/P22_105.mp4",
+   "video_sha256": "9ea469a2bde9c55a528778e28b6c23f15cea66c0f96e5385e58edc9e57489bd5",
+   "video_id": "P22_105",
+   "range_s": [
+    40.0,
+    68.9
+   ],
+   "chunk_s": 20.0,
+   "tick_hz": 2.0,
+   "width_px": 512,
+   "model": "claude-fable-5-1",
+   "prompt_version": "teacher-v1",
+   "rows_written": 2,
+   "usage": {
+    "input_tokens": 10,
+    "output_tokens": 5915,
+    "calls": 5
+   },
+   "started_at": "2026-09-16T11:51:58.723019+00:00",
+   "finished_at": "2026-09-16T11:53:25.385444+00:00",
+   "dry_run": false
+  }
+ ]
+}

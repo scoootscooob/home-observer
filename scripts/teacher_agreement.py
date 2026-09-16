@@ -14,6 +14,15 @@ from pathlib import Path
 
 DURABLE_VERBS = {"take", "pick-up", "put-down", "put", "put-in", "put-on", "open", "close", "turn-on", "turn-off",
                  "pour", "insert", "remove", "throw"}
+# Which observation kinds legitimately report a narrated verb (kind-aware matching).
+VERB_KINDS = {
+    "take": {"object_taken", "food_state"}, "pick-up": {"object_taken", "food_state"}, "remove": {"object_taken", "container_state"},
+    "put-down": {"object_placed", "food_state", "container_state"}, "put": {"object_placed", "food_state", "container_state"},
+    "put-in": {"object_placed", "food_state", "container_state"}, "put-on": {"object_placed", "container_state"},
+    "insert": {"object_placed", "container_state"}, "throw": {"object_placed"},
+    "open": {"container_state", "appliance_state"}, "close": {"container_state", "appliance_state"},
+    "turn-on": {"appliance_state"}, "turn-off": {"appliance_state"}, "pour": {"food_state"},
+}
 
 
 def load_rows(paths):
@@ -36,7 +45,11 @@ def narrations_for(row, annotation_root: Path, clip_root: Path):
     annotation = annotation_root / f"{video_id}.json"
     if annotation.exists():
         payload = json.loads(annotation.read_text())
-        items = payload if isinstance(payload, list) else next(v for v in payload.values() if isinstance(v, list))
+        if isinstance(payload, list):
+            items = payload
+        else:
+            items = next((v for v in payload.values() if isinstance(v, list) and v and isinstance(v[0], dict)
+                          and "start_timestamp" in v[0]), [])
 
         def sec(value):
             h, m, s = str(value).split(":")
@@ -82,7 +95,8 @@ def main():
     api_rows, inter_rows = load_rows(args.api), load_rows(args.interactive)
     report = {"collar_s": args.collar, "sources": [], "totals": {}}
     tot = {"api_ticks": 0, "api_pushes": 0, "api_pushes_in_narrated_span": 0, "durable_events": 0,
-           "durable_events_with_push": 0, "inter_pushes": 0, "api_inter_matched": 0, "second_looks": 0}
+           "durable_events_with_push": 0, "inter_pushes": 0, "api_inter_matched": 0, "second_looks": 0,
+           "durable_events_with_kind_matching_push": 0, "api_pushes_matching_a_durable_event_kind": 0}
     for row in api_rows:
         start, end = row["source"]["start_s"], row["source"]["end_s"]
         events = narrations_for(row, args.annotations, args.clips)
@@ -93,6 +107,15 @@ def main():
                 in_span += 1
         durable = [e for e in events if e["verb"] in DURABLE_VERBS and e["stop"] >= start and e["start"] <= end]
         covered = sum(1 for e in durable if any(e["start"] - args.collar <= t <= e["stop"] + args.collar for t, _ in api))
+
+        def kind_of(tick):
+            return tick["observation"]["kind"] if tick.get("observation") else "act"
+        covered_kind = sum(1 for e in durable if any(
+            e["start"] - args.collar <= t <= e["stop"] + args.collar and kind_of(tick) in VERB_KINDS.get(e["verb"], set())
+            for t, tick in api))
+        in_span_kind = sum(1 for t, tick in api if any(
+            e["start"] - args.collar <= t <= e["stop"] + args.collar and kind_of(tick) in VERB_KINDS.get(e["verb"], set())
+            for e in events if e["verb"] in DURABLE_VERBS))
         inter = [r for r in inter_rows if r["source"]["video_id"] == row["source"]["video_id"]
                  and abs(r["source"]["start_s"] - start) < 0.6]
         inter_p = pushes(inter[0]) if inter else []
@@ -100,18 +123,22 @@ def main():
         entry = {"video_id": row["source"]["video_id"], "window_s": [start, end], "ticks": len(row["ticks"]),
                  "api_pushes": [(t, tick["observation"]["kind"] if tick.get("observation") else "act") for t, tick in api],
                  "api_pushes_in_narrated_span": in_span, "durable_events": [(e["start"], e["narration"]) for e in durable],
-                 "durable_events_with_push": covered,
+                 "durable_events_with_push": covered, "durable_events_with_kind_matching_push": covered_kind,
+                 "api_pushes_matching_a_durable_event_kind": in_span_kind,
                  "interactive_pushes": [(t, tick["observation"]["kind"]) for t, tick in inter_p] if inter else None,
                  "api_interactive_matched": len(pairs), "second_looks": len(row["teacher"].get("second_looks", []))}
         report["sources"].append(entry)
         increments = {"api_ticks": len(row["ticks"]), "api_pushes": len(api), "api_pushes_in_narrated_span": in_span,
                       "durable_events": len(durable), "durable_events_with_push": covered, "inter_pushes": len(inter_p),
-                      "api_inter_matched": len(pairs), "second_looks": entry["second_looks"]}
+                      "api_inter_matched": len(pairs), "second_looks": entry["second_looks"],
+                      "durable_events_with_kind_matching_push": covered_kind, "api_pushes_matching_a_durable_event_kind": in_span_kind}
         for key, value in increments.items():
             tot[key] += value
     tot["api_silence_rate"] = round(1 - tot["api_pushes"] / max(1, tot["api_ticks"]), 3)
     tot["api_push_precision_vs_narration"] = round(tot["api_pushes_in_narrated_span"] / max(1, tot["api_pushes"]), 3)
     tot["durable_recall"] = round(tot["durable_events_with_push"] / max(1, tot["durable_events"]), 3)
+    tot["durable_recall_kind_aware"] = round(tot["durable_events_with_kind_matching_push"] / max(1, tot["durable_events"]), 3)
+    tot["api_push_precision_kind_aware"] = round(tot["api_pushes_matching_a_durable_event_kind"] / max(1, tot["api_pushes"]), 3)
     tot["api_interactive_agreement"] = round(2 * tot["api_inter_matched"] / max(1, tot["api_pushes"] + tot["inter_pushes"]), 3)
     report["totals"] = tot
     text = json.dumps(report, indent=1)

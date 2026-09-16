@@ -1,0 +1,27 @@
+{
+ "runs": [
+  {
+   "video": "data/continuous-v2-workflow/negative-move-plate-P22_105.mp4",
+   "video_sha256": "ef4c57ff24a9cb0189edfe782561b9d429f78fa98c5068dae29f95e2cd7d2595",
+   "video_id": "P22_105",
+   "range_s": [
+    0.0,
+    12.0
+   ],
+   "chunk_s": 20.0,
+   "tick_hz": 2.0,
+   "width_px": 512,
+   "model": "claude-fable-5-1",
+   "prompt_version": "teacher-v1",
+   "rows_written": 1,
+   "usage": {
+    "input_tokens": 2,
+    "output_tokens": 1409,
+    "calls": 1
+   },
+   "started_at": "2026-09-16T11:51:36.623818+00:00",
+   "finished_at": "2026-09-16T11:51:58.602492+00:00",
+   "dry_run": false
+  }
+ ]
+}

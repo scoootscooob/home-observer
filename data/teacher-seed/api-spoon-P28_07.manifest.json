@@ -1,0 +1,27 @@
+{
+ "runs": [
+  {
+   "video": "data/continuous-v2-workflow/positive-take-spoon-P28_07.mp4",
+   "video_sha256": "d83620ac6045b0668e9ba7815b53fd675f8e596923a63c3c6322ef9e7ff6796e",
+   "video_id": "P28_07",
+   "range_s": [
+    0.0,
+    11.01
+   ],
+   "chunk_s": 20.0,
+   "tick_hz": 2.0,
+   "width_px": 512,
+   "model": "claude-fable-5-1",
+   "prompt_version": "teacher-v1",
+   "rows_written": 1,
+   "usage": {
+    "input_tokens": 4,
+    "output_tokens": 2500,
+    "calls": 2
+   },
+   "started_at": "2026-09-16T11:50:39.424800+00:00",
+   "finished_at": "2026-09-16T11:51:36.496591+00:00",
+   "dry_run": false
+  }
+ ]
+}

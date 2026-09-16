@@ -1,0 +1,27 @@
+{
+ "runs": [
+  {
+   "video": "data/continuous-v2-workflow/positive-take-lid-P27_03.mp4",
+   "video_sha256": "2ebe37f28a35ed656a1785ad21263b049d1bbb8d816a2569bfa5e20656e002fe",
+   "video_id": "P27_03",
+   "range_s": [
+    0.0,
+    8.51
+   ],
+   "chunk_s": 20.0,
+   "tick_hz": 2.0,
+   "width_px": 512,
+   "model": "claude-fable-5-1",
+   "prompt_version": "teacher-v1",
+   "rows_written": 1,
+   "usage": {
+    "input_tokens": 2,
+    "output_tokens": 1671,
+    "calls": 1
+   },
+   "started_at": "2026-09-16T11:49:37.960997+00:00",
+   "finished_at": "2026-09-16T11:49:58.330924+00:00",
+   "dry_run": false
+  }
+ ]
+}

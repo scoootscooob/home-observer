@@ -1,8 +1,9 @@
 # Teacher distillation: a frontier model decides when the observer should speak
 
-Status: protocol v1, 2026-09-16. Written after a first-hand teacher pass over the four
-workflow clips and a 29-second untrimmed segment (section 4). Companion to
-`docs/model-roadmap.md`.
+Status: protocol v1 measured, v2 changes listed in section 4.1, 2026-09-16. Written after a
+first-hand teacher pass over the four workflow clips and a 29-second untrimmed segment, and a
+blind pass of the frontier teacher through the pipeline on the same footage (section 4).
+Companion to `docs/model-roadmap.md`.
 
 ## 1. The idea
 
@@ -94,6 +95,47 @@ What this calibrates:
   object and food events; presence and location targets need fixed-camera footage.
 - One event, one line. The mozzarella pickup and put-down within two seconds is one served
   observation, not two events; the two plate slides are one report or none.
+
+### 4.1 The frontier teacher through the pipeline (same footage, blind)
+
+`scripts/teacher_label.py` with `claude-fable-5-1` through the research proxy, 2 Hz, 512 px,
+20 s chunks, a 2 s lead-in, journal chained across chunks, second looks at 4 Hz and 896 px.
+Rows: `data/teacher-seed/api-*.jsonl`; scoring: `scripts/teacher_agreement.py`, output
+`data/teacher-seed/agreement-2026-09-16.json`, collar 1.5 s.
+
+| Measure | Value | What it means |
+|---|---|---|
+| ticks / pushes / second looks | 138 / 19 / 6 | silence on 86 percent of ticks in dense cooking footage |
+| pushes inside any narrated manipulation | 18 of 19 | the teacher speaks when something is happening |
+| durable narrated events (take, put, open, close) with a push within the collar | 14 of 16 | loose, kind-agnostic |
+| the same, requiring a compatible observation kind | 10 of 16 | strict; the misses are the spoon pickup, the pan take and the plate put-down |
+| pushes matching a durable event with a compatible kind | 7 of 19 | strict lower bound: presence, activity and "moved" pushes have no durable narration to match |
+| agreement with the interactive pass (matched pairs over both push sets) | 0.52 | the two teachers do not yet agree on what is worth saying |
+
+Judged push by push, 15 of the 19 frontier pushes are right, and the four errors are
+instructive: a lid read as lifted out of a drawer when it was being placed in (a direction
+error during an egocentric swing, the same one the interactive pass made), a fork transfer of
+mozzarella read as "eating starts", a plate slide reported as taken in one run and as moved in
+another run on the same seconds, and "begins cutting" reported at 58 s in the clip run because
+the clip starts mid-activity with an empty journal, while the segment run with the journal
+chained reported the start correctly at 45 s. The two misses that matter are quick pickups
+(spoon, pan) that a 2 Hz pass without a second look does not resolve.
+
+What changes in protocol v2 as a result:
+
+- **Worked examples in the prompt.** The rubric alone leaves too much freedom; the prompt gets
+  eight short examples, half of them silent, drawn from this pass (lid direction, plate slide
+  under the default goal, journal-aware activity starts, presence changes).
+- **Second look on every candidate pickup or placement**, not only on `unsure`: the teacher
+  marks the tick as `context` and the pipeline verifies direction and kind at 4 Hz before the
+  row is written. Cost is one extra call per push, about 1 in 7 ticks.
+- **Goal-conditioned kinds.** `object_moved` is silent under the default goal and allowed only
+  when the goal names the object or surface; `activity_started` requires the journal to lack a
+  matching activity.
+- **Chunks start with a journal.** Never label a chunk without the previous chunk's lines; for
+  the first chunk of a source, a 20 s unlabeled lead-in is summarized into the journal first.
+- **Audit is kind-aware.** Narration checks count a push only when its kind is compatible with
+  the narrated verb; the loose span match is reported alongside, never alone.
 
 ## 5. Building the dataset
 

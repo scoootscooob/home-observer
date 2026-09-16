@@ -1,0 +1,330 @@
+{
+ "collar_s": 1.5,
+ "sources": [
+  {
+   "video_id": "P27_03",
+   "window_s": [
+    44.5,
+    53.01
+   ],
+   "ticks": 17,
+   "api_pushes": [
+    [
+     45.0,
+     "object_placed"
+    ],
+    [
+     48.0,
+     "object_taken"
+    ],
+    [
+     51.0,
+     "container_state"
+    ],
+    [
+     52.5,
+     "object_placed"
+    ]
+   ],
+   "api_pushes_in_narrated_span": 4,
+   "durable_events": [
+    [
+     41.38,
+     "put down saucepan"
+    ],
+    [
+     47.68,
+     "take lid"
+    ],
+    [
+     48.98,
+     "put down lid"
+    ]
+   ],
+   "durable_events_with_push": 3,
+   "durable_events_with_kind_matching_push": 3,
+   "api_pushes_matching_a_durable_event_kind": 4,
+   "interactive_pushes": [
+    [
+     48.0,
+     "object_taken"
+    ]
+   ],
+   "api_interactive_matched": 1,
+   "second_looks": 0
+  },
+  {
+   "video_id": "P27_03",
+   "window_s": [
+    52.5,
+    61.01
+   ],
+   "ticks": 17,
+   "api_pushes": [
+    [
+     53.0,
+     "object_taken"
+    ],
+    [
+     59.0,
+     "object_placed"
+    ]
+   ],
+   "api_pushes_in_narrated_span": 2,
+   "durable_events": [
+    [
+     48.98,
+     "put down lid"
+    ],
+    [
+     56.54,
+     "take pan"
+    ],
+    [
+     57.9,
+     "put down pan"
+    ]
+   ],
+   "durable_events_with_push": 3,
+   "durable_events_with_kind_matching_push": 1,
+   "api_pushes_matching_a_durable_event_kind": 1,
+   "interactive_pushes": [
+    [
+     54.5,
+     "container_state"
+    ],
+    [
+     57.5,
+     "object_taken"
+    ],
+    [
+     59.0,
+     "object_placed"
+    ]
+   ],
+   "api_interactive_matched": 2,
+   "second_looks": 2
+  },
+  {
+   "video_id": "P22_105",
+   "window_s": [
+    55.0,
+    67.0
+   ],
+   "ticks": 24,
+   "api_pushes": [
+    [
+     58.0,
+     "activity_started"
+    ],
+    [
+     61.0,
+     "food_state"
+    ],
+    [
+     64.5,
+     "object_taken"
+    ],
+    [
+     66.5,
+     "person_presence"
+    ]
+   ],
+   "api_pushes_in_narrated_span": 4,
+   "durable_events": [
+    [
+     59.76,
+     "pick up mozzarella"
+    ],
+    [
+     61.02,
+     "put down mozzarella"
+    ],
+    [
+     62.08,
+     "put down cutlery"
+    ]
+   ],
+   "durable_events_with_push": 3,
+   "durable_events_with_kind_matching_push": 3,
+   "api_pushes_matching_a_durable_event_kind": 1,
+   "interactive_pushes": [
+    [
+     61.0,
+     "food_state"
+    ]
+   ],
+   "api_interactive_matched": 1,
+   "second_looks": 0
+  },
+  {
+   "video_id": "P22_105",
+   "window_s": [
+    40.0,
+    60.0
+   ],
+   "ticks": 40,
+   "api_pushes": [
+    [
+     40.5,
+     "person_presence"
+    ],
+    [
+     45.0,
+     "activity_started"
+    ],
+    [
+     58.0,
+     "object_moved"
+    ],
+    [
+     59.0,
+     "activity_started"
+    ]
+   ],
+   "api_pushes_in_narrated_span": 4,
+   "durable_events": [
+    [
+     41.66,
+     "put down plate"
+    ],
+    [
+     42.67,
+     "pick up knife"
+    ],
+    [
+     59.76,
+     "pick up mozzarella"
+    ]
+   ],
+   "durable_events_with_push": 2,
+   "durable_events_with_kind_matching_push": 0,
+   "api_pushes_matching_a_durable_event_kind": 0,
+   "interactive_pushes": [
+    [
+     42.0,
+     "object_placed"
+    ],
+    [
+     44.0,
+     "activity_started"
+    ],
+    [
+     61.0,
+     "food_state"
+    ],
+    [
+     67.0,
+     "person_presence"
+    ]
+   ],
+   "api_interactive_matched": 2,
+   "second_looks": 1
+  },
+  {
+   "video_id": "P22_105",
+   "window_s": [
+    60.0,
+    68.9
+   ],
+   "ticks": 18,
+   "api_pushes": [
+    [
+     62.0,
+     "food_state"
+    ],
+    [
+     64.5,
+     "object_moved"
+    ],
+    [
+     67.0,
+     "person_presence"
+    ]
+   ],
+   "api_pushes_in_narrated_span": 2,
+   "durable_events": [
+    [
+     59.76,
+     "pick up mozzarella"
+    ],
+    [
+     61.02,
+     "put down mozzarella"
+    ],
+    [
+     62.08,
+     "put down cutlery"
+    ]
+   ],
+   "durable_events_with_push": 3,
+   "durable_events_with_kind_matching_push": 3,
+   "api_pushes_matching_a_durable_event_kind": 1,
+   "interactive_pushes": null,
+   "api_interactive_matched": 0,
+   "second_looks": 2
+  },
+  {
+   "video_id": "P28_07",
+   "window_s": [
+    16.0,
+    27.01
+   ],
+   "ticks": 22,
+   "api_pushes": [
+    [
+     16.0,
+     "activity_started"
+    ],
+    [
+     24.5,
+     "activity_started"
+    ]
+   ],
+   "api_pushes_in_narrated_span": 2,
+   "durable_events": [
+    [
+     22.15,
+     "take spoon"
+    ]
+   ],
+   "durable_events_with_push": 0,
+   "durable_events_with_kind_matching_push": 0,
+   "api_pushes_matching_a_durable_event_kind": 0,
+   "interactive_pushes": [
+    [
+     16.5,
+     "appliance_state"
+    ],
+    [
+     22.5,
+     "object_taken"
+    ],
+    [
+     24.5,
+     "activity_started"
+    ]
+   ],
+   "api_interactive_matched": 2,
+   "second_looks": 1
+  }
+ ],
+ "totals": {
+  "api_ticks": 138,
+  "api_pushes": 19,
+  "api_pushes_in_narrated_span": 18,
+  "durable_events": 16,
+  "durable_events_with_push": 14,
+  "inter_pushes": 12,
+  "api_inter_matched": 8,
+  "second_looks": 6,
+  "durable_events_with_kind_matching_push": 10,
+  "api_pushes_matching_a_durable_event_kind": 7,
+  "api_silence_rate": 0.862,
+  "api_push_precision_vs_narration": 0.947,
+  "durable_recall": 0.875,
+  "durable_recall_kind_aware": 0.625,
+  "api_push_precision_kind_aware": 0.368,
+  "api_interactive_agreement": 0.516
+ }
+}

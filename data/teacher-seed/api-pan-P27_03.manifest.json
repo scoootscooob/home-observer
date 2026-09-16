@@ -1,0 +1,27 @@
+{
+ "runs": [
+  {
+   "video": "data/continuous-v2-workflow/positive-take-pan-P27_03.mp4",
+   "video_sha256": "3c3cea12449ec4b432cdf1e3a8bc827172fc13d7fe74460db4cddc1f522b29eb",
+   "video_id": "P27_03",
+   "range_s": [
+    0.0,
+    8.51
+   ],
+   "chunk_s": 20.0,
+   "tick_hz": 2.0,
+   "width_px": 512,
+   "model": "claude-fable-5-1",
+   "prompt_version": "teacher-v1",
+   "rows_written": 1,
+   "usage": {
+    "input_tokens": 6,
+    "output_tokens": 2905,
+    "calls": 3
+   },
+   "started_at": "2026-09-16T11:49:58.442496+00:00",
+   "finished_at": "2026-09-16T11:50:39.308737+00:00",
+   "dry_run": false
+  }
+ ]
+}
