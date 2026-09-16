@@ -1,8 +1,8 @@
 # Model roadmap: how to make the local perception actually work
 
 Status: proposal, 2026-09-16. Grounded in the measured failures of iterations 1 and 2 and in
-three research notes under `docs/research/` (perception stack, datasets, labeling and data
-plan), each with primary sources. Numbers from those notes are marked measured or estimated
+four research notes under `docs/research/` (perception stack, datasets, labeling and data
+plan, decoding and training), each with primary sources. Numbers from those notes are marked measured or estimated
 there; re-measure anything load-bearing on the target machine before committing to it.
 
 ## 0. The decision in one paragraph
@@ -164,6 +164,42 @@ constrained greedy decoding provably distorts the distribution and turns unsuper
 into confident hallucinations, which is exactly what our judged-fields completion exposed.
 Interleaved textual timestamps outperform other time encodings, and Qwen3-VL already uses them.
 
+### 2.2 The VLM judge: decoding contract and calibration (from `docs/research/decoding-and-training-2026-09.md`)
+
+- **Validity and content are separate problems.** Grammar constraints on Apple silicon
+  (llama.cpp with the Gemma 4 GGUF and mmproj builds, or mlx-vlm with llguidance) take
+  schema-valid JSON from 0 to nearly 100 percent at about 1 percent per-token overhead, and
+  llguidance makes a per-request enum of allowed evidence IDs essentially free. But
+  grammar-constrained greedy decoding provably distorts the model's distribution: forcing
+  the unsupervised fields makes the model fill them, which is exactly what our judged-fields
+  completion showed. Expect valid JSON with the same recall unless the contract changes.
+- **Contract for the judge:** `event_present` first, then a bounded event list, evidence IDs
+  drawn from a per-request enum, a lazy grammar so free evidence text may precede the JSON,
+  and the decision read from the renormalized log-probability of the `event_present` token,
+  never from a verbalized confidence: for models at or below 4B, verbalized confidence has
+  an AUROC near 0.5 while token probability is usable. Platt or temperature scaling on
+  event-matched labels turns that into a calibrated score.
+- **If the VLM is fine-tuned at all,** the published recipes that work from small data are
+  reinforcement fine-tuning with a verifiable temporal-IoU reward (2.5 to 5K samples raise
+  Charades-STA mIoU from about 29 to about 60), and they all start from a base that already
+  localizes. Supervised fine-tuning on the same data reaches only about 46. Every supervised
+  temporal-grounding tune in the literature used 10^5 to 10^6 instances with the projector
+  and usually the vision tower trainable; language-only LoRA on 200 windows was never going
+  to work, and the one published replica of that recipe left multi-step localization flat.
+  Measure Gemma 4's zero-shot window-level event-presence accuracy before spending on it.
+
+### 2.3 Post-processing as a deployed alerting system
+
+Every deployed event detector in the literature emits through the same chain, and none of it
+existed in our pipeline: median-filter the window scores, apply hysteresis (an onset threshold
+above the offset threshold), enforce a minimum duration and a refractory period, run
+temporal soft non-maximum suppression across overlapping windows, and set the final
+threshold with a statistical guarantee on held-out quiet footage. A worked example from the
+note: with ten quiet hours split into minute units, certifying at most two false events per
+hour at 90 percent confidence requires at most 13 false emissions in the calibration set,
+about 1.3 per hour empirically. Our 1800 per hour is three orders of magnitude off every
+deployed alerting system, and the chain alone caps output at the refractory rate.
+
 ## 3. Data: what exists, what is usable, and what we must record ourselves
 
 Full survey with licenses: `docs/research/datasets-2026-09.md`. Headline: no public dataset
@@ -235,6 +271,13 @@ in real footage.
 - **Training.** Small models train in minutes to hours on one H100: a detector fine-tune,
   a clip classifier, a geometry head. The Runpod runner, staging and hash-verified retrieval
   already work; each run is bounded and the acceptance set is never touched by training.
+  Three tiers from the decoding-and-training note, all cheap in compute: a frozen-feature
+  temporal detector head (the recipe that tops untrimmed EPIC-KITCHENS detection at about 32
+  average mAP with InternVideo2 features, under $60 of GPU time), a VideoMAE-S or -B fine-tune
+  on our own crops ($10 to $40), and, only later, reinforcement fine-tuning of the verifier
+  ($40 to $140). Labeled hours are the constraint, not GPU time: kitchens yield about 900
+  labeled actions per hour, and point labels keep most of full-supervision accuracy at a
+  sixth of the annotation cost.
 - **Labeling.** A research-only labeling service (frontier video model plus segmentation
   propagation plus a review UI) produces versioned datasets with the same manifest, hash and
   split discipline as `data/continuous-v2`.
@@ -246,10 +289,13 @@ in real footage.
 
 - Frozen acceptance homes, whole homes never used for training or tuning, versioned and never
   rewritten; report per home, per placement, per lighting.
-- Event recall at temporal IoU 0.5 with boundary error in seconds; false events per hour on
-  exhaustively covered time; miss rate versus false-alarm rate curves (the ActEV convention),
-  identity switches against mask tracks, lifted/supported accuracy on adjudicated outcomes,
-  calibration error on held-out homes, and source-frame to verified-response latency.
+- Event-level precision, recall and F1 with a one-second onset collar plus mean average
+  precision over temporal IoU 0.1 to 0.5 with each ground-truth event matched once (the
+  EPIC-KITCHENS convention, so duplicates count as false); false events per hour on at least
+  ten hours of held-out quiet footage with miss rate at 1, 5 and 20 false events per hour;
+  identity switches against mask tracks; lifted/supported accuracy on adjudicated outcomes;
+  calibration error on held-out homes; bootstrap confidence intervals over videos; and
+  source-frame to verified-response latency for stream replays.
 - Shipping tiers: at most one false informational notification per home-day and one false
   escalation per home-week, with confirmation gating before anything escalates to a person.
   Field deployments of comparable systems produced 3 to 85 false alarms per day per person
@@ -261,11 +307,11 @@ in real footage.
 
 | Phase | Weeks | Work | Gate to pass |
 |---|---|---|---|
-| 0. Measure the stack on the target Mac | 1 | EdgeTAM Core ML versus SAM 2.1 tiny MLX at 512, 768 and 1024 px with 1 and 4 objects; YOLOE-26 s versus OmDet-Turbo at 480 and 640; Hands23 on MPS; Qwen3-VL-4B with prefix caching; X3D-S versus VideoMAE-S on crops | a 15 fps budget that closes, or a documented fallback at 7.5 fps |
+| 0. Measure the stack on the target Mac | 1 | EdgeTAM Core ML versus SAM 2.1 tiny MLX at 512, 768 and 1024 px with 1 and 4 objects; YOLOE-26 s versus OmDet-Turbo at 480 and 640; Hands23 on MPS; Qwen3-VL-4B with prefix caching; X3D-S versus VideoMAE-S on crops; Gemma 4 E4B and Qwen3-VL-4B zero-shot event-presence accuracy on the frozen test windows under a grammar with log-prob scoring | a 15 fps budget that closes, or a documented fallback at 7.5 fps; a zero-shot verifier baseline with a calibrated threshold |
 | 1. Tracker and contact replace CSRT | 2 | memory tracker with detector re-prompting, hand pose and contact geometry, state machine emitting motion/contact/placed with "unknown"; rerun the eight fresh-footage workflows | visible-track coverage above 80 percent on the pan and lid clips; the geometric gate opens on the real pickups; no false completion |
 | 2. Lift test and verifier | 2 | support-surface model, depth-based lift check, Qwen3-VL-4B verifier under a grammar with a forced abstain option; wire into `LocalVerifier` | positive workflows reach `confirmed` on the narrated pickups; the plate negative stays `contradicted` or `unknown` |
 | 3. Pilot data and labeling pipeline | 3 | two team homes, consent and blur tooling, Gemini proposals, snapping, SAM masklets, CVAT adjudication; measure human minutes per hour | pipeline error rate known; 20 labeled hours with negatives |
-| 4. Interaction classifier v1 | 2 | X3D-S or VideoMAE-S pretrained on Ego-Exo4D exocentric crops and Ego4D state-change clips, fine-tuned on pilot crops; temperature scaling; temporal NMS and hysteresis | on the pilot's held-out home: recall at IoU 0.5 above 0.5, under 5 false events per hour, calibration error under 0.1 |
+| 4. Interaction classifier v1 | 2 | frozen-feature temporal head as the first tier, then X3D-S or VideoMAE-S pretrained on Ego-Exo4D exocentric crops and Ego4D state-change clips and fine-tuned on pilot crops; temperature scaling; the full post-processing chain of section 2.3 with a certified threshold on quiet hours | on the pilot's held-out home: recall at IoU 0.5 above 0.5, under 5 false events per hour, calibration error under 0.1 |
 | 5. Breadth collection and acceptance freeze | 6 to 8 | 8 to 12 homes, 60 to 100 labeled hours, 3 to 4 frozen acceptance homes | acceptance set frozen and double-annotated before any model sees it |
 | 6. Acceptance and field loop | ongoing | ship tiers with confirmation gating; on-device active learning with consent | tier targets met on frozen homes; drift tracked monthly |
 
@@ -286,7 +332,8 @@ adjudicated hours at the stated human rates plus a few hundred dollars of API an
 
 ## 8. What we should stop doing
 
-- Fine-tuning a generative VLM to emit detection, tracking and calibration as JSON.
+- Fine-tuning a generative VLM to emit detection, tracking and calibration as JSON, and
+  trusting any verbalized confidence from a model of this size.
 - Supervising abstention with a ten-token empty target next to eighty-token positives.
 - Training on egocentric footage for a static camera and hoping for transfer.
 - Training on trimmed action clips: they teach that every window contains an action.
