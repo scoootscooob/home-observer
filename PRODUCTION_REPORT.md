@@ -1,4 +1,4 @@
-# Production privacy boundary and local perception — iteration 2 (DRAFT, pending sections marked)
+# Production privacy boundary and local perception — iteration 2
 
 **The production privacy boundary is now enforced and demonstrated. Model quality remains weak.**
 Every sensory byte stayed on this machine in the production-shaped runs: perception ran
@@ -177,23 +177,89 @@ windows with targets plus truly quiet windows (195 train, 22 validation rows); w
 actions overlap only partially are excluded from supervision so an empty event list never
 contradicts a visible partial action (`supervised-selection.json`).
 
-Runpod research job: the first launch failed at payload extraction (the project archive
-carried local uid/gid and the pod's `tar` could not chown); the runner stopped that pod with
-its volume retained, nothing had run, and the pod was deleted and provider-confirmed
+### Controlled experiment on Runpod (H100 SXM)
+
+The first launch failed at payload extraction (the archive carried local uid/gid and the
+pod's `tar` could not chown); that pod ran nothing and was deleted and provider-confirmed
 (`reports/physical-v2-failed-upload-cleanup.json`, about $0.10). The packager now writes
-root-owned entries and the extractor uses `--no-same-owner`. The relaunched job on a fresh
-H100 pod: PENDING (v2 training for 300 steps on the supervised subset, then matched native
-evaluation of v2, v1 and base on the 242 test windows).
+root-owned entries and extracts with `--no-same-owner`. The relaunched job trained the v2
+adapter for 300 steps (about 3 epochs over the 195 supervised windows; supervised-field
+validation loss 2.83 → 0.30) and then ran the matched native evaluation of v2, v1 and base
+on the 242 frozen test windows: identical rows, frames, prompt, greedy decoding, token
+budgets and GPU, adapter being the only difference (`unmatched_settings: []`). Artifacts were
+retrieved over SSH, hash-verified (`f7495da5…`) and copied to `artifacts/physical-training-v2/`;
+the pod was deleted and the provider confirms no pod remains
+(`reports/physical-v2-recovery-verification.json`). Cost about $22.70 for 6.5 hours; the
+local supervisor died with a session restart, so a detached recovery chain did the
+retrieval, and the validation-split pass was cut at 33 of 42 rows (unused).
+
+| Run | Contract | Usable | Exact-verb recall | False events / h (covered) | Abstention on quiet windows | Mean latency |
+|---|---|---:|---:|---:|---:|---:|
+| base | strict | 0/242 | 0.000 | n/a | n/a | 31.3 s |
+| base | judged | 124/242 | 0.000 (0/146) | 0 | 12/12 | 31.3 s |
+| v1 | strict | 0/242 | 0.000 | n/a | n/a | 19.2 s |
+| v1 | judged | 235/242 | 0.000 (0/146) | 1817 | 0/31 | 19.2 s |
+| v2 | strict | 0/242 | 0.000 | n/a | n/a | 10.8 s |
+| v2 | judged | 237/242 | 0.034 (5/146) | 1827 | 2/31 | 10.8 s |
+
+Reading the table (`reports/physical-v2-comparison/`):
+
+- **Strict validity is 0 for every model** on native decoding: the adapters emit only the
+  supervised fields and the base model emits verbose object inventories that truncate.
+  Complete-contract success therefore remains a decoding-contract problem, not something
+  more training fixed.
+- **Under the judged contract the adapters are usable but wrong.** v1 never matches a labeled
+  event and says `pick-up` in 120 of 242 windows, a bias inherited from the pickup-heavy
+  pilot. v2 matches 5 events, all `open` (drawer, freezer, fridge, oven) with mean temporal
+  IoU 0.68, and spreads its verbs across the training distribution instead.
+- **Neither adapter learned to abstain**: v1 emits an event in every quiet window, v2 in 29 of
+  31, even though 48 of the 195 supervised training windows were empty-event negatives.
+  That is the source of the false-event rate: about 1800 unmatched evaluated-class claims
+  per hour of exhaustively covered time, measured on 353 s of coverage, so the absolute
+  figure is a small-sample estimate but the qualitative conclusion is robust.
+- **The base model is silent rather than wrong**: 124 usable decisions, zero events of any
+  evaluated class, zero false events, so its recall is also zero. On this footage no model
+  in the comparison provides a usable event signal.
+- **Uncertainty calibration cannot be reported**: the adapters' confidences are placeholders
+  under the judged contract and the base produced no scorable events.
+- Detection delay and tracking identity are not measured here (offline tiling has no clock
+  mapping and no boxes); the stream replays in section 4 carry the delay measurements.
+
+The two temporal controls (reversed, static frames) were not rerun in this iteration.
 
 ## 6. Unresolved uncertainty and limits
 
-- The sandbox is a local `sandbox-exec` profile, not a network or hardware guarantee.
-- Structured exports still reveal household activity by design.
-- Tracker identity, false events per hour, calibration and delay on fresh footage are
-  not yet measured; the pilot test rows are diagnostic only.
-- The judged-fields contract makes the adapter usable but its confidence is a placeholder;
-  watches requiring a model judgment above 0.5 cannot be satisfied by it.
+- The sandbox is a local `sandbox-exec` profile, not a network or hardware guarantee, and
+  structured exports still reveal household activity by design.
+- The CSRT tracker with translation-only camera compensation loses objects and reports
+  motion under egocentric camera movement; the fresh-footage cues fired before the narrated
+  actions for that reason, and no positive workflow reached a verified pickup. A static
+  household camera removes the camera-motion source but not the appearance-change losses.
+- Model content on fresh continuous footage is close to zero: no adapter abstains, exact-verb
+  recall is at most 0.034, and false events run at about 1800 per covered hour. The judged
+  contract makes outputs usable; it does not make them right, and its confidence is a
+  placeholder that cannot satisfy a watch requiring a model judgment above 0.5.
+- Tracking identity, identity switches and calibration remain unmeasured: no independent
+  boxes or identities exist, and no scorable model confidences exist.
+- Home-level separation of the benchmark is asserted from the dataset protocol, not verified.
+- False-event rates come from 353 s of covered test time across four videos; treat them as
+  order-of-magnitude, not precise.
 
 ## 7. Planned work
 
-PENDING: filled after the Runpod results and the workflow runs.
+1. **Decoding contract before more training**: constrained decoding on the local backend so
+   strict validity stops being a format failure, or a training target that includes the
+   complete contract; without this, strict metrics will stay at zero for every model.
+2. **Abstention supervision that actually binds**: weight quiet negatives, add
+   near-miss negatives (reaches, repositioning), and evaluate abstention on validation before
+   any test run; the current 25 percent empty-window share did not teach it.
+3. **Tracking that survives handling**: re-detection after loss, appearance-model updates, and
+   a static-camera capture for the household setting; measure identity switches once
+   independent boxes exist.
+4. **Learned verification on real evidence**: the learned check has never executed on real
+   footage because geometry never confirmed movement; make the geometric gate and the
+   learned check independently measurable.
+5. **Gateway transport**: implement the AHP WebSocket binding so the sensing node speaks to an
+   OpenClaw gateway directly, keeping the scanner in the path.
+6. **More covered footage**: false-event rates need hours, not minutes, of exhaustively narrated
+   negatives before any threshold is tuned.

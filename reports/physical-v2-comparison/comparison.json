@@ -1,0 +1,1755 @@
+{
+  "dataset": "data/continuous-v2/test.jsonl",
+  "dataset_sha256": "62fe07edc181db86e01a6a1ee476de852760f8ee3e2c52aec791f2eb7a39f1fd",
+  "runs": {
+    "base": {
+      "adapter": null,
+      "adapter_sha256": {},
+      "strict": {
+        "usable": 0,
+        "windows": 242,
+        "usable_rate": 0.0,
+        "labeled": 146,
+        "matched": 0,
+        "recall": 0.0,
+        "false_with_coverage": 0,
+        "false_events_per_hour": null,
+        "false_events_per_hour_exhaustive_subset": 0.0,
+        "covered_seconds": 352.76,
+        "unscored_extras": 0,
+        "mean_iou": null,
+        "calibration": {
+          "scorable_predictions": 0,
+          "brier_known_labels": null,
+          "ece_known_labels": null,
+          "positive_only": false
+        },
+        "mean_latency_s": 31.26356984194068,
+        "per_kind": {
+          "close:bin:bread": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "close:drawer": {
+            "labeled": 11,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "close:freezer": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "close:fridge": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "close:oven": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "dry:saucepan": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "move:box": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "move:plate": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:bin:bread": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:drawer": {
+            "labeled": 15,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:freezer": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:fridge": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:mozzarella": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:oven": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "pick-up:fork": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "pick-up:knife": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "pick-up:ladle": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "pick-up:mozzarella": {
+            "labeled": 6,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:cutlery": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:fork": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:glove:oven": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:knife": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:ladle": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:lid": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:mozzarella": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:pan": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:plate": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:saucepan": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:sponge": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:spoon": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-in:food": {
+            "labeled": 6,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-in:tray": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put:fish": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put:food": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put:knife": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "stir:food": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take-from:food": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take-out:tray": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:board:chopping": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:box": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:bread": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:fish": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:food": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:glove:oven": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:knife": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:lid": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:pan": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:saucepan": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:spoon": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "turn-off:tap": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "turn-on:tap": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          }
+        }
+      },
+      "judged": {
+        "usable": 124,
+        "windows": 242,
+        "usable_rate": 0.512396694214876,
+        "labeled": 146,
+        "matched": 0,
+        "recall": 0.0,
+        "false_with_coverage": 0,
+        "false_events_per_hour": null,
+        "false_events_per_hour_exhaustive_subset": 0.0,
+        "covered_seconds": 352.76,
+        "unscored_extras": 20,
+        "mean_iou": null,
+        "calibration": {
+          "scorable_predictions": 0,
+          "brier_known_labels": null,
+          "ece_known_labels": null,
+          "positive_only": false
+        },
+        "mean_latency_s": 31.26356984194068,
+        "per_kind": {
+          "close:bin:bread": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "close:drawer": {
+            "labeled": 11,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "close:freezer": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "close:fridge": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "close:oven": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "dry:saucepan": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "move:box": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "move:plate": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:bin:bread": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:drawer": {
+            "labeled": 15,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:freezer": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:fridge": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:mozzarella": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:oven": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "pick-up:fork": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "pick-up:knife": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "pick-up:ladle": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "pick-up:mozzarella": {
+            "labeled": 6,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:cutlery": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:fork": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:glove:oven": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:knife": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:ladle": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:lid": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:mozzarella": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:pan": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:plate": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:saucepan": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:sponge": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:spoon": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-in:food": {
+            "labeled": 6,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-in:tray": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put:fish": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put:food": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put:knife": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "stir:food": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take-from:food": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take-out:tray": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:board:chopping": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:box": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:bread": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:fish": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:food": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:glove:oven": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:knife": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:lid": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:pan": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:saucepan": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:spoon": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "turn-off:tap": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "turn-on:tap": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          }
+        }
+      },
+      "abstention_strict": {
+        "quiet_windows": 33,
+        "usable_quiet": 0,
+        "abstained": 0,
+        "abstention_rate_on_usable": null
+      },
+      "abstention_judged": {
+        "quiet_windows": 33,
+        "usable_quiet": 12,
+        "abstained": 12,
+        "abstention_rate_on_usable": 1.0
+      }
+    },
+    "v1": {
+      "adapter": "/workspace/home-observer/data/adapter-v1",
+      "adapter_sha256": {
+        "adapter_model.safetensors": "e46d41928e3657cda31194451d35588fb1c054e1b4f881a947dea7aa84309306",
+        "adapter_config.json": "d5c4a268f8add1708d61ca210482328d5338fd7697e4e088ec125e3473fdfc74"
+      },
+      "strict": {
+        "usable": 0,
+        "windows": 242,
+        "usable_rate": 0.0,
+        "labeled": 146,
+        "matched": 0,
+        "recall": 0.0,
+        "false_with_coverage": 0,
+        "false_events_per_hour": null,
+        "false_events_per_hour_exhaustive_subset": 0.0,
+        "covered_seconds": 352.76,
+        "unscored_extras": 0,
+        "mean_iou": null,
+        "calibration": {
+          "scorable_predictions": 0,
+          "brier_known_labels": null,
+          "ece_known_labels": null,
+          "positive_only": false
+        },
+        "mean_latency_s": 19.198011913336813,
+        "per_kind": {
+          "close:bin:bread": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "close:drawer": {
+            "labeled": 11,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "close:freezer": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "close:fridge": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "close:oven": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "dry:saucepan": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "move:box": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "move:plate": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:bin:bread": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:drawer": {
+            "labeled": 15,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:freezer": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:fridge": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:mozzarella": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:oven": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "pick-up:fork": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "pick-up:knife": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "pick-up:ladle": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "pick-up:mozzarella": {
+            "labeled": 6,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:cutlery": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:fork": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:glove:oven": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:knife": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:ladle": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:lid": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:mozzarella": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:pan": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:plate": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:saucepan": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:sponge": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:spoon": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-in:food": {
+            "labeled": 6,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-in:tray": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put:fish": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put:food": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put:knife": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "stir:food": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take-from:food": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take-out:tray": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:board:chopping": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:box": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:bread": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:fish": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:food": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:glove:oven": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:knife": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:lid": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:pan": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:saucepan": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:spoon": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "turn-off:tap": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "turn-on:tap": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          }
+        }
+      },
+      "judged": {
+        "usable": 235,
+        "windows": 242,
+        "usable_rate": 0.9710743801652892,
+        "labeled": 146,
+        "matched": 0,
+        "recall": 0.0,
+        "false_with_coverage": 178,
+        "false_events_per_hour": null,
+        "false_events_per_hour_exhaustive_subset": 1816.5324866764938,
+        "covered_seconds": 352.76,
+        "unscored_extras": 57,
+        "mean_iou": null,
+        "calibration": {
+          "scorable_predictions": 178,
+          "brier_known_labels": 0.25,
+          "ece_known_labels": 0.5,
+          "positive_only": false
+        },
+        "mean_latency_s": 19.198011913336813,
+        "per_kind": {
+          "close:bin:bread": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "close:drawer": {
+            "labeled": 11,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "close:freezer": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "close:fridge": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "close:oven": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "dry:saucepan": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "move:box": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "move:plate": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:bin:bread": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:drawer": {
+            "labeled": 15,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:freezer": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:fridge": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:mozzarella": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:oven": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "pick-up:fork": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "pick-up:knife": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "pick-up:ladle": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "pick-up:mozzarella": {
+            "labeled": 6,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:cutlery": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:fork": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:glove:oven": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:knife": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:ladle": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:lid": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:mozzarella": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:pan": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:plate": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:saucepan": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:sponge": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:spoon": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-in:food": {
+            "labeled": 6,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-in:tray": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put:fish": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put:food": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put:knife": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "stir:food": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take-from:food": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take-out:tray": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:board:chopping": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:box": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:bread": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:fish": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:food": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:glove:oven": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:knife": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:lid": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:pan": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:saucepan": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:spoon": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "turn-off:tap": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "turn-on:tap": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          }
+        }
+      },
+      "abstention_strict": {
+        "quiet_windows": 33,
+        "usable_quiet": 0,
+        "abstained": 0,
+        "abstention_rate_on_usable": null
+      },
+      "abstention_judged": {
+        "quiet_windows": 33,
+        "usable_quiet": 31,
+        "abstained": 0,
+        "abstention_rate_on_usable": 0.0
+      }
+    },
+    "v2": {
+      "adapter": "/workspace/home-observer/artifacts/physical-v2/adapter",
+      "adapter_sha256": {
+        "adapter_model.safetensors": "71db2cb8762c5b834aef862774aa0c4f024127f01a55985f8f06a24c077194e7",
+        "adapter_config.json": "ddf5b6e252bcd82e7522b42df1e5306bb341dd50ccc5fb8c6d736ca561ebe1eb"
+      },
+      "strict": {
+        "usable": 0,
+        "windows": 242,
+        "usable_rate": 0.0,
+        "labeled": 146,
+        "matched": 0,
+        "recall": 0.0,
+        "false_with_coverage": 0,
+        "false_events_per_hour": null,
+        "false_events_per_hour_exhaustive_subset": 0.0,
+        "covered_seconds": 352.76,
+        "unscored_extras": 0,
+        "mean_iou": null,
+        "calibration": {
+          "scorable_predictions": 0,
+          "brier_known_labels": null,
+          "ece_known_labels": null,
+          "positive_only": false
+        },
+        "mean_latency_s": 10.770225588923074,
+        "per_kind": {
+          "close:bin:bread": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "close:drawer": {
+            "labeled": 11,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "close:freezer": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "close:fridge": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "close:oven": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "dry:saucepan": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "move:box": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "move:plate": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:bin:bread": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:drawer": {
+            "labeled": 15,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:freezer": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:fridge": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:mozzarella": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:oven": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "pick-up:fork": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "pick-up:knife": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "pick-up:ladle": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "pick-up:mozzarella": {
+            "labeled": 6,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:cutlery": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:fork": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:glove:oven": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:knife": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:ladle": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:lid": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:mozzarella": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:pan": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:plate": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:saucepan": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:sponge": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:spoon": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-in:food": {
+            "labeled": 6,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-in:tray": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put:fish": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put:food": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put:knife": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "stir:food": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take-from:food": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take-out:tray": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:board:chopping": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:box": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:bread": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:fish": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:food": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:glove:oven": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:knife": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:lid": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:pan": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:saucepan": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:spoon": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "turn-off:tap": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "turn-on:tap": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          }
+        }
+      },
+      "judged": {
+        "usable": 237,
+        "windows": 242,
+        "usable_rate": 0.9793388429752066,
+        "labeled": 146,
+        "matched": 5,
+        "recall": 0.03424657534246575,
+        "false_with_coverage": 179,
+        "false_events_per_hour": null,
+        "false_events_per_hour_exhaustive_subset": 1826.7377253656878,
+        "covered_seconds": 352.76,
+        "unscored_extras": 119,
+        "mean_iou": 0.6844279403926683,
+        "calibration": {
+          "scorable_predictions": 184,
+          "brier_known_labels": 0.2691853260869565,
+          "ece_known_labels": 0.4863586956521739,
+          "positive_only": false
+        },
+        "mean_latency_s": 10.770225588923074,
+        "per_kind": {
+          "close:bin:bread": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "close:drawer": {
+            "labeled": 11,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "close:freezer": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "close:fridge": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "close:oven": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "dry:saucepan": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "move:box": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "move:plate": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:bin:bread": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:drawer": {
+            "labeled": 15,
+            "matched": 2,
+            "recall": 0.13333333333333333
+          },
+          "open:freezer": {
+            "labeled": 2,
+            "matched": 1,
+            "recall": 0.5
+          },
+          "open:fridge": {
+            "labeled": 2,
+            "matched": 1,
+            "recall": 0.5
+          },
+          "open:mozzarella": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "open:oven": {
+            "labeled": 2,
+            "matched": 1,
+            "recall": 0.5
+          },
+          "pick-up:fork": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "pick-up:knife": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "pick-up:ladle": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "pick-up:mozzarella": {
+            "labeled": 6,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:cutlery": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:fork": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:glove:oven": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:knife": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:ladle": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:lid": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:mozzarella": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:pan": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:plate": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:saucepan": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:sponge": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-down:spoon": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-in:food": {
+            "labeled": 6,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put-in:tray": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put:fish": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put:food": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "put:knife": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "stir:food": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take-from:food": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take-out:tray": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:board:chopping": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:box": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:bread": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:fish": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:food": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:glove:oven": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:knife": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:lid": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:pan": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:saucepan": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "take:spoon": {
+            "labeled": 4,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "turn-off:tap": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          },
+          "turn-on:tap": {
+            "labeled": 2,
+            "matched": 0,
+            "recall": 0.0
+          }
+        }
+      },
+      "abstention_strict": {
+        "quiet_windows": 33,
+        "usable_quiet": 0,
+        "abstained": 0,
+        "abstention_rate_on_usable": null
+      },
+      "abstention_judged": {
+        "quiet_windows": 33,
+        "usable_quiet": 31,
+        "abstained": 2,
+        "abstention_rate_on_usable": 0.06451612903225806
+      }
+    }
+  },
+  "matched_settings": {
+    "dataset_sha256": true,
+    "selected_ids": true,
+    "prompt_sha256": true,
+    "media_sha256": true,
+    "implementation_sha256": true,
+    "generation": true,
+    "versions": true,
+    "source_rows": true,
+    "selection_limit": true,
+    "backend": true,
+    "model_config.model_id": true,
+    "model_config.revision": true,
+    "model_config.dataset_root": true,
+    "model_config.quantization": true,
+    "model_config.max_frames": true,
+    "model_config.max_audio_seconds": true,
+    "model_config.max_input_tokens": true,
+    "model_config.max_new_tokens": true,
+    "model_config.max_soft_tokens": true,
+    "model_config.max_context_chars": true,
+    "model_config.max_media_bytes": true,
+    "model_config.max_batch_size": true,
+    "model_config.merge_adapter": true
+  },
+  "unmatched_settings": [],
+  "note": "Strict = complete validated decision; judged = adapter-judged fields with recorded placeholders; false events per hour counts unmatched evaluated-class predictions inside covered intervals."
+}
