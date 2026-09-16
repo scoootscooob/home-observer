@@ -25,7 +25,8 @@ local outcome verifier (`local_verifier.py`), and a sandboxed frontier coordinat
 `scripts/run_production.py`. See [production runtime](docs/production-runtime.md),
 [local verifier](docs/local-verifier.md), the [frozen continuous benchmark
 protocol](docs/continuous-benchmark.md) and the iteration report
-[PRODUCTION_REPORT.md](PRODUCTION_REPORT.md). The experimental Runpod replay in
+[PRODUCTION_REPORT.md](PRODUCTION_REPORT.md), and the plan for making the model
+actually work is [docs/model-roadmap.md](docs/model-roadmap.md). The experimental Runpod replay in
 `docs/recipe-workflow.md` remains research-only. The node self-describes to agent gateways
 through an [Agent Hardware Protocol](https://github.com/scoootscooob/agent-bridge-sdk)
 (separate repository) manifest derived from the same schemas (`python -m home_observer.ahp_manifest`).

@@ -1,0 +1,842 @@
+{
+  "purpose": "Temporal-sensitivity control for the v2 adapter on fresh continuous test windows (research diagnostic; not a metric)",
+  "adapter_sha256": "71db2cb8762c5b834aef862774aa0c4f024127f01a55985f8f06a24c077194e7",
+  "backend": "PhysicalLocalModel on Apple Metal, judged-fields contract, greedy",
+  "windows_requested": 24,
+  "windows_completed": 21,
+  "windows_usable": 20,
+  "static_repeat_event_claimed": 20,
+  "static_repeat_identical_verbs": 8,
+  "reversed_identical_verbs": 12,
+  "quiet_windows": 12,
+  "quiet_windows_with_event_claimed": 12,
+  "target_windows": 8,
+  "target_windows_with_a_shared_verb": 2,
+  "rows": [
+    {
+      "id": "cont_5c9c1a83fcb8956b7377",
+      "quiet": false,
+      "targets": [
+        [
+          "take",
+          "spoon"
+        ]
+      ],
+      "original": {
+        "events": [
+          [
+            "pick-up",
+            "spoon"
+          ]
+        ],
+        "error": null
+      },
+      "static_repeat": {
+        "events": [
+          [
+            "open",
+            "door"
+          ]
+        ],
+        "error": null
+      },
+      "reversed": {
+        "events": [
+          [
+            "pick-up",
+            "spoon"
+          ],
+          [
+            "pick-up",
+            "spoon"
+          ]
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "cont_d75845aa9ebf8a53a114",
+      "quiet": false,
+      "targets": [
+        [
+          "put-in",
+          "tray"
+        ]
+      ],
+      "original": {
+        "events": [
+          [
+            "check",
+            "food"
+          ]
+        ],
+        "error": null
+      },
+      "static_repeat": {
+        "events": [
+          [
+            "check",
+            "pot"
+          ]
+        ],
+        "error": null
+      },
+      "reversed": {
+        "events": [
+          [
+            "check",
+            "food"
+          ]
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "cont_2eccd2e11b31047c2ada",
+      "quiet": false,
+      "targets": [
+        [
+          "put",
+          "fish"
+        ],
+        [
+          "take",
+          "box"
+        ]
+      ],
+      "original": {
+        "events": [
+          [
+            "put-in",
+            "milk"
+          ]
+        ],
+        "error": null
+      },
+      "static_repeat": {
+        "events": [
+          [
+            "put-in",
+            "milk"
+          ]
+        ],
+        "error": null
+      },
+      "reversed": {
+        "events": [
+          [
+            "put-in",
+            "milk"
+          ]
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "cont_dce627ada385f4800a5e",
+      "quiet": false,
+      "targets": [
+        [
+          "take",
+          "food"
+        ]
+      ],
+      "original": {
+        "events": [
+          [
+            "put-in",
+            "packaging"
+          ]
+        ],
+        "error": null
+      },
+      "static_repeat": {
+        "events": [
+          [
+            "close",
+            "door"
+          ],
+          [
+            "close",
+            "door"
+          ]
+        ],
+        "error": null
+      },
+      "reversed": {
+        "events": [
+          [
+            "put-in",
+            "milk"
+          ]
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "cont_bb5fc1818a2f42f0f54c",
+      "quiet": false,
+      "targets": [
+        [
+          "take",
+          "bread"
+        ],
+        [
+          "close",
+          "bin:bread"
+        ]
+      ],
+      "original": {
+        "events": [
+          [
+            "close",
+            "box"
+          ],
+          [
+            "put-in",
+            "packaging"
+          ]
+        ],
+        "error": null
+      },
+      "static_repeat": {
+        "events": [
+          [
+            "put-in",
+            "packaging"
+          ]
+        ],
+        "error": null
+      },
+      "reversed": {
+        "events": [],
+        "error": "JSONDecodeError"
+      }
+    },
+    {
+      "id": "cont_fb004842729c46559071",
+      "quiet": false,
+      "targets": [
+        [
+          "open",
+          "mozzarella"
+        ],
+        [
+          "put-down",
+          "lid"
+        ]
+      ],
+      "original": {
+        "events": [
+          [
+            "turn-on",
+            "tap"
+          ],
+          [
+            "close",
+            "tap"
+          ]
+        ],
+        "error": null
+      },
+      "static_repeat": {
+        "events": [
+          [
+            "turn-on",
+            "tap"
+          ],
+          [
+            "close",
+            "tap"
+          ]
+        ],
+        "error": null
+      },
+      "reversed": {
+        "events": [
+          [
+            "turn-on",
+            "tap"
+          ],
+          [
+            "close",
+            "tap"
+          ]
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "cont_1e140dd6ada76f03a798",
+      "quiet": false,
+      "targets": [
+        [
+          "pick-up",
+          "mozzarella"
+        ],
+        [
+          "put-down",
+          "mozzarella"
+        ]
+      ],
+      "original": {
+        "events": [
+          [
+            "put-down",
+            "fork"
+          ]
+        ],
+        "error": null
+      },
+      "static_repeat": {
+        "events": [
+          [
+            "put-down",
+            "fork"
+          ],
+          [
+            "close",
+            "lid"
+          ]
+        ],
+        "error": null
+      },
+      "reversed": {
+        "events": [
+          [
+            "put-down",
+            "knife"
+          ],
+          [
+            "put-down",
+            "fork"
+          ]
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "cont_9e0ffa0f55ccf2752208",
+      "quiet": false,
+      "targets": [
+        [
+          "put-down",
+          "saucepan"
+        ]
+      ],
+      "original": {
+        "events": [
+          [
+            "pick-up",
+            "pot"
+          ]
+        ],
+        "error": null
+      },
+      "static_repeat": {
+        "events": [
+          [
+            "close",
+            "drawer"
+          ]
+        ],
+        "error": null
+      },
+      "reversed": {
+        "events": [
+          [
+            "put-in",
+            "pot"
+          ]
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "cont_dfaed6bd22504dc05ebc",
+      "quiet": false,
+      "targets": [
+        [
+          "pick-up",
+          "fork"
+        ],
+        [
+          "put-down",
+          "fork"
+        ]
+      ],
+      "original": {
+        "events": [
+          [
+            "pick-up",
+            "scissors"
+          ]
+        ],
+        "error": null
+      },
+      "static_repeat": {
+        "events": [
+          [
+            "pick-up",
+            "knife"
+          ]
+        ],
+        "error": null
+      },
+      "reversed": {
+        "events": [
+          [
+            "pick-up",
+            "scissors"
+          ]
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "cont_7c73a801cc09cbdc3908",
+      "quiet": true,
+      "targets": [],
+      "original": {
+        "events": [
+          [
+            "open",
+            "oven"
+          ],
+          [
+            "put-in",
+            "food"
+          ]
+        ],
+        "error": null
+      },
+      "static_repeat": {
+        "events": [
+          [
+            "open",
+            "oven"
+          ],
+          [
+            "put-in",
+            "food"
+          ]
+        ],
+        "error": null
+      },
+      "reversed": {
+        "events": [
+          [
+            "open",
+            "oven"
+          ],
+          [
+            "take",
+            "pan"
+          ]
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "cont_ebd6251ce19fb575a83b",
+      "quiet": true,
+      "targets": [],
+      "original": {
+        "events": [
+          [
+            "put-down",
+            "teaspoon"
+          ],
+          [
+            "put-down",
+            "teaspoon"
+          ]
+        ],
+        "error": null
+      },
+      "static_repeat": {
+        "events": [
+          [
+            "put-down",
+            "spoon"
+          ],
+          [
+            "put-down",
+            "spoon"
+          ]
+        ],
+        "error": null
+      },
+      "reversed": {
+        "events": [
+          [
+            "put-down",
+            "teaspoon"
+          ]
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "cont_e576af5022e12b98ace9",
+      "quiet": true,
+      "targets": [],
+      "original": {
+        "events": [
+          [
+            "touch",
+            "screen"
+          ]
+        ],
+        "error": null
+      },
+      "static_repeat": {
+        "events": [
+          [
+            "touch",
+            "screen"
+          ]
+        ],
+        "error": null
+      },
+      "reversed": {
+        "events": [
+          [
+            "put-on",
+            "phone"
+          ]
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "cont_08c9ef11db781e7334fa",
+      "quiet": true,
+      "targets": [],
+      "original": {
+        "events": [
+          [
+            "take",
+            "milk"
+          ]
+        ],
+        "error": null
+      },
+      "static_repeat": {
+        "events": [
+          [
+            "put-in",
+            "milk"
+          ]
+        ],
+        "error": null
+      },
+      "reversed": {
+        "events": [
+          [
+            "take",
+            "milk"
+          ]
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "cont_893e6e3914f107334c31",
+      "quiet": true,
+      "targets": [],
+      "original": {
+        "events": [
+          [
+            "put-in",
+            "plastic"
+          ]
+        ],
+        "error": null
+      },
+      "static_repeat": {
+        "events": [
+          [
+            "open",
+            "drawer"
+          ]
+        ],
+        "error": null
+      },
+      "reversed": {
+        "events": [
+          [
+            "put-in",
+            "plastic"
+          ]
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "cont_e17c762812250029ce48",
+      "quiet": true,
+      "targets": [],
+      "original": {
+        "events": [
+          [
+            "put-in",
+            "milk"
+          ]
+        ],
+        "error": null
+      },
+      "static_repeat": {
+        "events": [
+          [
+            "open",
+            "freezer"
+          ]
+        ],
+        "error": null
+      },
+      "reversed": {
+        "events": [
+          [
+            "put-in",
+            "milk"
+          ],
+          [
+            "close",
+            "fridge"
+          ]
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "cont_32eef3da3d2105adb792",
+      "quiet": true,
+      "targets": [],
+      "original": {
+        "events": [
+          [
+            "put-down",
+            "knife"
+          ]
+        ],
+        "error": null
+      },
+      "static_repeat": {
+        "events": [
+          [
+            "put-on",
+            "knife"
+          ]
+        ],
+        "error": null
+      },
+      "reversed": {
+        "events": [
+          [
+            "pick-up",
+            "knife"
+          ]
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "cont_0216e22b2739e7f69c23",
+      "quiet": true,
+      "targets": [],
+      "original": {
+        "events": [
+          [
+            "put-down",
+            "teaspoon"
+          ],
+          [
+            "put-down",
+            "teaspoon"
+          ],
+          [
+            "put-down",
+            "teaspoon"
+          ]
+        ],
+        "error": null
+      },
+      "static_repeat": {
+        "events": [
+          [
+            "put-down",
+            "teaspoon"
+          ]
+        ],
+        "error": null
+      },
+      "reversed": {
+        "events": [
+          [
+            "put-on",
+            "pot"
+          ],
+          [
+            "close",
+            "drawer"
+          ],
+          [
+            "put-on",
+            "pot"
+          ]
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "cont_e1474d89a7148a04ce87",
+      "quiet": true,
+      "targets": [],
+      "original": {
+        "events": [
+          [
+            "put-down",
+            "knife"
+          ],
+          [
+            "put-down",
+            "fork"
+          ],
+          [
+            "put-down",
+            "spoon"
+          ]
+        ],
+        "error": null
+      },
+      "static_repeat": {
+        "events": [
+          [
+            "put-on",
+            "teaspoon"
+          ]
+        ],
+        "error": null
+      },
+      "reversed": {
+        "events": [
+          [
+            "put-down",
+            "teaspoon"
+          ]
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "cont_97c4a76747386308d4ea",
+      "quiet": true,
+      "targets": [],
+      "original": {
+        "events": [
+          [
+            "put-on",
+            "pan"
+          ]
+        ],
+        "error": null
+      },
+      "static_repeat": {
+        "events": [
+          [
+            "put-on",
+            "pot"
+          ],
+          [
+            "close",
+            "drawer"
+          ]
+        ],
+        "error": null
+      },
+      "reversed": {
+        "events": [
+          [
+            "put-on",
+            "pot"
+          ]
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "cont_d748b49d9e6f098e5190",
+      "quiet": true,
+      "targets": [],
+      "original": {
+        "events": [
+          [
+            "wash",
+            "hand"
+          ]
+        ],
+        "error": null
+      },
+      "static_repeat": {
+        "events": [
+          [
+            "put-on",
+            "sugar"
+          ]
+        ],
+        "error": null
+      },
+      "reversed": {
+        "events": [
+          [
+            "put-on",
+            "pot"
+          ],
+          [
+            "close",
+            "pot"
+          ]
+        ],
+        "error": null
+      }
+    },
+    {
+      "id": "cont_d85c7a2b120ad5008c8b",
+      "quiet": true,
+      "targets": [],
+      "original": {
+        "events": [
+          [
+            "put-on",
+            "pot"
+          ]
+        ],
+        "error": null
+      },
+      "static_repeat": {
+        "events": [
+          [
+            "turn-on",
+            "tap"
+          ],
+          [
+            "wash",
+            "hand"
+          ]
+        ],
+        "error": null
+      },
+      "reversed": {
+        "events": [
+          [
+            "pick-up",
+            "pot"
+          ]
+        ],
+        "error": null
+      }
+    }
+  ],
+  "recorded_at": 1789542810.615248
+}
