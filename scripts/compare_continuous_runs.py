@@ -69,7 +69,9 @@ def summary(scores: dict) -> dict:
     return {"usable": scores["usable_decisions"], "windows": scores["windows"],
             "usable_rate": scores["output_usable_rate"], "labeled": events["labeled"], "matched": events["matched"],
             "recall": events["labeled_event_recall"], "false_with_coverage": events["false_with_exhaustive_coverage"],
-            "false_events_per_hour": events["false_events_per_hour"], "covered_seconds": events["exhaustive_subset"]["covered_seconds"],
+            "false_events_per_hour": events["false_events_per_hour"],
+            "false_events_per_hour_exhaustive_subset": events["exhaustive_subset"]["false_events_per_hour"],
+            "covered_seconds": events["exhaustive_subset"]["covered_seconds"],
             "unscored_extras": events["unscored_extras"], "mean_iou": events["mean_matched_temporal_iou"],
             "calibration": {k: scores["event_confidence_calibration"][k] for k in ("scorable_predictions", "brier_known_labels", "ece_known_labels", "positive_only")},
             "mean_latency_s": scores["timing"]["model_latency_s"]["mean"], "per_kind": scores["events"]["per_kind_object"]}
@@ -136,7 +138,7 @@ def main():
                       "false events per hour counts unmatched evaluated-class predictions inside covered intervals."}
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(report, indent=2) + "\n")
-    lines = ["| Run | Contract | Usable | Recall | False/h | Abstention on quiet | Mean latency |", "|---|---|---:|---:|---:|---:|---:|"]
+    lines = ["| Run | Contract | Usable | Recall | False/h (covered subset) | Abstention on quiet | Mean latency |", "|---|---|---:|---:|---:|---:|---:|"]
     def fmt(value, digits, suffix=""):
         return "n/a" if value is None else f"{value:.{digits}f}{suffix}"
 
@@ -144,7 +146,8 @@ def main():
         for contract in ("strict", "judged"):
             s, a = r[contract], r["abstention_" + contract]
             lines.append("| " + " | ".join([name, contract, f"{s['usable']}/{s['windows']}", fmt(s["recall"], 3),
-                                            fmt(s["false_events_per_hour"], 1), fmt(a["abstention_rate_on_usable"], 2),
+                                            fmt(s["false_events_per_hour_exhaustive_subset"], 1),
+                                            fmt(a["abstention_rate_on_usable"], 2),
                                             fmt(s["mean_latency_s"], 1, " s")]) + " |")
     print("\n".join(lines))
     if unmatched:

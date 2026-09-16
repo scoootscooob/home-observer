@@ -59,3 +59,21 @@ def test_trailing_characters_and_fences_are_format_noise():
     assert completion["ignored_trailing_characters"] == 1
     with pytest.raises(ValueError):
         complete_judged_decision("no object here", WINDOW)
+
+
+def test_claimed_start_milliseconds_before_first_frame_snaps_onto_it_and_is_recorded():
+    window = {"window_id": "w", "started_at": 1.5, "ended_at": 4.5, "clips": [{
+        "clip_id": "c", "camera_id": "cam", "started_at": 1.5, "ended_at": 4.5,
+        "frames": [{"evidence_id": f"cam:{i}", "timestamp": round(1.5015 + i * 0.43, 4), "path": f"{i}.jpg"}
+                   for i in range(7)]}]}
+    raw = json.dumps({"events": [{"kind": "pick-up", "object_label": "spoon", "started_at": 1.5, "ended_at": 3.89,
+                                  "description": "pick up spoon"}]})
+    decision, completion = complete_judged_decision(raw, window)
+    validate_physical_decision(decision, window)
+    assert decision.events[0].started_at == pytest.approx(1.5015)
+    assert decision.events[0].pre_evidence_ids == ["cam:0"]
+    assert completion["events"][0]["start_snapped_s"] == pytest.approx(0.0015)
+    far = json.dumps({"events": [{"kind": "pick-up", "object_label": "spoon", "started_at": 1.2, "ended_at": 3.89,
+                                  "description": "pick up spoon"}]})
+    with pytest.raises(ValueError):
+        complete_judged_decision(far, window)

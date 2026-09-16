@@ -42,11 +42,13 @@ def score_rows(rows, config, generations):
     for row in rows:
         clean = prepare_physical_request(physical_request_from_row(row), config)
         item = generations[row["id"]]
-        raw, metrics, error = item["raw_output"], item["metrics"], item.get("error")
+        raw, metrics, error = item.get("raw_output") or "", item.get("metrics") or {}, item.get("error")
         strict = {"id": row["id"], "result": {"decision": None, "metrics": metrics, "raw_output": raw}}
         judged = {"id": row["id"], "result": {"decision": None, "metrics": metrics, "raw_output": raw}}
-        if error:
-            strict["result"]["error"] = judged["result"]["error"] = error
+        # A recorded error next to retained raw text is a validation failure to re-judge, not a
+        # missing generation; only an empty generation is a backend failure.
+        if not raw:
+            strict["result"]["error"] = judged["result"]["error"] = error or "no generation"
         else:
             try:
                 decision = validate_physical_decision(PhysicalDecision.model_validate_json(raw), clean["window"])

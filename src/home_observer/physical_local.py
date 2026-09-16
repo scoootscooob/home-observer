@@ -30,6 +30,7 @@ from .physical_model import (
 from .physical_schema import PhysicalDecision, PhysicalModel, PhysicalWindow, validate_physical_decision
 
 PLACEHOLDER_CONFIDENCE = 0.5
+START_SNAP_TOLERANCE_S = 0.05  # frame timestamps are index/fps; a claimed start may precede the first frame by ms
 PLACEHOLDER_UNCERTAINTY = ("confidence and uncertainty were not supervised for this adapter; "
                            "this value is an explicit placeholder, not a model judgment")
 
@@ -97,12 +98,19 @@ def complete_judged_decision(raw: str, window: PhysicalWindow | dict) -> tuple[P
                   "evidence": "derived_from_interval",
                   "ignored_model_citations": len(item.pre_evidence_ids) + len(item.post_evidence_ids),
                   "ignored_event_fields": sorted(item.model_extra or {})}
-        before = [f.evidence_id for f in frames if f.timestamp <= item.started_at]
-        inside = [f.evidence_id for f in frames if item.started_at < f.timestamp <= item.ended_at]
+        start = item.started_at
+        before = [f.evidence_id for f in frames if f.timestamp <= start]
+        if not before and frames and 0 < frames[0].timestamp - start <= START_SNAP_TOLERANCE_S:
+            # The claim starts a few milliseconds before the first sampled frame: snap it onto
+            # that frame rather than reject it; the shift is recorded, never hidden.
+            record["start_snapped_s"] = round(frames[0].timestamp - start, 4)
+            start = frames[0].timestamp
+            before = [frames[0].evidence_id]
+        inside = [f.evidence_id for f in frames if start < f.timestamp <= item.ended_at]
         pre, post = before[-1:], inside[-1:]
         events.append({
             "event_id": f"judged_{index + 1}", "kind": item.kind, "object_label": item.object_label,
-            "subject_ids": item.subject_ids, "started_at": item.started_at, "ended_at": item.ended_at,
+            "subject_ids": item.subject_ids, "started_at": start, "ended_at": item.ended_at,
             "description": item.description or f"{item.kind} {item.object_label or ''}".strip(),
             "pre_evidence_ids": pre, "post_evidence_ids": post,
             "confidence": item.confidence if item.confidence is not None else PLACEHOLDER_CONFIDENCE,
